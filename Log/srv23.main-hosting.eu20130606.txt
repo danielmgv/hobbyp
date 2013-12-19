@@ -1,0 +1,327 @@
+07:18:48-80.25.246.60-BEGIN AJAX.
+07:18:48-80.25.246.60-select.
+07:18:48-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+07:18:48-80.25.246.60-Conectando.
+08:18:48-80.25.246.60-Nueva conexion.
+07:19:00-80.25.246.60-BEGIN AJAX.
+07:19:00-80.25.246.60-select.
+07:19:00-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+07:19:00-80.25.246.60-Conectando.
+08:19:00-80.25.246.60-Nueva conexion.
+07:19:00-80.25.246.60-BEGIN AJAX.
+07:19:00-80.25.246.60-select.
+07:19:00-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+07:19:00-80.25.246.60-Conectando.
+08:19:00-80.25.246.60-Nueva conexion.
+07:19:10-80.25.246.60-BEGIN AJAX.
+07:19:10-80.25.246.60-select.
+07:19:10-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+07:19:10-80.25.246.60-Conectando.
+08:19:10-80.25.246.60-Nueva conexion.
+07:19:10-80.25.246.60-BEGIN AJAX.
+07:19:10-80.25.246.60-select.
+07:19:10-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+07:19:10-80.25.246.60-Conectando.
+08:19:10-80.25.246.60-Nueva conexion.
+07:19:52-80.25.246.60-BEGIN AJAX.
+07:19:52-80.25.246.60-procedure.
+07:19:52-80.25.246.60-Conectando.
+08:19:52-80.25.246.60-Nueva conexion.
+08:19:52-80.25.246.60-Error CALL failed: (1146) Table 'u490265401_educa.control' doesn't exist CALL ControlUpdate(21,'ttttttttttuuu',1,Null,2,Null,'uuuuuuuuuuuuuuuuuuuuu').
+07:21:33-80.25.246.60-BEGIN AJAX.
+07:21:33-80.25.246.60-procedure.
+07:21:33-80.25.246.60-Conectando.
+08:21:33-80.25.246.60-Nueva conexion.
+08:21:33-80.25.246.60-Error CALL failed: (1146) Table 'u490265401_educa.control' doesn't exist CALL ControlUpdate(21,'ttttttttttuuu',1,Null,2,Null,'uuuuuuuuuuuuuuuuuuuuu').
+07:23:33-80.25.246.60-BEGIN AJAX.
+07:23:33-80.25.246.60-select.
+07:23:33-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+07:23:33-80.25.246.60-Conectando.
+08:23:33-80.25.246.60-Nueva conexion.
+07:25:14-80.25.246.60-BEGIN AJAX.
+07:25:14-80.25.246.60-select.
+07:25:14-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+07:25:14-80.25.246.60-Conectando.
+08:25:15-80.25.246.60-Nueva conexion.
+07:25:15-80.25.246.60-BEGIN AJAX.
+07:25:15-80.25.246.60-select.
+07:25:15-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+07:25:15-80.25.246.60-Conectando.
+08:25:15-80.25.246.60-Nueva conexion.
+07:25:20-80.25.246.60-BEGIN AJAX.
+07:25:20-80.25.246.60-select.
+07:25:20-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+07:25:20-80.25.246.60-Conectando.
+08:25:20-80.25.246.60-Nueva conexion.
+07:25:20-80.25.246.60-BEGIN AJAX.
+07:25:20-80.25.246.60-select.
+07:25:20-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+07:25:20-80.25.246.60-Conectando.
+08:25:20-80.25.246.60-Nueva conexion.
+07:37:15-80.25.246.60-BEGIN AJAX.
+07:37:15-80.25.246.60-select.
+07:37:15-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+07:37:15-80.25.246.60-Conectando.
+08:37:15-80.25.246.60-Nueva conexion.
+07:37:24-80.25.246.60-BEGIN AJAX.
+07:37:24-80.25.246.60-select.
+07:37:24-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+07:37:24-80.25.246.60-Conectando.
+08:37:24-80.25.246.60-Nueva conexion.
+07:39:09-80.25.246.60-BEGIN AJAX.
+07:39:09-80.25.246.60-select.
+07:39:09-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+07:39:09-80.25.246.60-Conectando.
+08:39:09-80.25.246.60-Nueva conexion.
+07:39:14-80.25.246.60-BEGIN AJAX.
+07:39:14-80.25.246.60-select.
+07:39:14-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+07:39:14-80.25.246.60-Conectando.
+08:39:14-80.25.246.60-Nueva conexion.
+07:39:49-80.25.246.60-BEGIN AJAX.
+07:39:49-80.25.246.60-select.
+07:39:49-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+07:39:49-80.25.246.60-Conectando.
+08:39:49-80.25.246.60-Nueva conexion.
+07:40:01-80.25.246.60-BEGIN AJAX.
+07:40:01-80.25.246.60-select.
+07:40:01-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+07:40:01-80.25.246.60-Conectando.
+08:40:01-80.25.246.60-Nueva conexion.
+07:40:01-80.25.246.60-BEGIN AJAX.
+07:40:01-80.25.246.60-select.
+07:40:01-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+07:40:01-80.25.246.60-Conectando.
+08:40:01-80.25.246.60-Nueva conexion.
+07:40:07-80.25.246.60-BEGIN AJAX.
+07:40:07-80.25.246.60-select.
+07:40:07-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+07:40:07-80.25.246.60-Conectando.
+08:40:07-80.25.246.60-Nueva conexion.
+07:40:07-80.25.246.60-BEGIN AJAX.
+07:40:07-80.25.246.60-select.
+07:40:07-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+07:40:07-80.25.246.60-Conectando.
+08:40:07-80.25.246.60-Nueva conexion.
+07:42:50-80.25.246.60-BEGIN AJAX.
+07:42:50-80.25.246.60-select.
+07:42:50-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+07:42:50-80.25.246.60-Conectando.
+08:42:50-80.25.246.60-Nueva conexion.
+07:56:01-80.25.246.60-BEGIN AJAX.
+07:56:01-80.25.246.60-select.
+07:56:01-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+07:56:01-80.25.246.60-Conectando.
+08:56:01-80.25.246.60-Nueva conexion.
+07:56:23-80.25.246.60-BEGIN AJAX.
+07:56:23-80.25.246.60-select.
+07:56:23-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+07:56:23-80.25.246.60-Conectando.
+08:56:23-80.25.246.60-Nueva conexion.
+07:57:29-80.25.246.60-BEGIN AJAX.
+07:57:29-80.25.246.60-select.
+07:57:29-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+07:57:29-80.25.246.60-Conectando.
+08:57:29-80.25.246.60-Nueva conexion.
+07:57:29-80.25.246.60-BEGIN AJAX.
+07:57:29-80.25.246.60-select.
+07:57:29-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+07:57:29-80.25.246.60-Conectando.
+08:57:29-80.25.246.60-Nueva conexion.
+07:57:33-80.25.246.60-BEGIN AJAX.
+07:57:33-80.25.246.60-select.
+07:57:33-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+07:57:33-80.25.246.60-Conectando.
+08:57:33-80.25.246.60-Nueva conexion.
+07:57:33-80.25.246.60-BEGIN AJAX.
+07:57:33-80.25.246.60-select.
+07:57:33-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+07:57:33-80.25.246.60-Conectando.
+08:57:33-80.25.246.60-Nueva conexion.
+07:57:34-80.25.246.60-BEGIN AJAX.
+07:57:34-80.25.246.60-select.
+07:57:34-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+07:57:34-80.25.246.60-Conectando.
+08:57:34-80.25.246.60-Nueva conexion.
+07:58:27-80.25.246.60-BEGIN AJAX.
+07:58:27-80.25.246.60-select.
+07:58:27-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+07:58:27-80.25.246.60-Conectando.
+08:58:27-80.25.246.60-Nueva conexion.
+07:58:33-80.25.246.60-BEGIN AJAX.
+07:58:33-80.25.246.60-select.
+07:58:33-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+07:58:33-80.25.246.60-Conectando.
+08:58:33-80.25.246.60-Nueva conexion.
+07:58:33-80.25.246.60-BEGIN AJAX.
+07:58:33-80.25.246.60-select.
+07:58:33-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+07:58:33-80.25.246.60-Conectando.
+08:58:33-80.25.246.60-Nueva conexion.
+07:58:37-80.25.246.60-BEGIN AJAX.
+07:58:37-80.25.246.60-select.
+07:58:37-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+07:58:37-80.25.246.60-Conectando.
+08:58:37-80.25.246.60-Nueva conexion.
+07:58:37-80.25.246.60-BEGIN AJAX.
+07:58:37-80.25.246.60-select.
+07:58:37-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+07:58:37-80.25.246.60-Conectando.
+08:58:37-80.25.246.60-Nueva conexion.
+08:04:36-80.25.246.60-BEGIN AJAX.
+08:04:36-80.25.246.60-select.
+08:04:36-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+08:04:36-80.25.246.60-Conectando.
+09:04:36-80.25.246.60-Nueva conexion.
+08:06:15-80.25.246.60-BEGIN AJAX.
+08:06:15-80.25.246.60-select.
+08:06:15-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:06:15-80.25.246.60-Conectando.
+09:06:15-80.25.246.60-Nueva conexion.
+08:06:25-80.25.246.60-BEGIN AJAX.
+08:06:25-80.25.246.60-select.
+08:06:25-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+08:06:25-80.25.246.60-Conectando.
+09:06:25-80.25.246.60-Nueva conexion.
+08:06:40-80.25.246.60-BEGIN AJAX.
+08:06:40-80.25.246.60-procedure.
+08:06:40-80.25.246.60-Conectando.
+09:06:40-80.25.246.60-Nueva conexion.
+09:06:40-80.25.246.60-Error CALL failed: (1054) Unknown column 'IdModoParam' in 'field list' CALL ControlUpdate(21,'tttttttttt',2,Null,2,Null,'yyyyyyyyyyyyyyyyyybbbb').
+08:08:34-80.25.246.60-BEGIN AJAX.
+08:08:34-80.25.246.60-select.
+08:08:34-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:08:34-80.25.246.60-Conectando.
+09:08:34-80.25.246.60-Nueva conexion.
+08:08:38-80.25.246.60-BEGIN AJAX.
+08:08:38-80.25.246.60-select.
+08:08:38-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+08:08:38-80.25.246.60-Conectando.
+09:08:38-80.25.246.60-Nueva conexion.
+08:08:47-80.25.246.60-BEGIN AJAX.
+08:08:47-80.25.246.60-procedure.
+08:08:47-80.25.246.60-Conectando.
+09:08:47-80.25.246.60-Nueva conexion.
+08:08:47-80.25.246.60-BEGIN AJAX.
+08:08:47-80.25.246.60-select.
+08:08:47-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+08:08:47-80.25.246.60-Conectando.
+09:08:47-80.25.246.60-Nueva conexion.
+08:08:59-80.25.246.60-BEGIN AJAX.
+08:08:59-80.25.246.60-select.
+08:08:59-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:08:59-80.25.246.60-Conectando.
+09:08:59-80.25.246.60-Nueva conexion.
+08:09:06-80.25.246.60-BEGIN AJAX.
+08:09:06-80.25.246.60-select.
+08:09:06-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 12.
+08:09:06-80.25.246.60-Conectando.
+09:09:06-80.25.246.60-Nueva conexion.
+08:09:44-80.25.246.60-BEGIN AJAX.
+08:09:44-80.25.246.60-select.
+08:09:44-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:09:44-80.25.246.60-Conectando.
+09:09:44-80.25.246.60-Nueva conexion.
+08:09:48-80.25.246.60-BEGIN AJAX.
+08:09:48-80.25.246.60-select.
+08:09:48-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+08:09:48-80.25.246.60-Conectando.
+09:09:48-80.25.246.60-Nueva conexion.
+08:09:56-80.25.246.60-BEGIN AJAX.
+08:09:56-80.25.246.60-select.
+08:09:56-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:09:56-80.25.246.60-Conectando.
+09:09:56-80.25.246.60-Nueva conexion.
+08:10:02-80.25.246.60-BEGIN AJAX.
+08:10:02-80.25.246.60-select.
+08:10:02-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 12.
+08:10:02-80.25.246.60-Conectando.
+09:10:02-80.25.246.60-Nueva conexion.
+08:10:10-80.25.246.60-BEGIN AJAX.
+08:10:10-80.25.246.60-select.
+08:10:10-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:10:10-80.25.246.60-Conectando.
+09:10:10-80.25.246.60-Nueva conexion.
+08:10:13-80.25.246.60-BEGIN AJAX.
+08:10:13-80.25.246.60-procedure.
+08:10:13-80.25.246.60-Conectando.
+09:10:13-80.25.246.60-Nueva conexion.
+08:10:14-80.25.246.60-BEGIN AJAX.
+08:10:14-80.25.246.60-select.
+08:10:14-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:10:14-80.25.246.60-Conectando.
+09:10:14-80.25.246.60-Nueva conexion.
+08:10:17-80.25.246.60-BEGIN AJAX.
+08:10:17-80.25.246.60-procedure.
+08:10:17-80.25.246.60-Conectando.
+09:10:17-80.25.246.60-Nueva conexion.
+08:10:17-80.25.246.60-BEGIN AJAX.
+08:10:17-80.25.246.60-select.
+08:10:17-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:10:17-80.25.246.60-Conectando.
+09:10:17-80.25.246.60-Nueva conexion.
+08:10:19-80.25.246.60-BEGIN AJAX.
+08:10:19-80.25.246.60-procedure.
+08:10:19-80.25.246.60-Conectando.
+09:10:19-80.25.246.60-Nueva conexion.
+08:10:20-80.25.246.60-BEGIN AJAX.
+08:10:20-80.25.246.60-select.
+08:10:20-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:10:20-80.25.246.60-Conectando.
+09:10:20-80.25.246.60-Nueva conexion.
+08:10:22-80.25.246.60-BEGIN AJAX.
+08:10:22-80.25.246.60-procedure.
+08:10:22-80.25.246.60-Conectando.
+09:10:22-80.25.246.60-Nueva conexion.
+08:10:22-80.25.246.60-BEGIN AJAX.
+08:10:22-80.25.246.60-select.
+08:10:22-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:10:22-80.25.246.60-Conectando.
+09:10:22-80.25.246.60-Nueva conexion.
+08:10:25-80.25.246.60-BEGIN AJAX.
+08:10:25-80.25.246.60-procedure.
+08:10:25-80.25.246.60-Conectando.
+09:10:25-80.25.246.60-Nueva conexion.
+08:10:25-80.25.246.60-BEGIN AJAX.
+08:10:25-80.25.246.60-select.
+08:10:25-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:10:25-80.25.246.60-Conectando.
+09:10:25-80.25.246.60-Nueva conexion.
+08:10:47-80.25.246.60-BEGIN AJAX.
+08:10:47-80.25.246.60-procedureScalar.
+08:10:47-80.25.246.60-Conectando.
+09:10:47-80.25.246.60-Nueva conexion.
+08:10:48-80.25.246.60-BEGIN AJAX.
+08:10:48-80.25.246.60-select.
+08:10:48-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 22.
+08:10:48-80.25.246.60-Conectando.
+09:10:48-80.25.246.60-Nueva conexion.
+08:10:57-80.25.246.60-BEGIN AJAX.
+08:10:57-80.25.246.60-select.
+08:10:57-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:10:57-80.25.246.60-Conectando.
+09:10:57-80.25.246.60-Nueva conexion.
+08:11:02-80.25.246.60-BEGIN AJAX.
+08:11:02-80.25.246.60-select.
+08:11:02-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 22.
+08:11:02-80.25.246.60-Conectando.
+09:11:02-80.25.246.60-Nueva conexion.
+08:11:11-80.25.246.60-BEGIN AJAX.
+08:11:11-80.25.246.60-procedure.
+08:11:11-80.25.246.60-Conectando.
+09:11:11-80.25.246.60-Nueva conexion.
+08:11:11-80.25.246.60-BEGIN AJAX.
+08:11:11-80.25.246.60-select.
+08:11:11-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 22.
+08:11:11-80.25.246.60-Conectando.
+09:11:11-80.25.246.60-Nueva conexion.
+08:11:22-80.25.246.60-BEGIN AJAX.
+08:11:22-80.25.246.60-select.
+08:11:22-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+08:11:22-80.25.246.60-Conectando.
+09:11:22-80.25.246.60-Nueva conexion.
+08:11:25-80.25.246.60-BEGIN AJAX.
+08:11:25-80.25.246.60-select.
+08:11:25-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+08:11:25-80.25.246.60-Conectando.
+09:11:25-80.25.246.60-Nueva conexion.

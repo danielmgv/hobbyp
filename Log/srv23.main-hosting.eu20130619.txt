@@ -1,0 +1,345 @@
+12:55:45-80.25.246.60-BEGIN AJAX.
+12:55:45-80.25.246.60-select.
+12:55:45-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+12:55:45-80.25.246.60-Conectando.
+12:55:45-80.25.246.60-Nueva conexion.
+13:07:30-80.25.246.60-BEGIN AJAX.
+13:07:30-80.25.246.60-select.
+13:07:30-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:07:30-80.25.246.60-Conectando.
+13:07:30-80.25.246.60-Nueva conexion.
+13:07:30-80.25.246.60-BEGIN AJAX.
+13:07:30-80.25.246.60-select.
+13:07:30-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+13:07:30-80.25.246.60-Conectando.
+13:07:30-80.25.246.60-Nueva conexion.
+13:07:30-80.25.246.60-BEGIN AJAX.
+13:07:30-80.25.246.60-select.
+13:07:30-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_evaluacion.
+13:07:30-80.25.246.60-Conectando.
+13:07:30-80.25.246.60-Nueva conexion.
+13:07:30-80.25.246.60-BEGIN AJAX.
+13:07:30-80.25.246.60-BEGIN AJAX.
+13:07:30-80.25.246.60-select.
+13:07:30-80.25.246.60-select.
+13:07:30-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+13:07:30-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+13:07:30-80.25.246.60-Conectando.
+13:07:30-80.25.246.60-Conectando.
+13:07:30-80.25.246.60-Nueva conexion.
+13:07:30-80.25.246.60-Nueva conexion.
+13:18:32-80.25.246.60-BEGIN AJAX.
+13:18:32-80.25.246.60-select.
+13:18:32-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:18:32-80.25.246.60-Conectando.
+13:18:32-80.25.246.60-Nueva conexion.
+13:20:14-80.25.246.60-BEGIN AJAX.
+13:20:14-80.25.246.60-select.
+13:20:14-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:20:14-80.25.246.60-Conectando.
+13:20:14-80.25.246.60-Nueva conexion.
+13:21:51-80.25.246.60-BEGIN AJAX.
+13:21:51-80.25.246.60-select.
+13:21:51-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:21:51-80.25.246.60-Conectando.
+13:21:51-80.25.246.60-Nueva conexion.
+13:24:53-80.25.246.60-BEGIN AJAX.
+13:24:53-80.25.246.60-select.
+13:24:53-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:24:53-80.25.246.60-Conectando.
+13:24:53-80.25.246.60-Nueva conexion.
+13:29:10-80.25.246.60-BEGIN AJAX.
+13:29:10-80.25.246.60-select.
+13:29:10-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:29:10-80.25.246.60-Conectando.
+13:29:10-80.25.246.60-Nueva conexion.
+13:30:04-80.25.246.60-BEGIN AJAX.
+13:30:04-80.25.246.60-select.
+13:30:04-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:30:04-80.25.246.60-Conectando.
+13:30:04-80.25.246.60-Nueva conexion.
+13:30:57-80.25.246.60-BEGIN AJAX.
+13:30:57-80.25.246.60-select.
+13:30:57-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:30:57-80.25.246.60-Conectando.
+13:30:57-80.25.246.60-Nueva conexion.
+13:34:06-80.25.246.60-BEGIN AJAX.
+13:34:06-80.25.246.60-select.
+13:34:06-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:34:06-80.25.246.60-Conectando.
+13:34:06-80.25.246.60-Nueva conexion.
+13:34:35-80.25.246.60-BEGIN AJAX.
+13:34:35-80.25.246.60-procedure.
+13:34:35-80.25.246.60-Conectando.
+13:34:35-80.25.246.60-Nueva conexion.
+13:34:35-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL ALControlUpdateNota(6,21,'2012_2013',).
+13:35:00-80.25.246.60-BEGIN AJAX.
+13:35:00-80.25.246.60-procedure.
+13:35:00-80.25.246.60-Conectando.
+13:35:00-80.25.246.60-Nueva conexion.
+13:35:00-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL ALControlUpdateNota(6,21,'2012_2013',).
+13:46:16-80.25.246.60-BEGIN AJAX.
+13:46:16-80.25.246.60-select.
+13:46:16-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:46:16-80.25.246.60-Conectando.
+13:46:16-80.25.246.60-Nueva conexion.
+13:46:30-80.25.246.60-BEGIN AJAX.
+13:46:30-80.25.246.60-procedure.
+13:46:30-80.25.246.60-Conectando.
+13:46:30-80.25.246.60-Nueva conexion.
+13:46:30-80.25.246.60-BEGIN AJAX.
+13:46:30-80.25.246.60-select.
+13:46:30-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:46:30-80.25.246.60-Conectando.
+13:46:30-80.25.246.60-Nueva conexion.
+13:46:41-80.25.246.60-BEGIN AJAX.
+13:46:41-80.25.246.60-procedure.
+13:46:41-80.25.246.60-Conectando.
+13:46:41-80.25.246.60-Nueva conexion.
+13:46:41-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL ALControlUpdateNota(17,21,2,'2012_2013',---).
+13:48:05-80.25.246.60-BEGIN AJAX.
+13:48:05-80.25.246.60-select.
+13:48:05-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:48:05-80.25.246.60-Conectando.
+13:48:05-80.25.246.60-Nueva conexion.
+13:48:16-80.25.246.60-BEGIN AJAX.
+13:48:16-80.25.246.60-procedure.
+13:48:16-80.25.246.60-Conectando.
+13:48:16-80.25.246.60-Nueva conexion.
+13:48:16-80.25.246.60-BEGIN AJAX.
+13:48:16-80.25.246.60-select.
+13:48:16-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:48:16-80.25.246.60-Conectando.
+13:48:16-80.25.246.60-Nueva conexion.
+13:48:28-80.25.246.60-BEGIN AJAX.
+13:48:28-80.25.246.60-procedure.
+13:48:28-80.25.246.60-Conectando.
+13:48:28-80.25.246.60-Nueva conexion.
+13:48:29-80.25.246.60-BEGIN AJAX.
+13:48:29-80.25.246.60-select.
+13:48:29-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:48:29-80.25.246.60-Conectando.
+13:48:29-80.25.246.60-Nueva conexion.
+13:48:35-80.25.246.60-BEGIN AJAX.
+13:48:35-80.25.246.60-procedure.
+13:48:35-80.25.246.60-Conectando.
+13:48:35-80.25.246.60-Nueva conexion.
+13:48:35-80.25.246.60-BEGIN AJAX.
+13:48:35-80.25.246.60-select.
+13:48:35-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:48:35-80.25.246.60-Conectando.
+13:48:35-80.25.246.60-Nueva conexion.
+13:48:44-80.25.246.60-BEGIN AJAX.
+13:48:44-80.25.246.60-select.
+13:48:44-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:48:44-80.25.246.60-Conectando.
+13:48:44-80.25.246.60-Nueva conexion.
+13:52:27-80.25.246.60-BEGIN AJAX.
+13:52:27-80.25.246.60-select.
+13:52:27-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:52:27-80.25.246.60-Conectando.
+13:52:27-80.25.246.60-Nueva conexion.
+13:52:35-80.25.246.60-BEGIN AJAX.
+13:52:35-80.25.246.60-procedure.
+13:52:35-80.25.246.60-Conectando.
+13:52:35-80.25.246.60-Nueva conexion.
+13:52:35-80.25.246.60-BEGIN AJAX.
+13:52:35-80.25.246.60-select.
+13:52:35-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:52:35-80.25.246.60-Conectando.
+13:52:35-80.25.246.60-Nueva conexion.
+13:52:41-80.25.246.60-BEGIN AJAX.
+13:52:41-80.25.246.60-procedure.
+13:52:41-80.25.246.60-Conectando.
+13:52:41-80.25.246.60-Nueva conexion.
+13:52:42-80.25.246.60-BEGIN AJAX.
+13:52:42-80.25.246.60-select.
+13:52:42-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:52:42-80.25.246.60-Conectando.
+13:52:42-80.25.246.60-Nueva conexion.
+13:53:54-80.25.246.60-BEGIN AJAX.
+13:53:54-80.25.246.60-select.
+13:53:54-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+13:53:54-80.25.246.60-Conectando.
+13:53:54-80.25.246.60-Nueva conexion.
+14:04:22-80.25.246.60-BEGIN AJAX.
+14:04:22-80.25.246.60-select.
+14:04:22-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+14:04:22-80.25.246.60-Conectando.
+14:04:22-80.25.246.60-Nueva conexion.
+14:06:41-80.25.246.60-BEGIN AJAX.
+14:06:41-80.25.246.60-select.
+14:06:41-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:06:41-80.25.246.60-Conectando.
+14:06:41-80.25.246.60-Nueva conexion.
+14:06:41-80.25.246.60-BEGIN AJAX.
+14:06:41-80.25.246.60-select.
+14:06:41-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+14:06:41-80.25.246.60-Conectando.
+14:06:41-80.25.246.60-Nueva conexion.
+14:06:41-80.25.246.60-BEGIN AJAX.
+14:06:41-80.25.246.60-select.
+14:06:41-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_evaluacion.
+14:06:41-80.25.246.60-Conectando.
+14:06:41-80.25.246.60-Nueva conexion.
+14:06:42-80.25.246.60-BEGIN AJAX.
+14:06:42-80.25.246.60-select.
+14:06:42-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+14:06:42-80.25.246.60-Conectando.
+14:06:42-80.25.246.60-Nueva conexion.
+14:06:42-80.25.246.60-BEGIN AJAX.
+14:06:42-80.25.246.60-select.
+14:06:42-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+14:06:42-80.25.246.60-Conectando.
+14:06:42-80.25.246.60-Nueva conexion.
+14:27:38-80.25.246.60-BEGIN AJAX.
+14:27:38-80.25.246.60-select.
+14:27:38-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:27:38-80.25.246.60-Conectando.
+14:27:38-80.25.246.60-Nueva conexion.
+14:28:03-80.25.246.60-BEGIN AJAX.
+14:28:03-80.25.246.60-select.
+14:28:03-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:28:03-80.25.246.60-Conectando.
+14:28:03-80.25.246.60-Nueva conexion.
+14:34:02-80.25.246.60-BEGIN AJAX.
+14:34:02-80.25.246.60-select.
+14:34:02-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:34:02-80.25.246.60-Conectando.
+14:34:02-80.25.246.60-Nueva conexion.
+14:34:24-80.25.246.60-BEGIN AJAX.
+14:34:24-80.25.246.60-select.
+14:34:24-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:34:24-80.25.246.60-Conectando.
+14:34:24-80.25.246.60-Nueva conexion.
+14:34:52-80.25.246.60-BEGIN AJAX.
+14:34:52-80.25.246.60-select.
+14:34:52-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:34:52-80.25.246.60-Conectando.
+14:34:52-80.25.246.60-Nueva conexion.
+14:35:05-80.25.246.60-BEGIN AJAX.
+14:35:05-80.25.246.60-procedure.
+14:35:05-80.25.246.60-Conectando.
+14:35:05-80.25.246.60-Nueva conexion.
+14:35:05-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL ALControlesDelete(22,2,'6,17','undefined',).
+14:39:33-80.25.246.60-BEGIN AJAX.
+14:39:33-80.25.246.60-select.
+14:39:33-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:39:33-80.25.246.60-Conectando.
+14:39:33-80.25.246.60-Nueva conexion.
+14:39:38-80.25.246.60-BEGIN AJAX.
+14:39:38-80.25.246.60-procedure.
+14:39:38-80.25.246.60-Conectando.
+14:39:38-80.25.246.60-Nueva conexion.
+14:39:38-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL' at line 1 CALL ALControlesDelete(22,2,'6,17','2012_2013').
+14:41:05-80.25.246.60-BEGIN AJAX.
+14:41:05-80.25.246.60-select.
+14:41:05-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:41:05-80.25.246.60-Conectando.
+14:41:05-80.25.246.60-Nueva conexion.
+14:41:13-80.25.246.60-BEGIN AJAX.
+14:41:13-80.25.246.60-procedure.
+14:41:13-80.25.246.60-Conectando.
+14:41:13-80.25.246.60-Nueva conexion.
+14:41:13-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE IdAlumno IN (6,17) AND IdControl = 22 AND IdEvaluacion = 2 AND Periodo = 2' at line 1 CALL ALControlesDelete(22,2,'6,17','2012_2013').
+14:42:55-80.25.246.60-BEGIN AJAX.
+14:42:55-80.25.246.60-select.
+14:42:55-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:42:55-80.25.246.60-Conectando.
+14:42:55-80.25.246.60-Nueva conexion.
+14:43:28-80.25.246.60-BEGIN AJAX.
+14:43:28-80.25.246.60-procedure.
+14:43:28-80.25.246.60-Conectando.
+14:43:28-80.25.246.60-Nueva conexion.
+14:43:28-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2012_2013' at line 1 CALL ALControlesDelete(22,2,'6,17','2012_2013').
+14:44:47-80.25.246.60-BEGIN AJAX.
+14:44:47-80.25.246.60-procedure.
+14:44:47-80.25.246.60-Conectando.
+14:44:47-80.25.246.60-Nueva conexion.
+14:44:47-80.25.246.60-Error CALL failed: (1059) Identifier name 'error: DELETE FROM al_controles WHERE IdAlumno IN (6,17) AND IdControl = 22 AND IdEvaluacion = 2 AND' is too long CALL ALControlesDelete(22,2,'6,17','2012_2013').
+14:47:14-80.25.246.60-BEGIN AJAX.
+14:47:14-80.25.246.60-select.
+14:47:14-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica, A.Nombre as Asignatura  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  LEFT JOIN asignaturas A ON A.Id = C.IdAsignatura  where 1 = 1  ORDER BY Nombre,Asignatura,UnidadDidactica.
+14:47:14-80.25.246.60-Conectando.
+14:47:14-80.25.246.60-Nueva conexion.
+14:47:18-80.25.246.60-BEGIN AJAX.
+14:47:18-80.25.246.60-procedure.
+14:47:18-80.25.246.60-Conectando.
+14:47:18-80.25.246.60-Nueva conexion.
+14:47:18-80.25.246.60-Error CALL failed: (1305) PROCEDURE u490265401_educa.error:  AND Periodo = '2012_2013, solution does not exist CALL ALControlesDelete(22,2,'6,17','2012_2013').
+14:48:47-80.25.246.60-BEGIN AJAX.
+14:48:47-80.25.246.60-procedure.
+14:48:47-80.25.246.60-Conectando.
+14:48:47-80.25.246.60-Nueva conexion.
+14:48:47-80.25.246.60-Error CALL failed: (1305) PROCEDURE u490265401_educa.error:  AND Periodo = '2012_2013', solution does not exist CALL ALControlesDelete(22,2,'6,17','2012_2013').
+14:49:17-80.25.246.60-BEGIN AJAX.
+14:49:17-80.25.246.60-procedure.
+14:49:17-80.25.246.60-Conectando.
+14:49:17-80.25.246.60-Nueva conexion.
+14:49:17-80.25.246.60-BEGIN AJAX.
+14:49:17-80.25.246.60-select.
+14:49:17-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:49:17-80.25.246.60-Conectando.
+14:49:17-80.25.246.60-Nueva conexion.
+14:49:52-80.25.246.60-BEGIN AJAX.
+14:49:52-80.25.246.60-select.
+14:49:52-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:49:52-80.25.246.60-Conectando.
+14:49:52-80.25.246.60-Nueva conexion.
+14:53:50-80.25.246.60-BEGIN AJAX.
+14:53:50-80.25.246.60-select.
+14:53:50-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:53:50-80.25.246.60-Conectando.
+14:53:50-80.25.246.60-Nueva conexion.
+14:53:57-80.25.246.60-BEGIN AJAX.
+14:53:57-80.25.246.60-select.
+14:53:57-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica, A.Nombre as Asignatura  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  LEFT JOIN asignaturas A ON A.Id = C.IdAsignatura  where 1 = 1  ORDER BY Nombre,Asignatura,UnidadDidactica.
+14:53:57-80.25.246.60-Conectando.
+14:53:57-80.25.246.60-Nueva conexion.
+14:54:20-80.25.246.60-BEGIN AJAX.
+14:54:20-80.25.246.60-procedure.
+14:54:20-80.25.246.60-Conectando.
+14:54:20-80.25.246.60-Nueva conexion.
+14:54:20-80.25.246.60-BEGIN AJAX.
+14:54:20-80.25.246.60-procedure.
+14:54:20-80.25.246.60-Conectando.
+14:54:20-80.25.246.60-Nueva conexion.
+14:54:20-80.25.246.60-BEGIN AJAX.
+14:54:20-80.25.246.60-select.
+14:54:20-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:54:20-80.25.246.60-Conectando.
+14:54:20-80.25.246.60-Nueva conexion.
+14:54:22-80.25.246.60-BEGIN AJAX.
+14:54:22-80.25.246.60-select.
+14:54:22-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:54:22-80.25.246.60-Conectando.
+14:54:22-80.25.246.60-Nueva conexion.
+14:56:04-80.25.246.60-BEGIN AJAX.
+14:56:04-80.25.246.60-select.
+14:56:04-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:56:04-80.25.246.60-Conectando.
+14:56:04-80.25.246.60-Nueva conexion.
+14:56:38-80.25.246.60-BEGIN AJAX.
+14:56:38-80.25.246.60-select.
+14:56:38-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:56:38-80.25.246.60-Conectando.
+14:56:38-80.25.246.60-Nueva conexion.
+14:56:43-80.25.246.60-BEGIN AJAX.
+14:56:43-80.25.246.60-procedure.
+14:56:43-80.25.246.60-Conectando.
+14:56:43-80.25.246.60-Nueva conexion.
+14:56:43-80.25.246.60-BEGIN AJAX.
+14:56:43-80.25.246.60-select.
+14:56:43-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:56:43-80.25.246.60-Conectando.
+14:56:43-80.25.246.60-Nueva conexion.
+14:58:16-80.25.246.60-BEGIN AJAX.
+14:58:16-80.25.246.60-select.
+14:58:16-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+14:58:16-80.25.246.60-Conectando.
+14:58:16-80.25.246.60-Nueva conexion.
+14:58:19-80.25.246.60-BEGIN AJAX.
+14:58:19-80.25.246.60-select.
+14:58:19-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica, A.Nombre as Asignatura  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  LEFT JOIN asignaturas A ON A.Id = C.IdAsignatura  where 1 = 1  ORDER BY Nombre,Asignatura,UnidadDidactica.
+14:58:19-80.25.246.60-Conectando.
+14:58:19-80.25.246.60-Nueva conexion.

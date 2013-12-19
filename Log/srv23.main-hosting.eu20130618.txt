@@ -1,0 +1,61 @@
+09:53:11-80.25.246.60-BEGIN AJAX.
+09:53:11-80.25.246.60-select.
+09:53:11-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+09:53:11-80.25.246.60-Conectando.
+09:53:11-80.25.246.60-Nueva conexion.
+09:55:01-81.45.53.82-BEGIN AJAX.
+09:55:01-81.45.53.82-select.
+09:55:01-81.45.53.82-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+09:55:01-81.45.53.82-Conectando.
+09:55:01-81.45.53.82-Nueva conexion.
+09:56:31-80.25.246.60-BEGIN AJAX.
+09:56:31-80.25.246.60-select.
+09:56:31-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+09:56:31-80.25.246.60-Conectando.
+09:56:31-80.25.246.60-Nueva conexion.
+09:56:31-80.25.246.60-Error Unknown column 'AP.NEv1' in 'field list'.
+09:56:31-80.25.246.60-BEGIN AJAX.
+09:56:31-80.25.246.60-select.
+09:56:31-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+09:56:31-80.25.246.60-Conectando.
+09:56:31-80.25.246.60-Nueva conexion.
+09:56:31-80.25.246.60-BEGIN AJAX.
+09:56:31-80.25.246.60-select.
+09:56:31-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_evaluacion.
+09:56:31-80.25.246.60-Conectando.
+09:56:31-80.25.246.60-Nueva conexion.
+09:56:40-80.25.246.60-BEGIN AJAX.
+09:56:41-80.25.246.60-select.
+09:56:42-80.25.246.60-BEGIN AJAX.
+09:56:43-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+09:56:43-80.25.246.60-select.
+09:56:43-80.25.246.60-Conectando.
+09:56:43-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+09:56:43-80.25.246.60-Conectando.
+09:56:43-80.25.246.60-Nueva conexion.
+09:56:43-80.25.246.60-Nueva conexion.
+10:25:00-80.25.246.60-BEGIN AJAX.
+10:25:00-80.25.246.60-select.
+10:25:00-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+10:25:00-80.25.246.60-Conectando.
+10:25:00-80.25.246.60-Nueva conexion.
+10:31:31-80.25.246.60-BEGIN AJAX.
+10:31:31-80.25.246.60-select.
+10:31:31-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo LEFT JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+10:31:31-80.25.246.60-Conectando.
+10:31:31-80.25.246.60-Nueva conexion.
+10:50:47-80.25.246.60-BEGIN AJAX.
+10:50:47-80.25.246.60-select.
+10:50:47-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+10:50:47-80.25.246.60-Conectando.
+10:50:47-80.25.246.60-Nueva conexion.
+10:53:42-80.25.246.60-BEGIN AJAX.
+10:53:42-80.25.246.60-select.
+10:53:42-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+10:53:42-80.25.246.60-Conectando.
+10:53:42-80.25.246.60-Nueva conexion.
+11:36:54-80.25.246.60-BEGIN AJAX.
+11:36:54-80.25.246.60-select.
+11:36:54-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+11:36:54-80.25.246.60-Conectando.
+11:36:54-80.25.246.60-Nueva conexion.

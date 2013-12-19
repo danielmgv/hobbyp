@@ -1,0 +1,15 @@
+10:14:49-85.251.54.20-BEGIN AJAX.
+10:14:49-85.251.54.20-select.
+10:14:49-85.251.54.20-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+10:14:50-85.251.54.20-BEGIN AJAX.
+10:14:50-85.251.54.20-select.
+10:14:50-85.251.54.20-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+10:14:53-85.251.54.20-BEGIN AJAX.
+10:14:53-85.251.54.20-select.
+10:14:53-85.251.54.20-SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id   LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye .
+10:15:45-85.251.54.20-BEGIN AJAX.
+10:15:45-85.251.54.20-select.
+10:15:45-85.251.54.20-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+10:15:45-85.251.54.20-BEGIN AJAX.
+10:15:45-85.251.54.20-select.
+10:15:45-85.251.54.20-SELECT Name as Texto, Id as Valor  FROM ohoobyes.

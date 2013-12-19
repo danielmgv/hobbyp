@@ -1,0 +1,20 @@
+12:42:30-80.25.246.60-BEGIN AJAX.
+12:42:30-80.25.246.60-select.
+12:42:30-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+12:42:30-80.25.246.60-Conectando.
+13:42:30-80.25.246.60-Nueva conexion.
+12:42:35-80.25.246.60-BEGIN AJAX.
+12:42:35-80.25.246.60-select.
+12:42:35-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+12:42:35-80.25.246.60-Conectando.
+13:42:35-80.25.246.60-Nueva conexion.
+12:42:35-80.25.246.60-BEGIN AJAX.
+12:42:35-80.25.246.60-select.
+12:42:35-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+12:42:35-80.25.246.60-Conectando.
+13:42:35-80.25.246.60-Nueva conexion.
+12:42:36-80.25.246.60-BEGIN AJAX.
+12:42:36-80.25.246.60-select.
+12:42:36-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:42:36-80.25.246.60-Conectando.
+13:42:36-80.25.246.60-Nueva conexion.

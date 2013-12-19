@@ -1,0 +1,741 @@
+08:40:13-80.25.246.60-BEGIN AJAX.
+08:40:14-80.25.246.60-select.
+08:40:14-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+08:40:14-80.25.246.60-Conectando.
+09:40:14-80.25.246.60-Nueva conexion.
+08:40:23-80.25.246.60-BEGIN AJAX.
+08:40:23-80.25.246.60-select.
+08:40:23-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+08:40:23-80.25.246.60-Conectando.
+09:40:23-80.25.246.60-Nueva conexion.
+08:40:28-80.25.246.60-BEGIN AJAX.
+08:40:28-80.25.246.60-procedureScalar.
+08:40:28-80.25.246.60-Conectando.
+09:40:28-80.25.246.60-Nueva conexion.
+09:40:28-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL ControlInsert('e1',,).
+08:55:40-80.25.246.60-BEGIN AJAX.
+08:55:40-80.25.246.60-procedureScalar.
+08:55:40-80.25.246.60-Conectando.
+09:55:40-80.25.246.60-Nueva conexion.
+09:55:40-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL ControlInsert('C1',,).
+08:57:24-80.25.246.60-BEGIN AJAX.
+08:57:24-80.25.246.60-select.
+08:57:24-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+08:57:24-80.25.246.60-Conectando.
+09:57:24-80.25.246.60-Nueva conexion.
+08:57:33-80.25.246.60-BEGIN AJAX.
+08:57:33-80.25.246.60-select.
+08:57:33-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+08:57:33-80.25.246.60-Conectando.
+09:57:33-80.25.246.60-Nueva conexion.
+08:57:47-80.25.246.60-BEGIN AJAX.
+08:57:47-80.25.246.60-procedureScalar.
+08:57:47-80.25.246.60-Conectando.
+09:57:47-80.25.246.60-Nueva conexion.
+09:57:47-80.25.246.60-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.ControlInsert; expected 6, got 4 CALL ControlInsert('C1',2,2,'erwer').
+09:14:40-80.25.246.60-BEGIN AJAX.
+09:14:40-80.25.246.60-select.
+09:14:40-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+09:14:40-80.25.246.60-Conectando.
+10:14:40-80.25.246.60-Nueva conexion.
+09:15:00-80.25.246.60-BEGIN AJAX.
+09:15:00-80.25.246.60-select.
+09:15:00-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+09:15:00-80.25.246.60-Conectando.
+10:15:00-80.25.246.60-Nueva conexion.
+09:15:11-80.25.246.60-BEGIN AJAX.
+09:15:11-80.25.246.60-procedureScalar.
+09:15:11-80.25.246.60-Conectando.
+10:15:11-80.25.246.60-Nueva conexion.
+10:15:11-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''wer',2,)' at line 1 CALL ControlInsert('er',2,,'wer',2,).
+09:18:35-80.25.246.60-BEGIN AJAX.
+09:18:35-80.25.246.60-procedureScalar.
+09:18:35-80.25.246.60-Conectando.
+10:18:35-80.25.246.60-Nueva conexion.
+10:18:35-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''wedqw',2,)' at line 1 CALL ControlInsert('1',2,,'wedqw',2,).
+09:25:38-80.25.246.60-BEGIN AJAX.
+09:25:38-80.25.246.60-procedureScalar.
+09:25:38-80.25.246.60-Conectando.
+10:25:38-80.25.246.60-Nueva conexion.
+10:25:38-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2131',2,)' at line 1 CALL ControlInsert('2131',2,,'2131',2,).
+09:33:15-80.25.246.60-BEGIN AJAX.
+09:33:15-80.25.246.60-procedureScalar.
+09:33:15-80.25.246.60-Conectando.
+10:33:15-80.25.246.60-Nueva conexion.
+10:33:15-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12312',2,)' at line 1 CALL ControlInsert('2131',2,,'12312',2,).
+09:34:14-80.25.246.60-BEGIN AJAX.
+09:34:14-80.25.246.60-procedureScalar.
+09:34:14-80.25.246.60-Conectando.
+10:34:14-80.25.246.60-Nueva conexion.
+10:34:14-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''23423',2,)' at line 1 CALL ControlInsert('234233',3,,'23423',2,).
+09:35:01-80.25.246.60-BEGIN AJAX.
+09:35:01-80.25.246.60-procedureScalar.
+09:35:01-80.25.246.60-Conectando.
+10:35:01-80.25.246.60-Nueva conexion.
+10:35:01-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123123',2,)' at line 1 CALL ControlInsert('2131',2,,'123123',2,).
+09:35:32-80.25.246.60-BEGIN AJAX.
+09:35:32-80.25.246.60-procedureScalar.
+09:35:32-80.25.246.60-Conectando.
+10:35:32-80.25.246.60-Nueva conexion.
+10:35:32-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''erter',2,)' at line 1 CALL ControlInsert('1232134',2,,'erter',2,).
+09:39:00-80.25.246.60-BEGIN AJAX.
+09:39:00-80.25.246.60-procedureScalar.
+09:39:00-80.25.246.60-Conectando.
+10:39:00-80.25.246.60-Nueva conexion.
+10:39:00-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12312',2,)' at line 1 CALL ControlInsert('23213',2,,'12312',2,).
+09:40:25-80.25.246.60-BEGIN AJAX.
+09:40:25-80.25.246.60-procedureScalar.
+09:40:25-80.25.246.60-Conectando.
+10:40:25-80.25.246.60-Nueva conexion.
+10:40:25-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12312',2,)' at line 1 CALL ControlInsert('21321',2,,'12312',2,).
+09:46:25-80.25.246.60-BEGIN AJAX.
+09:46:25-80.25.246.60-procedureScalar.
+09:46:25-80.25.246.60-Conectando.
+10:46:25-80.25.246.60-Nueva conexion.
+10:46:25-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''werwe',2,)' at line 1 CALL ControlInsert('wewrwe',2,,'werwe',2,).
+09:52:29-80.25.246.60-BEGIN AJAX.
+09:52:29-80.25.246.60-procedureScalar.
+09:52:29-80.25.246.60-Conectando.
+10:52:29-80.25.246.60-Nueva conexion.
+10:52:29-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''werwe',2,)' at line 1 CALL ControlInsert('3424',2,,'werwe',2,).
+09:54:09-80.25.246.60-BEGIN AJAX.
+09:54:09-80.25.246.60-select.
+09:54:09-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+09:54:09-80.25.246.60-Conectando.
+10:54:09-80.25.246.60-Nueva conexion.
+09:54:13-80.25.246.60-BEGIN AJAX.
+09:54:13-80.25.246.60-select.
+09:54:13-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+09:54:13-80.25.246.60-Conectando.
+10:54:13-80.25.246.60-Nueva conexion.
+09:54:21-80.25.246.60-BEGIN AJAX.
+09:54:21-80.25.246.60-procedureScalar.
+09:54:21-80.25.246.60-Conectando.
+10:54:21-80.25.246.60-Nueva conexion.
+10:54:21-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12312',2,)' at line 1 CALL ControlInsert('12312',2,,'12312',2,).
+09:57:25-80.25.246.60-BEGIN AJAX.
+09:57:25-80.25.246.60-procedureScalar.
+09:57:25-80.25.246.60-Conectando.
+10:57:25-80.25.246.60-Nueva conexion.
+10:57:25-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12312',2,)' at line 1 CALL ControlInsert('123',1,,'12312',2,).
+10:02:09-80.25.246.60-BEGIN AJAX.
+10:02:09-80.25.246.60-procedureScalar.
+10:02:09-80.25.246.60-Conectando.
+11:02:09-80.25.246.60-Nueva conexion.
+11:02:09-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12312',2,)' at line 1 CALL ControlInsert('12312',2,,'12312',2,).
+10:45:12-80.25.246.60-BEGIN AJAX.
+10:45:12-80.25.246.60-procedureScalar.
+10:45:12-80.25.246.60-Conectando.
+11:45:12-80.25.246.60-Nueva conexion.
+11:45:12-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''erterter',2,)' at line 1 CALL ControlInsert('234234',1,,'erterter',2,).
+10:46:02-80.25.246.60-BEGIN AJAX.
+10:46:02-80.25.246.60-procedureScalar.
+10:46:02-80.25.246.60-Conectando.
+11:46:02-80.25.246.60-Nueva conexion.
+11:46:02-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''erterter',2,)' at line 1 CALL ControlInsert('234234',1,,'erterter',2,).
+10:47:19-80.25.246.60-BEGIN AJAX.
+10:47:19-80.25.246.60-select.
+10:47:19-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+10:47:19-80.25.246.60-Conectando.
+11:47:19-80.25.246.60-Nueva conexion.
+10:47:32-80.25.246.60-BEGIN AJAX.
+10:47:32-80.25.246.60-select.
+10:47:32-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+10:47:32-80.25.246.60-Conectando.
+11:47:32-80.25.246.60-Nueva conexion.
+10:48:26-80.25.246.60-BEGIN AJAX.
+10:48:26-80.25.246.60-procedureScalar.
+10:48:26-80.25.246.60-Conectando.
+11:48:26-80.25.246.60-Nueva conexion.
+11:48:26-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''21312312',2,)' at line 1 CALL ControlInsert('23423',2,,'21312312',2,).
+10:54:42-80.25.246.60-BEGIN AJAX.
+10:54:42-80.25.246.60-procedureScalar.
+10:54:42-80.25.246.60-Conectando.
+11:54:42-80.25.246.60-Nueva conexion.
+11:54:42-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123213',2,)' at line 1 CALL ControlInsert('Prueba',2,,'123213',2,).
+10:55:17-80.25.246.60-BEGIN AJAX.
+10:55:17-80.25.246.60-procedureScalar.
+10:55:17-80.25.246.60-Conectando.
+11:55:17-80.25.246.60-Nueva conexion.
+11:55:17-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123213',2,)' at line 1 CALL ControlInsert('Prueba',2,,'123213',2,).
+10:55:37-80.25.246.60-BEGIN AJAX.
+10:55:37-80.25.246.60-procedureScalar.
+10:55:37-80.25.246.60-Conectando.
+11:55:37-80.25.246.60-Nueva conexion.
+11:55:37-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123213',2,)' at line 1 CALL ControlInsert('Prueba',2,,'123213',2,).
+10:56:40-80.25.246.60-BEGIN AJAX.
+10:56:40-80.25.246.60-select.
+10:56:40-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+10:56:40-80.25.246.60-Conectando.
+11:56:40-80.25.246.60-Nueva conexion.
+10:58:31-80.25.246.60-BEGIN AJAX.
+10:58:31-80.25.246.60-select.
+10:58:31-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+10:58:31-80.25.246.60-Conectando.
+11:58:31-80.25.246.60-Nueva conexion.
+10:58:44-80.25.246.60-BEGIN AJAX.
+10:58:44-80.25.246.60-procedureScalar.
+10:58:44-80.25.246.60-Conectando.
+11:58:44-80.25.246.60-Nueva conexion.
+11:58:44-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''234234234',2,)' at line 1 CALL ControlInsert('24234',2,,'234234234',2,).
+11:10:08-80.25.246.60-BEGIN AJAX.
+11:10:08-80.25.246.60-procedureScalar.
+11:10:08-80.25.246.60-Conectando.
+12:10:08-80.25.246.60-Nueva conexion.
+12:10:08-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123213',2,)' at line 1 CALL ControlInsert('12312',1,,'123213',2,).
+11:10:19-80.25.246.60-BEGIN AJAX.
+11:10:19-80.25.246.60-select.
+11:10:19-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+11:10:19-80.25.246.60-Conectando.
+12:10:19-80.25.246.60-Nueva conexion.
+11:10:19-80.25.246.60-BEGIN AJAX.
+11:10:19-80.25.246.60-select.
+11:10:19-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+11:10:19-80.25.246.60-Conectando.
+12:10:19-80.25.246.60-Nueva conexion.
+11:10:19-80.25.246.60-BEGIN AJAX.
+11:10:19-80.25.246.60-select.
+11:10:19-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:10:19-80.25.246.60-Conectando.
+12:10:19-80.25.246.60-Nueva conexion.
+11:13:23-80.25.246.60-BEGIN AJAX.
+11:13:23-80.25.246.60-select.
+11:13:23-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:13:23-80.25.246.60-Conectando.
+12:13:23-80.25.246.60-Nueva conexion.
+11:14:15-80.25.246.60-BEGIN AJAX.
+11:14:15-80.25.246.60-procedureScalar.
+11:14:15-80.25.246.60-Conectando.
+12:14:15-80.25.246.60-Nueva conexion.
+12:14:15-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12312',2,)' at line 1 CALL ControlInsert('123',1,,'12312',2,).
+11:19:48-80.25.246.60-BEGIN AJAX.
+11:19:48-80.25.246.60-procedureScalar.
+11:19:48-80.25.246.60-Conectando.
+12:19:48-80.25.246.60-Nueva conexion.
+12:19:48-80.25.246.60-Error CALL failed: (1054) Unknown column 'IdUnidadDidactica' in 'field list' CALL ControlInsert('21123',2,Null,'123123',2,Null).
+11:39:29-80.25.246.60-BEGIN AJAX.
+11:39:29-80.25.246.60-procedureScalar.
+11:39:29-80.25.246.60-Conectando.
+12:39:29-80.25.246.60-Nueva conexion.
+11:41:53-80.25.246.60-BEGIN AJAX.
+11:41:53-80.25.246.60-procedureScalar.
+11:41:53-80.25.246.60-Conectando.
+12:41:53-80.25.246.60-Nueva conexion.
+11:42:34-80.25.246.60-BEGIN AJAX.
+11:42:34-80.25.246.60-procedureScalar.
+11:42:34-80.25.246.60-Conectando.
+12:42:34-80.25.246.60-Nueva conexion.
+11:43:03-80.25.246.60-BEGIN AJAX.
+11:43:03-80.25.246.60-select.
+11:43:03-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+11:43:03-80.25.246.60-Conectando.
+12:43:03-80.25.246.60-Nueva conexion.
+11:43:10-80.25.246.60-BEGIN AJAX.
+11:43:10-80.25.246.60-select.
+11:43:10-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+11:43:10-80.25.246.60-Conectando.
+12:43:10-80.25.246.60-Nueva conexion.
+11:43:32-80.25.246.60-BEGIN AJAX.
+11:43:32-80.25.246.60-procedureScalar.
+11:43:32-80.25.246.60-Conectando.
+12:43:32-80.25.246.60-Nueva conexion.
+11:47:15-80.25.246.60-BEGIN AJAX.
+11:47:15-80.25.246.60-procedureScalar.
+11:47:15-80.25.246.60-Conectando.
+12:47:15-80.25.246.60-Nueva conexion.
+11:50:51-80.25.246.60-BEGIN AJAX.
+11:50:51-80.25.246.60-procedureScalar.
+11:50:51-80.25.246.60-Conectando.
+12:50:51-80.25.246.60-Nueva conexion.
+11:53:45-80.25.246.60-BEGIN AJAX.
+11:53:45-80.25.246.60-procedureScalar.
+11:53:45-80.25.246.60-Conectando.
+12:53:45-80.25.246.60-Nueva conexion.
+12:01:39-80.25.246.60-BEGIN AJAX.
+12:01:39-80.25.246.60-procedureScalar.
+12:01:39-80.25.246.60-Conectando.
+13:01:39-80.25.246.60-Nueva conexion.
+12:05:23-80.25.246.60-BEGIN AJAX.
+12:05:23-80.25.246.60-procedureScalar.
+12:05:23-80.25.246.60-Conectando.
+13:05:23-80.25.246.60-Nueva conexion.
+12:05:23-80.25.246.60-BEGIN AJAX.
+12:05:23-80.25.246.60-select.
+12:05:23-80.25.246.60-SELECT C.Id, C.Nombre, E.Nombre, M.Nombre  FROM Controles C  LEFT JOIN Evaluaciones E ON E.Id = C.Evaluacion  LEFT JOIN Materias M ON M.Id = C.Materia  where C.Id = 9.
+12:05:23-80.25.246.60-Conectando.
+13:05:23-80.25.246.60-Nueva conexion.
+13:05:23-80.25.246.60-Error Table 'u490265401_educa.Controles' doesn't exist.
+12:05:45-80.25.246.60-BEGIN AJAX.
+12:05:45-80.25.246.60-procedureScalar.
+12:05:45-80.25.246.60-Conectando.
+13:05:45-80.25.246.60-Nueva conexion.
+12:05:46-80.25.246.60-BEGIN AJAX.
+12:05:46-80.25.246.60-select.
+12:05:46-80.25.246.60-SELECT C.Id, C.Nombre, E.Nombre, M.Nombre  FROM Controles C  LEFT JOIN Evaluaciones E ON E.Id = C.Evaluacion  LEFT JOIN Materias M ON M.Id = C.Materia  where C.Id = 10.
+12:05:46-80.25.246.60-Conectando.
+13:05:46-80.25.246.60-Nueva conexion.
+13:05:46-80.25.246.60-Error Table 'u490265401_educa.Controles' doesn't exist.
+12:06:23-80.25.246.60-BEGIN AJAX.
+12:06:23-80.25.246.60-procedureScalar.
+12:06:23-80.25.246.60-Conectando.
+13:06:23-80.25.246.60-Nueva conexion.
+12:06:24-80.25.246.60-BEGIN AJAX.
+12:06:24-80.25.246.60-select.
+12:06:24-80.25.246.60-SELECT C.Id, C.Nombre, E.Nombre, M.Nombre  FROM controles C  LEFT JOIN Evaluaciones E ON E.Id = C.Evaluacion  LEFT JOIN Materias M ON M.Id = C.Materia  where C.Id = 11.
+12:06:24-80.25.246.60-Conectando.
+13:06:24-80.25.246.60-Nueva conexion.
+13:06:24-80.25.246.60-Error Table 'u490265401_educa.Evaluaciones' doesn't exist.
+12:09:13-80.25.246.60-BEGIN AJAX.
+12:09:13-80.25.246.60-procedureScalar.
+12:09:13-80.25.246.60-Conectando.
+13:09:13-80.25.246.60-Nueva conexion.
+12:09:13-80.25.246.60-BEGIN AJAX.
+12:09:13-80.25.246.60-select.
+12:09:13-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C .
+12:09:13-80.25.246.60-Conectando.
+13:09:13-80.25.246.60-Nueva conexion.
+12:11:59-80.25.246.60-BEGIN AJAX.
+12:11:59-80.25.246.60-procedureScalar.
+12:11:59-80.25.246.60-Conectando.
+13:12:03-80.25.246.60-Nueva conexion.
+12:12:57-80.25.246.60-BEGIN AJAX.
+12:12:57-80.25.246.60-procedureScalar.
+12:12:57-80.25.246.60-Conectando.
+13:12:57-80.25.246.60-Nueva conexion.
+12:12:58-80.25.246.60-BEGIN AJAX.
+12:12:58-80.25.246.60-select.
+12:12:58-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C .
+12:12:58-80.25.246.60-Conectando.
+13:12:58-80.25.246.60-Nueva conexion.
+12:15:46-80.25.246.60-BEGIN AJAX.
+12:15:46-80.25.246.60-procedureScalar.
+12:15:46-80.25.246.60-Conectando.
+13:15:46-80.25.246.60-Nueva conexion.
+12:15:46-80.25.246.60-BEGIN AJAX.
+12:15:46-80.25.246.60-select.
+12:15:46-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C .
+12:15:46-80.25.246.60-Conectando.
+13:15:46-80.25.246.60-Nueva conexion.
+12:18:27-80.25.246.60-BEGIN AJAX.
+12:18:27-80.25.246.60-procedureScalar.
+12:18:27-80.25.246.60-Conectando.
+13:18:27-80.25.246.60-Nueva conexion.
+12:18:28-80.25.246.60-BEGIN AJAX.
+12:18:28-80.25.246.60-select.
+12:18:28-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C .
+12:18:28-80.25.246.60-Conectando.
+13:18:28-80.25.246.60-Nueva conexion.
+12:20:28-80.25.246.60-BEGIN AJAX.
+12:20:28-80.25.246.60-procedureScalar.
+12:20:28-80.25.246.60-Conectando.
+13:20:28-80.25.246.60-Nueva conexion.
+12:20:28-80.25.246.60-BEGIN AJAX.
+12:20:28-80.25.246.60-select.
+12:20:28-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C .
+12:20:28-80.25.246.60-Conectando.
+13:20:28-80.25.246.60-Nueva conexion.
+12:23:57-80.25.246.60-BEGIN AJAX.
+12:23:57-80.25.246.60-procedureScalar.
+12:23:57-80.25.246.60-Conectando.
+13:23:57-80.25.246.60-Nueva conexion.
+12:23:57-80.25.246.60-BEGIN AJAX.
+12:23:57-80.25.246.60-select.
+12:23:57-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C .
+12:23:57-80.25.246.60-Conectando.
+13:23:57-80.25.246.60-Nueva conexion.
+12:25:00-80.25.246.60-BEGIN AJAX.
+12:25:00-80.25.246.60-procedureScalar.
+12:25:00-80.25.246.60-Conectando.
+13:25:00-80.25.246.60-Nueva conexion.
+12:25:03-80.25.246.60-BEGIN AJAX.
+12:25:03-80.25.246.60-select.
+12:25:03-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C .
+12:25:03-80.25.246.60-Conectando.
+13:25:03-80.25.246.60-Nueva conexion.
+12:29:09-80.25.246.60-BEGIN AJAX.
+12:29:09-80.25.246.60-procedureScalar.
+12:29:09-80.25.246.60-Conectando.
+13:29:09-80.25.246.60-Nueva conexion.
+12:29:31-80.25.246.60-BEGIN AJAX.
+12:29:31-80.25.246.60-select.
+12:29:31-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C .
+12:29:31-80.25.246.60-Conectando.
+13:29:31-80.25.246.60-Nueva conexion.
+12:31:50-80.25.246.60-BEGIN AJAX.
+12:31:50-80.25.246.60-procedureScalar.
+12:31:50-80.25.246.60-Conectando.
+13:31:50-80.25.246.60-Nueva conexion.
+12:31:50-80.25.246.60-BEGIN AJAX.
+12:31:50-80.25.246.60-select.
+12:31:50-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 21.
+12:31:50-80.25.246.60-Conectando.
+13:31:50-80.25.246.60-Nueva conexion.
+12:41:22-80.25.246.60-BEGIN AJAX.
+12:41:22-80.25.246.60-select.
+12:41:22-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM Controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  AND C.Nombre LIKE '%undefined%' AND C.IdUnidadDidactica =undefined ORDER BY Nombre,UnidadDidactica.
+12:41:22-80.25.246.60-Conectando.
+13:41:22-80.25.246.60-Nueva conexion.
+13:41:22-80.25.246.60-Error Table 'u490265401_educa.Controles' doesn't exist.
+12:43:10-80.25.246.60-BEGIN AJAX.
+12:43:10-80.25.246.60-select.
+12:43:10-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  AND C.Nombre LIKE '%undefined%' AND C.IdUnidadDidactica =undefined ORDER BY Nombre,UnidadDidactica.
+12:43:10-80.25.246.60-Conectando.
+13:43:10-80.25.246.60-Nueva conexion.
+13:43:10-80.25.246.60-Error Unknown column 'undefined' in 'where clause'.
+12:47:27-80.25.246.60-BEGIN AJAX.
+12:47:27-80.25.246.60-select.
+12:47:27-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  AND C.Nombre LIKE '%undefined%' ORDER BY Nombre,UnidadDidactica.
+12:47:27-80.25.246.60-Conectando.
+13:47:27-80.25.246.60-Nueva conexion.
+12:49:33-80.25.246.60-BEGIN AJAX.
+12:49:33-80.25.246.60-select.
+12:49:33-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:49:33-80.25.246.60-Conectando.
+13:49:33-80.25.246.60-Nueva conexion.
+12:51:05-80.25.246.60-BEGIN AJAX.
+12:51:05-80.25.246.60-select.
+12:51:05-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:51:05-80.25.246.60-Conectando.
+13:51:05-80.25.246.60-Nueva conexion.
+12:51:17-80.25.246.60-BEGIN AJAX.
+12:51:17-80.25.246.60-procedure.
+12:51:17-80.25.246.60-Conectando.
+13:51:17-80.25.246.60-Nueva conexion.
+13:51:17-80.25.246.60-Error CALL failed: (1146) Table 'u490265401_educa.control' doesn't exist CALL ControlDelete(6).
+12:54:53-80.25.246.60-BEGIN AJAX.
+12:54:53-80.25.246.60-select.
+12:54:53-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:54:53-80.25.246.60-Conectando.
+13:54:53-80.25.246.60-Nueva conexion.
+12:54:58-80.25.246.60-BEGIN AJAX.
+12:54:58-80.25.246.60-procedure.
+12:54:58-80.25.246.60-Conectando.
+13:54:58-80.25.246.60-Nueva conexion.
+13:54:58-80.25.246.60-Error CALL failed: (1146) Table 'u490265401_educa.control' doesn't exist CALL ControlDelete(6).
+12:56:40-80.25.246.60-BEGIN AJAX.
+12:56:40-80.25.246.60-select.
+12:56:40-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:56:40-80.25.246.60-Conectando.
+13:56:40-80.25.246.60-Nueva conexion.
+12:56:49-80.25.246.60-BEGIN AJAX.
+12:56:49-80.25.246.60-procedure.
+12:56:49-80.25.246.60-Conectando.
+13:56:49-80.25.246.60-Nueva conexion.
+12:56:50-80.25.246.60-BEGIN AJAX.
+12:56:50-80.25.246.60-select.
+12:56:50-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:56:50-80.25.246.60-Conectando.
+13:56:50-80.25.246.60-Nueva conexion.
+12:57:29-80.25.246.60-BEGIN AJAX.
+12:57:29-80.25.246.60-select.
+12:57:29-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:57:29-80.25.246.60-Conectando.
+13:57:29-80.25.246.60-Nueva conexion.
+12:58:06-80.25.246.60-BEGIN AJAX.
+12:58:06-80.25.246.60-select.
+12:58:06-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:58:06-80.25.246.60-Conectando.
+13:58:06-80.25.246.60-Nueva conexion.
+12:58:14-80.25.246.60-BEGIN AJAX.
+12:58:14-80.25.246.60-procedure.
+12:58:14-80.25.246.60-Conectando.
+13:58:14-80.25.246.60-Nueva conexion.
+12:58:15-80.25.246.60-BEGIN AJAX.
+12:58:15-80.25.246.60-select.
+12:58:15-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:58:15-80.25.246.60-Conectando.
+13:58:15-80.25.246.60-Nueva conexion.
+12:58:18-80.25.246.60-BEGIN AJAX.
+12:58:18-80.25.246.60-procedure.
+12:58:18-80.25.246.60-Conectando.
+13:58:18-80.25.246.60-Nueva conexion.
+12:58:20-80.25.246.60-BEGIN AJAX.
+12:58:20-80.25.246.60-select.
+12:58:20-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:58:20-80.25.246.60-Conectando.
+13:58:20-80.25.246.60-Nueva conexion.
+12:58:23-80.25.246.60-BEGIN AJAX.
+12:58:23-80.25.246.60-procedure.
+12:58:23-80.25.246.60-Conectando.
+13:58:23-80.25.246.60-Nueva conexion.
+12:58:25-80.25.246.60-BEGIN AJAX.
+12:58:25-80.25.246.60-select.
+12:58:25-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:58:25-80.25.246.60-Conectando.
+13:58:25-80.25.246.60-Nueva conexion.
+12:59:13-80.25.246.60-BEGIN AJAX.
+12:59:13-80.25.246.60-select.
+12:59:13-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:13-80.25.246.60-Conectando.
+13:59:13-80.25.246.60-Nueva conexion.
+12:59:21-80.25.246.60-BEGIN AJAX.
+12:59:21-80.25.246.60-procedure.
+12:59:21-80.25.246.60-Conectando.
+13:59:21-80.25.246.60-Nueva conexion.
+12:59:22-80.25.246.60-BEGIN AJAX.
+12:59:22-80.25.246.60-select.
+12:59:22-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:22-80.25.246.60-Conectando.
+13:59:22-80.25.246.60-Nueva conexion.
+12:59:24-80.25.246.60-BEGIN AJAX.
+12:59:24-80.25.246.60-procedure.
+12:59:24-80.25.246.60-Conectando.
+13:59:24-80.25.246.60-Nueva conexion.
+12:59:24-80.25.246.60-BEGIN AJAX.
+12:59:24-80.25.246.60-select.
+12:59:24-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:24-80.25.246.60-Conectando.
+13:59:24-80.25.246.60-Nueva conexion.
+12:59:29-80.25.246.60-BEGIN AJAX.
+12:59:29-80.25.246.60-procedure.
+12:59:29-80.25.246.60-Conectando.
+13:59:29-80.25.246.60-Nueva conexion.
+12:59:30-80.25.246.60-BEGIN AJAX.
+12:59:30-80.25.246.60-select.
+12:59:30-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:30-80.25.246.60-Conectando.
+13:59:30-80.25.246.60-Nueva conexion.
+12:59:33-80.25.246.60-BEGIN AJAX.
+12:59:33-80.25.246.60-procedure.
+12:59:33-80.25.246.60-Conectando.
+13:59:33-80.25.246.60-Nueva conexion.
+12:59:34-80.25.246.60-BEGIN AJAX.
+12:59:34-80.25.246.60-select.
+12:59:34-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:34-80.25.246.60-Conectando.
+13:59:34-80.25.246.60-Nueva conexion.
+12:59:39-80.25.246.60-BEGIN AJAX.
+12:59:39-80.25.246.60-procedure.
+12:59:39-80.25.246.60-Conectando.
+13:59:39-80.25.246.60-Nueva conexion.
+12:59:40-80.25.246.60-BEGIN AJAX.
+12:59:40-80.25.246.60-select.
+12:59:40-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:40-80.25.246.60-Conectando.
+13:59:40-80.25.246.60-Nueva conexion.
+12:59:44-80.25.246.60-BEGIN AJAX.
+12:59:44-80.25.246.60-procedure.
+12:59:44-80.25.246.60-Conectando.
+13:59:44-80.25.246.60-Nueva conexion.
+12:59:45-80.25.246.60-BEGIN AJAX.
+12:59:45-80.25.246.60-select.
+12:59:45-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:45-80.25.246.60-Conectando.
+13:59:45-80.25.246.60-Nueva conexion.
+12:59:51-80.25.246.60-BEGIN AJAX.
+12:59:51-80.25.246.60-procedure.
+12:59:51-80.25.246.60-Conectando.
+13:59:51-80.25.246.60-Nueva conexion.
+12:59:51-80.25.246.60-BEGIN AJAX.
+12:59:51-80.25.246.60-select.
+12:59:51-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:51-80.25.246.60-Conectando.
+13:59:51-80.25.246.60-Nueva conexion.
+12:59:54-80.25.246.60-BEGIN AJAX.
+12:59:54-80.25.246.60-procedure.
+12:59:54-80.25.246.60-Conectando.
+13:59:54-80.25.246.60-Nueva conexion.
+12:59:54-80.25.246.60-BEGIN AJAX.
+12:59:54-80.25.246.60-select.
+12:59:54-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:54-80.25.246.60-Conectando.
+13:59:54-80.25.246.60-Nueva conexion.
+12:59:56-80.25.246.60-BEGIN AJAX.
+12:59:56-80.25.246.60-procedure.
+12:59:56-80.25.246.60-Conectando.
+13:59:56-80.25.246.60-Nueva conexion.
+12:59:57-80.25.246.60-BEGIN AJAX.
+12:59:57-80.25.246.60-select.
+12:59:57-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+12:59:57-80.25.246.60-Conectando.
+13:59:57-80.25.246.60-Nueva conexion.
+12:59:59-80.25.246.60-BEGIN AJAX.
+12:59:59-80.25.246.60-procedure.
+12:59:59-80.25.246.60-Conectando.
+13:59:59-80.25.246.60-Nueva conexion.
+13:00:00-80.25.246.60-BEGIN AJAX.
+13:00:00-80.25.246.60-select.
+13:00:00-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:00:00-80.25.246.60-Conectando.
+14:00:00-80.25.246.60-Nueva conexion.
+13:01:04-80.25.246.60-BEGIN AJAX.
+13:01:04-80.25.246.60-select.
+13:01:04-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+13:01:04-80.25.246.60-Conectando.
+14:01:04-80.25.246.60-Nueva conexion.
+13:01:04-80.25.246.60-BEGIN AJAX.
+13:01:04-80.25.246.60-select.
+13:01:04-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  AND C.IdUnidadDidactica = undefined ORDER BY Nombre,UnidadDidactica.
+13:01:04-80.25.246.60-Conectando.
+14:01:04-80.25.246.60-Nueva conexion.
+14:01:04-80.25.246.60-Error Unknown column 'undefined' in 'where clause'.
+13:04:49-80.25.246.60-BEGIN AJAX.
+13:04:49-80.25.246.60-select.
+13:04:49-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:04:49-80.25.246.60-Conectando.
+14:04:49-80.25.246.60-Nueva conexion.
+13:05:18-80.25.246.60-BEGIN AJAX.
+13:05:18-80.25.246.60-select.
+13:05:18-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:05:18-80.25.246.60-Conectando.
+14:05:18-80.25.246.60-Nueva conexion.
+13:05:25-80.25.246.60-BEGIN AJAX.
+13:05:25-80.25.246.60-select.
+13:05:25-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  AND C.IdUnidadDidactica = undefined ORDER BY Nombre,UnidadDidactica.
+13:05:25-80.25.246.60-Conectando.
+14:05:25-80.25.246.60-Nueva conexion.
+14:05:25-80.25.246.60-Error Unknown column 'undefined' in 'where clause'.
+13:06:10-80.25.246.60-BEGIN AJAX.
+13:06:10-80.25.246.60-select.
+13:06:10-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:06:10-80.25.246.60-Conectando.
+14:06:10-80.25.246.60-Nueva conexion.
+13:06:18-80.25.246.60-BEGIN AJAX.
+13:06:18-80.25.246.60-select.
+13:06:18-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  AND C.IdUnidadDidactica = 2 ORDER BY Nombre,UnidadDidactica.
+13:06:18-80.25.246.60-Conectando.
+14:06:18-80.25.246.60-Nueva conexion.
+13:06:21-80.25.246.60-BEGIN AJAX.
+13:06:21-80.25.246.60-select.
+13:06:21-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  AND C.IdUnidadDidactica = 1 ORDER BY Nombre,UnidadDidactica.
+13:06:21-80.25.246.60-Conectando.
+14:06:21-80.25.246.60-Nueva conexion.
+13:06:23-80.25.246.60-BEGIN AJAX.
+13:06:23-80.25.246.60-select.
+13:06:23-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  AND C.IdUnidadDidactica = 3 ORDER BY Nombre,UnidadDidactica.
+13:06:23-80.25.246.60-Conectando.
+14:06:23-80.25.246.60-Nueva conexion.
+13:06:24-80.25.246.60-BEGIN AJAX.
+13:06:24-80.25.246.60-select.
+13:06:24-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:06:24-80.25.246.60-Conectando.
+14:06:24-80.25.246.60-Nueva conexion.
+13:06:32-80.25.246.60-BEGIN AJAX.
+13:06:32-80.25.246.60-select.
+13:06:32-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre DESC,UnidadDidactica.
+13:06:32-80.25.246.60-Conectando.
+14:06:32-80.25.246.60-Nueva conexion.
+13:06:34-80.25.246.60-BEGIN AJAX.
+13:06:34-80.25.246.60-select.
+13:06:34-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:06:34-80.25.246.60-Conectando.
+14:06:34-80.25.246.60-Nueva conexion.
+13:06:35-80.25.246.60-BEGIN AJAX.
+13:06:35-80.25.246.60-select.
+13:06:35-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY UnidadDidactica,Nombre.
+13:06:35-80.25.246.60-Conectando.
+14:06:35-80.25.246.60-Nueva conexion.
+13:06:36-80.25.246.60-BEGIN AJAX.
+13:06:36-80.25.246.60-select.
+13:06:36-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY UnidadDidactica DESC,Nombre.
+13:06:36-80.25.246.60-Conectando.
+14:06:36-80.25.246.60-Nueva conexion.
+13:06:43-80.25.246.60-BEGIN AJAX.
+13:06:43-80.25.246.60-procedure.
+13:06:43-80.25.246.60-Conectando.
+14:06:43-80.25.246.60-Nueva conexion.
+13:06:43-80.25.246.60-BEGIN AJAX.
+13:06:43-80.25.246.60-select.
+13:06:43-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY UnidadDidactica DESC,Nombre.
+13:06:43-80.25.246.60-Conectando.
+14:06:43-80.25.246.60-Nueva conexion.
+13:07:05-80.25.246.60-BEGIN AJAX.
+13:07:05-80.25.246.60-select.
+13:07:05-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 12.
+13:07:05-80.25.246.60-Conectando.
+14:07:05-80.25.246.60-Nueva conexion.
+13:08:07-80.25.246.60-BEGIN AJAX.
+13:08:07-80.25.246.60-select.
+13:08:07-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:08:07-80.25.246.60-Conectando.
+14:08:07-80.25.246.60-Nueva conexion.
+13:08:21-80.25.246.60-BEGIN AJAX.
+13:08:21-80.25.246.60-select.
+13:08:21-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 5.
+13:08:21-80.25.246.60-Conectando.
+14:08:21-80.25.246.60-Nueva conexion.
+13:12:48-80.25.246.60-BEGIN AJAX.
+13:12:48-80.25.246.60-select.
+13:12:48-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:12:48-80.25.246.60-Conectando.
+14:12:48-80.25.246.60-Nueva conexion.
+13:13:53-80.25.246.60-BEGIN AJAX.
+13:13:53-80.25.246.60-select.
+13:13:53-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 3.
+13:13:53-80.25.246.60-Conectando.
+14:13:53-80.25.246.60-Nueva conexion.
+13:17:10-80.25.246.60-BEGIN AJAX.
+13:17:10-80.25.246.60-select.
+13:17:10-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+13:17:10-80.25.246.60-Conectando.
+14:17:10-80.25.246.60-Nueva conexion.
+13:17:10-80.25.246.60-BEGIN AJAX.
+13:17:10-80.25.246.60-select.
+13:17:10-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+13:17:10-80.25.246.60-Conectando.
+14:17:10-80.25.246.60-Nueva conexion.
+13:17:10-80.25.246.60-BEGIN AJAX.
+13:17:10-80.25.246.60-select.
+13:17:10-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:17:10-80.25.246.60-Conectando.
+14:17:10-80.25.246.60-Nueva conexion.
+13:17:19-80.25.246.60-BEGIN AJAX.
+13:17:19-80.25.246.60-select.
+13:17:19-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:17:19-80.25.246.60-Conectando.
+14:17:19-80.25.246.60-Nueva conexion.
+13:17:29-80.25.246.60-BEGIN AJAX.
+13:17:29-80.25.246.60-select.
+13:17:29-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 15.
+13:17:29-80.25.246.60-Conectando.
+14:17:29-80.25.246.60-Nueva conexion.
+13:17:50-80.25.246.60-BEGIN AJAX.
+13:17:50-80.25.246.60-procedure.
+13:17:50-80.25.246.60-Conectando.
+14:17:50-80.25.246.60-Nueva conexion.
+14:17:50-80.25.246.60-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.ControlUpdate; expected 7, got 6 CALL ControlUpdate('aaa',1,Null,2,Null,'qweqw').
+13:18:54-80.25.246.60-BEGIN AJAX.
+13:18:54-80.25.246.60-select.
+13:18:54-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:18:54-80.25.246.60-Conectando.
+14:18:54-80.25.246.60-Nueva conexion.
+13:19:04-80.25.246.60-BEGIN AJAX.
+13:19:04-80.25.246.60-select.
+13:19:04-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 15.
+13:19:04-80.25.246.60-Conectando.
+14:19:04-80.25.246.60-Nueva conexion.
+13:19:15-80.25.246.60-BEGIN AJAX.
+13:19:15-80.25.246.60-procedure.
+13:19:15-80.25.246.60-Conectando.
+14:19:15-80.25.246.60-Nueva conexion.
+14:19:15-80.25.246.60-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.ControlUpdate; expected 7, got 6 CALL ControlUpdate('aaaeeee',2,Null,2,Null,'ewfwefwefwef').
+13:41:33-80.25.246.60-BEGIN AJAX.
+13:41:33-80.25.246.60-select.
+13:41:33-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+13:41:33-80.25.246.60-Conectando.
+14:41:33-80.25.246.60-Nueva conexion.
+13:41:41-80.25.246.60-BEGIN AJAX.
+13:41:41-80.25.246.60-select.
+13:41:41-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM unidadesdidacticas.
+13:41:41-80.25.246.60-Conectando.
+14:41:41-80.25.246.60-Nueva conexion.
+13:41:41-80.25.246.60-BEGIN AJAX.
+13:41:41-80.25.246.60-select.
+13:41:41-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+13:41:41-80.25.246.60-Conectando.
+14:41:41-80.25.246.60-Nueva conexion.
+13:41:45-80.25.246.60-BEGIN AJAX.
+13:41:45-80.25.246.60-select.
+13:41:45-80.25.246.60-SELECT Nombre as Text, Id as Value , IdAsignatura as JoinField  FROM unidadesdidacticas.
+13:41:45-80.25.246.60-Conectando.
+14:41:45-80.25.246.60-Nueva conexion.
+13:41:45-80.25.246.60-BEGIN AJAX.
+13:41:45-80.25.246.60-select.
+13:41:45-80.25.246.60-SELECT C.Id, C.Nombre, C.Observaciones, C.IdAsignatura, C.IdUnidadDidactica  FROM controles C  where C.Id = 12.
+13:41:45-80.25.246.60-Conectando.
+14:41:45-80.25.246.60-Nueva conexion.
+13:42:01-80.25.246.60-BEGIN AJAX.
+13:42:01-80.25.246.60-procedure.
+13:42:01-80.25.246.60-Conectando.
+14:42:01-80.25.246.60-Nueva conexion.
+14:42:01-80.25.246.60-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.ControlUpdate; expected 7, got 6 CALL ControlUpdate('2213',2,Null,2,Null,'sfsdf').

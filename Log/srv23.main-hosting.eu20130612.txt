@@ -1,0 +1,677 @@
+07:28:29-80.25.246.60-BEGIN AJAX.
+07:28:29-80.25.246.60-select.
+07:28:29-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+07:28:29-80.25.246.60-Conectando.
+08:28:29-80.25.246.60-Nueva conexion.
+07:29:37-80.25.246.60-BEGIN AJAX.
+07:29:37-80.25.246.60-select.
+07:29:37-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+07:29:37-80.25.246.60-Conectando.
+08:29:37-80.25.246.60-Nueva conexion.
+07:32:30-80.25.246.60-BEGIN AJAX.
+07:32:30-80.25.246.60-select.
+07:32:30-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where 1 = 1  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+07:32:30-80.25.246.60-Conectando.
+08:32:30-80.25.246.60-Nueva conexion.
+08:32:30-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+07:37:10-80.25.246.60-BEGIN AJAX.
+07:37:10-80.25.246.60-select.
+07:37:10-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+07:37:10-80.25.246.60-Conectando.
+07:37:10-80.25.246.60-BEGIN AJAX.
+07:37:10-80.25.246.60-select.
+07:37:10-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+07:37:10-80.25.246.60-Conectando.
+08:37:10-80.25.246.60-Nueva conexion.
+08:37:10-80.25.246.60-Nueva conexion.
+07:37:11-80.25.246.60-BEGIN AJAX.
+07:37:11-80.25.246.60-select.
+07:37:11-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where 1 = 1  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+07:37:11-80.25.246.60-Conectando.
+08:37:11-80.25.246.60-Nueva conexion.
+08:37:11-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+10:45:14-80.25.246.60-BEGIN AJAX.
+10:45:14-80.25.246.60-select.
+10:45:14-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+10:45:14-80.25.246.60-Conectando.
+11:45:14-80.25.246.60-Nueva conexion.
+10:47:26-80.25.246.60-BEGIN AJAX.
+10:47:26-80.25.246.60-select.
+10:47:26-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+10:47:26-80.25.246.60-Conectando.
+11:47:26-80.25.246.60-Nueva conexion.
+10:47:26-80.25.246.60-BEGIN AJAX.
+10:47:26-80.25.246.60-select.
+10:47:26-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+10:47:26-80.25.246.60-Conectando.
+11:47:26-80.25.246.60-Nueva conexion.
+10:48:42-80.25.246.60-BEGIN AJAX.
+10:48:42-80.25.246.60-select.
+10:48:42-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+10:48:42-80.25.246.60-Conectando.
+11:48:42-80.25.246.60-Nueva conexion.
+11:48:42-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+10:49:25-80.25.246.60-BEGIN AJAX.
+10:49:25-80.25.246.60-select.
+10:49:25-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+10:49:25-80.25.246.60-Conectando.
+11:49:25-80.25.246.60-Nueva conexion.
+11:49:25-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+10:55:50-80.25.246.60-BEGIN AJAX.
+10:55:50-80.25.246.60-select.
+10:55:50-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+10:55:50-80.25.246.60-Conectando.
+11:55:50-80.25.246.60-Nueva conexion.
+11:55:50-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+10:56:41-80.25.246.60-BEGIN AJAX.
+10:56:41-80.25.246.60-select.
+10:56:41-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+10:56:41-80.25.246.60-Conectando.
+11:56:41-80.25.246.60-Nueva conexion.
+11:56:41-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+10:56:41-80.25.246.60-BEGIN AJAX.
+10:56:41-80.25.246.60-select.
+10:56:41-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+10:56:41-80.25.246.60-Conectando.
+11:56:41-80.25.246.60-Nueva conexion.
+11:56:41-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+10:58:21-80.25.246.60-BEGIN AJAX.
+10:58:21-80.25.246.60-select.
+10:58:21-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+10:58:21-80.25.246.60-Conectando.
+11:58:21-80.25.246.60-Nueva conexion.
+11:58:21-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+10:58:21-80.25.246.60-BEGIN AJAX.
+10:58:21-80.25.246.60-select.
+10:58:21-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+10:58:21-80.25.246.60-Conectando.
+11:58:21-80.25.246.60-Nueva conexion.
+11:58:21-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:01:24-80.25.246.60-BEGIN AJAX.
+11:01:24-80.25.246.60-select.
+11:01:24-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:01:24-80.25.246.60-Conectando.
+12:01:24-80.25.246.60-Nueva conexion.
+12:01:24-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:01:24-80.25.246.60-BEGIN AJAX.
+11:01:24-80.25.246.60-select.
+11:01:24-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:01:24-80.25.246.60-Conectando.
+12:01:24-80.25.246.60-Nueva conexion.
+12:01:24-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:04:32-80.25.246.60-BEGIN AJAX.
+11:04:32-80.25.246.60-select.
+11:04:32-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:04:32-80.25.246.60-Conectando.
+12:04:32-80.25.246.60-Nueva conexion.
+12:04:32-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:04:32-80.25.246.60-BEGIN AJAX.
+11:04:32-80.25.246.60-select.
+11:04:32-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:04:32-80.25.246.60-Conectando.
+12:04:32-80.25.246.60-Nueva conexion.
+12:04:32-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:05:39-80.25.246.60-BEGIN AJAX.
+11:05:39-80.25.246.60-select.
+11:05:39-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:05:39-80.25.246.60-Conectando.
+12:05:39-80.25.246.60-Nueva conexion.
+12:05:39-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:05:39-80.25.246.60-BEGIN AJAX.
+11:05:39-80.25.246.60-select.
+11:05:39-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:05:39-80.25.246.60-Conectando.
+12:05:39-80.25.246.60-Nueva conexion.
+12:05:39-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:07:51-80.25.246.60-BEGIN AJAX.
+11:07:51-80.25.246.60-select.
+11:07:51-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:07:51-80.25.246.60-Conectando.
+12:07:51-80.25.246.60-Nueva conexion.
+12:07:51-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:07:52-80.25.246.60-BEGIN AJAX.
+11:07:52-80.25.246.60-select.
+11:07:52-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:07:52-80.25.246.60-Conectando.
+12:07:52-80.25.246.60-Nueva conexion.
+12:07:52-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:08:35-80.25.246.60-BEGIN AJAX.
+11:08:35-80.25.246.60-select.
+11:08:35-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:08:35-80.25.246.60-Conectando.
+12:08:35-80.25.246.60-Nueva conexion.
+12:08:35-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:08:35-80.25.246.60-BEGIN AJAX.
+11:08:35-80.25.246.60-select.
+11:08:35-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:08:35-80.25.246.60-Conectando.
+12:08:35-80.25.246.60-Nueva conexion.
+12:08:35-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:10:38-80.25.246.60-BEGIN AJAX.
+11:10:38-80.25.246.60-select.
+11:10:38-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:10:38-80.25.246.60-Conectando.
+12:10:39-80.25.246.60-Nueva conexion.
+12:10:39-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:10:39-80.25.246.60-BEGIN AJAX.
+11:10:39-80.25.246.60-select.
+11:10:39-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:10:39-80.25.246.60-Conectando.
+12:10:39-80.25.246.60-Nueva conexion.
+12:10:39-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:10:57-80.25.246.60-BEGIN AJAX.
+11:10:57-80.25.246.60-select.
+11:10:57-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:10:57-80.25.246.60-Conectando.
+12:10:57-80.25.246.60-Nueva conexion.
+12:10:57-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:10:57-80.25.246.60-BEGIN AJAX.
+11:10:57-80.25.246.60-select.
+11:10:57-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:10:57-80.25.246.60-Conectando.
+12:10:57-80.25.246.60-Nueva conexion.
+12:10:57-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:12:25-80.25.246.60-BEGIN AJAX.
+11:12:25-80.25.246.60-select.
+11:12:25-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:12:25-80.25.246.60-Conectando.
+12:12:25-80.25.246.60-Nueva conexion.
+12:12:25-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:12:25-80.25.246.60-BEGIN AJAX.
+11:12:25-80.25.246.60-select.
+11:12:25-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:12:25-80.25.246.60-Conectando.
+12:12:25-80.25.246.60-Nueva conexion.
+12:12:25-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:15:08-80.25.246.60-BEGIN AJAX.
+11:15:08-80.25.246.60-select.
+11:15:08-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:15:08-80.25.246.60-Conectando.
+12:15:08-80.25.246.60-Nueva conexion.
+12:15:08-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:15:08-80.25.246.60-BEGIN AJAX.
+11:15:08-80.25.246.60-select.
+11:15:08-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:15:08-80.25.246.60-Conectando.
+12:15:08-80.25.246.60-Nueva conexion.
+12:15:08-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:15:31-80.25.246.60-BEGIN AJAX.
+11:15:31-80.25.246.60-select.
+11:15:31-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:15:31-80.25.246.60-Conectando.
+12:15:31-80.25.246.60-Nueva conexion.
+12:15:31-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:16:25-80.25.246.60-BEGIN AJAX.
+11:16:25-80.25.246.60-select.
+11:16:25-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:16:25-80.25.246.60-Conectando.
+12:16:25-80.25.246.60-Nueva conexion.
+12:16:25-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:16:25-80.25.246.60-BEGIN AJAX.
+11:16:25-80.25.246.60-select.
+11:16:25-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:16:25-80.25.246.60-Conectando.
+12:16:25-80.25.246.60-Nueva conexion.
+12:16:25-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:16:38-80.25.246.60-BEGIN AJAX.
+11:16:38-80.25.246.60-select.
+11:16:38-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+11:16:38-80.25.246.60-Conectando.
+12:16:38-80.25.246.60-Nueva conexion.
+11:17:25-80.25.246.60-BEGIN AJAX.
+11:17:25-80.25.246.60-select.
+11:17:25-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+11:17:25-80.25.246.60-Conectando.
+11:17:25-80.25.246.60-BEGIN AJAX.
+11:17:25-80.25.246.60-select.
+11:17:25-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+11:17:25-80.25.246.60-Conectando.
+12:17:25-80.25.246.60-Nueva conexion.
+12:17:25-80.25.246.60-Nueva conexion.
+11:17:26-80.25.246.60-BEGIN AJAX.
+11:17:26-80.25.246.60-select.
+11:17:26-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase ACC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno = 0  AND ACC.Curso  = undefined AND ACC.Clase  = undefined ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:17:26-80.25.246.60-Conectando.
+12:17:26-80.25.246.60-Nueva conexion.
+12:17:26-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:17:26-80.25.246.60-BEGIN AJAX.
+11:17:26-80.25.246.60-select.
+11:17:26-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:17:26-80.25.246.60-Conectando.
+12:17:26-80.25.246.60-Nueva conexion.
+12:17:26-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:20:08-80.25.246.60-BEGIN AJAX.
+11:20:08-80.25.246.60-select.
+11:20:08-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno = 0  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:20:08-80.25.246.60-Conectando.
+12:20:08-80.25.246.60-Nueva conexion.
+12:20:08-80.25.246.60-Error Unknown column 'A.ExAlumno' in 'where clause'.
+11:20:08-80.25.246.60-BEGIN AJAX.
+11:20:08-80.25.246.60-select.
+11:20:08-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:20:08-80.25.246.60-Conectando.
+12:20:08-80.25.246.60-Nueva conexion.
+12:20:08-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:21:31-80.25.246.60-BEGIN AJAX.
+11:21:31-80.25.246.60-select.
+11:21:31-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno = 0  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:21:31-80.25.246.60-Conectando.
+12:21:31-80.25.246.60-Nueva conexion.
+12:21:31-80.25.246.60-Error Unknown column 'A.ExAlumno' in 'where clause'.
+11:21:31-80.25.246.60-BEGIN AJAX.
+11:21:31-80.25.246.60-select.
+11:21:31-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:21:31-80.25.246.60-Conectando.
+12:21:31-80.25.246.60-Nueva conexion.
+12:21:31-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:23:03-80.25.246.60-BEGIN AJAX.
+11:23:03-80.25.246.60-select.
+11:23:03-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno = 0  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:23:03-80.25.246.60-Conectando.
+12:23:03-80.25.246.60-Nueva conexion.
+11:23:03-80.25.246.60-BEGIN AJAX.
+11:23:03-80.25.246.60-select.
+12:23:03-80.25.246.60-Error Unknown column 'A.ExAlumno' in 'where clause'.
+11:23:03-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:23:03-80.25.246.60-Conectando.
+12:23:03-80.25.246.60-Nueva conexion.
+12:23:03-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:24:22-80.25.246.60-BEGIN AJAX.
+11:24:22-80.25.246.60-select.
+11:24:22-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno = 0  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:24:22-80.25.246.60-Conectando.
+12:24:22-80.25.246.60-Nueva conexion.
+12:24:22-80.25.246.60-Error Unknown column 'A.ExAlumno' in 'where clause'.
+11:24:22-80.25.246.60-BEGIN AJAX.
+11:24:22-80.25.246.60-select.
+11:24:22-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:24:22-80.25.246.60-Conectando.
+12:24:22-80.25.246.60-Nueva conexion.
+12:24:22-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:27:44-80.25.246.60-BEGIN AJAX.
+11:27:44-80.25.246.60-select.
+11:27:44-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:27:44-80.25.246.60-Conectando.
+12:27:44-80.25.246.60-Nueva conexion.
+11:27:44-80.25.246.60-BEGIN AJAX.
+11:27:44-80.25.246.60-select.
+11:27:44-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos FROM A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:27:44-80.25.246.60-Conectando.
+12:27:44-80.25.246.60-Nueva conexion.
+12:27:44-80.25.246.60-Error Table 'u490265401_educa.A' doesn't exist.
+11:29:23-80.25.246.60-BEGIN AJAX.
+11:29:23-80.25.246.60-select.
+11:29:23-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:29:23-80.25.246.60-Conectando.
+12:29:23-80.25.246.60-Nueva conexion.
+11:29:24-80.25.246.60-BEGIN AJAX.
+11:29:24-80.25.246.60-select.
+11:29:24-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:29:24-80.25.246.60-Conectando.
+12:29:24-80.25.246.60-Nueva conexion.
+12:29:24-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:29:48-80.25.246.60-BEGIN AJAX.
+11:29:48-80.25.246.60-select.
+11:29:48-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:29:48-80.25.246.60-Conectando.
+12:29:48-80.25.246.60-Nueva conexion.
+11:29:48-80.25.246.60-BEGIN AJAX.
+11:29:48-80.25.246.60-select.
+11:29:48-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase ACC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND ACC.Periodo  = '2012_2013' AND ACC.IdClase  = 1 AND ACC.IdClase  = 1 ORDER BY Nombre,Apellidos.
+11:29:48-80.25.246.60-Conectando.
+12:29:48-80.25.246.60-Nueva conexion.
+12:29:48-80.25.246.60-Error Table 'u490265401_educa.al_clase' doesn't exist.
+11:38:11-80.25.246.60-BEGIN AJAX.
+11:38:11-80.25.246.60-select.
+11:38:11-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:38:11-80.25.246.60-Conectando.
+12:38:11-80.25.246.60-Nueva conexion.
+11:38:12-80.25.246.60-BEGIN AJAX.
+11:38:12-80.25.246.60-select.
+11:38:12-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' AND AC.IdClase  =  AND AC.IdCurso  =  ORDER BY Nombre,Apellidos.
+11:38:12-80.25.246.60-Conectando.
+12:38:12-80.25.246.60-Nueva conexion.
+12:38:12-80.25.246.60-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND AC.IdCurso  =  ORDER BY Nombre,Apellidos' at line 1.
+11:39:03-80.25.246.60-BEGIN AJAX.
+11:39:03-80.25.246.60-select.
+11:39:03-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:39:03-80.25.246.60-Conectando.
+12:39:03-80.25.246.60-Nueva conexion.
+11:39:03-80.25.246.60-BEGIN AJAX.
+11:39:03-80.25.246.60-select.
+11:39:03-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+11:39:03-80.25.246.60-Conectando.
+12:39:03-80.25.246.60-Nueva conexion.
+11:39:40-80.25.246.60-BEGIN AJAX.
+11:39:40-80.25.246.60-select.
+11:39:40-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:39:40-80.25.246.60-Conectando.
+12:39:40-80.25.246.60-Nueva conexion.
+11:39:51-80.25.246.60-BEGIN AJAX.
+11:39:51-80.25.246.60-select.
+11:39:51-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:39:51-80.25.246.60-Conectando.
+11:39:51-80.25.246.60-BEGIN AJAX.
+11:39:51-80.25.246.60-select.
+11:39:51-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+11:39:51-80.25.246.60-Conectando.
+12:39:51-80.25.246.60-Nueva conexion.
+12:39:51-80.25.246.60-Nueva conexion.
+11:39:58-80.25.246.60-BEGIN AJAX.
+11:39:58-80.25.246.60-procedure.
+11:39:58-80.25.246.60-Conectando.
+12:39:58-80.25.246.60-Nueva conexion.
+12:39:58-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL AlClaseMove('2012_2013',Null,Null,,).
+11:40:25-80.25.246.60-BEGIN AJAX.
+11:40:25-80.25.246.60-select.
+11:40:25-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+11:40:25-80.25.246.60-Conectando.
+11:40:25-80.25.246.60-BEGIN AJAX.
+11:40:25-80.25.246.60-select.
+11:40:25-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:40:25-80.25.246.60-Conectando.
+12:40:25-80.25.246.60-Nueva conexion.
+12:40:25-80.25.246.60-Nueva conexion.
+11:40:41-80.25.246.60-BEGIN AJAX.
+11:40:41-80.25.246.60-select.
+11:40:41-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:40:41-80.25.246.60-Conectando.
+12:40:41-80.25.246.60-Nueva conexion.
+11:40:45-80.25.246.60-BEGIN AJAX.
+11:40:45-80.25.246.60-select.
+11:40:45-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:40:45-80.25.246.60-Conectando.
+12:40:45-80.25.246.60-Nueva conexion.
+11:42:09-80.25.246.60-BEGIN AJAX.
+11:42:09-80.25.246.60-select.
+11:42:09-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:42:09-80.25.246.60-Conectando.
+12:42:09-80.25.246.60-Nueva conexion.
+11:42:09-80.25.246.60-BEGIN AJAX.
+11:42:09-80.25.246.60-select.
+11:42:09-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+11:42:09-80.25.246.60-Conectando.
+12:42:09-80.25.246.60-Nueva conexion.
+11:42:16-80.25.246.60-BEGIN AJAX.
+11:42:16-80.25.246.60-select.
+11:42:16-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase AC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno <> 1  AND AC.IdCurso  = 1 ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:42:16-80.25.246.60-Conectando.
+12:42:16-80.25.246.60-Nueva conexion.
+11:42:19-80.25.246.60-BEGIN AJAX.
+11:42:19-80.25.246.60-select.
+11:42:19-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase AC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno <> 1  AND AC.IdCurso  = 2 ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:42:19-80.25.246.60-Conectando.
+12:42:19-80.25.246.60-Nueva conexion.
+11:42:22-80.25.246.60-BEGIN AJAX.
+11:42:22-80.25.246.60-select.
+11:42:22-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase AC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno <> 1  AND AC.IdCurso  = 3 ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:42:22-80.25.246.60-Conectando.
+12:42:22-80.25.246.60-Nueva conexion.
+11:42:24-80.25.246.60-BEGIN AJAX.
+11:42:24-80.25.246.60-select.
+11:42:24-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase AC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno <> 1  AND AC.IdCurso  = 4 ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:42:24-80.25.246.60-Conectando.
+12:42:24-80.25.246.60-Nueva conexion.
+11:42:27-80.25.246.60-BEGIN AJAX.
+11:42:27-80.25.246.60-select.
+11:42:27-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase AC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno <> 1  AND AC.IdCurso  = 5 ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:42:27-80.25.246.60-Conectando.
+12:42:27-80.25.246.60-Nueva conexion.
+11:42:29-80.25.246.60-BEGIN AJAX.
+11:42:29-80.25.246.60-select.
+11:42:29-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase AC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno <> 1  AND AC.IdCurso  = 6 ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:42:29-80.25.246.60-Conectando.
+12:42:29-80.25.246.60-Nueva conexion.
+11:42:33-80.25.246.60-BEGIN AJAX.
+11:42:33-80.25.246.60-select.
+11:42:33-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:42:33-80.25.246.60-Conectando.
+12:42:33-80.25.246.60-Nueva conexion.
+11:44:07-80.25.246.60-BEGIN AJAX.
+11:44:07-80.25.246.60-select.
+11:44:07-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:44:07-80.25.246.60-Conectando.
+12:44:07-80.25.246.60-Nueva conexion.
+11:44:07-80.25.246.60-BEGIN AJAX.
+11:44:07-80.25.246.60-select.
+11:44:07-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+11:44:07-80.25.246.60-Conectando.
+12:44:07-80.25.246.60-Nueva conexion.
+11:44:14-80.25.246.60-BEGIN AJAX.
+11:44:14-80.25.246.60-select.
+11:44:14-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase AC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno <> 1  AND AC.IdCurso  = 3 ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:44:14-80.25.246.60-Conectando.
+12:44:14-80.25.246.60-Nueva conexion.
+11:44:16-80.25.246.60-BEGIN AJAX.
+11:44:16-80.25.246.60-select.
+11:44:16-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  JOIN al_clase AC ON AC.IdAlumno = A.Id AND AC.Periodo = '2012_2013' where A.ExAlumno <> 1  AND AC.IdCurso  = 1 ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:44:16-80.25.246.60-Conectando.
+12:44:17-80.25.246.60-Nueva conexion.
+11:44:18-80.25.246.60-BEGIN AJAX.
+11:44:18-80.25.246.60-select.
+11:44:18-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+11:44:18-80.25.246.60-Conectando.
+12:44:18-80.25.246.60-Nueva conexion.
+11:44:23-80.25.246.60-BEGIN AJAX.
+11:44:23-80.25.246.60-select.
+11:44:23-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' AND AC.IdCurso  =  ORDER BY Nombre,Apellidos.
+11:44:23-80.25.246.60-Conectando.
+12:44:23-80.25.246.60-Nueva conexion.
+12:44:23-80.25.246.60-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY Nombre,Apellidos' at line 1.
+13:18:04-80.25.246.60-BEGIN AJAX.
+13:18:04-80.25.246.60-select.
+13:18:04-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+13:18:04-80.25.246.60-Conectando.
+14:18:05-80.25.246.60-Nueva conexion.
+13:20:49-80.25.246.60-BEGIN AJAX.
+13:20:49-80.25.246.60-select.
+13:20:49-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+13:20:49-80.25.246.60-Conectando.
+14:20:49-80.25.246.60-Nueva conexion.
+13:20:49-80.25.246.60-BEGIN AJAX.
+13:20:49-80.25.246.60-select.
+13:20:49-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+13:20:49-80.25.246.60-Conectando.
+13:20:49-80.25.246.60-BEGIN AJAX.
+13:20:49-80.25.246.60-select.
+13:20:49-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+13:20:49-80.25.246.60-Conectando.
+14:20:49-80.25.246.60-Nueva conexion.
+14:20:49-80.25.246.60-Nueva conexion.
+13:20:49-80.25.246.60-BEGIN AJAX.
+13:20:49-80.25.246.60-select.
+13:20:49-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+13:20:49-80.25.246.60-Conectando.
+14:20:49-80.25.246.60-Nueva conexion.
+13:20:49-80.25.246.60-BEGIN AJAX.
+13:20:49-80.25.246.60-select.
+13:20:49-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:20:49-80.25.246.60-Conectando.
+14:20:49-80.25.246.60-Nueva conexion.
+13:20:49-80.25.246.60-BEGIN AJAX.
+13:20:49-80.25.246.60-select.
+13:20:49-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' AND AC.IdClase  = null AND AC.IdCurso  = null ORDER BY Nombre,Apellidos.
+13:20:49-80.25.246.60-Conectando.
+14:20:49-80.25.246.60-Nueva conexion.
+13:36:55-80.25.246.60-BEGIN AJAX.
+13:36:55-80.25.246.60-procedure.
+13:36:55-80.25.246.60-Conectando.
+14:36:55-80.25.246.60-Nueva conexion.
+14:36:55-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL AlClaseMove('2012_2013',Null,Null,,).
+13:39:00-80.25.246.60-BEGIN AJAX.
+13:39:00-80.25.246.60-select.
+13:39:00-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM asignaturas.
+13:39:00-80.25.246.60-Conectando.
+14:39:00-80.25.246.60-Nueva conexion.
+13:39:36-80.25.246.60-BEGIN AJAX.
+13:39:36-80.25.246.60-select.
+13:39:36-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+13:39:36-80.25.246.60-Conectando.
+14:39:36-80.25.246.60-Nueva conexion.
+13:39:36-80.25.246.60-BEGIN AJAX.
+13:39:36-80.25.246.60-select.
+13:39:36-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+13:39:36-80.25.246.60-Conectando.
+14:39:36-80.25.246.60-Nueva conexion.
+13:39:36-80.25.246.60-BEGIN AJAX.
+13:39:36-80.25.246.60-select.
+13:39:36-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_clase.
+13:39:36-80.25.246.60-Conectando.
+14:39:36-80.25.246.60-Nueva conexion.
+13:39:36-80.25.246.60-BEGIN AJAX.
+13:39:36-80.25.246.60-select.
+13:39:36-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:39:36-80.25.246.60-Conectando.
+14:39:36-80.25.246.60-Nueva conexion.
+13:39:36-80.25.246.60-BEGIN AJAX.
+13:39:36-80.25.246.60-select.
+13:39:36-80.25.246.60-SELECT Nombre as Text, Id as Value  FROM tipo_curso.
+13:39:36-80.25.246.60-Conectando.
+14:39:36-80.25.246.60-Nueva conexion.
+13:39:36-80.25.246.60-BEGIN AJAX.
+13:39:36-80.25.246.60-select.
+13:39:36-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' AND AC.IdClase  = null AND AC.IdCurso  = null ORDER BY Nombre,Apellidos.
+13:39:36-80.25.246.60-Conectando.
+14:39:36-80.25.246.60-Nueva conexion.
+13:39:49-80.25.246.60-BEGIN AJAX.
+13:39:49-80.25.246.60-procedure.
+13:39:49-80.25.246.60-Conectando.
+14:39:49-80.25.246.60-Nueva conexion.
+14:39:49-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL AlClaseMove('2012_2013',Null,Null,,).
+13:40:17-80.25.246.60-BEGIN AJAX.
+13:40:17-80.25.246.60-select.
+13:40:17-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:40:17-80.25.246.60-Conectando.
+14:40:17-80.25.246.60-Nueva conexion.
+13:40:17-80.25.246.60-BEGIN AJAX.
+13:40:17-80.25.246.60-select.
+13:40:17-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:40:17-80.25.246.60-Conectando.
+14:40:17-80.25.246.60-Nueva conexion.
+13:41:49-80.25.246.60-BEGIN AJAX.
+13:41:49-80.25.246.60-procedure.
+13:41:49-80.25.246.60-Conectando.
+14:41:49-80.25.246.60-Nueva conexion.
+14:41:49-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL AlClaseMove('2012_2013',Null,Null,,).
+13:43:45-80.25.246.60-BEGIN AJAX.
+13:43:45-80.25.246.60-select.
+13:43:45-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:43:45-80.25.246.60-Conectando.
+14:43:45-80.25.246.60-Nueva conexion.
+13:43:45-80.25.246.60-BEGIN AJAX.
+13:43:45-80.25.246.60-select.
+13:43:45-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:43:45-80.25.246.60-Conectando.
+14:43:45-80.25.246.60-Nueva conexion.
+13:46:40-80.25.246.60-BEGIN AJAX.
+13:46:40-80.25.246.60-select.
+13:46:40-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:46:40-80.25.246.60-Conectando.
+14:46:40-80.25.246.60-Nueva conexion.
+13:46:40-80.25.246.60-BEGIN AJAX.
+13:46:40-80.25.246.60-select.
+13:46:40-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:46:40-80.25.246.60-Conectando.
+14:46:40-80.25.246.60-Nueva conexion.
+13:46:50-80.25.246.60-BEGIN AJAX.
+13:46:50-80.25.246.60-procedure.
+13:46:50-80.25.246.60-Conectando.
+14:46:50-80.25.246.60-Nueva conexion.
+14:46:50-80.25.246.60-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlClaseMove; expected 4, got 5 CALL AlClaseMove('2012_2013',Null,Null,6,17).
+13:49:40-80.25.246.60-BEGIN AJAX.
+13:49:40-80.25.246.60-select.
+13:49:40-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:49:40-80.25.246.60-Conectando.
+14:49:40-80.25.246.60-Nueva conexion.
+13:49:40-80.25.246.60-BEGIN AJAX.
+13:49:40-80.25.246.60-select.
+13:49:40-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:49:40-80.25.246.60-Conectando.
+14:49:40-80.25.246.60-Nueva conexion.
+13:50:09-80.25.246.60-BEGIN AJAX.
+13:50:09-80.25.246.60-select.
+13:50:09-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:50:09-80.25.246.60-Conectando.
+14:50:09-80.25.246.60-Nueva conexion.
+13:50:09-80.25.246.60-BEGIN AJAX.
+13:50:09-80.25.246.60-select.
+13:50:09-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:50:09-80.25.246.60-Conectando.
+14:50:09-80.25.246.60-Nueva conexion.
+13:50:18-80.25.246.60-BEGIN AJAX.
+13:50:18-80.25.246.60-select.
+13:50:18-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:50:18-80.25.246.60-Conectando.
+14:50:18-80.25.246.60-Nueva conexion.
+13:50:18-80.25.246.60-BEGIN AJAX.
+13:50:18-80.25.246.60-select.
+13:50:18-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:50:18-80.25.246.60-Conectando.
+14:50:18-80.25.246.60-Nueva conexion.
+13:50:28-80.25.246.60-BEGIN AJAX.
+13:50:28-80.25.246.60-select.
+13:50:28-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' AND AC.IdCurso  =  ORDER BY Nombre,Apellidos.
+13:50:28-80.25.246.60-Conectando.
+14:50:28-80.25.246.60-Nueva conexion.
+14:50:28-80.25.246.60-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY Nombre,Apellidos' at line 1.
+13:52:49-80.25.246.60-BEGIN AJAX.
+13:52:49-80.25.246.60-select.
+13:52:49-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:52:49-80.25.246.60-Conectando.
+14:52:49-80.25.246.60-Nueva conexion.
+13:52:49-80.25.246.60-BEGIN AJAX.
+13:52:49-80.25.246.60-select.
+13:52:49-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:52:49-80.25.246.60-Conectando.
+14:52:49-80.25.246.60-Nueva conexion.
+13:53:03-80.25.246.60-BEGIN AJAX.
+13:53:03-80.25.246.60-select.
+13:53:03-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:53:03-80.25.246.60-Conectando.
+14:53:03-80.25.246.60-Nueva conexion.
+13:53:03-80.25.246.60-BEGIN AJAX.
+13:53:03-80.25.246.60-select.
+13:53:03-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:53:03-80.25.246.60-Conectando.
+14:53:03-80.25.246.60-Nueva conexion.
+13:53:11-80.25.246.60-BEGIN AJAX.
+13:53:11-80.25.246.60-select.
+13:53:11-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' AND AC.IdCurso  =  ORDER BY Nombre,Apellidos.
+13:53:11-80.25.246.60-Conectando.
+14:53:11-80.25.246.60-Nueva conexion.
+14:53:11-80.25.246.60-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY Nombre,Apellidos' at line 1.
+13:54:11-80.25.246.60-BEGIN AJAX.
+13:54:11-80.25.246.60-select.
+13:54:11-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:54:11-80.25.246.60-Conectando.
+14:54:11-80.25.246.60-Nueva conexion.
+13:54:11-80.25.246.60-BEGIN AJAX.
+13:54:11-80.25.246.60-select.
+13:54:11-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:54:11-80.25.246.60-Conectando.
+14:54:12-80.25.246.60-Nueva conexion.
+13:54:32-80.25.246.60-BEGIN AJAX.
+13:54:32-80.25.246.60-select.
+13:54:32-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  where A.ExAlumno <> 1  ORDER BY Nombre,Apellidos,FechaDeNacimiento.
+13:54:32-80.25.246.60-Conectando.
+14:54:32-80.25.246.60-Nueva conexion.
+13:54:32-80.25.246.60-BEGIN AJAX.
+13:54:32-80.25.246.60-select.
+13:54:32-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' ORDER BY Nombre,Apellidos.
+13:54:32-80.25.246.60-Conectando.
+14:54:32-80.25.246.60-Nueva conexion.
+13:54:36-80.25.246.60-BEGIN AJAX.
+13:54:36-80.25.246.60-select.
+13:54:36-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' AND AC.IdCurso  = 2 ORDER BY Nombre,Apellidos.
+13:54:36-80.25.246.60-Conectando.
+14:54:36-80.25.246.60-Nueva conexion.
+13:54:39-80.25.246.60-BEGIN AJAX.
+13:54:39-80.25.246.60-select.
+13:54:39-80.25.246.60- SELECT A.Id, A.Nombre, A.Apellidos   FROM Alumnos A  JOIN al_clase AC ON AC.IdAlumno = A.Id  WHERE 1 = 1  AND AC.Periodo  = '2012_2013' AND AC.IdClase  = 2 AND AC.IdCurso  = 2 ORDER BY Nombre,Apellidos.
+13:54:39-80.25.246.60-Conectando.
+14:54:39-80.25.246.60-Nueva conexion.
+13:54:44-80.25.246.60-BEGIN AJAX.
+13:54:44-80.25.246.60-procedure.
+13:54:44-80.25.246.60-Conectando.
+14:54:44-80.25.246.60-Nueva conexion.
+14:54:44-80.25.246.60-Error CALL failed: (1136) Column count doesn't match value count at row 1 CALL AlClaseMove('2012_2013',2,2,'6,17').

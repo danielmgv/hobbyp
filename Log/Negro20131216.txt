@@ -1,0 +1,93 @@
+16:44:26-127.0.0.1-BEGIN AJAX.
+16:44:26-127.0.0.1-select.
+16:44:26-127.0.0.1-Error Fallo al conectar a MySQL: (2002) php_network_getaddresses: getaddrinfo failed: Host desconocido. .
+16:50:42-127.0.0.1-BEGIN AJAX.
+16:50:42-127.0.0.1-select.
+16:50:42-127.0.0.1-Error Fallo al conectar a MySQL: (1045) Access denied for user 'u490265401_admin'@'localhost' (using password: YES).
+16:51:46-127.0.0.1-BEGIN AJAX.
+16:51:46-127.0.0.1-select.
+16:51:46-127.0.0.1-Error Fallo al conectar a MySQL: (1044) Access denied for user 'u490265401_admin'@'localhost' to database 'u490265401_educa'.
+16:51:49-127.0.0.1-BEGIN AJAX.
+16:51:49-127.0.0.1-select.
+16:51:49-127.0.0.1-Error Fallo al conectar a MySQL: (1044) Access denied for user 'u490265401_admin'@'localhost' to database 'u490265401_educa'.
+21:04:40-127.0.0.1-BEGIN AJAX.
+21:04:40-127.0.0.1-select.
+21:04:40-127.0.0.1-Error Fallo al conectar a MySQL: (1044) Access denied for user 'u490265401_admin'@'localhost' to database 'u490265401_educa'.
+21:10:33-127.0.0.1-BEGIN AJAX.
+21:10:33-127.0.0.1-select.
+21:10:33-127.0.0.1-SELECT Nombre as Texto, Id as Valor  FROM asignaturas.
+21:10:44-127.0.0.1-BEGIN AJAX.
+21:10:44-127.0.0.1-procedureScalar.
+21:10:44-127.0.0.1-CALL Login('bego','bego').
+21:10:47-127.0.0.1-BEGIN AJAX.
+21:10:47-127.0.0.1-select.
+21:10:47-127.0.0.1-BEGIN AJAX.
+21:10:47-127.0.0.1-select.
+21:10:47-127.0.0.1-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+21:10:47-127.0.0.1-BEGIN AJAX.
+21:10:47-127.0.0.1-select.
+21:10:47-127.0.0.1-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+21:10:47-127.0.0.1- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2013_2012' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+21:10:50-127.0.0.1-BEGIN AJAX.
+21:10:50-127.0.0.1-select.
+21:10:50-127.0.0.1-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2013_2012' where A.Id = 6.
+21:10:58-127.0.0.1-BEGIN AJAX.
+21:10:58-127.0.0.1-select.
+21:10:59-127.0.0.1-SELECT Nombre as Texto, Id as Valor , IdAsignatura as JoinField  FROM unidadesdidacticas.
+21:11:04-127.0.0.1-BEGIN AJAX.
+21:11:04-127.0.0.1-select.
+21:11:04-127.0.0.1- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2013_2012' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+21:11:34-127.0.0.1-BEGIN AJAX.
+21:11:34-127.0.0.1-select.
+21:11:34-127.0.0.1-BEGIN AJAX.
+21:11:34-127.0.0.1-BEGIN AJAX.
+21:11:34-127.0.0.1-select.
+21:11:34-127.0.0.1-select.
+21:11:34-127.0.0.1- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo  JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2013_2012'.
+21:11:34-127.0.0.1-SELECT Nombre as Texto, Id as Valor  FROM unidadesdidacticas.
+21:11:34-127.0.0.1-SELECT Nombre as Texto, Id as Valor  FROM tipo_evaluacion.
+21:11:41-127.0.0.1-BEGIN AJAX.
+21:11:41-127.0.0.1-select.
+21:11:41-127.0.0.1- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo  JOIN controles C ON C.Id = AC.IdControl  AND C.IdAsignatura = 1 LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2013_2012'.
+21:11:43-127.0.0.1-BEGIN AJAX.
+21:11:43-127.0.0.1-select.
+21:11:43-127.0.0.1- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo  JOIN controles C ON C.Id = AC.IdControl  AND C.IdAsignatura = 2 LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2013_2012'.
+21:11:46-127.0.0.1-BEGIN AJAX.
+21:11:46-127.0.0.1-select.
+21:11:46-127.0.0.1- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo  JOIN controles C ON C.Id = AC.IdControl  AND C.IdAsignatura = 3 LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2013_2012'.
+21:11:48-127.0.0.1-BEGIN AJAX.
+21:11:48-127.0.0.1-select.
+21:11:48-127.0.0.1- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo  JOIN controles C ON C.Id = AC.IdControl  AND C.IdAsignatura = 4 LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2013_2012'.
+21:13:50-127.0.0.1-BEGIN AJAX.
+21:13:50-127.0.0.1-procedureScalar.
+21:13:50-127.0.0.1-CALL Login('bego','bego').
+21:14:35-127.0.0.1-BEGIN AJAX.
+21:14:35-127.0.0.1-select.
+21:14:35-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+21:14:35-127.0.0.1-BEGIN AJAX.
+21:14:35-127.0.0.1-select.
+21:14:35-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+21:14:40-127.0.0.1-BEGIN AJAX.
+21:14:40-127.0.0.1-select.
+21:14:40-127.0.0.1-SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id   LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye .
+21:14:45-127.0.0.1-BEGIN AJAX.
+21:14:45-127.0.0.1-select.
+21:14:45-127.0.0.1-BEGIN AJAX.
+21:14:45-127.0.0.1-select.
+21:14:45-127.0.0.1-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+21:14:45-127.0.0.1-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+21:14:49-127.0.0.1-BEGIN AJAX.
+21:14:49-127.0.0.1-select.
+21:14:49-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+21:14:52-127.0.0.1-BEGIN AJAX.
+21:14:52-127.0.0.1-select.
+21:14:52-127.0.0.1-BEGIN AJAX.
+21:14:52-127.0.0.1-select.
+21:14:52-127.0.0.1-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+21:14:52-127.0.0.1-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+21:15:19-127.0.0.1-BEGIN AJAX.
+21:15:19-127.0.0.1-select.
+21:15:19-127.0.0.1-SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id   LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye .
+21:15:21-127.0.0.1-BEGIN AJAX.
+21:15:21-127.0.0.1-select.
+21:15:21-127.0.0.1-SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id   LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye .

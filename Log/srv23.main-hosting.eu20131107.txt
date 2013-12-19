@@ -1,0 +1,129 @@
+13:31:57-80.25.246.60-BEGIN AJAX.
+13:31:57-80.25.246.60-select.
+13:31:57-80.25.246.60-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+13:32:00-80.25.246.60-BEGIN AJAX.
+13:32:00-80.25.246.60-select.
+13:32:00-80.25.246.60-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+13:37:46-80.25.246.60-BEGIN AJAX.
+13:37:46-80.25.246.60-select.
+13:37:46-80.25.246.60-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+13:44:54-80.25.246.60-BEGIN AJAX.
+13:44:54-80.25.246.60-select.
+13:44:54-80.25.246.60-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+13:44:54-80.25.246.60-BEGIN AJAX.
+13:44:54-80.25.246.60-select.
+13:44:54-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:45:01-80.25.246.60-BEGIN AJAX.
+13:45:01-80.25.246.60-select.
+13:45:01-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:46:16-80.25.246.60-BEGIN AJAX.
+13:46:16-80.25.246.60-select.
+13:46:16-80.25.246.60-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+13:46:16-80.25.246.60-BEGIN AJAX.
+13:46:16-80.25.246.60-select.
+13:46:16-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:46:20-80.25.246.60-BEGIN AJAX.
+13:46:20-80.25.246.60-select.
+13:46:20-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:47:38-80.25.246.60-BEGIN AJAX.
+13:47:38-80.25.246.60-select.
+13:47:38-80.25.246.60-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+13:47:38-80.25.246.60-BEGIN AJAX.
+13:47:38-80.25.246.60-select.
+13:47:38-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:47:43-80.25.246.60-BEGIN AJAX.
+13:47:43-80.25.246.60-select.
+13:47:43-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:48:19-80.25.246.60-BEGIN AJAX.
+13:48:19-80.25.246.60-select.
+13:48:19-80.25.246.60-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+13:48:19-80.25.246.60-BEGIN AJAX.
+13:48:19-80.25.246.60-select.
+13:48:19-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:48:37-80.25.246.60-BEGIN AJAX.
+13:48:37-80.25.246.60-select.
+13:48:37-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:48:54-80.25.246.60-BEGIN AJAX.
+13:48:54-80.25.246.60-select.
+13:48:54-80.25.246.60-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+13:48:54-80.25.246.60-BEGIN AJAX.
+13:48:54-80.25.246.60-select.
+13:48:54-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:49:20-80.25.246.60-BEGIN AJAX.
+13:49:20-80.25.246.60-select.
+13:49:20-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:01:08-80.25.246.60-BEGIN AJAX.
+14:01:08-80.25.246.60-select.
+14:01:08-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+14:01:20-80.25.246.60-BEGIN AJAX.
+14:01:20-80.25.246.60-select.
+14:01:20-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:16:31-80.25.246.60-BEGIN AJAX.
+14:16:31-80.25.246.60-select.
+14:16:31-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+14:16:35-80.25.246.60-BEGIN AJAX.
+14:16:35-80.25.246.60-select.
+14:16:35-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:17:33-80.25.246.60-BEGIN AJAX.
+14:17:33-80.25.246.60-select.
+14:17:33-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:24:07-80.25.246.60-BEGIN AJAX.
+14:24:07-80.25.246.60-select.
+14:24:07-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+14:24:16-80.25.246.60-BEGIN AJAX.
+14:24:16-80.25.246.60-select.
+14:24:16-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:24:22-80.25.246.60-BEGIN AJAX.
+14:24:22-80.25.246.60-select.
+14:24:22-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:27:17-80.25.246.60-BEGIN AJAX.
+14:27:17-80.25.246.60-select.
+14:27:17-80.25.246.60-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+14:27:24-80.25.246.60-BEGIN AJAX.
+14:27:24-80.25.246.60-select.
+14:27:24-80.25.246.60-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+14:27:24-80.25.246.60-BEGIN AJAX.
+14:27:24-80.25.246.60-select.
+14:27:24-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+14:27:27-80.25.246.60-BEGIN AJAX.
+14:27:27-80.25.246.60-select.
+14:27:27-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:27:38-80.25.246.60-BEGIN AJAX.
+14:27:38-80.25.246.60-select.
+14:27:38-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:37:44-80.25.246.60-BEGIN AJAX.
+14:37:44-80.25.246.60-select.
+14:37:44-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+14:37:52-80.25.246.60-BEGIN AJAX.
+14:37:52-80.25.246.60-select.
+14:37:53-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:37:59-80.25.246.60-BEGIN AJAX.
+14:37:59-80.25.246.60-select.
+14:37:59-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:40:23-80.25.246.60-BEGIN AJAX.
+14:40:23-80.25.246.60-select.
+14:40:23-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+14:40:26-80.25.246.60-BEGIN AJAX.
+14:40:26-80.25.246.60-select.
+14:40:26-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:40:43-80.25.246.60-BEGIN AJAX.
+14:40:43-80.25.246.60-select.
+14:40:43-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:43:18-80.25.246.60-BEGIN AJAX.
+14:43:18-80.25.246.60-select.
+14:43:18-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+14:43:22-80.25.246.60-BEGIN AJAX.
+14:43:22-80.25.246.60-select.
+14:43:22-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:43:26-80.25.246.60-BEGIN AJAX.
+14:43:26-80.25.246.60-select.
+14:43:26-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:56:42-80.25.246.60-BEGIN AJAX.
+14:56:42-80.25.246.60-select.
+14:56:42-80.25.246.60-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+14:56:45-80.25.246.60-BEGIN AJAX.
+14:56:45-80.25.246.60-select.
+14:56:45-80.25.246.60-Error Unknown column 'Name' in 'field list'.
+14:56:52-80.25.246.60-BEGIN AJAX.
+14:56:52-80.25.246.60-select.
+14:56:52-80.25.246.60-Error Unknown column 'Name' in 'field list'.

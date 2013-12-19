@@ -1,0 +1,74 @@
+03:40:24-Conectando.
+03:43:35-Conectando.
+03:45:21-Conectando.
+03:45:21-Error Fallo al conectar a MySQL: (1045) Access denied for user 'Admin'@'localhost' (using password: YES).
+03:52:02-127.0.0.1Conectando.
+03:52:02-127.0.0.1Error Fallo al conectar a MySQL: (1045) Access denied for user 'Admin'@'localhost' (using password: YES).
+03:52:35-127.0.0.1-Conectando.
+03:52:35-127.0.0.1-Error Fallo al conectar a MySQL: (1045) Access denied for user 'Admin'@'localhost' (using password: YES).
+03:54:51-127.0.0.1-Conectando.
+05:54:51-127.0.0.1-Nueva conexión.
+03:56:44-127.0.0.1-Conectando.
+05:56:44-127.0.0.1-Nueva conexion.
+03:56:55-127.0.0.1-Conectando.
+05:56:55-127.0.0.1-Nueva conexion.
+03:57:18-127.0.0.1-Conectando.
+05:57:18-127.0.0.1-Nueva conexion.
+03:58:53-127.0.0.1-Conectando.
+05:58:53-127.0.0.1-Nueva conexion.
+03:59:43-127.0.0.1-Conectando.
+03:59:43-127.0.0.1-Conectando.
+05:59:43-127.0.0.1-Nueva conexion.
+05:59:43-127.0.0.1-Nueva conexion.
+03:59:50-127.0.0.1-Conectando.
+05:59:50-127.0.0.1-Nueva conexion.
+03:59:51-127.0.0.1-Conectando.
+05:59:51-127.0.0.1-Nueva conexion.
+04:00:28-127.0.0.1-Conectando.
+06:00:28-127.0.0.1-Nueva conexion.
+04:00:29-127.0.0.1-Conectando.
+06:00:29-127.0.0.1-Nueva conexion.
+04:00:53-127.0.0.1-Conectando.
+06:00:53-127.0.0.1-Nueva conexion.
+04:03:17-127.0.0.1-Conectando.
+06:03:17-127.0.0.1-Nueva conexion.
+04:03:19-127.0.0.1-Conectando.
+06:03:19-127.0.0.1-Nueva conexion.
+04:08:42-127.0.0.1-Conectando.
+06:08:42-127.0.0.1-Nueva conexion.
+04:08:48-127.0.0.1-Conectando.
+04:08:48-127.0.0.1-Conectando.
+06:08:48-127.0.0.1-Nueva conexion.
+06:08:48-127.0.0.1-Nueva conexion.
+04:10:36-127.0.0.1-Conectando.
+06:10:36-127.0.0.1-Nueva conexion.
+04:11:24-127.0.0.1-Conectando.
+06:11:24-127.0.0.1-Nueva conexion.
+04:14:32-127.0.0.1-Conectando.
+06:14:32-127.0.0.1-Nueva conexion.
+04:15:49-127.0.0.1-Conectando.
+06:15:49-127.0.0.1-Nueva conexion.
+04:15:55-127.0.0.1-Conectando.
+04:15:55-127.0.0.1-Conectando.
+06:15:55-127.0.0.1-Nueva conexion.
+06:15:55-127.0.0.1-Nueva conexion.
+04:16:21-127.0.0.1-Conectando.
+06:16:21-127.0.0.1-Nueva conexion.
+04:16:30-127.0.0.1-Conectando.
+04:16:30-127.0.0.1-Conectando.
+06:16:30-127.0.0.1-Nueva conexion.
+06:16:30-127.0.0.1-Nueva conexion.
+04:16:41-127.0.0.1-Conectando.
+06:16:41-127.0.0.1-Nueva conexion.
+04:16:41-127.0.0.1-Conectando.
+06:16:41-127.0.0.1-Nueva conexion.
+04:16:52-127.0.0.1-Conectando.
+06:16:52-127.0.0.1-Nueva conexion.
+04:16:56-127.0.0.1-Conectando.
+06:16:56-127.0.0.1-Nueva conexion.
+04:16:58-127.0.0.1-Conectando.
+06:16:58-127.0.0.1-Nueva conexion.
+04:17:01-127.0.0.1-Conectando.
+06:17:01-127.0.0.1-Nueva conexion.
+04:17:02-127.0.0.1-Conectando.
+06:17:02-127.0.0.1-Nueva conexion.

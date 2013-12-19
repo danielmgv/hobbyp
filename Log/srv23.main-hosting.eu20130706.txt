@@ -1,0 +1,42 @@
+22:42:38-85.251.54.20-BEGIN AJAX.
+22:42:38-85.251.54.20-procedureScalar.
+22:42:38-85.251.54.20-CALL Login('bego','bego').
+22:42:45-85.251.54.20-BEGIN AJAX.
+22:42:45-85.251.54.20-select.
+22:42:45-85.251.54.20-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+22:42:46-85.251.54.20-BEGIN AJAX.
+22:42:46-85.251.54.20-select.
+22:42:46-85.251.54.20-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+22:42:46-85.251.54.20-BEGIN AJAX.
+22:42:46-85.251.54.20-select.
+22:42:46-85.251.54.20- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+22:42:55-85.251.54.20-BEGIN AJAX.
+22:42:55-85.251.54.20-select.
+22:42:55-85.251.54.20- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  AND AP.IdCurso = 4.
+22:43:12-85.251.54.20-BEGIN AJAX.
+22:43:12-85.251.54.20-select.
+22:43:12-85.251.54.20- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 17 ORDER BY Fecha desc.
+22:43:27-85.251.54.20-BEGIN AJAX.
+22:43:27-85.251.54.20-procedureScalar.
+22:43:27-85.251.54.20-CALL ALObservacionesesInsert(17,'jjjj').
+22:43:28-85.251.54.20-BEGIN AJAX.
+22:43:28-85.251.54.20-select.
+22:43:28-85.251.54.20- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 17 ORDER BY Fecha desc.
+22:44:06-85.251.54.20-BEGIN AJAX.
+22:44:06-85.251.54.20-procedure.
+22:44:06-85.251.54.20-CALL AlObservacionesDelete(28).
+22:44:06-85.251.54.20-BEGIN AJAX.
+22:44:06-85.251.54.20-procedure.
+22:44:06-85.251.54.20-CALL AlObservacionesDelete(28).
+22:44:06-85.251.54.20-BEGIN AJAX.
+22:44:06-85.251.54.20-select.
+22:44:06-85.251.54.20- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 17 ORDER BY Fecha desc.
+22:44:07-85.251.54.20-BEGIN AJAX.
+22:44:07-85.251.54.20-select.
+22:44:07-85.251.54.20- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 17 ORDER BY Fecha desc.
+22:46:18-85.251.54.20-BEGIN AJAX.
+22:46:18-85.251.54.20-procedureScalar.
+22:46:18-85.251.54.20-CALL HRegister('hhhh','kkkkk','uuuu').
+22:47:14-85.251.54.20-BEGIN AJAX.
+22:47:14-85.251.54.20-procedureScalar.
+22:47:14-85.251.54.20-CALL HDocumentoInsert("../Data/73/", 73, "762cb0210b1c329e4a900f358753ded4.jpg").

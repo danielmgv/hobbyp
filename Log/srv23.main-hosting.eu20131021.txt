@@ -1,0 +1,45 @@
+16:28:06-85.251.54.20-BEGIN AJAX.
+16:28:06-85.251.54.20-select.
+16:28:06-85.251.54.20-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+16:28:07-85.251.54.20-BEGIN AJAX.
+16:28:07-85.251.54.20-select.
+16:28:07-85.251.54.20-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+16:28:13-85.251.54.20-BEGIN AJAX.
+16:28:13-85.251.54.20-select.
+16:28:13-85.251.54.20-BEGIN AJAX.
+16:28:13-85.251.54.20-select.
+16:28:13-85.251.54.20-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+16:28:13-85.251.54.20-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+16:28:25-85.251.54.20-BEGIN AJAX.
+16:28:25-85.251.54.20-procedureScalar.
+16:28:25-85.251.54.20-Error CALL failed: (1305) PROCEDURE u490265401_educa.HHobInsert does not exist CALL HHobInsert("undefined", undefined, "undefined").
+16:37:10-85.251.54.20-BEGIN AJAX.
+16:37:10-85.251.54.20-select.
+16:37:10-85.251.54.20-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+16:37:11-85.251.54.20-BEGIN AJAX.
+16:37:11-85.251.54.20-select.
+16:37:11-85.251.54.20-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+16:37:11-85.251.54.20-BEGIN AJAX.
+16:37:11-85.251.54.20-select.
+16:37:11-85.251.54.20-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+16:37:16-85.251.54.20-BEGIN AJAX.
+16:37:16-85.251.54.20-procedureScalar.
+16:37:16-85.251.54.20-Error CALL failed: (1305) PROCEDURE u490265401_educa.HHobInsert does not exist CALL HHobInsert("undefined", undefined, "undefined").
+16:37:24-85.251.54.20-BEGIN AJAX.
+16:37:24-85.251.54.20-BEGIN AJAX.
+16:37:24-85.251.54.20-select.
+16:37:24-85.251.54.20-select.
+16:37:24-85.251.54.20-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+16:37:24-85.251.54.20-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+16:37:28-85.251.54.20-BEGIN AJAX.
+16:37:28-85.251.54.20-select.
+16:37:28-85.251.54.20-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+16:37:29-85.251.54.20-BEGIN AJAX.
+16:37:29-85.251.54.20-select.
+16:37:29-85.251.54.20-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+16:37:29-85.251.54.20-BEGIN AJAX.
+16:37:29-85.251.54.20-select.
+16:37:29-85.251.54.20-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+16:37:38-85.251.54.20-BEGIN AJAX.
+16:37:38-85.251.54.20-procedureScalar.
+16:37:38-85.251.54.20-Error CALL failed: (1305) PROCEDURE u490265401_educa.HHobInsert does not exist CALL HHobInsert("undefined", undefined, "undefined").

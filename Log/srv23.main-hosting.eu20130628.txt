@@ -1,0 +1,1236 @@
+07:51:40-81.45.53.129-BEGIN AJAX.
+07:51:40-81.45.53.129-procedureScalar.
+07:51:40-81.45.53.129-CALL Login('bego','bego').
+07:51:43-81.45.53.129-BEGIN AJAX.
+07:51:43-81.45.53.129-select.
+07:51:43-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+07:51:43-81.45.53.129-BEGIN AJAX.
+07:51:43-81.45.53.129-select.
+07:51:43-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+07:51:43-81.45.53.129-BEGIN AJAX.
+07:51:43-81.45.53.129-select.
+07:51:43-81.45.53.129- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+07:51:59-81.45.53.129-BEGIN AJAX.
+07:51:59-81.45.53.129-select.
+07:51:59-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+07:52:42-81.45.53.129-BEGIN AJAX.
+07:52:42-81.45.53.129-procedureScalar.
+07:52:42-81.45.53.129-CALL ALObservacionesesInsert(6,'tttttt').
+07:52:43-81.45.53.129-BEGIN AJAX.
+07:52:43-81.45.53.129-select.
+07:52:43-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+07:57:34-81.45.53.129-BEGIN AJAX.
+07:57:34-81.45.53.129-select.
+07:57:34-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:00:34-81.45.53.129-BEGIN AJAX.
+08:00:34-81.45.53.129-select.
+08:00:34-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:00:41-81.45.53.129-BEGIN AJAX.
+08:00:41-81.45.53.129-select.
+08:00:41-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:01:01-81.45.53.129-BEGIN AJAX.
+08:01:01-81.45.53.129-procedureScalar.
+08:01:02-81.45.53.129-CALL Login('bego','bego').
+08:01:04-81.45.53.129-BEGIN AJAX.
+08:01:04-81.45.53.129-select.
+08:01:04-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+08:01:04-81.45.53.129-BEGIN AJAX.
+08:01:04-81.45.53.129-select.
+08:01:04-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+08:01:04-81.45.53.129-BEGIN AJAX.
+08:01:04-81.45.53.129-select.
+08:01:04-81.45.53.129- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+08:01:15-81.45.53.129-BEGIN AJAX.
+08:01:15-81.45.53.129-select.
+08:01:15-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:04:51-80.25.246.60-BEGIN AJAX.
+08:04:51-80.25.246.60-select.
+08:04:51-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM asignaturas.
+08:05:48-81.45.53.129-BEGIN AJAX.
+08:05:48-81.45.53.129-select.
+08:05:48-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:06:09-80.25.246.60-BEGIN AJAX.
+08:06:09-80.25.246.60-procedureScalar.
+08:06:09-80.25.246.60-CALL Login('bego','bego').
+08:06:11-80.25.246.60-BEGIN AJAX.
+08:06:11-80.25.246.60-select.
+08:06:11-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+08:06:11-80.25.246.60-BEGIN AJAX.
+08:06:11-80.25.246.60-select.
+08:06:11-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+08:06:11-80.25.246.60-BEGIN AJAX.
+08:06:11-80.25.246.60-select.
+08:06:11-80.25.246.60- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+08:06:23-80.25.246.60-BEGIN AJAX.
+08:06:23-80.25.246.60-select.
+08:06:23-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:07:04-81.45.53.129-BEGIN AJAX.
+08:07:04-81.45.53.129-select.
+08:07:04-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+08:07:04-81.45.53.129-BEGIN AJAX.
+08:07:04-81.45.53.129-select.
+08:07:04-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+08:07:04-81.45.53.129-BEGIN AJAX.
+08:07:04-81.45.53.129-select.
+08:07:04-81.45.53.129- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+08:07:12-81.45.53.129-BEGIN AJAX.
+08:07:12-81.45.53.129-select.
+08:07:12-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:13:41-81.45.53.129-BEGIN AJAX.
+08:13:41-81.45.53.129-select.
+08:13:41-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:13:55-81.45.53.129-BEGIN AJAX.
+08:13:55-81.45.53.129-procedureScalar.
+08:13:55-81.45.53.129-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+08:14:08-81.45.53.129-BEGIN AJAX.
+08:14:08-81.45.53.129-procedureScalar.
+08:14:08-81.45.53.129-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+08:29:32-81.45.53.129-BEGIN AJAX.
+08:29:32-81.45.53.129-select.
+08:29:32-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:29:40-81.45.53.129-BEGIN AJAX.
+08:29:40-81.45.53.129-procedureScalar.
+08:29:40-81.45.53.129-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+08:30:05-81.45.53.129-BEGIN AJAX.
+08:30:05-81.45.53.129-procedureScalar.
+08:30:05-81.45.53.129-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+08:30:53-81.45.53.129-BEGIN AJAX.
+08:30:53-81.45.53.129-procedureScalar.
+08:30:53-81.45.53.129-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+08:30:58-81.45.53.129-BEGIN AJAX.
+08:30:58-81.45.53.129-select.
+08:30:58-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:56:08-81.45.53.129-BEGIN AJAX.
+08:56:08-81.45.53.129-select.
+08:56:08-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+08:56:23-81.45.53.129-BEGIN AJAX.
+08:56:23-81.45.53.129-procedureScalar.
+08:56:23-81.45.53.129-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+08:56:34-81.45.53.129-BEGIN AJAX.
+08:56:34-81.45.53.129-select.
+08:56:34-81.45.53.129-BEGIN AJAX.
+08:56:34-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+08:56:34-81.45.53.129-select.
+08:56:34-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+08:56:34-81.45.53.129-BEGIN AJAX.
+08:56:34-81.45.53.129-select.
+08:56:34-81.45.53.129- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+09:02:15-81.45.53.129-BEGIN AJAX.
+09:02:15-81.45.53.129-select.
+09:02:15-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+09:02:56-81.45.53.129-BEGIN AJAX.
+09:02:56-81.45.53.129-procedureScalar.
+09:02:56-81.45.53.129-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+09:04:27-81.45.53.129-BEGIN AJAX.
+09:04:27-81.45.53.129-select.
+09:04:27-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+09:04:27-81.45.53.129-BEGIN AJAX.
+09:04:27-81.45.53.129-select.
+09:04:27-81.45.53.129-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+09:04:27-81.45.53.129-BEGIN AJAX.
+09:04:27-81.45.53.129-select.
+09:04:27-81.45.53.129- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+09:04:32-81.45.53.129-BEGIN AJAX.
+09:04:32-81.45.53.129-select.
+09:04:32-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+09:04:48-81.45.53.129-BEGIN AJAX.
+09:04:48-81.45.53.129-procedure.
+09:04:48-81.45.53.129-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+09:05:29-80.25.246.60-BEGIN AJAX.
+09:05:29-80.25.246.60-select.
+09:05:29-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+09:05:33-80.25.246.60-BEGIN AJAX.
+09:05:33-80.25.246.60-select.
+09:05:33-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+09:05:40-80.25.246.60-BEGIN AJAX.
+09:05:40-80.25.246.60-procedure.
+09:05:40-80.25.246.60-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+09:06:03-80.25.246.60-BEGIN AJAX.
+09:06:03-80.25.246.60-select.
+09:06:03-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+09:06:59-80.25.246.60-BEGIN AJAX.
+09:06:59-80.25.246.60-procedure.
+09:06:59-80.25.246.60-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.AlObservacionesDelete; expected 1, got 0 CALL AlObservacionesDelete().
+09:07:03-80.25.246.60-BEGIN AJAX.
+09:07:03-80.25.246.60-select.
+09:07:03-80.25.246.60-BEGIN AJAX.
+09:07:03-80.25.246.60-select.
+09:07:03-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+09:07:03-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+09:07:03-80.25.246.60-BEGIN AJAX.
+09:07:03-80.25.246.60-select.
+09:07:03-80.25.246.60- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+09:07:06-80.25.246.60-BEGIN AJAX.
+09:07:06-80.25.246.60-select.
+09:07:06-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+09:24:33-81.45.53.129-BEGIN AJAX.
+09:24:33-81.45.53.129-select.
+09:24:33-81.45.53.129- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+09:25:15-80.25.246.60-BEGIN AJAX.
+09:25:15-80.25.246.60-select.
+09:25:15-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:14:53-81.45.53.86-BEGIN AJAX.
+10:14:53-81.45.53.86-procedureScalar.
+10:14:53-81.45.53.86-CALL Login('bego','bego').
+10:14:56-81.45.53.86-BEGIN AJAX.
+10:14:56-81.45.53.86-select.
+10:14:56-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+10:14:56-81.45.53.86-BEGIN AJAX.
+10:14:56-81.45.53.86-select.
+10:14:56-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+10:15:00-81.45.53.86-BEGIN AJAX.
+10:15:00-81.45.53.86-select.
+10:15:00-81.45.53.86- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+10:15:09-81.45.53.86-BEGIN AJAX.
+10:15:09-81.45.53.86-select.
+10:15:09-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:17:10-80.25.246.60-BEGIN AJAX.
+10:17:10-80.25.246.60-procedureScalar.
+10:17:10-80.25.246.60-CALL Login('bego','bego').
+10:17:19-80.25.246.60-BEGIN AJAX.
+10:17:19-80.25.246.60-select.
+10:17:19-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+10:17:20-80.25.246.60-BEGIN AJAX.
+10:17:20-80.25.246.60-select.
+10:17:20-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+10:17:20-80.25.246.60-BEGIN AJAX.
+10:17:20-80.25.246.60-select.
+10:17:20-80.25.246.60- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+10:17:32-80.25.246.60-BEGIN AJAX.
+10:17:32-80.25.246.60-select.
+10:17:32-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:18:32-80.25.246.60-BEGIN AJAX.
+10:18:32-80.25.246.60-select.
+10:18:32-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:18:44-80.25.246.60-BEGIN AJAX.
+10:18:44-80.25.246.60-select.
+10:18:44-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:19:03-80.25.246.60-BEGIN AJAX.
+10:19:03-80.25.246.60-select.
+10:19:03-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:23:22-80.25.246.60-BEGIN AJAX.
+10:23:22-80.25.246.60-select.
+10:23:22-80.25.246.60- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:34:36-81.45.53.86-BEGIN AJAX.
+10:34:36-81.45.53.86-select.
+10:34:36-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:34:51-81.45.53.86-BEGIN AJAX.
+10:34:51-81.45.53.86-procedure.
+10:34:51-81.45.53.86-CALL AlObservacionesDelete(17).
+10:34:51-81.45.53.86-BEGIN AJAX.
+10:34:51-81.45.53.86-select.
+10:34:51-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:35:14-81.45.53.86-BEGIN AJAX.
+10:35:14-81.45.53.86-procedure.
+10:35:14-81.45.53.86-CALL AlObservacionesDelete(15).
+10:35:14-81.45.53.86-BEGIN AJAX.
+10:35:14-81.45.53.86-procedure.
+10:35:14-81.45.53.86-CALL AlObservacionesDelete(15).
+10:35:15-81.45.53.86-BEGIN AJAX.
+10:35:15-81.45.53.86-select.
+10:35:15-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:35:15-81.45.53.86-BEGIN AJAX.
+10:35:15-81.45.53.86-select.
+10:35:15-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:35:38-81.45.53.86-BEGIN AJAX.
+10:35:38-81.45.53.86-procedure.
+10:35:38-81.45.53.86-CALL AlObservacionesDelete(14).
+10:35:38-81.45.53.86-BEGIN AJAX.
+10:35:38-81.45.53.86-procedure.
+10:35:38-81.45.53.86-BEGIN AJAX.
+10:35:38-81.45.53.86-procedure.
+10:35:38-81.45.53.86-CALL AlObservacionesDelete(14).
+10:35:38-81.45.53.86-CALL AlObservacionesDelete(14).
+10:35:38-81.45.53.86-BEGIN AJAX.
+10:35:38-81.45.53.86-procedure.
+10:35:38-81.45.53.86-CALL AlObservacionesDelete(14).
+10:35:38-81.45.53.86-BEGIN AJAX.
+10:35:38-81.45.53.86-select.
+10:35:38-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:35:38-81.45.53.86-BEGIN AJAX.
+10:35:38-81.45.53.86-select.
+10:35:38-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:35:38-81.45.53.86-BEGIN AJAX.
+10:35:38-81.45.53.86-select.
+10:35:38-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:35:38-81.45.53.86-BEGIN AJAX.
+10:35:38-81.45.53.86-select.
+10:35:38-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:07-81.45.53.86-BEGIN AJAX.
+10:36:07-81.45.53.86-procedureScalar.
+10:36:07-81.45.53.86-CALL ALObservacionesesInsert(6,'no trabaja').
+10:36:08-81.45.53.86-BEGIN AJAX.
+10:36:08-81.45.53.86-select.
+10:36:08-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-procedure.
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:17-81.45.53.86-BEGIN AJAX.
+10:36:17-81.45.53.86-select.
+10:36:17-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:18-81.45.53.86-BEGIN AJAX.
+10:36:18-81.45.53.86-select.
+10:36:18-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:18-81.45.53.86-BEGIN AJAX.
+10:36:18-81.45.53.86-select.
+10:36:18-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:18-81.45.53.86-BEGIN AJAX.
+10:36:18-81.45.53.86-select.
+10:36:18-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:18-81.45.53.86-BEGIN AJAX.
+10:36:18-81.45.53.86-select.
+10:36:18-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:18-81.45.53.86-BEGIN AJAX.
+10:36:18-81.45.53.86-select.
+10:36:18-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:18-81.45.53.86-BEGIN AJAX.
+10:36:18-81.45.53.86-select.
+10:36:18-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:18-81.45.53.86-BEGIN AJAX.
+10:36:18-81.45.53.86-select.
+10:36:18-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:19-81.45.53.86-BEGIN AJAX.
+10:36:19-81.45.53.86-select.
+10:36:19-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:36:24-81.45.53.86-BEGIN AJAX.
+10:36:24-81.45.53.86-procedure.
+10:36:24-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:24-81.45.53.86-BEGIN AJAX.
+10:36:24-81.45.53.86-procedure.
+10:36:24-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:24-81.45.53.86-BEGIN AJAX.
+10:36:24-81.45.53.86-procedure.
+10:36:24-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:24-81.45.53.86-BEGIN AJAX.
+10:36:24-81.45.53.86-procedure.
+10:36:24-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:24-81.45.53.86-BEGIN AJAX.
+10:36:24-81.45.53.86-procedure.
+10:36:24-81.45.53.86-BEGIN AJAX.
+10:36:24-81.45.53.86-procedure.
+10:36:24-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:24-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-BEGIN AJAX.
+10:36:25-81.45.53.86-procedure.
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:25-81.45.53.86-CALL AlObservacionesDelete(16).
+10:36:54-81.45.53.86-BEGIN AJAX.
+10:36:54-81.45.53.86-select.
+10:36:54-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:37:08-81.45.53.86-BEGIN AJAX.
+10:37:08-81.45.53.86-procedure.
+10:37:08-81.45.53.86-CALL AlObservacionesDelete(13).
+10:37:10-81.45.53.86-BEGIN AJAX.
+10:37:10-81.45.53.86-select.
+10:37:10-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:37:23-81.45.53.86-BEGIN AJAX.
+10:37:23-81.45.53.86-procedure.
+10:37:23-81.45.53.86-CALL AlObservacionesDelete(22).
+10:37:23-81.45.53.86-BEGIN AJAX.
+10:37:23-81.45.53.86-procedure.
+10:37:23-81.45.53.86-CALL AlObservacionesDelete(22).
+10:37:23-81.45.53.86-BEGIN AJAX.
+10:37:23-81.45.53.86-select.
+10:37:23-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:37:24-81.45.53.86-BEGIN AJAX.
+10:37:24-81.45.53.86-select.
+10:37:24-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:39:11-81.45.53.86-BEGIN AJAX.
+10:39:11-81.45.53.86-select.
+10:39:11-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:39:19-81.45.53.86-BEGIN AJAX.
+10:39:19-81.45.53.86-select.
+10:39:19-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:42:25-81.45.53.86-BEGIN AJAX.
+10:42:25-81.45.53.86-procedureScalar.
+10:42:25-81.45.53.86-CALL Login('bego','bego').
+10:42:28-81.45.53.86-BEGIN AJAX.
+10:42:28-81.45.53.86-select.
+10:42:28-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+10:42:28-81.45.53.86-BEGIN AJAX.
+10:42:28-81.45.53.86-select.
+10:42:28-81.45.53.86- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+10:42:28-81.45.53.86-BEGIN AJAX.
+10:42:28-81.45.53.86-select.
+10:42:28-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+10:49:51-81.45.53.86-BEGIN AJAX.
+10:49:51-81.45.53.86-procedureScalar.
+10:49:51-81.45.53.86-CALL Login('bego','bego').
+10:49:54-81.45.53.86-BEGIN AJAX.
+10:49:54-81.45.53.86-select.
+10:49:54-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+10:49:54-81.45.53.86-BEGIN AJAX.
+10:49:54-81.45.53.86-select.
+10:49:54-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+10:49:54-81.45.53.86-BEGIN AJAX.
+10:49:54-81.45.53.86-select.
+10:49:54-81.45.53.86- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+10:51:04-81.45.53.86-BEGIN AJAX.
+10:51:04-81.45.53.86-procedureScalar.
+10:51:04-81.45.53.86-CALL Login('bego','bego').
+10:51:07-81.45.53.86-BEGIN AJAX.
+10:51:07-81.45.53.86-select.
+10:51:07-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+10:51:07-81.45.53.86-BEGIN AJAX.
+10:51:07-81.45.53.86-select.
+10:51:07-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+10:51:07-81.45.53.86-BEGIN AJAX.
+10:51:07-81.45.53.86-select.
+10:51:07-81.45.53.86- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+10:51:14-81.45.53.86-BEGIN AJAX.
+10:51:14-81.45.53.86-select.
+10:51:14-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:52:57-81.45.53.86-BEGIN AJAX.
+10:52:57-81.45.53.86-procedureScalar.
+10:52:57-81.45.53.86-CALL Login('bego','bego').
+10:53:00-81.45.53.86-BEGIN AJAX.
+10:53:00-81.45.53.86-select.
+10:53:00-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+10:53:00-81.45.53.86-BEGIN AJAX.
+10:53:00-81.45.53.86-select.
+10:53:00-81.45.53.86- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+10:53:00-81.45.53.86-BEGIN AJAX.
+10:53:00-81.45.53.86-select.
+10:53:00-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+10:53:07-81.45.53.86-BEGIN AJAX.
+10:53:07-81.45.53.86-select.
+10:53:07-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:53:18-81.45.53.86-BEGIN AJAX.
+10:53:18-81.45.53.86-procedure.
+10:53:18-81.45.53.86-CALL AlObservacionesDelete(9).
+10:53:18-81.45.53.86-BEGIN AJAX.
+10:53:18-81.45.53.86-select.
+10:53:18-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:53:34-81.45.53.86-BEGIN AJAX.
+10:53:34-81.45.53.86-procedure.
+10:53:34-81.45.53.86-BEGIN AJAX.
+10:53:34-81.45.53.86-procedure.
+10:53:34-81.45.53.86-CALL AlObservacionesDelete(7).
+10:53:34-81.45.53.86-CALL AlObservacionesDelete(7).
+10:53:35-81.45.53.86-BEGIN AJAX.
+10:53:35-81.45.53.86-select.
+10:53:35-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:53:36-81.45.53.86-BEGIN AJAX.
+10:53:36-81.45.53.86-select.
+10:53:36-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:54:38-81.45.53.86-BEGIN AJAX.
+10:54:38-81.45.53.86-select.
+10:54:38-81.45.53.86- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+10:54:50-81.45.53.86-BEGIN AJAX.
+10:54:50-81.45.53.86-select.
+10:54:50-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+10:54:51-81.45.53.86-BEGIN AJAX.
+10:54:51-81.45.53.86-select.
+10:54:51-81.45.53.86-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+10:54:51-81.45.53.86-BEGIN AJAX.
+10:54:51-81.45.53.86-select.
+10:54:51-81.45.53.86- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+10:55:41-81.45.53.86-BEGIN AJAX.
+10:55:41-81.45.53.86-select.
+10:55:41-81.45.53.86- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  AND AP.IdClase = 2.
+10:57:26-80.25.246.60-BEGIN AJAX.
+10:57:26-80.25.246.60-select.
+10:57:26-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM asignaturas.
+11:17:37-81.45.53.88-BEGIN AJAX.
+11:17:37-81.45.53.88-procedureScalar.
+11:17:37-81.45.53.88-CALL Login('bego','bego').
+11:17:39-81.45.53.88-BEGIN AJAX.
+11:17:39-81.45.53.88-select.
+11:17:39-81.45.53.88-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+11:17:39-81.45.53.88-BEGIN AJAX.
+11:17:39-81.45.53.88-select.
+11:17:39-81.45.53.88-BEGIN AJAX.
+11:17:39-81.45.53.88-select.
+11:17:39-81.45.53.88-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+11:17:39-81.45.53.88- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+11:17:50-81.45.53.88-BEGIN AJAX.
+11:17:50-81.45.53.88-select.
+11:17:50-81.45.53.88- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+11:18:32-81.45.53.88-BEGIN AJAX.
+11:18:32-81.45.53.88-procedure.
+11:18:32-81.45.53.88-CALL AlObservacionesDelete(12).
+11:18:34-81.45.53.88-BEGIN AJAX.
+11:18:34-81.45.53.88-select.
+11:18:34-81.45.53.88- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+11:18:48-81.45.53.88-BEGIN AJAX.
+11:18:48-81.45.53.88-procedure.
+11:18:48-81.45.53.88-CALL AlObservacionesDelete(3).
+11:18:48-81.45.53.88-BEGIN AJAX.
+11:18:48-81.45.53.88-procedure.
+11:18:48-81.45.53.88-CALL AlObservacionesDelete(3).
+11:18:49-81.45.53.88-BEGIN AJAX.
+11:18:49-81.45.53.88-select.
+11:18:49-81.45.53.88- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+11:18:49-81.45.53.88-BEGIN AJAX.
+11:18:49-81.45.53.88-select.
+11:18:49-81.45.53.88- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+11:25:33-80.25.246.60-BEGIN AJAX.
+11:25:33-80.25.246.60-procedureScalar.
+11:25:33-80.25.246.60-CALL Login('bego','bego').
+11:25:51-80.25.246.60-BEGIN AJAX.
+11:25:51-80.25.246.60-select.
+11:25:51-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:25:51-80.25.246.60-BEGIN AJAX.
+11:25:51-80.25.246.60-select.
+11:25:51-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+11:25:51-80.25.246.60-BEGIN AJAX.
+11:25:51-80.25.246.60-select.
+11:25:51-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+11:26:01-80.25.246.60-BEGIN AJAX.
+11:26:01-80.25.246.60-select.
+11:26:01-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+11:26:02-80.25.246.60-BEGIN AJAX.
+11:26:02-80.25.246.60-select.
+11:26:02-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+11:34:00-80.25.246.60-BEGIN AJAX.
+11:34:00-80.25.246.60-select.
+11:34:00-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:34:10-80.25.246.60-BEGIN AJAX.
+11:34:10-80.25.246.60-select.
+11:34:10-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+11:34:12-80.25.246.60-BEGIN AJAX.
+11:34:12-80.25.246.60-select.
+11:34:12-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+11:36:46-80.25.246.60-BEGIN AJAX.
+11:36:46-80.25.246.60-select.
+11:36:46-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:36:53-80.25.246.60-BEGIN AJAX.
+11:36:53-80.25.246.60-select.
+11:36:53-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+11:36:54-80.25.246.60-BEGIN AJAX.
+11:36:54-80.25.246.60-select.
+11:36:54-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+11:36:55-80.25.246.60-BEGIN AJAX.
+11:36:55-80.25.246.60-select.
+11:36:55-80.25.246.60-Error Table 'u490265401_educa.aL_observaciones' doesn't exist.
+11:49:13-80.25.246.60-BEGIN AJAX.
+11:49:13-80.25.246.60-select.
+11:49:13-80.25.246.60-BEGIN AJAX.
+11:49:13-80.25.246.60-select.
+11:49:13-80.25.246.60-Error Table 'u490265401_educa.aL_observaciones' doesn't exist.
+11:49:13-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+11:49:15-80.25.246.60-BEGIN AJAX.
+11:49:15-80.25.246.60-select.
+11:49:15-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+11:49:18-80.25.246.60-BEGIN AJAX.
+11:49:18-80.25.246.60-select.
+11:49:18-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+11:49:19-80.25.246.60-BEGIN AJAX.
+11:49:19-80.25.246.60-select.
+11:49:19-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:49:29-80.25.246.60-BEGIN AJAX.
+11:49:29-80.25.246.60-select.
+11:49:29-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha DESC,Observaciones.
+11:49:31-80.25.246.60-BEGIN AJAX.
+11:49:31-80.25.246.60-select.
+11:49:31-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:50:13-80.25.246.60-BEGIN AJAX.
+11:50:13-80.25.246.60-select.
+11:50:13-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:50:23-80.25.246.60-BEGIN AJAX.
+11:50:23-80.25.246.60-select.
+11:50:23-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:50:51-80.25.246.60-BEGIN AJAX.
+11:50:51-80.25.246.60-select.
+11:50:51-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:50:59-80.25.246.60-BEGIN AJAX.
+11:50:59-80.25.246.60-select.
+11:50:59-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 17.
+11:51:00-80.25.246.60-BEGIN AJAX.
+11:51:00-80.25.246.60-select.
+11:51:00-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 17 ORDER BY Fecha,Observaciones.
+11:51:01-80.25.246.60-BEGIN AJAX.
+11:51:01-80.25.246.60-select.
+11:51:01-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+11:53:59-80.25.246.60-BEGIN AJAX.
+11:53:59-80.25.246.60-select.
+11:53:59-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:54:10-80.25.246.60-BEGIN AJAX.
+11:54:10-80.25.246.60-select.
+11:54:10-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+11:54:11-80.25.246.60-BEGIN AJAX.
+11:54:11-80.25.246.60-select.
+11:54:11-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+11:54:12-80.25.246.60-BEGIN AJAX.
+11:54:12-80.25.246.60-select.
+11:54:12-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:55:00-80.25.246.60-BEGIN AJAX.
+11:55:00-80.25.246.60-select.
+11:55:00-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+11:55:06-80.25.246.60-BEGIN AJAX.
+11:55:06-80.25.246.60-select.
+11:55:06-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+11:55:07-80.25.246.60-BEGIN AJAX.
+11:55:07-80.25.246.60-select.
+11:55:07-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+11:55:08-80.25.246.60-BEGIN AJAX.
+11:55:08-80.25.246.60-select.
+11:55:08-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:55:12-80.25.246.60-BEGIN AJAX.
+11:55:12-80.25.246.60-procedure.
+11:55:12-80.25.246.60-CALL AlObservacionesDelete(8).
+11:55:12-80.25.246.60-BEGIN AJAX.
+11:55:12-80.25.246.60-select.
+11:55:12-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:55:15-80.25.246.60-BEGIN AJAX.
+11:55:15-80.25.246.60-procedure.
+11:55:15-80.25.246.60-CALL AlObservacionesDelete(1).
+11:55:15-80.25.246.60-BEGIN AJAX.
+11:55:15-80.25.246.60-select.
+11:55:15-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:55:18-80.25.246.60-BEGIN AJAX.
+11:55:18-80.25.246.60-procedure.
+11:55:18-80.25.246.60-CALL AlObservacionesDelete(6).
+11:55:18-80.25.246.60-BEGIN AJAX.
+11:55:18-80.25.246.60-select.
+11:55:18-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:55:20-80.25.246.60-BEGIN AJAX.
+11:55:20-80.25.246.60-procedure.
+11:55:20-80.25.246.60-CALL AlObservacionesDelete(10).
+11:55:21-80.25.246.60-BEGIN AJAX.
+11:55:21-80.25.246.60-select.
+11:55:21-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:55:23-80.25.246.60-BEGIN AJAX.
+11:55:23-80.25.246.60-procedure.
+11:55:23-80.25.246.60-CALL AlObservacionesDelete(2).
+11:55:23-80.25.246.60-BEGIN AJAX.
+11:55:23-80.25.246.60-select.
+11:55:23-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:55:25-80.25.246.60-BEGIN AJAX.
+11:55:25-80.25.246.60-procedure.
+11:55:25-80.25.246.60-CALL AlObservacionesDelete(4).
+11:55:26-80.25.246.60-BEGIN AJAX.
+11:55:26-80.25.246.60-select.
+11:55:26-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+11:56:48-80.25.246.60-BEGIN AJAX.
+11:56:48-80.25.246.60-select.
+11:56:48-80.25.246.60-BEGIN AJAX.
+11:56:48-80.25.246.60-select.
+11:56:48-80.25.246.60- Select A.Id as IdAlumno, A.Nombre, A.Apellidos, C.Id as IdControl, C.Nombre as Control, AC.Peso, AC.Nota, AC.IdEvaluacion  , Clase.Nombre as Clase, Curso.Nombre as Curso, AP.NEv1, AP.NEv2, AP.NEv3, AP.NTotal, AP.Periodo  from Alumnos A  JOIN al_periodo AP ON AP.IdAlumno = A.Id  LEFT JOIN al_controles AC ON AC.IdAlumno = A.Id AND AP.Periodo = AC.Periodo  JOIN controles C ON C.Id = AC.IdControl  LEFT JOIN tipo_clase Clase ON Clase.Id = AP.IdClase  LEFT JOIN tipo_curso Curso ON Curso.Id = AP.IdCurso  WHERE  AP.Periodo = '2012_2013'.
+11:56:48-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_evaluacion.
+11:56:49-80.25.246.60-BEGIN AJAX.
+11:56:49-80.25.246.60-select.
+11:56:49-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM unidadesdidacticas.
+11:57:27-80.25.246.60-BEGIN AJAX.
+11:57:27-80.25.246.60-select.
+11:57:27-80.25.246.60-SELECT C.Id, C.Nombre, U.Nombre as UnidadDidactica  FROM controles C  LEFT JOIN unidadesdidacticas U ON U.Id = C.IdUnidadDidactica  where 1 = 1  ORDER BY Nombre,UnidadDidactica.
+11:57:53-80.25.246.60-BEGIN AJAX.
+11:57:53-80.25.246.60-select.
+11:57:53-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:21:05-80.25.246.60-BEGIN AJAX.
+12:21:05-80.25.246.60-select.
+12:21:05-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:21:17-80.25.246.60-BEGIN AJAX.
+12:21:17-80.25.246.60-select.
+12:21:17-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:21:18-80.25.246.60-BEGIN AJAX.
+12:21:18-80.25.246.60-select.
+12:21:18-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:21:18-80.25.246.60-BEGIN AJAX.
+12:21:18-80.25.246.60-select.
+12:21:18-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:22:26-80.25.246.60-BEGIN AJAX.
+12:22:26-80.25.246.60-select.
+12:22:26-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:22:52-80.25.246.60-BEGIN AJAX.
+12:22:52-80.25.246.60-select.
+12:22:52-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:22:53-80.25.246.60-BEGIN AJAX.
+12:22:53-80.25.246.60-select.
+12:22:53-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:22:54-80.25.246.60-BEGIN AJAX.
+12:22:54-80.25.246.60-select.
+12:22:54-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:23:49-80.25.246.60-BEGIN AJAX.
+12:23:49-80.25.246.60-select.
+12:23:49-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:26:07-80.25.246.60-BEGIN AJAX.
+12:26:07-80.25.246.60-select.
+12:26:07-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:26:17-80.25.246.60-BEGIN AJAX.
+12:26:17-80.25.246.60-select.
+12:26:17-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:26:18-80.25.246.60-BEGIN AJAX.
+12:26:18-80.25.246.60-select.
+12:26:18-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:26:19-80.25.246.60-BEGIN AJAX.
+12:26:19-80.25.246.60-select.
+12:26:19-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:27:37-80.25.246.60-BEGIN AJAX.
+12:27:37-80.25.246.60-select.
+12:27:37-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:27:50-80.25.246.60-BEGIN AJAX.
+12:27:50-80.25.246.60-select.
+12:27:50-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:27:53-80.25.246.60-BEGIN AJAX.
+12:27:53-80.25.246.60-select.
+12:27:53-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:27:55-80.25.246.60-BEGIN AJAX.
+12:27:55-80.25.246.60-select.
+12:27:55-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:28:09-80.25.246.60-BEGIN AJAX.
+12:28:09-80.25.246.60-select.
+12:28:09-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:28:26-80.25.246.60-BEGIN AJAX.
+12:28:26-80.25.246.60-select.
+12:28:26-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:28:28-80.25.246.60-BEGIN AJAX.
+12:28:28-80.25.246.60-select.
+12:28:28-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:28:29-80.25.246.60-BEGIN AJAX.
+12:28:29-80.25.246.60-select.
+12:28:29-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:29:07-80.25.246.60-BEGIN AJAX.
+12:29:07-80.25.246.60-procedure.
+12:29:07-80.25.246.60-Error CALL failed: (1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 CALL AlObservacionesInsert(,).
+12:29:21-80.25.246.60-BEGIN AJAX.
+12:29:21-80.25.246.60-select.
+12:29:21-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:40:08-80.25.246.60-BEGIN AJAX.
+12:40:08-80.25.246.60-select.
+12:40:08-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:40:29-80.25.246.60-BEGIN AJAX.
+12:40:29-80.25.246.60-select.
+12:40:29-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:40:31-80.25.246.60-BEGIN AJAX.
+12:40:31-80.25.246.60-select.
+12:40:31-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:41:18-80.25.246.60-BEGIN AJAX.
+12:41:18-80.25.246.60-select.
+12:41:18-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:41:27-81.45.53.171-BEGIN AJAX.
+12:41:27-81.45.53.171-select.
+12:41:27-81.45.53.171- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+12:41:47-80.25.246.60-BEGIN AJAX.
+12:41:47-80.25.246.60-select.
+12:41:47-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:41:47-80.25.246.60-BEGIN AJAX.
+12:41:47-80.25.246.60-select.
+12:41:47-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:41:49-80.25.246.60-BEGIN AJAX.
+12:41:49-80.25.246.60-select.
+12:41:49-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:42:58-80.25.246.60-BEGIN AJAX.
+12:42:58-80.25.246.60-select.
+12:42:58-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:43:17-80.25.246.60-BEGIN AJAX.
+12:43:17-80.25.246.60-select.
+12:43:17-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:43:18-80.25.246.60-BEGIN AJAX.
+12:43:18-80.25.246.60-select.
+12:43:18-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:43:20-80.25.246.60-BEGIN AJAX.
+12:43:20-80.25.246.60-select.
+12:43:20-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:44:25-80.25.246.60-BEGIN AJAX.
+12:44:25-80.25.246.60-select.
+12:44:25-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:44:35-80.25.246.60-BEGIN AJAX.
+12:44:35-80.25.246.60-select.
+12:44:35-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:44:37-80.25.246.60-BEGIN AJAX.
+12:44:37-80.25.246.60-select.
+12:44:37-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:44:38-80.25.246.60-BEGIN AJAX.
+12:44:38-80.25.246.60-select.
+12:44:38-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:45:18-80.25.246.60-BEGIN AJAX.
+12:45:18-80.25.246.60-select.
+12:45:18-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:45:28-80.25.246.60-BEGIN AJAX.
+12:45:28-80.25.246.60-select.
+12:45:28-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:45:41-80.25.246.60-BEGIN AJAX.
+12:45:41-80.25.246.60-select.
+12:45:41-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:46:01-80.25.246.60-BEGIN AJAX.
+12:46:01-80.25.246.60-select.
+12:46:01-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:46:40-80.25.246.60-BEGIN AJAX.
+12:46:40-80.25.246.60-select.
+12:46:40-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:46:45-80.25.246.60-BEGIN AJAX.
+12:46:45-80.25.246.60-select.
+12:46:45-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:47:55-80.25.246.60-BEGIN AJAX.
+12:47:55-80.25.246.60-select.
+12:47:55-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:50:36-80.25.246.60-BEGIN AJAX.
+12:50:36-80.25.246.60-select.
+12:50:36-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:50:47-80.25.246.60-BEGIN AJAX.
+12:50:47-80.25.246.60-select.
+12:50:47-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:50:49-80.25.246.60-BEGIN AJAX.
+12:50:49-80.25.246.60-select.
+12:50:49-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:50:52-80.25.246.60-BEGIN AJAX.
+12:50:52-80.25.246.60-select.
+12:50:52-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:52:14-80.25.246.60-BEGIN AJAX.
+12:52:14-80.25.246.60-select.
+12:52:14-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:52:35-80.25.246.60-BEGIN AJAX.
+12:52:35-80.25.246.60-select.
+12:52:35-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:52:36-80.25.246.60-BEGIN AJAX.
+12:52:36-80.25.246.60-select.
+12:52:36-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:52:37-80.25.246.60-BEGIN AJAX.
+12:52:37-80.25.246.60-select.
+12:52:37-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:53:26-80.25.246.60-BEGIN AJAX.
+12:53:26-80.25.246.60-select.
+12:53:26-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:53:38-80.25.246.60-BEGIN AJAX.
+12:53:38-80.25.246.60-select.
+12:53:38-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:53:41-80.25.246.60-BEGIN AJAX.
+12:53:41-80.25.246.60-select.
+12:53:41-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:53:42-80.25.246.60-BEGIN AJAX.
+12:53:42-80.25.246.60-select.
+12:53:42-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:55:55-80.25.246.60-BEGIN AJAX.
+12:55:55-80.25.246.60-select.
+12:55:55-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:56:20-80.25.246.60-BEGIN AJAX.
+12:56:20-80.25.246.60-select.
+12:56:20-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:56:22-80.25.246.60-BEGIN AJAX.
+12:56:22-80.25.246.60-select.
+12:56:22-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:56:23-80.25.246.60-BEGIN AJAX.
+12:56:23-80.25.246.60-select.
+12:56:23-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:57:07-80.25.246.60-BEGIN AJAX.
+12:57:07-80.25.246.60-select.
+12:57:07-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:57:33-80.25.246.60-BEGIN AJAX.
+12:57:33-80.25.246.60-select.
+12:57:33-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+12:57:34-80.25.246.60-BEGIN AJAX.
+12:57:34-80.25.246.60-select.
+12:57:34-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:57:36-80.25.246.60-BEGIN AJAX.
+12:57:36-80.25.246.60-select.
+12:57:36-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+12:58:47-80.25.246.60-BEGIN AJAX.
+12:58:47-80.25.246.60-select.
+12:58:47-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+12:59:11-80.25.246.60-BEGIN AJAX.
+12:59:11-80.25.246.60-select.
+12:59:11-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+12:59:13-80.25.246.60-BEGIN AJAX.
+12:59:13-80.25.246.60-select.
+12:59:13-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:00:08-80.25.246.60-BEGIN AJAX.
+13:00:08-80.25.246.60-select.
+13:00:08-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM asignaturas.
+13:01:03-80.25.246.60-BEGIN AJAX.
+13:01:03-80.25.246.60-select.
+13:01:03-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM asignaturas.
+13:01:17-80.25.246.60-BEGIN AJAX.
+13:01:17-80.25.246.60-procedureScalar.
+13:01:17-80.25.246.60-CALL Login('bego','bego').
+13:01:25-80.25.246.60-BEGIN AJAX.
+13:01:25-80.25.246.60-select.
+13:01:25-80.25.246.60-BEGIN AJAX.
+13:01:25-80.25.246.60-select.
+13:01:25-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+13:01:25-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+13:01:25-80.25.246.60-BEGIN AJAX.
+13:01:25-80.25.246.60-select.
+13:01:25-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:01:31-80.25.246.60-BEGIN AJAX.
+13:01:31-80.25.246.60-select.
+13:01:31-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:01:33-80.25.246.60-BEGIN AJAX.
+13:01:33-80.25.246.60-select.
+13:01:33-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:01:33-80.25.246.60-BEGIN AJAX.
+13:01:33-80.25.246.60-select.
+13:01:33-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:02:20-80.25.246.60-BEGIN AJAX.
+13:02:20-80.25.246.60-select.
+13:02:20-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:02:31-80.25.246.60-BEGIN AJAX.
+13:02:31-80.25.246.60-select.
+13:02:31-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:02:32-80.25.246.60-BEGIN AJAX.
+13:02:32-80.25.246.60-select.
+13:02:32-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:02:33-80.25.246.60-BEGIN AJAX.
+13:02:33-80.25.246.60-select.
+13:02:33-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:02:54-80.25.246.60-BEGIN AJAX.
+13:02:54-80.25.246.60-select.
+13:02:54-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:02:58-80.25.246.60-BEGIN AJAX.
+13:02:58-80.25.246.60-select.
+13:02:58-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:02:59-80.25.246.60-BEGIN AJAX.
+13:02:59-80.25.246.60-select.
+13:02:59-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:03:00-80.25.246.60-BEGIN AJAX.
+13:03:00-80.25.246.60-select.
+13:03:00-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:04:30-80.25.246.60-BEGIN AJAX.
+13:04:30-80.25.246.60-select.
+13:04:30-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:04:44-80.25.246.60-BEGIN AJAX.
+13:04:44-80.25.246.60-select.
+13:04:44-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:04:45-80.25.246.60-BEGIN AJAX.
+13:04:45-80.25.246.60-select.
+13:04:45-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:06:24-80.25.246.60-BEGIN AJAX.
+13:06:24-80.25.246.60-select.
+13:06:24-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:06:28-80.25.246.60-BEGIN AJAX.
+13:06:28-80.25.246.60-select.
+13:06:28-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:06:31-80.25.246.60-BEGIN AJAX.
+13:06:31-80.25.246.60-select.
+13:06:31-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:06:31-80.25.246.60-BEGIN AJAX.
+13:06:31-80.25.246.60-select.
+13:06:31-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:11:56-80.25.246.60-BEGIN AJAX.
+13:11:56-80.25.246.60-select.
+13:11:56-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:12:05-80.25.246.60-BEGIN AJAX.
+13:12:05-80.25.246.60-select.
+13:12:05-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:12:06-80.25.246.60-BEGIN AJAX.
+13:12:06-80.25.246.60-select.
+13:12:06-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:12:06-80.25.246.60-BEGIN AJAX.
+13:12:06-80.25.246.60-select.
+13:12:06-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:12:19-80.25.246.60-BEGIN AJAX.
+13:12:19-80.25.246.60-select.
+13:12:19-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:12:28-80.25.246.60-BEGIN AJAX.
+13:12:28-80.25.246.60-select.
+13:12:28-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:12:30-80.25.246.60-BEGIN AJAX.
+13:12:30-80.25.246.60-select.
+13:12:30-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:12:31-80.25.246.60-BEGIN AJAX.
+13:12:31-80.25.246.60-select.
+13:12:31-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:12:39-80.25.246.60-BEGIN AJAX.
+13:12:39-80.25.246.60-procedure.
+13:12:39-80.25.246.60-Error CALL failed: (1305) PROCEDURE u490265401_educa.AlObservacionesUpdate does not exist CALL AlObservacionesUpdate(20,6,'qwwwwhrrr').
+13:22:23-80.25.246.60-BEGIN AJAX.
+13:22:23-80.25.246.60-select.
+13:22:23-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:22:29-80.25.246.60-BEGIN AJAX.
+13:22:29-80.25.246.60-select.
+13:22:29-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:22:30-80.25.246.60-BEGIN AJAX.
+13:22:30-80.25.246.60-select.
+13:22:30-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:22:32-80.25.246.60-BEGIN AJAX.
+13:22:32-80.25.246.60-select.
+13:22:32-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:22:39-80.25.246.60-BEGIN AJAX.
+13:22:39-80.25.246.60-procedure.
+13:22:39-80.25.246.60-CALL AlObservacionesUpdate(21,'ttttttrrrrr').
+13:22:39-80.25.246.60-BEGIN AJAX.
+13:22:39-80.25.246.60-select.
+13:22:39-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:22:46-80.25.246.60-BEGIN AJAX.
+13:22:46-80.25.246.60-procedure.
+13:22:46-80.25.246.60-CALL AlObservacionesUpdate(20,'aaa').
+13:22:47-80.25.246.60-BEGIN AJAX.
+13:22:47-80.25.246.60-select.
+13:22:47-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:22:55-80.25.246.60-BEGIN AJAX.
+13:22:55-80.25.246.60-procedure.
+13:22:55-80.25.246.60-CALL AlObservacionesUpdate(5,'rtyrtyrtyrty').
+13:22:58-80.25.246.60-BEGIN AJAX.
+13:22:58-80.25.246.60-select.
+13:22:58-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:23:13-80.25.246.60-BEGIN AJAX.
+13:23:13-80.25.246.60-procedure.
+13:23:13-80.25.246.60-CALL AlObservacionesDelete(20).
+13:23:13-80.25.246.60-BEGIN AJAX.
+13:23:13-80.25.246.60-select.
+13:23:13-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:26:39-80.25.246.60-BEGIN AJAX.
+13:26:39-80.25.246.60-select.
+13:26:39-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:26:47-80.25.246.60-BEGIN AJAX.
+13:26:47-80.25.246.60-select.
+13:26:47-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:26:49-80.25.246.60-BEGIN AJAX.
+13:26:49-80.25.246.60-select.
+13:26:49-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:26:49-80.25.246.60-BEGIN AJAX.
+13:26:49-80.25.246.60-select.
+13:26:49-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:26:56-80.25.246.60-BEGIN AJAX.
+13:26:56-80.25.246.60-select.
+13:26:56-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:27:03-80.25.246.60-BEGIN AJAX.
+13:27:03-80.25.246.60-select.
+13:27:03-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:27:05-80.25.246.60-BEGIN AJAX.
+13:27:05-80.25.246.60-select.
+13:27:05-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:27:05-80.25.246.60-BEGIN AJAX.
+13:27:05-80.25.246.60-select.
+13:27:05-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:27:13-80.25.246.60-BEGIN AJAX.
+13:27:13-80.25.246.60-select.
+13:27:13-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:27:26-80.25.246.60-BEGIN AJAX.
+13:27:26-80.25.246.60-select.
+13:27:26-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:27:28-80.25.246.60-BEGIN AJAX.
+13:27:28-80.25.246.60-select.
+13:27:28-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:27:30-80.25.246.60-BEGIN AJAX.
+13:27:30-80.25.246.60-select.
+13:27:30-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:27:37-80.25.246.60-BEGIN AJAX.
+13:27:37-80.25.246.60-procedure.
+13:27:37-80.25.246.60-CALL AlObservacionesDelete(11).
+13:27:37-80.25.246.60-BEGIN AJAX.
+13:27:37-80.25.246.60-select.
+13:27:37-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:30:54-80.25.246.60-BEGIN AJAX.
+13:30:54-80.25.246.60-select.
+13:30:54-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:31:05-80.25.246.60-BEGIN AJAX.
+13:31:05-80.25.246.60-select.
+13:31:05-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:31:07-80.25.246.60-BEGIN AJAX.
+13:31:07-80.25.246.60-select.
+13:31:07-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:31:07-80.25.246.60-BEGIN AJAX.
+13:31:07-80.25.246.60-select.
+13:31:07-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:31:15-80.25.246.60-BEGIN AJAX.
+13:31:15-80.25.246.60-select.
+13:31:15-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:31:30-80.25.246.60-BEGIN AJAX.
+13:31:30-80.25.246.60-select.
+13:31:30-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:31:31-80.25.246.60-BEGIN AJAX.
+13:31:31-80.25.246.60-select.
+13:31:31-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:31:32-80.25.246.60-BEGIN AJAX.
+13:31:32-80.25.246.60-select.
+13:31:32-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:31:39-80.25.246.60-BEGIN AJAX.
+13:31:39-80.25.246.60-select.
+13:31:39-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:40:24-80.25.246.60-BEGIN AJAX.
+13:40:24-80.25.246.60-select.
+13:40:24-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:40:42-80.25.246.60-BEGIN AJAX.
+13:40:42-80.25.246.60-select.
+13:40:43-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:41:34-80.25.246.60-BEGIN AJAX.
+13:41:34-80.25.246.60-select.
+13:41:34-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:41:39-80.25.246.60-BEGIN AJAX.
+13:41:39-80.25.246.60-select.
+13:41:39-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:43:25-80.25.246.60-BEGIN AJAX.
+13:43:25-80.25.246.60-select.
+13:43:25-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:43:36-80.25.246.60-BEGIN AJAX.
+13:43:36-80.25.246.60-select.
+13:43:36-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:47:26-80.25.246.60-BEGIN AJAX.
+13:47:26-80.25.246.60-select.
+13:47:26-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:47:42-80.25.246.60-BEGIN AJAX.
+13:47:42-80.25.246.60-select.
+13:47:42-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:48:14-80.25.246.60-BEGIN AJAX.
+13:48:14-80.25.246.60-select.
+13:48:14-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:48:25-80.25.246.60-BEGIN AJAX.
+13:48:25-80.25.246.60-select.
+13:48:25-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:48:52-80.25.246.60-BEGIN AJAX.
+13:48:52-80.25.246.60-select.
+13:48:52-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM asignaturas.
+13:49:26-80.25.246.60-BEGIN AJAX.
+13:49:26-80.25.246.60-select.
+13:49:26-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM asignaturas.
+13:49:35-80.25.246.60-BEGIN AJAX.
+13:49:35-80.25.246.60-procedureScalar.
+13:49:35-80.25.246.60-CALL Login('bego','bego').
+13:49:40-80.25.246.60-BEGIN AJAX.
+13:49:40-80.25.246.60-BEGIN AJAX.
+13:49:40-80.25.246.60-BEGIN AJAX.
+13:49:49-80.25.246.60-select.
+13:49:49-80.25.246.60-select.
+13:49:49-80.25.246.60-select.
+13:49:49-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+13:49:49-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:49:49-80.25.246.60-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+13:50:16-80.25.246.60-BEGIN AJAX.
+13:50:16-80.25.246.60-select.
+13:50:16-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:52:58-80.25.246.60-BEGIN AJAX.
+13:52:58-80.25.246.60-select.
+13:52:58-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:53:04-80.25.246.60-BEGIN AJAX.
+13:53:04-80.25.246.60-select.
+13:53:04-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:55:06-80.25.246.60-BEGIN AJAX.
+13:55:06-80.25.246.60-select.
+13:55:06-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:55:12-80.25.246.60-BEGIN AJAX.
+13:55:12-80.25.246.60-select.
+13:55:12-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:55:13-80.25.246.60-BEGIN AJAX.
+13:55:13-80.25.246.60-select.
+13:55:13-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:55:14-80.25.246.60-BEGIN AJAX.
+13:55:14-80.25.246.60-select.
+13:55:14-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:55:26-80.25.246.60-BEGIN AJAX.
+13:55:26-80.25.246.60-procedure.
+13:55:26-80.25.246.60-CALL AlumnoUpdate(6,"Bedagonino", "eee", '2013-11-02 23:00:00', '2012_2013', 5, 3).
+13:55:27-80.25.246.60-BEGIN AJAX.
+13:55:27-80.25.246.60-select.
+13:55:27-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:55:52-80.25.246.60-BEGIN AJAX.
+13:55:52-80.25.246.60-select.
+13:55:52-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:56:00-80.25.246.60-BEGIN AJAX.
+13:56:00-80.25.246.60-select.
+13:56:00-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:56:02-80.25.246.60-BEGIN AJAX.
+13:56:02-80.25.246.60-select.
+13:56:02-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:56:02-80.25.246.60-BEGIN AJAX.
+13:56:02-80.25.246.60-select.
+13:56:02-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:57:25-80.25.246.60-BEGIN AJAX.
+13:57:25-80.25.246.60-select.
+13:57:25-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:57:31-80.25.246.60-BEGIN AJAX.
+13:57:31-80.25.246.60-select.
+13:57:31-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:57:32-80.25.246.60-BEGIN AJAX.
+13:57:32-80.25.246.60-select.
+13:57:32-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:57:34-80.25.246.60-BEGIN AJAX.
+13:57:34-80.25.246.60-select.
+13:57:34-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+13:58:44-80.25.246.60-BEGIN AJAX.
+13:58:44-80.25.246.60-select.
+13:58:44-80.25.246.60- SELECT  A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones  , Cu.Nombre as Curso, Cl.Nombre as Clase FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  ORDER BY Curso,Clase,Nombre.
+13:58:52-80.25.246.60-BEGIN AJAX.
+13:58:52-80.25.246.60-select.
+13:58:52-80.25.246.60-SELECT A.Id, A.Nombre, A.Apellidos, A.FechaDeNacimiento ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, AP.IdCurso, AP.IdClase   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno = A.Id AND AD.Tipo = 0  LEFT JOIN al_periodo AP ON AP.IdAlumno = A.Id AND AP.Periodo = '2012_2013' where A.Id = 6.
+13:58:53-80.25.246.60-BEGIN AJAX.
+13:58:53-80.25.246.60-select.
+13:58:53-80.25.246.60-Error Unknown column 'C.Materia' in 'field list'.
+13:58:54-80.25.246.60-BEGIN AJAX.
+13:58:54-80.25.246.60-select.
+13:58:54-80.25.246.60- SELECT  O.Id, O.Fecha, O.Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha,Observaciones.
+14:05:15-81.45.53.71-BEGIN AJAX.
+14:05:15-81.45.53.71-select.
+14:05:15-81.45.53.71-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+14:05:15-81.45.53.71-BEGIN AJAX.
+14:05:15-81.45.53.71-select.
+14:05:15-81.45.53.71-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+14:05:15-81.45.53.71-BEGIN AJAX.
+14:05:15-81.45.53.71-select.
+14:05:15-81.45.53.71- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+14:58:00-85.251.54.20-BEGIN AJAX.
+14:58:00-85.251.54.20-procedureScalar.
+14:58:00-85.251.54.20-CALL Login('bego','bego').
+14:58:04-85.251.54.20-BEGIN AJAX.
+14:58:04-85.251.54.20-select.
+14:58:04-85.251.54.20-SELECT Nombre as Texto, Id as Valor  FROM tipo_clase.
+14:58:05-85.251.54.20-BEGIN AJAX.
+14:58:05-85.251.54.20-select.
+14:58:05-85.251.54.20-BEGIN AJAX.
+14:58:05-85.251.54.20-select.
+14:58:05-85.251.54.20-SELECT Nombre as Texto, Id as Valor  FROM tipo_curso.
+14:58:05-85.251.54.20- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1 .
+14:58:38-85.251.54.20-BEGIN AJAX.
+14:58:38-85.251.54.20-select.
+14:58:38-85.251.54.20- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  AND AP.IdCurso = 4.
+14:58:39-85.251.54.20-BEGIN AJAX.
+14:58:39-85.251.54.20-select.
+14:58:39-85.251.54.20- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  AND AP.IdCurso = 4.
+14:58:56-85.251.54.20-BEGIN AJAX.
+14:58:56-85.251.54.20-select.
+14:58:56-85.251.54.20- SELECT  A.Id, REPLACE(CONCAT(Cu.Nombre , Cl.Nombre, ' ', A.Apellidos, ' ', A.Nombre), 'E.S.O', '') as Texto, A.Nombre as Nombre ,AD.Id as IdFoto, AD.NombreOriginal, AD.Ruta, A.Observaciones   FROM Alumnos A  LEFT JOIN al_documentos AD ON AD.IdAlumno =   A.Id  LEFT JOIN al_periodo AP ON AP.IdAlumno =  A.Id AND AP.Periodo = '2012_2013' LEFT JOIN tipo_curso Cu ON Cu.Id = AP.IdCurso  LEFT JOIN tipo_clase Cl ON Cl.Id = AP.IdClase  where 1 = 1  AND AP.IdCurso = 5.
+14:59:04-85.251.54.20-BEGIN AJAX.
+14:59:04-85.251.54.20-select.
+14:59:04-85.251.54.20- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.
+14:59:34-85.251.54.20-BEGIN AJAX.
+14:59:34-85.251.54.20-procedureScalar.
+14:59:34-85.251.54.20-CALL ALObservacionesesInsert(6,'salta poco').
+14:59:34-85.251.54.20-BEGIN AJAX.
+14:59:34-85.251.54.20-select.
+14:59:34-85.251.54.20- SELECT Id, Fecha, Observaciones  FROM al_observaciones O  where O.IdAlumno = 6 ORDER BY Fecha desc.

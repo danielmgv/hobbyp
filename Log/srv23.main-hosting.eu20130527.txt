@@ -1,0 +1,2 @@
+11:48:25-80.25.246.60-Conectando.
+11:48:25-80.25.246.60-Error Fallo al conectar a MySQL: (1045) Access denied for user 'root'@'localhost' (using password: NO).

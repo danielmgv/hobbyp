@@ -1,0 +1,60 @@
+08:42:23-83.56.19.7-BEGIN AJAX.
+08:42:23-83.56.19.7-select.
+08:42:23-83.56.19.7-Error Fallo al conectar a MySQL: (2005) Unknown MySQL server host 'localhost:3306' (1).
+08:44:23-83.56.19.7-BEGIN AJAX.
+08:44:23-83.56.19.7-select.
+08:44:23-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+08:44:35-83.56.19.7-BEGIN AJAX.
+08:44:35-83.56.19.7-select.
+08:44:35-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:44:47-83.56.19.7-BEGIN AJAX.
+08:44:47-83.56.19.7-select.
+08:44:47-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:44:47-83.56.19.7-BEGIN AJAX.
+08:44:47-83.56.19.7-select.
+08:44:47-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:44:49-83.56.19.7-BEGIN AJAX.
+08:44:49-83.56.19.7-select.
+08:44:49-83.56.19.7-BEGIN AJAX.
+08:44:49-83.56.19.7-select.
+08:44:49-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:44:49-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:44:51-83.56.19.7-BEGIN AJAX.
+08:44:51-83.56.19.7-select.
+08:44:51-83.56.19.7-BEGIN AJAX.
+08:44:51-83.56.19.7-select.
+08:44:51-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:44:51-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:49:06-83.56.19.7-BEGIN AJAX.
+08:49:06-83.56.19.7-procedureScalar.
+08:49:06-83.56.19.7-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oMessagesInsert; expected 6, got 1 CALL oMessagesInsert('2013-12-19 07:46:24').
+08:49:18-83.56.19.7-BEGIN AJAX.
+08:49:18-83.56.19.7-BEGIN AJAX.
+08:49:18-83.56.19.7-select.
+08:49:18-83.56.19.7-select.
+08:49:18-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:49:18-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:49:22-83.56.19.7-BEGIN AJAX.
+08:49:22-83.56.19.7-BEGIN AJAX.
+08:49:22-83.56.19.7-select.
+08:49:22-83.56.19.7-select.
+08:49:22-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:49:22-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:49:24-83.56.19.7-BEGIN AJAX.
+08:49:24-83.56.19.7-select.
+08:49:24-83.56.19.7-BEGIN AJAX.
+08:49:24-83.56.19.7-select.
+08:49:24-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:49:24-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+08:50:37-83.56.19.7-BEGIN AJAX.
+08:50:37-83.56.19.7-procedureScalar.
+08:50:37-83.56.19.7-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oMessagesInsert; expected 6, got 1 CALL oMessagesInsert('2013-12-19 07:50:23').
+08:50:55-83.56.19.7-BEGIN AJAX.
+08:50:55-83.56.19.7-select.
+08:50:55-83.56.19.7-SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id   LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye .
+12:56:48-83.56.19.7-BEGIN AJAX.
+12:56:48-83.56.19.7-select.
+12:56:48-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+12:56:50-83.56.19.7-BEGIN AJAX.
+12:56:50-83.56.19.7-select.
+12:56:50-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
