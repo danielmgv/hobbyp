@@ -1,5 +1,5 @@
 
-var $listview;
+var $FriendsList;
 
 $(document).bind('pageinit', function(){	pageinit();	});
 
@@ -8,18 +8,17 @@ function pageinit(){
 	AjaxService = '../Ajax/AjaxService.php';		
 	
 	$("#newMessage").on( 'tap', tapnewMessage );	
-	
-	
+		
 	var params = {
 		ObtenerSQL:ObtenerSQL,
 		Text:  "Name",
 		Value: "Id",
 		Table: "oMessages"
 		};
-	//Todos los enviados
+	//Todos los friends
 	debugger;
-	$listview = $("#ListId").ListadoMensajes(params);
-	$listview.Consultar();
+	$FriendsList = $("#FriendsList").ListadoMensajes(params);
+	$FriendsList.Consultar();
 }
 
 function listViewClick(value)
