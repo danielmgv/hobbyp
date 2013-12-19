@@ -20,7 +20,7 @@
 		<script src="js/ListFriends.js"></script>
 		<script language="Javascript" type="text/javascript">
 			var fromServer = {
-				People : { 
+				People : {
 					Id: "<?php echo GetRequest('Id'); ?>",
 					Name: "<?php echo GetRequest('Name'); ?>"
 					}
