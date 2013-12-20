@@ -13,10 +13,10 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>	
-		<script src="../h_js/Comun.js"></script>
-		<script src="../h_js/Comun_Mobile.js"></script>
-		<script src="../h_js/MySQLLib/MySQL.js"></script>
-		<script src="../h_js/MySQLLib/op_hobbyes.js"></script>
+		<script src="../js/Comun.js"></script>
+		<script src="../js/Comun_Mobile.js"></script>
+		<script src="../js/MySQLLib/MySQL.js"></script>
+		<script src="../js/MySQLLib/op_hobbyes.js"></script>
 		<script src="js/Search.js"></script>
 		<script language="Javascript" type="text/javascript">
 			var fromServer = {
@@ -33,11 +33,11 @@
 			<div data-role="header" data-position="inline">				
 				<div data-role="navbar" id="navbarId">
 					<ul>
-						<li><a href="../H_Messages/Messages.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>	
-						<li><a href="../H_Friends/Friends.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Friends</a></li>						
-						<li><a href="../H_Search/Search.php?Id=<?php echo GetRequest('Id'); ?>" class="ui-btn-active"  rel="external" data-ajax="false" data-icon="gear" >Search</a></li>	
-						<li><a href="../H_Me/MyPhotos.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Photos</a></li>
-						<li><a href="../H_Me/MyHobs.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="search">Hobbies</a></li>						
+						<li><a href="../Messages/Messages.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>	
+						<li><a href="../Friends/Friends.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Friends</a></li>						
+						<li><a href="../Search/Search.php?Id=<?php echo GetRequest('Id'); ?>" class="ui-btn-active"  rel="external" data-ajax="false" data-icon="gear" >Search</a></li>	
+						<li><a href="../Photos/MyPhotos.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Photos</a></li>
+						<li><a href="../Hobbies/MyHobs.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="search">Hobbies</a></li>						
 					</ul>
 				</div>
 			</div>
