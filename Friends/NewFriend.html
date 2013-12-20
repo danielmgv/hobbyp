@@ -7,25 +7,24 @@
 		<title>New Friend</title>
 
 	</head>
-	<body>
-		
-		<div data-role="dialog">	
-			<div data-role="header" data-theme="d">
+	<body>		
+		<div data-role="dialog" >
+			<div data-role="header" data-theme="a">
 				<h1>New Friend</h1>
 			</div>
 		
-			<div data-role="content">
+			<div data-role="content" data-theme="a">
 				<h1>Busque</h1>
 				<p>Seleccione</p>
-				<form action="search.cfm" method="post">
-					<div data-role="fieldcontain">
-						<label for="search">Search:</label>
-						<input type="search" name="search" id="search" placeholder="Search for content...">
+				<form action="" method="post">
+					<div data-role="fieldcontain" data-theme="a">
+						<label for="searchNew">Search:</label>
+						<input type="search" name="searchNew" id="searchNew" placeholder="Search for content...">
 					</div>
-					<input type="submit" data-inline="true" value="Submit">
+					<input type="button" data-inline="true" id="btnBuscarNew" value="Buscar" data-theme="a">
       			</form>
-				<div data-role="fieldcontain" data-scroll="y">
-					<ul data-role="listview" data-inset="true"  id="NewFriendList" data-split-icon="delete">
+				<div data-role="fieldcontain" data-scroll="y" data-theme="a">
+					<ul data-role="listview" data-inset="true"  id="NewFriendList" data-split-icon="add">
 					</ul>
 				</div>	
     			<label for="textarea-a">Mensaje:</label>
@@ -33,6 +32,10 @@
 				</textarea>
 				<a href="" data-role="button" data-theme="b" id="btnEnviar">Add</a>       
 				<a href="dialog/index.html" data-role="button" data-rel="back" data-theme="c">Cancel</a>    
+			</div>
+			
+			<div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+				<h1>&nbsp;</h1>
 			</div>
 		</div>
 	</body>

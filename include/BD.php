@@ -14,6 +14,7 @@ define('DB_HOST', 'mysql.hostinger.es');
 define('DB_USERNAME', 'u490265401_admin');
 define('DB_PASSWORD', 'Passw0rd.');
 define('DB_NAME', 'u490265401_educa');
+define('PORT', 3306);
 
 
 function connect() {
@@ -24,9 +25,11 @@ function connect() {
 		//$mysqli = new mysqli("127.0.0.1", "Admin", "Admin", "educa", 3306);
 		//$mysqli = new mysqli("127.0.0.1", "root", "", "educa", 3306);
 		
-		$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, 3306);
+		$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, PORT);
 		
 		mysqli_query($mysqli,"SET NAMES 'utf8'");
+		//mysqli_query($mysqli,"lower_case_table_names=1");
+		
 		//echo "El juego de caracter en la base de dato es: ".mysql_client_encoding($conexion);
 		if ($mysqli -> connect_errno) {
 			//header("HTTP/1.1 500 Internal Server Error");

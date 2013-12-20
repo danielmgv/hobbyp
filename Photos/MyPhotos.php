@@ -12,10 +12,10 @@
 		<meta http-equiv="Content-Language" content="es-ES"/>
 		<title>Hobbyp</title>
 		<link rel="stylesheet" href="css/Bootstrap.css">		
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
 				
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 	
 		<script src="../js/Comun.js"></script>
 		<script src="../js/MySQLLib/MySQL.js"></script>
@@ -36,7 +36,7 @@
 	</head>
 	<body>
 		<div data-role="page" data-theme="a" id="one">
-			<div data-role="header" data-position="inline">	
+			<div data-role="header" data-position="fixed" >
 				<div data-role="navbar" id="navbarId">
 					<ul>
 						<li><a href="../Messages/Messages.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>
@@ -53,6 +53,10 @@
 					<ul data-role="listview"  id="lstPhotos">
 					</ul>				
 			</div>
+			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" >
+				<p class="jqm-version"></p>
+				<p>Hobbyp V.1.0 Research by quaz</p>
+			</div>	
 		</div>
 	</body>
 </html>

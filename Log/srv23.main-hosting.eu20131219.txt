@@ -58,3 +58,12 @@
 12:56:50-83.56.19.7-BEGIN AJAX.
 12:56:50-83.56.19.7-select.
 12:56:50-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+14:24:38-83.56.19.7-BEGIN AJAX.
+14:24:38-83.56.19.7-select.
+14:24:38-83.56.19.7-SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id   LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye .
+14:25:03-83.56.19.7-BEGIN AJAX.
+14:25:03-83.56.19.7-select.
+14:25:03-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+14:25:17-83.56.19.7-BEGIN AJAX.
+14:25:17-83.56.19.7-select.
+14:25:17-83.56.19.7-SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id   LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye .

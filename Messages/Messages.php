@@ -30,7 +30,7 @@
 	</head>
 	<body>
 		<div data-role="page" data-theme="a" id="Recibidos">
-			<div data-role="header" data-position="inline">		
+			<div data-role="header"  data-position="fixed" data-fullscreen="true">	
 				<div data-role="navbar" id="navbarId">
 					<ul>
 						<li><a href="../Messages/Messages.php?Id=<?php echo GetRequest('Id'); ?>" class="ui-btn-active" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>	
@@ -53,14 +53,14 @@
 					</div>
 				</div>
 			</div>		
-			<div data-role="footer" class="footer-docs" data-theme="a">
+			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" data-fullscreen="true">
 				<p class="jqm-version"></p>
 				<p>Hobbyp V.1.0 Research by quaz</p>
 			</div>
 		</div>
 
 		<div data-role="page" data-theme="a" id="Enviados">		
-			<div data-role="header" data-position="inline">
+			<div data-role="header"  data-position="fixed" data-fullscreen="true">
 				<div data-role="navbar" id="navbarId2">
 					<ul>
 						<li><a href="../Messages/Messages.php?Id=<?php echo GetRequest('Id'); ?>" class="ui-btn-active" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>	
@@ -92,7 +92,7 @@
 					
 				</div>
 			</div><!--/header-->		
-			<div data-role="footer" class="footer-docs" data-theme="a">
+			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" data-fullscreen="true">
 				<p class="jqm-version"></p>
 				<p>Hobbyp V.1.0 Research by quaz</p>
 			</div>					

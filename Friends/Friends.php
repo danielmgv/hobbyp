@@ -15,7 +15,7 @@
 		<script src="../js/Comun.js"></script>
 		<script src="../js/Comun_Mobile.js"></script>
 		<script src="../js/MySQLLib/MySQL.js"></script>
-		<script src="../js/MySQLLib/op_hobbyes.js"></script>
+		<script src="../js/MySQLLib/BDEntity.js"></script>
 		<script src="js/Friends.js"></script>
 		<script src="js/ListFriends.js"></script>
 		<script language="Javascript" type="text/javascript">
@@ -62,7 +62,7 @@
 		</div>
 		<!--Friends -->
 		<div data-role="page" data-theme="a" id="Friends">
-			<div data-role="header" data-position="fixed" data-fullscreen="true">
+			<div data-role="header" data-position="fixed" >
 				<div data-role="navbar" id="navbarId">
 					<ul>
 						<li><a href="../Messages/Messages.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>	
@@ -79,6 +79,8 @@
 						<li><a href="#Groups" >Groups</a></li>
 					</ul>
 				</div>
+			</div>
+			<div data-role="content" data-theme="a">	
 				<div data-role="fieldcontain" data-scroll="y">				
 					<div class="content-primary" >
 						<ul data-role="listview" data-inset="true"  id="FriendsList" data-split-icon="Gear">
@@ -89,7 +91,7 @@
 					<a id="addFriend" href="NewFriend.html" data-role="button" data-inline="true" data-rel="dialog" data-transition="pop">New</a>					
 				</div>
 			</div>
-			<div data-role="footer" class="footer-docs" data-theme="a" data-position="fixed" data-fullscreen="true">
+			<div data-role="footer" class="footer-docs" data-theme="a" data-position="fixed" >
 				<p class="jqm-version"></p>
 				<p>Hobbyp V.1.0 Research by quaz</p>
 			</div>

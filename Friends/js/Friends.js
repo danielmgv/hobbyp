@@ -1,13 +1,17 @@
 
 var $FriendsList;
+var $NewFriendList;
+var oGroup;
 
 $(document).bind('pageinit', function(){	pageinit();	});
 
 function pageinit(){
-	$listview = $("#listviewId");
+	oGroup = new ObjectBD("oGroup");
+	$FriendsList = $("#FriendsList");
+	$NewFriendList = $("#NewFriendList");
 	AjaxService = '../Ajax/AjaxService.php';		
 	
-	$("#newMessage").on( 'tap', tapnewMessage );	
+	$("#btnBuscarNew").on( 'tap', btnBuscarNewTap );	
 		
 	var params = {
 		ObtenerSQL:ObtenerSQL,
@@ -16,16 +20,32 @@ function pageinit(){
 		Table: "oMessages"
 		};
 	//Todos los friends
-	debugger;
+
 	//cargarLista();
-	
-	//$FriendsList = $("#FriendsList").ListadoMensajes(params);
-	//$FriendsList.Consultar();
 }
 
 function listViewClick(value)
 {
 	cargarLista(value, $("#description").val());
+}
+
+function btnBuscarNewTap()
+{	
+	/*
+	var params = {
+		ObtenerSQL:ObtenerSQL,
+		Radio: RadioTap,
+		Text : ""		
+	};
+	
+	var $NewFriendList = $("#NewFriendList").Listado(params);
+	$FriendsList.Consultar();
+	*/
+	cargarListaNew();
+}
+
+function RadioTap () {
+  
 }
 
 // Callback function references the event target and adds the 'tap' class to it
@@ -97,11 +117,12 @@ function sendMessageNOK(httpRequest, textStatus, errorThrown) {
 
 function cargarLista()
 {
-	sql = " SELECT POw.Name, PF.Name, G.IdOwner, PG.IdPeople FROM ";	
-	sql += " oGroup G JOIN oPGroup PG ON PG.Id = G.Id ";
-	sql += " JOIN oPeople POw ON POw.Id = G.IdOwner ";
-	sql += " JOIN oPeople PF ON PF.Id = G.IdPeople ";
+	var sql = " SELECT POw.Name, PF.Name, G.IdOwner, PG.IdPeople FROM ";	
+	sql += " oGroup G JOIN op_Group PG ON PG.IdGroup = G.Id ";
+	sql += " JOIN opeople POw ON POw.Id = G.IdOwner ";
+	sql += " JOIN opeople PF ON PF.Id = G.IdPeople ";
 	sql += " WHERE G.IdOwner = " + fromServer.People.Id;
+	sql += " AND PF.Name LIKE '%" + $("#searchNew").val() + "%'";
 	
 	var params = {SQL:sql};
 	AsyncConsultaSELECT(params, cargarListaOK, cargarListaNOK);	
@@ -113,6 +134,11 @@ function cargarListaOK(data) {
 	{		
 		dataToListado(data);		
 	}
+}
+
+function cargarListaNOK(httpRequest, textStatus, errorThrown) {
+	$.mobile.loading( 'hide' );	
+	alert("Error al cargar lista.\n" + sql + " " + textStatus + errorThrown.message + httpRequest.responseText);	
 }
 
 
@@ -142,5 +168,78 @@ function addRow(row)
 }
 
 //***************************************************************************************************************************
+function cargarListaNew()
+{
+	var sql = "SELECT Id, Name FROM opeople ";	
+	sql += " WHERE Name LIKE '%" + $("#searchNew").val() + "%'";
+	
+	var params = {SQL:sql};
+	AsyncConsultaSELECT(params, cargarListaNewOK, cargarListaNewNOK);	
+}
 
+function cargarListaNewOK(data) {	
+	$.mobile.loading( 'hide' );		
+	if(!hayError(data))
+	{		
+		dataToListadoNew(data);		
+	}
+}
+
+function cargarListaNewNOK(httpRequest, textStatus, errorThrown) {
+	$.mobile.loading( 'hide' );	
+	alert("Error al cargar lista.\n" + sql + " " + textStatus + errorThrown.message + httpRequest.responseText);	
+}
+
+
+function dataToListadoNew(data)
+{	
+	$NewFriendList.html('');	
+	if (data.NumRegistros == 0) {
+		var li = $('<li>');		
+		li.text("No se encontraron registros.");
+		$NewFriendList.append(li);
+	}
+	else {				
+		for (var i = 0; i < data.NumRegistros; i++) {			
+			addRowNew(data[i]);			
+		}
+	}	
+	
+	$NewFriendList.listview('refresh');	
+}
+
+function addRowNew(row)
+{
+	//var linkDelete = '<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Add</a>';
+	//var htmlImg = '<li class="ht" onclick="seleccionar(' + row.Id + ');" IdHobbie="'+ row.Id +'"><a href="#" ><h3>' + row.Name +'</h3><p>' + row.Name +'</p></a>' + linkDelete + '</li>';
+	
+	var htmlImg = '<li class="ht" onclick="NewFriend(' + row.Id + ');" IdPeople="'+ row.Id +'"><p>' + row.Name +'</p></li>';
+	
+	$NewFriendList.append(htmlImg);
+}
+
+function NewFriend(IdPeople)
+{	
+	var oGroup = new BDEntity("oGroup");	
+	//var params = [fromServer.People.Id, IdPeople];	
+	var params = {a:fromServer.People.Id, b:IdPeople};
+	oGroup.Procedure("NewFriend", params);
+}
+
+function NewFriendOK(data) {	
+	$.mobile.loading( 'hide' );		
+	if(!hayError(data))
+	{		
+		alert("NewFriendOK");
+	}
+}
+
+function NewFriendNOK(httpRequest, textStatus, errorThrown) {
+	$.mobile.loading( 'hide' );	
+	alert("Error al insertar\n" + sql + " " + textStatus + errorThrown.message + httpRequest.responseText);	
+}
+
+//***************************************************************************************************************************
+
+	
 		
