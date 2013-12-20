@@ -1,5 +1,5 @@
 
-var $FriendsList;
+var $listview;
 
 $(document).bind('pageinit', function(){	pageinit();	});
 
@@ -8,19 +8,18 @@ function pageinit(){
 	AjaxService = '../Ajax/AjaxService.php';		
 	
 	$("#newMessage").on( 'tap', tapnewMessage );	
-		
+	
+	
 	var params = {
 		ObtenerSQL:ObtenerSQL,
 		Text:  "Name",
 		Value: "Id",
 		Table: "oMessages"
 		};
-	//Todos los friends
+	//Todos los enviados
 	debugger;
-	//cargarLista();
-	
-	//$FriendsList = $("#FriendsList").ListadoMensajes(params);
-	//$FriendsList.Consultar();
+	$listview = $("#ListId").ListadoMensajes(params);
+	$listview.Consultar();
 }
 
 function listViewClick(value)
@@ -95,52 +94,6 @@ function sendMessageNOK(httpRequest, textStatus, errorThrown) {
 }
 //**************************************************************************************************
 
-function cargarLista()
-{
-	sql = " SELECT POw.Name, PF.Name, G.IdOwner, PG.IdPeople FROM ";	
-	sql += " oGroup G JOIN oPGroup PG ON PG.Id = G.Id ";
-	sql += " JOIN oPeople POw ON POw.Id = G.IdOwner ";
-	sql += " JOIN oPeople PF ON PF.Id = G.IdPeople ";
-	sql += " WHERE G.IdOwner = " + fromServer.People.Id;
-	
-	var params = {SQL:sql};
-	AsyncConsultaSELECT(params, cargarListaOK, cargarListaNOK);	
-}
 
-function cargarListaOK(data) {	
-	$.mobile.loading( 'hide' );		
-	if(!hayError(data))
-	{		
-		dataToListado(data);		
-	}
-}
-
-
-function dataToListado(data)
-{	
-	$listview.html('');	
-	if (data.NumRegistros == 0) {
-		var li = $('<li>');		
-		li.text("No se encontraron registros.");
-		$listview.append(li);
-	}
-	else {				
-		for (var i = 0; i < data.NumRegistros; i++) {			
-			addRow(data[i]);			
-		}
-	}	
-	
-	$listview.listview('refresh');	
-}
-
-function addRow(row)
-{
-	var linkDelete = '<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Delete</a>';
-	var htmlImg = '<li class="ht" onclick="seleccionar(' + row.Id + ');" IdHobbie="'+ row.IdHobbie +'"><a href="#" ><h3>' + row.Name +'</h3><p>' + row.Name +'</p></a>' + linkDelete + '</li>';
-	
-	$listview.append(htmlImg);
-}
-
-//***************************************************************************************************************************
 
 		

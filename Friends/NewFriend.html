@@ -17,10 +17,15 @@
 			<div data-role="content">
 				<h1>Busque</h1>
 				<p>Seleccione</p>
-				 <label for="basic">Name:</label>
-    			<input type="text" name="NameParam" id="NameParam" value=""  />
+				<form action="search.cfm" method="post">
+					<div data-role="fieldcontain">
+						<label for="search">Search:</label>
+						<input type="search" name="search" id="search" placeholder="Search for content...">
+					</div>
+					<input type="submit" data-inline="true" value="Submit">
+      			</form>
 				<div data-role="fieldcontain" data-scroll="y">
-					<ul id="FriendList" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search friends...">
+					<ul data-role="listview" data-inset="true"  id="NewFriendList" data-split-icon="delete">
 					</ul>
 				</div>	
     			<label for="textarea-a">Mensaje:</label>
