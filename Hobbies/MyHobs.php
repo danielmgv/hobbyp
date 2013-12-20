@@ -55,7 +55,7 @@
 			</div>
 			<div data-role="content" data-theme="a">	
 				<div data-role="fieldcontain" data-scroll="y">
-					<ul id="listHobbies" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search cars...">
+					<ul id="listHobbies" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search hobbyes...">
 					</ul>
 				</div>	
 				<div data-role="fieldcontain">

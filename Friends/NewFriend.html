@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>New Friend</title>
+
+	</head>
+	<body>
+		
+		<div data-role="dialog">	
+			<div data-role="header" data-theme="d">
+				<h1>New Friend</h1>
+			</div>
+		
+			<div data-role="content">
+				<h1>Busque</h1>
+				<p>Seleccione</p>
+				 <label for="basic">Name:</label>
+    			<input type="text" name="NameParam" id="NameParam" value=""  />
+				<div data-role="fieldcontain" data-scroll="y">
+					<ul id="FriendList" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search friends...">
+					</ul>
+				</div>	
+    			<label for="textarea-a">Mensaje:</label>
+				<textarea name="MensajeParam" id="MensajeParam">				
+				</textarea>
+				<a href="" data-role="button" data-theme="b" id="btnEnviar">Add</a>       
+				<a href="dialog/index.html" data-role="button" data-rel="back" data-theme="c">Cancel</a>    
+			</div>
+		</div>
+	</body>
+</html>

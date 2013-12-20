@@ -44,8 +44,8 @@
 				<div data-role="navbar" id="subNavbarId">
 					<ul>
 						<li><a href="#Requests" class="ui-btn-active ui-state-persist" >Requests</a></li>				
-						<li><a href="#Friends" >Friends</a></li>
-						<li><a href="#Groups" >Groups</a></li>
+						<li><a href="#Friends">Friends</a></li>
+						<li><a href="#Groups">Groups</a></li>
 					</ul>
 				</div>
 				<div data-role="fieldcontain" data-scroll="y">
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 				<div data-role="fieldcontain" data-scroll="y">
-					<button id="addFriend">New</button>
+					<a id="addFriend" href="NewFriend.html" data-role="button" data-inline="true" data-rel="dialog" data-transition="pop">New</a>					
 				</div>
 			</div>
 			<div data-role="footer" class="footer-docs" data-theme="a">
