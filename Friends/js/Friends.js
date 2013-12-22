@@ -213,19 +213,19 @@ function addRowNew(row)
 	//var linkDelete = '<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Add</a>';
 	//var htmlImg = '<li class="ht" onclick="seleccionar(' + row.Id + ');" IdHobbie="'+ row.Id +'"><a href="#" ><h3>' + row.Name +'</h3><p>' + row.Name +'</p></a>' + linkDelete + '</li>';
 	
-	var htmlImg = '<li class="ht" onclick="NewFriend(' + row.Id + ');" IdPeople="'+ row.Id +'"><p>' + row.Name +'</p></li>';
+	var htmlImg = '<li class="ht" onclick="NewRequest(' + row.Id + ');" IdPeople="'+ row.Id +'"><p>' + row.Name +'</p></li>';
 	
 	$NewFriendList.append(htmlImg);
 }
 
-function NewFriend(IdPeople)
+function NewRequest(IdPeople)
 {	
 	//var params = [fromServer.People.Id, IdPeople];	
 	var params = {a:fromServer.People.Id, b:IdPeople};
-	oGroup.Procedure("NewFriend", params);
+	oGroup.Procedure("NewRequest", params);
 }
 
-function NewFriendOK(data) {	
+function NewRequestOK(data) {	
 	$.mobile.loading( 'hide' );		
 	if(!hayError(data))
 	{		
@@ -233,9 +233,12 @@ function NewFriendOK(data) {
 	}
 }
 
-function NewFriendNOK(httpRequest, textStatus, errorThrown) {
+function NewRequestNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );	
-	alert("Error al insertar\n" + sql + " " + textStatus + errorThrown.message + httpRequest.responseText);	
+	if(!hayError(httpRequest.responseText))
+	{		
+		alert("Error al insertar\n" + textStatus + errorThrown.message + httpRequest.responseText);	
+	}
 }
 
 //***************************************************************************************************************************
