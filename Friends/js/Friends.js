@@ -6,7 +6,7 @@ var oGroup;
 $(document).bind('pageinit', function(){	pageinit();	});
 
 function pageinit(){
-	oGroup = new ObjectBD("oGroup");
+	oGroup = new BDEntity("oGroup");
 	$FriendsList = $("#FriendsList");
 	$NewFriendList = $("#NewFriendList");
 	AjaxService = '../Ajax/AjaxService.php';		
@@ -220,7 +220,6 @@ function addRowNew(row)
 
 function NewFriend(IdPeople)
 {	
-	var oGroup = new BDEntity("oGroup");	
 	//var params = [fromServer.People.Id, IdPeople];	
 	var params = {a:fromServer.People.Id, b:IdPeople};
 	oGroup.Procedure("NewFriend", params);

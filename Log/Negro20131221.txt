@@ -1,0 +1,168 @@
+14:55:29-127.0.0.1-BEGIN AJAX.
+14:55:29-127.0.0.1-select.
+14:55:29-127.0.0.1-Error Fallo al conectar a MySQL: (2002) php_network_getaddresses: getaddrinfo failed: Host desconocido. .
+15:09:03-127.0.0.1-BEGIN AJAX.
+15:09:03-127.0.0.1-select.
+15:09:03-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:09:03-127.0.0.1-BEGIN AJAX.
+15:09:03-127.0.0.1-select.
+15:09:03-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:09:11-127.0.0.1-BEGIN AJAX.
+15:09:11-127.0.0.1-select.
+15:09:11-127.0.0.1-BEGIN AJAX.
+15:09:11-127.0.0.1-select.
+15:09:11-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:09:30-127.0.0.1-BEGIN AJAX.
+15:09:30-127.0.0.1-select.
+15:09:30-127.0.0.1-BEGIN AJAX.
+15:09:30-127.0.0.1-select.
+15:09:30-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:09:30-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:09:32-127.0.0.1-BEGIN AJAX.
+15:09:32-127.0.0.1-select.
+15:09:32-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:12:32-127.0.0.1-BEGIN AJAX.
+15:12:32-127.0.0.1-select.
+15:12:32-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:12:32-127.0.0.1-BEGIN AJAX.
+15:12:32-127.0.0.1-select.
+15:12:32-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:12:36-127.0.0.1-BEGIN AJAX.
+15:12:36-127.0.0.1-BEGIN AJAX.
+15:12:36-127.0.0.1-select.
+15:12:36-127.0.0.1-select.
+15:12:36-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:12:36-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:12:38-127.0.0.1-BEGIN AJAX.
+15:12:38-127.0.0.1-select.
+15:12:38-127.0.0.1-select.
+15:12:38-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:12:38-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:03-127.0.0.1-BEGIN AJAX.
+15:13:03-127.0.0.1-BEGIN AJAX.
+15:13:03-127.0.0.1-select.
+15:13:03-127.0.0.1-select.
+15:13:03-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:03-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:07-127.0.0.1-BEGIN AJAX.
+15:13:07-127.0.0.1-select.
+15:13:07-127.0.0.1-select.
+15:13:07-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:07-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:12-127.0.0.1-BEGIN AJAX.
+15:13:12-127.0.0.1-BEGIN AJAX.
+15:13:12-127.0.0.1-select.
+15:13:12-127.0.0.1-select.
+15:13:12-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:12-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:13-127.0.0.1-BEGIN AJAX.
+15:13:13-127.0.0.1-select.
+15:13:13-127.0.0.1-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+15:13:17-127.0.0.1-BEGIN AJAX.
+15:13:17-127.0.0.1-select.
+15:13:17-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:13:19-127.0.0.1-BEGIN AJAX.
+15:13:19-127.0.0.1-select.
+15:13:19-127.0.0.1-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+15:13:21-127.0.0.1-BEGIN AJAX.
+15:13:21-127.0.0.1-select.
+15:13:21-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:13:29-127.0.0.1-BEGIN AJAX.
+15:13:29-127.0.0.1-select.
+15:13:29-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:13:32-127.0.0.1-BEGIN AJAX.
+15:13:32-127.0.0.1-BEGIN AJAX.
+15:13:32-127.0.0.1-select.
+15:13:32-127.0.0.1-select.
+15:13:32-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:32-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:34-127.0.0.1-BEGIN AJAX.
+15:13:34-127.0.0.1-select.
+15:13:34-127.0.0.1-select.
+15:13:34-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:34-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:36-127.0.0.1-BEGIN AJAX.
+15:13:36-127.0.0.1-BEGIN AJAX.
+15:13:36-127.0.0.1-select.
+15:13:36-127.0.0.1-select.
+15:13:36-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:13:36-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:14:00-127.0.0.1-BEGIN AJAX.
+15:14:00-127.0.0.1-BEGIN AJAX.
+15:14:00-127.0.0.1-select.
+15:14:00-127.0.0.1-select.
+15:14:00-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:14:00-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:14:05-127.0.0.1-BEGIN AJAX.
+15:14:05-127.0.0.1-procedureScalar.
+15:14:05-127.0.0.1-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oMessagesInsert; expected 6, got 5 CALL oMessagesInsert(Null,'2013-12-21 14:14:05','		ertertert		
+				','110','ert').
+15:14:17-127.0.0.1-BEGIN AJAX.
+15:14:17-127.0.0.1-select.
+15:14:17-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:14:43-127.0.0.1-BEGIN AJAX.
+15:14:43-127.0.0.1-select.
+15:14:43-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:17:30-127.0.0.1-BEGIN AJAX.
+15:17:30-127.0.0.1-select.
+15:17:30-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:17:41-127.0.0.1-BEGIN AJAX.
+15:17:41-127.0.0.1-select.
+15:17:41-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:17:52-127.0.0.1-BEGIN AJAX.
+15:17:52-127.0.0.1-select.
+15:17:52-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:17:56-127.0.0.1-BEGIN AJAX.
+15:17:56-127.0.0.1-select.
+15:17:56-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:38:05-127.0.0.1-BEGIN AJAX.
+15:38:05-127.0.0.1-select.
+15:38:05-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:38:05-127.0.0.1-BEGIN AJAX.
+15:38:05-127.0.0.1-select.
+15:38:05-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:38:17-127.0.0.1-BEGIN AJAX.
+15:38:17-127.0.0.1-select.
+15:38:17-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+15:38:53-127.0.0.1-BEGIN AJAX.
+15:38:53-127.0.0.1-select.
+15:38:53-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+16:18:07-127.0.0.1-BEGIN AJAX.
+16:18:07-127.0.0.1-select.
+16:18:07-127.0.0.1-BEGIN AJAX.
+16:18:07-127.0.0.1-select.
+16:18:07-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:18:07-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:20:08-127.0.0.1-BEGIN AJAX.
+16:20:08-127.0.0.1-BEGIN AJAX.
+16:20:08-127.0.0.1-select.
+16:20:08-127.0.0.1-select.
+16:20:08-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:20:08-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:27:07-127.0.0.1-BEGIN AJAX.
+16:27:07-127.0.0.1-select.
+16:27:07-127.0.0.1-SELECT Id, Name FROM opeople  WHERE Name LIKE '%sdsd%'.
+16:31:32-127.0.0.1-BEGIN AJAX.
+16:31:32-127.0.0.1-select.
+16:31:32-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+16:31:34-127.0.0.1-BEGIN AJAX.
+16:31:34-127.0.0.1-select.
+16:31:34-127.0.0.1-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+16:31:45-127.0.0.1-BEGIN AJAX.
+16:31:45-127.0.0.1-select.
+16:31:45-127.0.0.1-BEGIN AJAX.
+16:31:45-127.0.0.1-select.
+16:31:45-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:31:45-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:32:12-127.0.0.1-BEGIN AJAX.
+16:32:12-127.0.0.1-BEGIN AJAX.
+16:32:12-127.0.0.1-select.
+16:32:12-127.0.0.1-select.
+16:32:12-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:32:12-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:32:42-127.0.0.1-BEGIN AJAX.
+16:32:42-127.0.0.1-BEGIN AJAX.
+16:32:42-127.0.0.1-select.
+16:32:42-127.0.0.1-select.
+16:32:42-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+16:32:42-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.

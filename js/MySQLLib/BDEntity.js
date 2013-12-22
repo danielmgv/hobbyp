@@ -12,7 +12,7 @@ function BDEntity(tableName)
 	this.Delete = function (params)
 	{
 		AsyncCallProcedure(getSqlProcedure(this.DeleteProc, params), eval(this.DeleteProc + "OK"), eval(this.DeleteProc + "NOK"));
-	};
+	};  
 	
 	this.Procedure = function (procedureName, params)
 	{

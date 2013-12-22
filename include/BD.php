@@ -9,8 +9,8 @@ define('DB_NAME', 'educa');
 */
 
 //HOSTINGER
-define('DB_HOST', 'mysql.hostinger.es');
-//define('DB_HOST', 'localhost:3306');
+//define('DB_HOST', 'mysql.hostinger.es');
+define('DB_HOST', 'localhost:3306');
 define('DB_USERNAME', 'u490265401_admin');
 define('DB_PASSWORD', 'Passw0rd.');
 define('DB_NAME', 'u490265401_educa');
@@ -27,7 +27,7 @@ function connect() {
 		
 		$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, PORT);
 		
-		mysqli_query($mysqli,"SET NAMES 'utf8'");
+		//mysqli_query($mysqli,"SET NAMES 'utf8'");
 		//mysqli_query($mysqli,"lower_case_table_names=1");
 		
 		//echo "El juego de caracter en la base de dato es: ".mysql_client_encoding($conexion);

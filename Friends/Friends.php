@@ -18,6 +18,7 @@
 		<script src="../js/MySQLLib/BDEntity.js"></script>
 		<script src="js/Friends.js"></script>
 		<script src="js/ListFriends.js"></script>
+		<script src="js/BDEntity.js"></script>
 		<script language="Javascript" type="text/javascript">
 			var fromServer = {
 				People : {

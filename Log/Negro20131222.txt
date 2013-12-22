@@ -1,0 +1,21 @@
+07:48:12-127.0.0.1-BEGIN AJAX.
+07:48:12-127.0.0.1-select.
+07:48:12-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+07:48:12-127.0.0.1-BEGIN AJAX.
+07:48:12-127.0.0.1-select.
+07:48:12-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+07:48:16-127.0.0.1-BEGIN AJAX.
+07:48:16-127.0.0.1-select.
+07:48:16-127.0.0.1-BEGIN AJAX.
+07:48:16-127.0.0.1-select.
+07:48:16-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+07:48:16-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+07:51:10-127.0.0.1-BEGIN AJAX.
+07:51:10-127.0.0.1-select.
+07:51:10-127.0.0.1-SELECT Id, Name FROM opeople  WHERE Name LIKE '%tt%'.
+07:55:11-127.0.0.1-BEGIN AJAX.
+07:55:11-127.0.0.1-select.
+07:55:11-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+07:55:11-127.0.0.1-BEGIN AJAX.
+07:55:11-127.0.0.1-select.
+07:55:11-127.0.0.1-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
