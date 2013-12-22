@@ -1,12 +1,12 @@
 
 var $FriendsList;
 var $NewFriendList;
-var oGroup;
+var oRequest;
 
 $(document).bind('pageinit', function(){	pageinit();	});
 
 function pageinit(){
-	oGroup = new BDEntity("oGroup");
+	oRequest = new BDEntity("oRequest");
 	$FriendsList = $("#FriendsList");
 	$NewFriendList = $("#NewFriendList");
 	AjaxService = '../Ajax/AjaxService.php';		
@@ -222,18 +222,20 @@ function NewRequest(IdPeople)
 {	
 	//var params = [fromServer.People.Id, IdPeople];	
 	var params = {a:fromServer.People.Id, b:IdPeople};
-	oGroup.Procedure("NewRequest", params);
+	//oGroup.Procedure("NewRequest", params);
+	oRequest.Insert(params);
 }
 
-function NewRequestOK(data) {	
+
+function oRequestInsertOK(data) {	
 	$.mobile.loading( 'hide' );		
 	if(!hayError(data))
 	{		
-		alert("NewFriendOK");
+		alert("InsertOK");
 	}
 }
 
-function NewRequestNOK(httpRequest, textStatus, errorThrown) {
+function oRequestInsertNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );	
 	if(!hayError(httpRequest.responseText))
 	{		

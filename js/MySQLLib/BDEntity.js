@@ -16,7 +16,17 @@ function BDEntity(tableName)
 	
 	this.Procedure = function (procedureName, params)
 	{
-		AsyncCallProcedure(getSqlProcedure(procedureName, params), eval(procedureName + "OK"), eval(procedureName + "NOK"));
+		try{
+			var fnOK = eval(procedureName + "OK");
+			var fnNOK = eval(procedureName + "NOK");	
+		}
+		catch(any)
+		{	
+			alert("Err0r eval");
+		}
+
+		
+		AsyncCallProcedure(getSqlProcedure(procedureName, params), fnOK, fnNOK);
 	};
 }
 
