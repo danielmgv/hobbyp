@@ -6,11 +6,11 @@ var oRequest;
 $(document).bind('pageinit', function(){	pageinit();	});
 
 function pageinit(){
+
 	oRequest = new BDEntity("oRequest");
 	$FriendsList = $("#FriendsList");
 	$NewFriendList = $("#NewFriendList");
 	AjaxService = '../Ajax/AjaxService.php';		
-	
 	$("#btnBuscarNew").on( 'tap', btnBuscarNewTap );	
 		
 	var params = {
@@ -19,9 +19,6 @@ function pageinit(){
 		Value: "Id",
 		Table: "oMessages"
 		};
-	//Todos los friends
-
-	//cargarLista();
 }
 
 function listViewClick(value)
@@ -31,21 +28,7 @@ function listViewClick(value)
 
 function btnBuscarNewTap()
 {	
-	/*
-	var params = {
-		ObtenerSQL:ObtenerSQL,
-		Radio: RadioTap,
-		Text : ""		
-	};
-	
-	var $NewFriendList = $("#NewFriendList").Listado(params);
-	$FriendsList.Consultar();
-	*/
 	cargarListaNew();
-}
-
-function RadioTap () {
-  
 }
 
 // Callback function references the event target and adds the 'tap' class to it
@@ -213,7 +196,8 @@ function addRowNew(row)
 	//var linkDelete = '<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Add</a>';
 	//var htmlImg = '<li class="ht" onclick="seleccionar(' + row.Id + ');" IdHobbie="'+ row.Id +'"><a href="#" ><h3>' + row.Name +'</h3><p>' + row.Name +'</p></a>' + linkDelete + '</li>';
 	
-	var htmlImg = '<li class="ht" onclick="NewRequest(' + row.Id + ');" IdPeople="'+ row.Id +'"><p>' + row.Name +'</p></li>';
+	var linkAddRequest = '<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Add</a>';
+	var htmlImg = '<li class="ht" onClick="NewRequest(' + row.Id + ');" IdPeople="'+ row.Id +'">' + row.Name + '</li>';
 	
 	$NewFriendList.append(htmlImg);
 }
@@ -221,7 +205,7 @@ function addRowNew(row)
 function NewRequest(IdPeople)
 {	
 	//var params = [fromServer.People.Id, IdPeople];	
-	var params = {a:fromServer.People.Id, b:IdPeople};
+	var params = {a:fromServer.People.Id, b:IdPeople, c: $("#MensajeParam").text()};
 	//oGroup.Procedure("NewRequest", params);
 	oRequest.Insert(params);
 }

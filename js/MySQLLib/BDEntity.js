@@ -1,12 +1,21 @@
 
 function BDEntity(tableName)
 {
-	var InsertProc =  tableName + "Insert";
-	var DeleteProc = tableName + "Delete";
+	this.tableName = tableName;
+	this.InsertProc =  tableName + "Insert";
+	this.DeleteProc = tableName + "Delete";
 	
 	this.Insert = function (params)
 	{
-		AsyncCallProcedure(getSqlProcedure(this.InsertProc, params), eval(this.InsertProc + "OK"), eval(this.InsertProc + "NOK"));
+		try{
+			var fnOK = eval(this.InsertProc + "OK");
+			var fnNOK = eval(this.InsertProc + "NOK");	
+		}
+		catch(any)
+		{	
+			alert(any);
+		}
+		AsyncCallProcedure(getSqlProcedure(this.InsertProc, params), fnOK, fnNOK);
 	};
 	
 	this.Delete = function (params)
@@ -22,7 +31,7 @@ function BDEntity(tableName)
 		}
 		catch(any)
 		{	
-			alert("Err0r eval");
+			alert(any);
 		}
 
 		
