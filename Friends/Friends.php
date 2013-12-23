@@ -25,7 +25,9 @@
 					}
 			};
 		</script>
+		<script src="js/Requests.js"></script>
 		<script src="js/Friends.js"></script>
+
 		<title>Hobbyp</title>
 	</head>
 	<body>

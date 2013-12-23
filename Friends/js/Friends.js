@@ -22,40 +22,6 @@ function pageinit(){
 	ConsultarMyRequests();		
 }
 
-function ConsultarMyRequests()
-{	
-	var sql = " SELECT IdOwner, Description FROM oRequest WHERE IdPeople = " + fromServer.People.Id;	
-	AsyncConsultaSELECT({SQL:sql}, ConsultarMyRequestsOK, ConsultarMyRequestsNOK);	
-}
-
-function ConsultarMyRequestsOK(data) {
-	$.mobile.loading( 'hide' );
-	if(!hayError(data))
-	{
-		var linkR = '<a href="Requests.html">Tiene ' + data.NumRegistros + ' solicitudes de amistad</a>';
-		$("lblMyRequests").append(linkR);
-		
-	}
-}
-
-function ConsultarMyRequestsNOK(httpRequest, textStatus, errorThrown) {
-	$.mobile.loading( 'hide' );
-	//cargarLista();
-	if(httpRequest.status = 500)
-	{
-		try{
-			var errorJson = eval(httpRequest.responseText);
-			alert(errorJson.Error);
-		}
-		catch(any){
-			alert(httpRequest.responseText);		
-		}	
-	}
-	else
-	{		
-		alert("Error al mandar el mensaje.\n" + textStatus + errorThrown.message);	
-	}
-}
 
 //***********************************************************************************************************************
 

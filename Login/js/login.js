@@ -36,16 +36,16 @@ function login()
 		//,			html: html
 	});
 	
-	AsyncConsultaSELECT(params, HLoginOK, HLoginNOK);
+	AsyncConsultaSELECT(params, loginOK, loginNOK);
 	//CallMySQL(params);
 }
 
-function HLoginOK(data) {	
+function loginOK(data) {		
 	$.mobile.loading( 'hide' );	
 	
 	if(!hayError(data))
 	{
-		if(data.NumRegistros == 1)
+		if(data.NumRegistros > 0)
 		{
 			fromServer.People = {Id: data[0].Id};
 			logado(data[0].Id, data[0].Name);
@@ -57,7 +57,7 @@ function HLoginOK(data) {
 	}
 }
 
-function HLoginNOK(httpRequest, textStatus, errorThrown) {
+function loginNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );	
 	try
 	{
@@ -72,7 +72,7 @@ function HLoginNOK(httpRequest, textStatus, errorThrown) {
 
 function logado(IdPeople, Name)
 {
-	window.location.href="../Photos/MyPhotos.php?Id=" + IdPeople + "&Name=" + Name;
+	window.location.href="../Friends/Friends.php?Id=" + IdPeople + "&Name=" + Name;
 	//$.mobile.changePage("../H_Me/MyPhotos.php?Id=" + IdPeople + "&Name=" + Name);
 }
 
