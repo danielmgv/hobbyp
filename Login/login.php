@@ -8,16 +8,17 @@
 		<title>Hobbyp</title>
 		<link rel="stylesheet" href="css/Bootstrap.css">
 		
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.1.min.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 	
 		<script src="../js/Comun.js"></script>
 		<script src="../js/MySQLLib/MySQL.js"></script>
-		<script src="../js/phonegap/PGNavigation.js"></script>
-
 		<script src="js/login.js"></script>
-
+		
+		<script language="Javascript" type="text/javascript">
+			var fromServer = {};		
+		</script>
 	</head>
 	<body>
 		<div data-role="page" data-theme="a" id="one">

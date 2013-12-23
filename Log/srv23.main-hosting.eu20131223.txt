@@ -1,0 +1,168 @@
+08:10:22-83.56.19.7-BEGIN AJAX.
+08:10:22-83.56.19.7-select.
+08:10:22-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+08:10:24-83.56.19.7-BEGIN AJAX.
+08:10:24-83.56.19.7-select.
+08:10:24-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:11:36-83.56.19.7-BEGIN AJAX.
+08:11:36-83.56.19.7-select.
+08:11:36-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:12:19-83.56.19.7-BEGIN AJAX.
+08:12:19-83.56.19.7-select.
+08:12:19-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:12:41-83.56.19.7-BEGIN AJAX.
+08:12:41-83.56.19.7-select.
+08:12:41-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+08:12:43-83.56.19.7-BEGIN AJAX.
+08:12:43-83.56.19.7-select.
+08:12:43-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:13:06-83.56.19.7-BEGIN AJAX.
+08:13:06-83.56.19.7-select.
+08:13:06-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:20:53-83.56.19.7-BEGIN AJAX.
+08:20:53-83.56.19.7-select.
+08:20:53-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+08:20:54-83.56.19.7-BEGIN AJAX.
+08:20:54-83.56.19.7-select.
+08:20:54-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:24:37-83.56.19.7-BEGIN AJAX.
+08:24:37-83.56.19.7-select.
+08:24:37-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+08:24:39-83.56.19.7-BEGIN AJAX.
+08:24:39-83.56.19.7-select.
+08:24:39-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:28:26-83.56.19.7-BEGIN AJAX.
+08:28:26-83.56.19.7-select.
+08:28:26-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+08:28:51-83.56.19.7-BEGIN AJAX.
+08:28:51-83.56.19.7-select.
+08:28:51-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+08:28:57-83.56.19.7-BEGIN AJAX.
+08:28:57-83.56.19.7-select.
+08:28:57-83.56.19.7-SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id   LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye  WHERE PH.Idhobbye = 8.
+08:31:09-83.56.19.7-BEGIN AJAX.
+08:31:09-83.56.19.7-select.
+08:31:09-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+08:31:10-83.56.19.7-BEGIN AJAX.
+08:31:11-83.56.19.7-select.
+08:31:11-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:50:57-83.56.19.7-BEGIN AJAX.
+08:50:57-83.56.19.7-select.
+08:50:57-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+08:50:58-83.56.19.7-BEGIN AJAX.
+08:50:58-83.56.19.7-select.
+08:50:58-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+08:52:26-83.56.19.7-BEGIN AJAX.
+08:52:26-83.56.19.7-select.
+08:52:26-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+08:52:28-83.56.19.7-BEGIN AJAX.
+08:52:28-83.56.19.7-select.
+08:52:28-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+09:04:17-83.56.19.7-BEGIN AJAX.
+09:04:17-83.56.19.7-select.
+09:04:17-83.56.19.7-SELECT Id, Name FROM opeople  WHERE Name LIKE '%tt%'.
+09:06:51-83.56.19.7-BEGIN AJAX.
+09:06:51-83.56.19.7-select.
+09:06:51-83.56.19.7-SELECT Id, Name FROM opeople  WHERE Name LIKE '%t%'.
+09:07:33-83.56.19.7-BEGIN AJAX.
+09:07:33-83.56.19.7-select.
+09:07:33-83.56.19.7-SELECT Id, Name FROM opeople  WHERE Name LIKE '%t%'.
+09:07:50-83.56.19.7-BEGIN AJAX.
+09:07:50-83.56.19.7-procedure.
+09:07:50-83.56.19.7-Error CALL failed: (1305) PROCEDURE u490265401_educa.undefined does not exist CALL undefined('110',6).
+09:11:03-83.56.19.7-BEGIN AJAX.
+09:11:03-83.56.19.7-select.
+09:11:03-83.56.19.7-SELECT Id, Name FROM opeople  WHERE Name LIKE '%t%'.
+09:11:07-83.56.19.7-BEGIN AJAX.
+09:11:07-83.56.19.7-procedure.
+09:11:07-83.56.19.7-Error CALL failed: (1305) PROCEDURE u490265401_educa.undefined does not exist CALL undefined('110',5).
+09:12:39-83.56.19.7-BEGIN AJAX.
+09:12:39-83.56.19.7-select.
+09:12:39-83.56.19.7-SELECT Id, Name FROM opeople  WHERE Name LIKE '%t%'.
+09:12:47-83.56.19.7-BEGIN AJAX.
+09:12:47-83.56.19.7-procedure.
+09:12:47-83.56.19.7-Error CALL failed: (1305) PROCEDURE u490265401_educa.undefined does not exist CALL undefined('110',4).
+09:15:06-83.56.19.7-BEGIN AJAX.
+09:15:06-83.56.19.7-select.
+09:15:06-83.56.19.7-SELECT Id, Name FROM opeople  WHERE Name LIKE '%t%'.
+09:15:10-83.56.19.7-BEGIN AJAX.
+09:15:10-83.56.19.7-procedure.
+09:15:10-83.56.19.7-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oRequestInsert; expected 3, got 2 CALL oRequestInsert('110',4).
+11:54:56-83.56.19.7-BEGIN AJAX.
+11:54:56-83.56.19.7-select.
+11:54:56-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+11:54:58-83.56.19.7-BEGIN AJAX.
+11:54:58-83.56.19.7-select.
+11:54:58-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+12:02:44-83.56.19.7-BEGIN AJAX.
+12:02:44-83.56.19.7-select.
+12:02:44-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
+12:02:47-83.56.19.7-BEGIN AJAX.
+12:02:47-83.56.19.7-select.
+12:02:47-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+12:02:48-83.56.19.7-BEGIN AJAX.
+12:02:48-83.56.19.7-select.
+12:02:48-83.56.19.7- SELECT *  FROM oMessages  WHERE Para = 110.
+12:03:08-83.56.19.7-BEGIN AJAX.
+12:03:08-83.56.19.7-select.
+12:03:08-83.56.19.7-SELECT Id, Name FROM opeople  WHERE Name LIKE '%t%'.
+12:03:12-83.56.19.7-BEGIN AJAX.
+12:03:12-83.56.19.7-procedure.
+12:03:12-83.56.19.7-CALL oRequestInsert('110',6,'								').
+12:04:29-83.56.19.7-BEGIN AJAX.
+12:04:29-83.56.19.7-procedure.
+12:04:29-83.56.19.7-CALL oRequestInsert('110',98,'		werwerw						').
+13:39:00-83.56.19.7-BEGIN AJAX.
+13:39:00-83.56.19.7-select.
+13:39:00-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+13:42:33-83.56.19.7-BEGIN AJAX.
+13:42:33-83.56.19.7-select.
+13:42:33-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+13:49:03-83.56.19.7-BEGIN AJAX.
+13:49:03-83.56.19.7-select.
+13:49:03-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+13:52:10-83.56.19.7-BEGIN AJAX.
+13:52:10-83.56.19.7-select.
+13:52:10-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+13:54:58-83.56.19.7-BEGIN AJAX.
+13:54:58-83.56.19.7-select.
+13:54:58-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+13:55:50-83.56.19.7-BEGIN AJAX.
+13:55:50-83.56.19.7-select.
+13:55:50-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+13:57:00-83.56.19.7-BEGIN AJAX.
+13:57:00-83.56.19.7-select.
+13:57:00-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+14:01:26-83.56.19.7-BEGIN AJAX.
+14:01:26-83.56.19.7-select.
+14:01:26-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+14:01:28-83.56.19.7-BEGIN AJAX.
+14:01:28-83.56.19.7-select.
+14:01:28-83.56.19.7-Error Table 'u490265401_educa.oPeople' doesn't exist.
+14:01:56-83.56.19.7-BEGIN AJAX.
+14:01:56-83.56.19.7-select.
+14:01:56-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11.
+14:02:05-83.56.19.7-BEGIN AJAX.
+14:02:05-83.56.19.7-select.
+14:02:05-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11.
+14:02:10-83.56.19.7-BEGIN AJAX.
+14:02:10-83.56.19.7-select.
+14:02:10-83.56.19.7-SELECT Id, Name FROM opeople  WHERE Name LIKE '%bego%'.
+14:02:21-83.56.19.7-BEGIN AJAX.
+14:02:21-83.56.19.7-procedure.
+14:02:21-83.56.19.7-CALL oRequestInsert('11',110,'					Prueba			').
+14:03:36-83.56.19.7-BEGIN AJAX.
+14:03:36-83.56.19.7-select.
+14:03:36-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+14:03:37-83.56.19.7-BEGIN AJAX.
+14:03:37-83.56.19.7-select.
+14:03:37-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110.
+14:05:19-83.56.19.7-BEGIN AJAX.
+14:05:19-83.56.19.7-select.
+14:05:19-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110.
+14:06:10-83.56.19.7-BEGIN AJAX.
+14:06:10-83.56.19.7-select.
+14:06:10-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110.
+14:21:43-83.56.19.7-BEGIN AJAX.
+14:21:43-83.56.19.7-select.
+14:21:43-83.56.19.7-Error Fallo al conectar a MySQL: (2005) Unknown MySQL server host 'localhost:3306' (1).
