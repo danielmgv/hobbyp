@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>New Friend</title>
+
+	</head>
+	<body>		
+		<div data-role="dialog" >
+			<div data-role="header" >
+				<h1>New Friend</h1>
+			</div>
+		
+			<div data-role="content" >
+				<h1>Busque</h1>
+				<p>Seleccione</p>
+				<form action="" method="post">
+					<div data-role="fieldcontain" data-theme="a">
+						<label for="searchNew">Search:</label>
+						<input type="search" name="searchNew" id="searchNew" placeholder="Search for content...">
+					</div>
+					<input type="button" data-inline="true" id="btnBuscarNew" value="Buscar" data-theme="a">
+      			</form>
+				<div data-role="fieldcontain" data-scroll="y" data-theme="a">
+					<ul data-role="listview" data-inset="true"  id="NewFriendList" data-split-icon="add">
+					</ul>
+				</div>	
+    			<label for="textarea-a">Mensaje:</label>
+				<textarea name="MensajeParam" id="MensajeParam">				
+				</textarea>
+				<a href="" data-role="button" data-theme="b" id="btnEnviar">Add</a>       
+				<a href="dialog/index.html" data-role="button" data-rel="back" data-theme="c">Cancel</a>    
+			</div>
+			
+			<div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+				<h1>&nbsp;</h1>
+			</div>
+		</div>
+	</body>
+</html>
