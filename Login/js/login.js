@@ -72,7 +72,15 @@ function loginNOK(httpRequest, textStatus, errorThrown) {
 
 function logado(IdPeople, Name)
 {
-	window.location.href="../Friends/Friends.php?Id=" + IdPeople + "&Name=" + Name;
+	var fromServer = {
+			People : {
+				Id: IdPeople,
+				Name: Name
+				}
+		};	
+	hrefParams("../Friends/Friends.php", fromServer);
+	
+	//window.location.href="../Friends/Friends.php?Id=" + IdPeople + "&Name=" + Name;
 	//$.mobile.changePage("../H_Me/MyPhotos.php?Id=" + IdPeople + "&Name=" + Name);
 }
 

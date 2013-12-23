@@ -16,18 +16,9 @@
 		<script src="../js/Comun_Mobile.js"></script>
 		<script src="../js/MySQLLib/MySQL.js"></script>
 		<script src="../js/MySQLLib/BDEntity.js"></script>
-		
-		<script language="Javascript" type="text/javascript">
-			var fromServer = {
-				People : {
-					Id: "<?php echo GetRequest('Id'); ?>",
-					Name: "<?php echo GetRequest('Name'); ?>"
-					}
-			};
-		</script>
+		<script src="js/phonegap/PGNavigation.js"></script>
 		<script src="js/Requests.js"></script>
 		<script src="js/Friends.js"></script>
-
 		<title>Hobbyp</title>
 	</head>
 	<body>

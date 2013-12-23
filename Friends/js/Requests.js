@@ -1,11 +1,10 @@
-var $MyRequestsList;
-var oRequest;
+
 
 //**********************************************************************************************************************
 
 function ConsultarMyRequests()
 {	
-	var sql = " SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN oPeople P ON P.Id = R.IdOwner WHERE R.IdPeople = " + fromServer.People.Id;	
+	var sql = " SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = " + fromServer.People.Id;	
 	AsyncConsultaSELECT({SQL:sql}, ConsultarMyRequestsOK, ConsultarMyRequestsNOK);	
 }
 

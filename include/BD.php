@@ -9,8 +9,8 @@ define('DB_NAME', 'educa');
 */
 
 //HOSTINGER
-//define('DB_HOST', 'mysql.hostinger.es');
-define('DB_HOST', 'localhost:3306');
+define('DB_HOST', 'mysql.hostinger.es');
+//define('DB_HOST', 'localhost:3306');
 define('DB_USERNAME', 'u490265401_admin');
 define('DB_PASSWORD', 'Passw0rd.');
 define('DB_NAME', 'u490265401_educa');
