@@ -6,7 +6,8 @@ var oRequest;
 $(document).bind('pageinit', function(){	pageinit();	});
 
 function pageinit(){
-
+	onDeviceReady();
+	
 	oRequest = new BDEntity("oRequest");
 	$FriendsList = $("#FriendsList");
 	$NewFriendList = $("#NewFriendList");
@@ -202,12 +203,15 @@ function addRowNew(row)
 	$NewFriendList.append(htmlImg);
 }
 
+//********************************************************************************************************************************************************
+
 function NewRequest(IdPeople)
 {	
-	//var params = [fromServer.People.Id, IdPeople];	
-	var params = {a:fromServer.People.Id, b:IdPeople, c: $("#MensajeParam").text()};
-	//oGroup.Procedure("NewRequest", params);
-	oRequest.Insert(params);
+	if(confirm("¿Desea mandar la solicitud de amistad?"))
+	{
+		var params = {a:fromServer.People.Id, b:IdPeople, c: $("#MensajeParam").text()};
+		oRequest.Insert(params);
+	}
 }
 
 
@@ -229,5 +233,5 @@ function oRequestInsertNOK(httpRequest, textStatus, errorThrown) {
 
 //***************************************************************************************************************************
 
-	
+
 		

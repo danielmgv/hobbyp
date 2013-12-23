@@ -29,37 +29,6 @@
 		<title>Hobbyp</title>
 	</head>
 	<body>
-		<!--Requests -->
-		<div data-role="page" data-theme="a" id="Requests">
-			<div data-role="header" data-position="fixed" data-fullscreen="true">
-				<div data-role="navbar" id="navbarId">
-					<ul>
-						<li><a href="../Messages/Messages.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>	
-						<li><a href="" data-icon="gear" class="ui-btn-active">Friends</a></li>	
-						<li><a href="../Search/Search.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Search</a></li>	
-						<li><a href="../Photos/MyPhotos.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="gear" >Photos</a></li>
-						<li><a href="../Hobbies/MyHobs.php?Id=<?php echo GetRequest('Id'); ?>" rel="external" data-ajax="false" data-icon="search">Hobbies</a></li>						
-					</ul>
-				</div>
-				<div data-role="navbar" id="subNavbarId">
-					<ul>
-						<li><a href="#Requests" class="ui-btn-active ui-state-persist" >Requests</a></li>				
-						<li><a href="#Friends">Friends</a></li>
-						<li><a href="#Groups">Groups</a></li>
-					</ul>
-				</div>
-				<div data-role="fieldcontain" data-scroll="y">
-					<div data-role="fieldcontain" data-scroll="y">
-						<div data-role="collapsible-set" id="RequestsList">
-						</div>	
-					</div>						
-				</div>
-			</div>		
-			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" data-fullscreen="true">
-				<p class="jqm-version"></p>
-				<p>Hobbyp V.1.0 Research by quaz</p>
-			</div>
-		</div>
 		<!--Friends -->
 		<div data-role="page" data-theme="a" id="Friends">
 			<div data-role="header" data-position="fixed" >
@@ -73,8 +42,7 @@
 					</ul>
 				</div>
 				<div data-role="navbar" id="subNavbarId">
-					<ul>
-						<li><a href="#Requests" >Requests</a></li>				
+					<ul>		
 						<li><a href="#Friends" class="ui-btn-active ui-state-persist">Friends</a></li>
 						<li><a href="#Groups" >Groups</a></li>
 					</ul>
@@ -109,8 +77,7 @@
 					</ul>
 				</div>
 				<div data-role="navbar" id="subNavbarId2">
-					<ul>	
-						<li><a href="#Requests">Requests</a></li>				
+					<ul>				
 						<li><a href="#Friends">Friends</a></li>	
 						<li><a href="#Groups" class="ui-btn-active ui-state-persist">Groups</a></li>											
 					</ul>
