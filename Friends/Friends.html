@@ -15,6 +15,34 @@
 		<script src="../js/phonegap/PGNavigation.js"></script>
 		<script src="js/Requests.js"></script>
 		<script src="js/Friends.js"></script>
+		
+			<style>
+			.split-button-custom {
+			    float: right;
+			    margin-right: 10px;
+			    margin-top: -32px;
+			    border-bottom-left-radius: 1em 1em;
+			    border-bottom-right-radius: 1em 1em;
+			    border-top-left-radius: 1em 1em;
+			    border-top-right-radius: 1em 1em;   
+			}
+			
+			.split-button-custom span.ui-btn-inner {
+			    border-bottom-left-radius: 1em 1em;
+			    border-bottom-right-radius: 1em 1em;
+			    border-top-left-radius: 1em 1em;
+			    border-top-right-radius: 1em 1em;
+			    padding-right: 0px;
+			}
+			
+			.split-button-custom span.ui-icon {
+			    margin-top: 0px;
+			    right: 0px;
+			    top: 0px;
+			    position: relative;
+			}
+		</style>
+		
 		<title>Hobbyp</title>
 	</head>
 	<body>
@@ -38,7 +66,8 @@
 				</div>
 			</div>
 			<div data-role="content" data-theme="a">	
-				<div data-role="fieldcontain" data-scroll="y">				
+				<div data-role="fieldcontain" data-scroll="y">
+					<label id="lblMyRequests"></label>			
 					<div class="content-primary" >
 						<ul data-role="listview" data-inset="true" id="FriendsList" data-split-icon="Gear">
 						</ul>

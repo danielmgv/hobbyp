@@ -15,7 +15,7 @@ function ConsultarMyRequestsOK(data) {
 		if(data.NumRegistros > 0)
 		{
 			var linkR = '<a href="Requests.html">Tiene ' + data.NumRegistros + ' solicitudes de amistad</a>';
-			$("lblMyRequests").append(linkR);
+			$("#lblMyRequests").append(linkR);
 			CargarMyRequestsList(data);
 		}		
 	}
@@ -23,20 +23,9 @@ function ConsultarMyRequestsOK(data) {
 
 function ConsultarMyRequestsNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );
-	//cargarLista();
-	if(httpRequest.status = 500)
+	if(!hayError(httpRequest.responseText))
 	{
-		try{
-			var errorJson = eval(httpRequest.responseText);
-			alert(errorJson.Error);
-		}
-		catch(any){
-			alert(httpRequest.responseText);		
-		}	
-	}
-	else
-	{		
-		alert("Error al mandar el mensaje.\n" + textStatus + errorThrown.message);	
+		alert("Error al mandar el mensaje.\n" + httpRequest.responseText + textStatus + errorThrown.message);	
 	}
 }
 //*****************************************************************************************************************************************
@@ -51,11 +40,13 @@ function CargarMyRequestsList(data) {
 function addRowMyRequestsList(row)
 {	
 	var $li = $("<li>");
-	var linkList = '<a href="#" alt="' + $.trim(row.Description)  + '" onclick="alert(\'' + row.OwnerName + '\')"><h3>' + row.OwnerName + '</h3></a>';
-
+	var linkList = '<a href="#" alt="' + $.trim(row.Description)  + '" onclick="alert(\'' + row.OwnerName + '\')"><h3>' + row.OwnerName + '</h3><p>' + $.trim(row.Description) + '</p></a>';
+	var $controlgroup = $('<div data-role="controlgroup" data-type="horizontal">'); 
 	var linkAceptar = '<a href="#" onclick="oRequestAceptar(' + row.IdOwner + ');" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext">1st link</a>';   
 	var linkRechazar = '<a href="#" onclick="oRequestUpdateEstado(' + row.IdOwner + ', 2);" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">2st link</a>';
-	$li.html(linkList + linkAceptar + linkRechazar);	
+	$controlgroup.append(linkAceptar + linkRechazar);
+	$li.append(linkList);
+	$li.append($controlgroup);
 	$("#MyRequestsList").append($li);	
 }
 //********************************************************************************************************************************************************
