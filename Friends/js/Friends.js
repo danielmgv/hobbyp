@@ -6,6 +6,7 @@ var oRequest;
 $(document).bind('pageinit', function(){	pageinit();	});
 
 function pageinit(){
+	retrieveParams();
 	oRequest = new BDEntity("oRequest");	
 	$FriendsList = $("#FriendsList");
 	$NewFriendList = $("#NewFriendList");

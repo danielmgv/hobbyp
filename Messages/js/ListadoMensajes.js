@@ -19,8 +19,11 @@ function ListadoMensajes($Container, params) {
     };
 
     function obtenerRegistrosNOK(httpRequest, textStatus, errorThrown) {
-        $.jGrowl("Error al obtener registros.\n" + textStatus + errorThrown);
-        if (fnEnd) fnEnd();
+		if(!hayError(httpRequest))
+		{
+			alert("Error al obtener registros\n" + textStatus + errorThrown.message + httpRequest.responseText);			
+		}
+		if (fnEnd) fnEnd();
     }
 
     function recargarDatos(data) {   

@@ -51,19 +51,21 @@ function CargarMyRequestsList(data) {
 function addRowMyRequestsList(row)
 {	
 	var $li = $("<li>");
-	var linkList = '<a href="#" alt="' + row.Description + '" onclick="alert("' + row.OwnerName + '")"><h3>' + row.OwnerName + '</h3></a>';
+	var linkList = '<a href="#" alt="' + $.trim(row.Description)  + '" onclick="alert(\'' + row.OwnerName + '\')"><h3>' + row.OwnerName + '</h3></a>';
 
-	var linkAceptar = '<a href="#" onclick="AceptarRequest(' + row.IdOwner + ');" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext">1st link</a>';   
-	var linkRechazar = '<a href="#" onclick="RechazarRequest(' + row.IdOwner + ');" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">2st link</a>';
-	$li.append(linkList + linkAceptar + linkRechazar);	
+	var linkAceptar = '<a href="#" onclick="oRequestAceptar(' + row.IdOwner + ');" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext">1st link</a>';   
+	var linkRechazar = '<a href="#" onclick="oRequestUpdateEstado(' + row.IdOwner + ', 2);" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">2st link</a>';
+	$li.html(linkList + linkAceptar + linkRechazar);	
 	$("#MyRequestsList").append($li);	
 }
 //********************************************************************************************************************************************************
-function AceptarRequest(IdOwner)
+function oRequestAceptar(IdOwner)
 {	
-	if(confirm("¿Desea aceptar la solicitud de amistad?"))
+	var mensajeConfirm  = "¿Desea aceptar la solicitud de amistad?";
+
+	if(confirm(mensajeConfirm))
 	{
-		var params = {a:fromServer.People.Id, b:IdOwner, Estado: 1};
+		var params = {a:fromServer.People.Id, b:IdOwner};
 		oRequest.Procedure("oRequestAceptar", params);
 	}
 }
@@ -71,8 +73,8 @@ function AceptarRequest(IdOwner)
 function oRequestAceptarOK(data) {	
 	$.mobile.loading( 'hide' );		
 	if(!hayError(data))
-	{		
-		alert("Solicitud aceptada OK");
+	{
+		ConsultarMyRequests();
 	}
 }
 
@@ -80,10 +82,38 @@ function oRequestAceptarNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );	
 	if(!hayError(httpRequest.responseText))
 	{		
-		alert("Error al aceptar solicitud\n" + textStatus + errorThrown.message + httpRequest.responseText);	
+		alert("Error al procesar la solicitud\n" + textStatus + errorThrown.message + httpRequest.responseText);	
 	}
 }
 //***************************************************************************************************************************
+function oRequestUpdateEstado(IdOwner, estado)
+{	
+	var mensajeConfirm  = "¿Desea aceptar la solicitud de amistad?";
+	if(estado == 2)
+	{
+		mensajeConfirm  = "¿Desea rechazar la solicitud de amistad?";		
+	}
 
+	if(confirm(mensajeConfirm))
+	{
+		var params = {a:fromServer.People.Id, b:IdOwner, Estado: estado};
+		oRequest.Procedure("oRequestUpdateEstado", params);
+	}
+}
 
-		
+function oRequestUpdateEstadoOK(data) {	
+	$.mobile.loading( 'hide' );		
+	if(!hayError(data))
+	{
+		ConsultarMyRequests();
+	}
+}
+
+function oRequestUpdateEstadoNOK(httpRequest, textStatus, errorThrown) {
+	$.mobile.loading( 'hide' );	
+	if(!hayError(httpRequest.responseText))
+	{		
+		alert("Error al procesar la solicitud\n" + textStatus + errorThrown.message + httpRequest.responseText);	
+	}
+}
+//***************************************************************************************************************************

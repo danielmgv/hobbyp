@@ -1,7 +1,11 @@
 ﻿
-$(document).bind('pageinit', function(){	pageinit();	});
+$(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
 
 function pageinit(){
+	if(fromServer.Id)
+	{		
+		//hrefParams("../Friends/Friends.html");	
+	}
 	AjaxService = '../Ajax/AjaxService.php';
 	// Bind the tapHandler callback function to the tap event on div.box
     $("#btnLogin").on( 'tap', tapLogin );	
@@ -72,13 +76,13 @@ function loginNOK(httpRequest, textStatus, errorThrown) {
 
 function logado(IdPeople, Name)
 {
-	var fromServer = {
+	fromServer = {
 			People : {
 				Id: IdPeople,
 				Name: Name
 				}
 		};	
-	hrefParams("../Friends/Friends.php", fromServer);
+	hrefParams("../Friends/Friends.html");
 	
 	//window.location.href="../Friends/Friends.php?Id=" + IdPeople + "&Name=" + Name;
 	//$.mobile.changePage("../H_Me/MyPhotos.php?Id=" + IdPeople + "&Name=" + Name);

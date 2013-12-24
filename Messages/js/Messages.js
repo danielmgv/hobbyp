@@ -2,9 +2,9 @@
 var $listviewRecibidos;
 var $listviewEnviados;
 
-$(document).bind('pageinit', function(){	pageinit();	});
+$(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
 
-function pageinit(){
+function pageinit(){	
 	$listview = $("#listviewId");
 	AjaxService = '../Ajax/AjaxService.php';		
 	
