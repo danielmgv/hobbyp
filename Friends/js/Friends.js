@@ -2,30 +2,38 @@
 var $FriendsList;
 var $NewFriendList;
 var oRequest;
-
-$(document).bind('pageinit', function(){	pageinit();	});
+var $MyRequestsList;
+$(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
 
 function pageinit(){
-	retrieveParams();
+	
 	oRequest = new BDEntity("oRequest");	
 	$FriendsList = $("#FriendsList");
 	$NewFriendList = $("#NewFriendList");
 	AjaxService = '../Ajax/AjaxService.php';		
-	$("#btnBuscarNew").on( 'tap', btnBuscarNewTap );	
-		
+	$("#btnBuscarNew").on( 'tap', btnBuscarNewTap );			
+			
 	var params = {
 		ObtenerSQL:ObtenerSQL,
+		fnOnLoad: fnOnLoad,
 		Text:  "Name",
 		Value: "Id",
 		Table: "oMessages"
 		};
-		
-	ConsultarMyRequests();		
+
+	$MyRequestsList = $("#MyRequestsList").Listado(params);
+	$MyRequestsList.Consultar();		
 }
 
-
-//***********************************************************************************************************************
-
+function fnOnLoad(data)
+{
+	if(data.NumRegistros > 0)
+	{
+		var linkR = '<a href="Requests.html">Tiene ' + data.NumRegistros + ' solicitudes de amistad</a>';	
+		$("#lblMyRequests").html(linkR);
+	}
+}	
+//******************************************************************************************************************************************************************************
 function listViewClick(value)
 {
 	cargarLista(value, $("#description").val());
@@ -44,9 +52,7 @@ function tapnewMessage( event ) {
 
 function ObtenerSQL()
 {
-	sql = "SELECT P.Name as PName, P.Id, H.Name as HName  FROM opeople P JOIN op_hobbyes PH ON PH.IdPeople = P.Id  ";
-	sql += " LEFT JOIN ohoobyes H ON H.Id = PH.Idhobbye ";
-	
+	var sql = " SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = " + fromServer.People.Id;	
 	return sql;
 }
 

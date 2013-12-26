@@ -1,11 +1,8 @@
 ﻿
-$(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
+$(document).bind('pageinit', function(){	pageinit();	});
 
 function pageinit(){
-	if(fromServer.Id)
-	{		
-		//hrefParams("../Friends/Friends.html");	
-	}
+
 	AjaxService = '../Ajax/AjaxService.php';
 	// Bind the tapHandler callback function to the tap event on div.box
     $("#btnLogin").on( 'tap', tapLogin );	
@@ -46,22 +43,32 @@ function login()
 
 function loginOK(data) {		
 	$.mobile.loading( 'hide' );	
-	
-	if(!hayError(data))
-	{
-		if(data.NumRegistros > 0)
+	try{
+		if(!hayError(data))
 		{
-			fromServer.People = {Id: data[0].Id};
-			logado(data[0].Id, data[0].Name);
+			if(data.NumRegistros > 0)
+			{		
+				logado(data[0].Id, data[0].Name);
+			}
+			else
+			{
+				alert("No se encuentra el usuario");
+			}
 		}
 		else
 		{
-			alert("No se encuentra el usuario");
+			alert("error" + data.Error);		
 		}
 	}
+	catch(err){		
+		alert("loginOK: Error " + err.message);
+	}
+
+	
 }
 
 function loginNOK(httpRequest, textStatus, errorThrown) {
+	alert(2);
 	$.mobile.loading( 'hide' );	
 	try
 	{
@@ -70,7 +77,7 @@ function loginNOK(httpRequest, textStatus, errorThrown) {
 	}
 	catch(any)
 	{
-		alert("Error al realizar el registro.<br/>" + httpRequest.responseText + "<br/>" + textStatus + "<br/>" + errorThrown.message);
+		alert("Error al realizar el registro.<br/>" + any.message + httpRequest.responseText + "<br/>" + textStatus + "<br/>" + errorThrown.message);
 	}
 }
 
@@ -81,7 +88,7 @@ function logado(IdPeople, Name)
 				Id: IdPeople,
 				Name: Name
 				}
-		};	
+		};
 	hrefParams("../Friends/Friends.html");
 	
 	//window.location.href="../Friends/Friends.php?Id=" + IdPeople + "&Name=" + Name;

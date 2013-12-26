@@ -10,14 +10,21 @@ function ConsultarMyRequests()
 
 function ConsultarMyRequestsOK(data) {
 	$.mobile.loading( 'hide' );
-	if(!hayError(data))
-	{
-		if(data.NumRegistros > 0)
+	
+	try{
+		if(!hayError(data))
 		{
-			var linkR = '<a href="Requests.html">Tiene ' + data.NumRegistros + ' solicitudes de amistad</a>';
-			$("#lblMyRequests").append(linkR);
-			CargarMyRequestsList(data);
-		}		
+			if(data.NumRegistros > 0)
+			{
+				var linkR = '<a href="Requests.html">Tiene ' + data.NumRegistros + ' solicitudes de amistad</a>';
+				$("#lblMyRequests").html(linkR);
+				CargarMyRequestsList(data);
+			}
+		}
+	}
+	catch(err)
+	{
+		alert(err.message);
 	}
 }
 
@@ -34,20 +41,28 @@ function CargarMyRequestsList(data) {
 		addRowMyRequestsList(data[i]);			
 	}
 	
-	$("#MyRequestsList").listview('refresh');	
+	//$("#MyRequestsList").listview('refresh');	
 }
 
 function addRowMyRequestsList(row)
 {	
 	var $li = $("<li>");
+	var htmlLi = '<a href="#" onclick="alert(\'the item!\');">';
+	htmlLi += "<h3>The item</h3>";
+	htmlLi += "</a>";
+	htmlLi += '<a href="#" onclick="alert(\'1st splitbutton!\');" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext">1st link</a>';
+	htmlLi += '<a href="#" onclick="alert(\'2nd splitbutton!\');" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">2nd link</a>';
+					    
+	
 	var linkList = '<a href="#" alt="' + $.trim(row.Description)  + '" onclick="alert(\'' + row.OwnerName + '\')"><h3>' + row.OwnerName + '</h3><p>' + $.trim(row.Description) + '</p></a>';
-	var $controlgroup = $('<div data-role="controlgroup" data-type="horizontal">'); 
-	var linkAceptar = '<a href="#" onclick="oRequestAceptar(' + row.IdOwner + ');" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext">1st link</a>';   
-	var linkRechazar = '<a href="#" onclick="oRequestUpdateEstado(' + row.IdOwner + ', 2);" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">2st link</a>';
-	$controlgroup.append(linkAceptar + linkRechazar);
-	$li.append(linkList);
-	$li.append($controlgroup);
-	$("#MyRequestsList").append($li);	
+	//var $controlgroup = $('<div data-role="controlgroup" data-type="horizontal">'); 
+	var linkAceptar = '<a href="#" onclick="oRequestAceptar(' + row.IdOwner + ');" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext"></a>';   
+	var linkRechazar = '<a href="#" onclick="oRequestUpdateEstado(' + row.IdOwner + ', 2);" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext"></a>';
+	//$controlgroup.append(linkAceptar + linkRechazar);
+	$li.append(linkList + linkAceptar + linkRechazar);
+	//$li.append($controlgroup);
+	$("#MyRequestsList").append($li.append(htmlLi));
+	$("#MyRequestsList").listview('refresh');	
 }
 //********************************************************************************************************************************************************
 function oRequestAceptar(IdOwner)

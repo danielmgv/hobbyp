@@ -1,8 +1,5 @@
 <?php
-
-
 header('Content-type: application/json;charset=utf-8');
-
 include '../include/Utils.php';
 include '../include/BD.php';
 
@@ -41,8 +38,5 @@ function handleException( $e ) {
 }
 
 set_exception_handler( 'handleException' );
-
-
-
 ?>
 
