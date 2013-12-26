@@ -80,7 +80,7 @@ function oRequestAceptarOK(data) {
 	$.mobile.loading( 'hide' );		
 	if(!hayError(data))
 	{
-		ConsultarMyRequests();
+		$FriendsList.Consultar();
 	}
 }
 

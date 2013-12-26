@@ -23,7 +23,7 @@ function Listado($Container, params) {
 		{
 			alert("Error al obtener registros\n" + textStatus + errorThrown.message + httpRequest.responseText);			
 		}
-		if (fnEnd) fnEnd();
+		if (params.fnEnd) params.fnEnd();
     }
 
     function recargarDatos(data) {   
@@ -47,10 +47,11 @@ function Listado($Container, params) {
     function addRow(row) {
     	//debugger;
         var $collapsible = $('<div data-role="collapsible" data-theme="a" data-content-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true"></div>'); 
-		$collapsible.append("<h2>" + row.Fecha +"</h2>");
+		$collapsible.append("<h2>" + row[params.Titulo] +"</h2>");
 		var $listview = $('<ul data-role="listview"></ul>');
     	$collapsible.append($listview);
-    	var $divider = $('<li data-role="list-divider">'+ row.OwnerName +'<span class="ui-li-count">'+ row.NumeroMensajes +'</span></li>');
+
+    	var $divider = $('<li data-role="list-divider">'+ row.OwnerName +'<span class="ui-li-count">'+ dateToString(row[params.Fecha]) +'</span></li>');
     	$listview.append($divider);
     	var liMensaje = getLiMensaje(row);
         $listview.append(liMensaje);
@@ -73,12 +74,18 @@ function Listado($Container, params) {
     
     function getLiMensaje(row)
     {
-    	var $a = $('<a href="index.html"></a>');
-    	$a.append('<h3>Angela Smith</h3>');
-    	$a.append('<p><strong>Link Request</strong></p>');	
-    	$a.append('<h3>Angela Smith</h3>');
-    	$a.append('<h3><p>My name is Angela Smith, SEO Consultant.</p></h3>');	
-    	$a.append('<h3><p class="ui-li-aside"><strong>6:24</strong>AM</p></h3>');   
+//    	var $a = $('<a href="index.html"></a>');
+var $a = $('<div></div>');
+    	$a.append('<h3>Mensaje</h3>');
+    	$a.append('<p><strong>'+ row[params.Descripcion] +'</strong></p>');	
+    	//$a.append('<h3>Angela Smith</h3>');
+    	//$a.append('<h3><p>My name is Angela Smith, SEO Consultant.</p></h3>');	
+    	//$a.append('<h3><p class="ui-li-aside"><strong>' + dateToString(row[params.Fecha]) + '</strong></p></h3>');   
+    	var buttons = '';
+		buttons += '<a href="JavaScript:oRequestAceptar(' + row[params.Clave] + ');" data-role="button" data-icon="plus" data-mini="true" data-inline="true">Aceptar</a>';
+		buttons += '<a href="JavaScript:oRequestUpdateEstado(' + row[params.Clave] + ', 2);" data-role="button" data-icon="delete" data-mini="true" data-inline="true">Rechazar</a>';
+		//buttons += '';
+    	$a.append(buttons);
     	return $('<li></li>').append($a); 	
     }
     

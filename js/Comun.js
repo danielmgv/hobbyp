@@ -977,3 +977,15 @@ function serializeJson(jsonVar)
 
 //***********************************************************************************************************************************
 
+function dateToString (d) {	
+	if(!d)
+	{
+		return "";		
+	}
+	
+	var curr_date = d.getDate();
+	var curr_month = d.getMonth();
+	var curr_year = d.getFullYear();
+	return(curr_date + "/" + curr_month + "/" + curr_year);  
+}
+

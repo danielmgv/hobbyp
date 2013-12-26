@@ -6,23 +6,47 @@ var $MyRequestsList;
 $(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
 
 function pageinit(){
-	
-	oRequest = new BDEntity("oRequest");	
-	$FriendsList = $("#FriendsList");
+	oRequest = new BDEntity("oRequest");
 	$NewFriendList = $("#NewFriendList");
-	AjaxService = '../Ajax/AjaxService.php';		
-	$("#btnBuscarNew").on( 'tap', btnBuscarNewTap );			
+	AjaxService = '../Ajax/AjaxService.php';
+	$("#btnBuscarNew").on( 'tap', btnBuscarNewTap );	
 			
 	var params = {
 		ObtenerSQL:ObtenerSQL,
 		fnOnLoad: fnOnLoad,
-		Text:  "Name",
-		Value: "Id",
+		Titulo:  "OwnerName",
+		Descripcion: "Description",
+		Fecha: "FAlta",
+		Clave: "IdOwner",
 		Table: "oMessages"
 		};
 
 	$MyRequestsList = $("#MyRequestsList").Listado(params);
-	$MyRequestsList.Consultar();		
+	$MyRequestsList.Consultar();	
+	
+	var paramsFriendsList = {
+		ObtenerSQL:ObtenerSqlFriends,
+		Titulo:  "Friend",
+		Descripcion: "Friend",
+		//Fecha: "FAlta",
+		Clave: "Friend"
+		};
+	$FriendsList = $("#FriendsList").Listado(paramsFriendsList);
+	debugger;
+	$FriendsList.Consultar();		
+}
+
+function ObtenerSqlFriends()
+{
+	var sql = "SELECT IF(G.IdOwner = " + fromServer.People.Id + ", G.IdOwner, PG.IdPeople) as Friend ";
+	sql += " FROM `op_Group` PG ";
+	sql += " JOIN oGroup G ON PG.IdGroup = G.Id ";
+	sql += " JOIN opeople POwner ON G.IdOwner = POwner.Id ";
+	sql += " JOIN opeople PPeople ON PG.IdPeople = PPeople.Id ";
+	sql += " Where ";
+	sql += " G.IdOwner = " + fromServer.People.Id + " Or PG.IdPeople = " + fromServer.People.Id;	
+	//debugger;
+	return sql;
 }
 
 function fnOnLoad(data)
@@ -32,7 +56,8 @@ function fnOnLoad(data)
 		var linkR = '<a href="Requests.html">Tiene ' + data.NumRegistros + ' solicitudes de amistad</a>';	
 		$("#lblMyRequests").html(linkR);
 	}
-}	
+}
+
 //******************************************************************************************************************************************************************************
 function listViewClick(value)
 {
@@ -52,7 +77,8 @@ function tapnewMessage( event ) {
 
 function ObtenerSQL()
 {
-	var sql = " SELECT R.IdOwner, R.Description, P.Name as OwnerName FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = " + fromServer.People.Id;	
+	var sql = " SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = " + fromServer.People.Id;
+	sql += " AND Estado = 0";		
 	return sql;
 }
 
