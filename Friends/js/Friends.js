@@ -1,55 +1,46 @@
+//DEFINE
+var $FriendsList, $NewFriendList, $MyRequestsList;
+var oRequest = new BDEntity("oRequest");
 
-var $FriendsList;
-var $NewFriendList;
-var oRequest;
-var $MyRequestsList;
-$(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
+$(document).bind('pageinit', function(){retrieveParams(); pageinit();	});
 
-function pageinit(){
-	oRequest = new BDEntity("oRequest");
+function pageinit(){	
 	$NewFriendList = $("#NewFriendList");
 	AjaxService = '../Ajax/AjaxService.php';
 	$("#btnBuscarNew").on( 'tap', btnBuscarNewTap );	
-			
-	var params = {
-		ObtenerSQL:ObtenerSQL,
-		fnOnLoad: fnOnLoad,
-		Titulo:  "OwnerName",
-		Descripcion: "Description",
-		Fecha: "FAlta",
-		Clave: "IdOwner",
-		Table: "oMessages"
-		};
 
-	$MyRequestsList = $("#MyRequestsList").Listado(params);
-	$MyRequestsList.Consultar();	
+	//debugger;
+	BuscarPeticionesAmistad();
 	
-	var paramsFriendsList = {
-		ObtenerSQL:ObtenerSqlFriends,
-		Titulo:  "Friend",
-		Descripcion: "Friend",
-		//Fecha: "FAlta",
-		Clave: "Friend"
-		};
-	$FriendsList = $("#FriendsList").Listado(paramsFriendsList);
-	debugger;
-	$FriendsList.Consultar();		
+	// Cargar lista de friends
+	BuscarFriends();	
 }
 
-function ObtenerSqlFriends()
+//******************************************************************************************************************************************************************************
+function BuscarPeticionesAmistad()
 {
-	var sql = "SELECT IF(G.IdOwner = " + fromServer.People.Id + ", G.IdOwner, PG.IdPeople) as Friend ";
-	sql += " FROM `op_Group` PG ";
-	sql += " JOIN oGroup G ON PG.IdGroup = G.Id ";
-	sql += " JOIN opeople POwner ON G.IdOwner = POwner.Id ";
-	sql += " JOIN opeople PPeople ON PG.IdPeople = PPeople.Id ";
-	sql += " Where ";
-	sql += " G.IdOwner = " + fromServer.People.Id + " Or PG.IdPeople = " + fromServer.People.Id;	
-	//debugger;
+	var params = {
+	ObtenerSQL: ObtenerSQLMyRequests,
+	fnOnLoad: fnOnLoadMyRequests,
+	Titulo:  "OwnerName",
+	Descripcion: "Description",
+	Fecha: "FAlta",
+	Clave: "IdOwner",
+	Table: "oMessages"
+	};
+
+	$MyRequestsList = $("#MyRequestsList").Listado(params);
+	$MyRequestsList.Consultar();
+}
+
+function ObtenerSQLMyRequests()
+{
+	var sql = " SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = " + fromServer.People.Id;
+	sql += " AND Estado = 0";		
 	return sql;
 }
 
-function fnOnLoad(data)
+function fnOnLoadMyRequests(data)
 {
 	if(data.NumRegistros > 0)
 	{
@@ -58,136 +49,40 @@ function fnOnLoad(data)
 	}
 }
 
-//******************************************************************************************************************************************************************************
-function listViewClick(value)
-{
-	cargarLista(value, $("#description").val());
+//**************************************************************************************************************************************************
+function BuscarFriends(){
+		var paramsFriendsList = {
+		ObtenerSQL: ObtenerSqlFriends,
+		Titulo:  "FriendName",
+		Descripcion: "Friend",
+		//Fecha: "FAlta",
+		Clave: "FriendId"
+		};
+	$FriendsList = $("#FriendsList").ListadoFriends(paramsFriendsList);
+	$FriendsList.Consultar();		
 }
 
+function ObtenerSqlFriends()
+{
+	var sql = "SELECT DISTINCT IF(G.IdOwner = " + fromServer.People.Id + ", PG.IdPeople, G.IdOwner) as FriendId,  ";
+	sql += " IF(G.IdOwner = " + fromServer.People.Id + ", PPeople.Name, POwner.Name) as FriendName ";
+	sql += " FROM `op_Group` PG ";
+	sql += " JOIN oGroup G ON PG.IdGroup = G.Id ";
+	sql += " JOIN opeople POwner ON G.IdOwner = POwner.Id ";
+	sql += " JOIN opeople PPeople ON PG.IdPeople = PPeople.Id ";
+	sql += " Where ";
+	sql += " G.IdOwner = " + fromServer.People.Id + " Or PG.IdPeople = " + fromServer.People.Id;	
+	sql += " AND IF(G.IdOwner = " + fromServer.People.Id + ", PG.IdPeople, G.IdOwner) <> " + fromServer.People.Id;
+	//debugger;
+	return sql;
+}
+
+//******************************************************************************************************************************************************************************
 function btnBuscarNewTap()
 {	
 	cargarListaNew();
 }
 
-// Callback function references the event target and adds the 'tap' class to it
-function tapnewMessage( event ) {
-	$(event.target).addClass( "tap" );
-	cargarLista("", $("#description").val());
-}
-
-function ObtenerSQL()
-{
-	var sql = " SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = " + fromServer.People.Id;
-	sql += " AND Estado = 0";		
-	return sql;
-}
-
-//*************************************************************************************************************************************************************************
-
-function sendMessage()
-{
-	$.mobile.loading( 'show', {
-		text: "",
-		textVisible: false,
-		theme: "a",
-		textonly: false
-		//,			html: html
-	});
-	
-	var params = {
-			IdReciber:seleccionado,
-			IdSender: fromServer.People.Id,
-			Message: $("#Message").val(),
-			fnOK: sendMessageOK,
-			fnNOK: sendMessageNOK
-	};
-	op_hobbyesSendMenssage(params);
-}
-
-
-function sendMessageOK(data) {
-	$.mobile.loading( 'hide' );
-	$("#btnCancel").click();
-	//cargarLista();		
-	if(!hayError(data))
-	{
-		//alert("Borrado");	
-	}
-}
-
-function sendMessageNOK(httpRequest, textStatus, errorThrown) {
-	$.mobile.loading( 'hide' );
-	//cargarLista();
-	if(httpRequest.status = 500)
-	{
-		try{
-			var errorJson = eval(httpRequest.responseText);
-			alert(errorJson.Error);
-		}
-		catch(any){
-			alert(httpRequest.responseText);		
-		}	
-	}
-	else
-	{		
-		alert("Error al mandar el mensaje.\n" + textStatus + errorThrown.message);	
-	}
-}
-//**************************************************************************************************
-
-function cargarLista()
-{
-	var sql = " SELECT POw.Name, PF.Name, G.IdOwner, PG.IdPeople FROM ";	
-	sql += " oGroup G JOIN op_Group PG ON PG.IdGroup = G.Id ";
-	sql += " JOIN opeople POw ON POw.Id = G.IdOwner ";
-	sql += " JOIN opeople PF ON PF.Id = G.IdPeople ";
-	sql += " WHERE G.IdOwner = " + fromServer.People.Id;
-	sql += " AND PF.Name LIKE '%" + $("#searchNew").val() + "%'";
-	
-	var params = {SQL:sql};
-	AsyncConsultaSELECT(params, cargarListaOK, cargarListaNOK);	
-}
-
-function cargarListaOK(data) {	
-	$.mobile.loading( 'hide' );		
-	if(!hayError(data))
-	{		
-		dataToListado(data);		
-	}
-}
-
-function cargarListaNOK(httpRequest, textStatus, errorThrown) {
-	$.mobile.loading( 'hide' );	
-	alert("Error al cargar lista.\n" + sql + " " + textStatus + errorThrown.message + httpRequest.responseText);	
-}
-
-
-function dataToListado(data)
-{	
-	$listview.html('');	
-	if (data.NumRegistros == 0) {
-		var li = $('<li>');		
-		li.text("No se encontraron registros.");
-		$listview.append(li);
-	}
-	else {				
-		for (var i = 0; i < data.NumRegistros; i++) {			
-			addRow(data[i]);			
-		}
-	}	
-	
-	$listview.listview('refresh');	
-}
-
-function addRow(row)
-{
-	var linkDelete = '<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Delete</a>';
-	var htmlImg = '<li class="ht" onclick="seleccionar(' + row.Id + ');" IdHobbie="'+ row.IdHobbie +'"><a href="#" ><h3>' + row.Name +'</h3><p>' + row.Name +'</p></a>' + linkDelete + '</li>';
-	
-	$listview.append(htmlImg);
-}
-
-//***************************************************************************************************************************
 function cargarListaNew()
 {
 	var sql = "SELECT Id, Name FROM opeople ";	
@@ -268,6 +163,7 @@ function oRequestInsertNOK(httpRequest, textStatus, errorThrown) {
 }
 
 //***************************************************************************************************************************
-
-
-		
+function EnviarMensaje (to) {
+  fromServer["To"] = to;
+  hrefParams('../Messages/Messages.html');
+}

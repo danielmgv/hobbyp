@@ -31,7 +31,7 @@ function Listado($Container, params) {
         
         if(params.fnOnLoad)
         {
-        	fnOnLoad(data);        	
+        	params.fnOnLoad(data);        	
         }
         
         if (data.NumRegistros == 0) {
@@ -75,7 +75,7 @@ function Listado($Container, params) {
     function getLiMensaje(row)
     {
 //    	var $a = $('<a href="index.html"></a>');
-var $a = $('<div></div>');
+		var $a = $('<div></div>');
     	$a.append('<h3>Mensaje</h3>');
     	$a.append('<p><strong>'+ row[params.Descripcion] +'</strong></p>');	
     	//$a.append('<h3>Angela Smith</h3>');

@@ -63,12 +63,9 @@ function loginOK(data) {
 	catch(err){		
 		alert("loginOK: Error " + err.message);
 	}
-
-	
 }
 
 function loginNOK(httpRequest, textStatus, errorThrown) {
-	alert(2);
 	$.mobile.loading( 'hide' );	
 	try
 	{
