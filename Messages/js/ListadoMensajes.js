@@ -40,6 +40,7 @@ function ListadoMensajes($Container, params) {
     }
 
     function addRow(row) {
+    
         var $collapsible = $('<div data-role="collapsible" data-theme="a" data-content-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true"></div>'); 
 		$collapsible.append("<h2>" + row.DeNombre + row.Asunto +  dateTimeToString(row.Fecha) +"</h2>");
 		var $listview = $('<ul data-role="listview"></ul>');
@@ -68,8 +69,8 @@ function ListadoMensajes($Container, params) {
     {
     	var $div = $('<div></div>');
     	$div.append('<h3>' + row.Mensaje  + '</h3>');
-		var buttons = '<a href="JavaScript:EnviarMensaje(' + row[params.Clave] + ', \''+  row[params.Titulo] +'\');" data-role="button" data-icon="bars" data-mini="true" data-inline="true">Enviar mensaje</a>';
-		buttons += '<a href="JavaScript:EliminarFriend(' + row[params.Clave] + ');" data-role="button" data-icon="minus" data-mini="true" data-inline="true">Borrar</a>';		
+		var buttons = '<a href="JavaScript:ResponderMensaje(' + row[params.Clave] + ', \''+  row.Asunto +'\');" data-role="button" data-icon="bars" data-mini="true" data-inline="true">Responder</a>';
+		buttons += '<a href="JavaScript:oMessagesEliminarRecibido(' + row[params.Clave] + ');" data-role="button" data-icon="minus" data-mini="true" data-inline="true">Borrar</a>';		
     	$div.append(buttons);
     	return $('<li></li>').append($div); 	
     	/*
