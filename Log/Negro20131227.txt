@@ -1,0 +1,160 @@
+15:48:00-127.0.0.1-BEGIN AJAX.
+15:48:00-127.0.0.1-select.
+15:48:01-127.0.0.1-Error Fallo al conectar a MySQL: (2002) php_network_getaddresses: getaddrinfo failed: Host desconocido. .
+15:48:29-127.0.0.1-BEGIN AJAX.
+15:48:29-127.0.0.1-select.
+15:48:29-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:48:29-127.0.0.1-BEGIN AJAX.
+15:48:29-127.0.0.1-select.
+15:48:29-127.0.0.1-select.
+15:48:29-127.0.0.1-Error Unknown column 'R.FAlta' in 'field list'.
+exist.
+15:53:12-127.0.0.1-BEGIN AJAX.
+15:53:12-127.0.0.1-select.
+15:53:12-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:53:13-127.0.0.1-BEGIN AJAX.
+15:53:13-127.0.0.1-select.
+15:53:13-127.0.0.1-BEGIN AJAX.
+15:53:13-127.0.0.1-select.
+15:53:13-127.0.0.1-Error Unknown column 'R.FAlta' in 'field list'.
+15:53:13-127.0.0.1-Error Table 'u490265401_educa.ogroup' doesn't exist.
+15:56:01-127.0.0.1-BEGIN AJAX.
+15:56:01-127.0.0.1-select.
+15:56:01-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:56:01-127.0.0.1-BEGIN AJAX.
+15:56:01-127.0.0.1-BEGIN AJAX.
+15:56:01-127.0.0.1-select.
+15:56:01-127.0.0.1-select.
+15:56:01-127.0.0.1-Error Unknown column 'R.FAlta' in 'field list'.
+e) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+15:56:59-127.0.0.1-BEGIN AJAX.
+15:56:59-127.0.0.1-select.
+15:56:59-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:57:17-127.0.0.1-BEGIN AJAX.
+15:57:17-127.0.0.1-select.
+15:57:17-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:57:17-127.0.0.1-BEGIN AJAX.
+15:57:17-127.0.0.1-select.
+15:57:17-127.0.0.1-BEGIN AJAX.
+15:57:17-127.0.0.1-select.
+15:57:17-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+15:57:17-127.0.0.1-Error Unknown column 'Estado' in 'where clause'.
+15:57:57-127.0.0.1-BEGIN AJAX.
+15:57:57-127.0.0.1-select.
+15:57:57-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:57:57-127.0.0.1-BEGIN AJAX.
+15:57:57-127.0.0.1-select.
+15:57:57-127.0.0.1-select.
+15:57:57-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+15:57:57-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+15:58:00-127.0.0.1-BEGIN AJAX.
+15:58:00-127.0.0.1-BEGIN AJAX.
+15:58:00-127.0.0.1-select.
+15:58:00-127.0.0.1-select.
+15:58:00-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:58:00-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:58:01-127.0.0.1-BEGIN AJAX.
+15:58:01-127.0.0.1-select.
+15:58:01-127.0.0.1-BEGIN AJAX.
+15:58:01-127.0.0.1-select.
+15:58:01-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+15:58:01-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+15:58:07-127.0.0.1-BEGIN AJAX.
+15:58:07-127.0.0.1-BEGIN AJAX.
+15:58:07-127.0.0.1-select.
+15:58:07-127.0.0.1-select.
+15:58:07-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+15:58:07-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+15:58:12-127.0.0.1-BEGIN AJAX.
+15:58:12-127.0.0.1-select.
+15:58:12-127.0.0.1-SELECT Id, Name FROM opeople  WHERE Name LIKE '%ww%'.
+15:58:17-127.0.0.1-BEGIN AJAX.
+15:58:17-127.0.0.1-procedure.
+15:58:17-127.0.0.1-CALL oRequestInsert('110',13,'				
+				').
+15:58:28-127.0.0.1-BEGIN AJAX.
+15:58:28-127.0.0.1-select.
+15:58:28-127.0.0.1-BEGIN AJAX.
+15:58:28-127.0.0.1-select.
+15:58:28-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:58:28-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:58:29-127.0.0.1-BEGIN AJAX.
+15:58:29-127.0.0.1-BEGIN AJAX.
+15:58:29-127.0.0.1-select.
+15:58:29-127.0.0.1-select.
+15:58:29-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+15:58:30-127.0.0.1-BEGIN AJAX.
+15:58:30-127.0.0.1-BEGIN AJAX.
+15:58:30-127.0.0.1-select.
+15:58:30-127.0.0.1-select.
+15:58:30-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:58:30-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:58:31-127.0.0.1-BEGIN AJAX.
+15:58:31-127.0.0.1-BEGIN AJAX.
+15:58:31-127.0.0.1-select.
+15:58:31-127.0.0.1-select.
+15:58:31-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+15:58:31-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+15:58:36-127.0.0.1-BEGIN AJAX.
+15:58:36-127.0.0.1-select.
+15:58:36-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+15:58:36-127.0.0.1-BEGIN AJAX.
+15:58:36-127.0.0.1-BEGIN AJAX.
+15:58:36-127.0.0.1-select.
+15:58:36-127.0.0.1-select.
+15:58:36-127.0.0.1-SELECT IF(G.IdOwner = 11, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11.
+15:58:36-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+15:58:38-127.0.0.1-BEGIN AJAX.
+15:58:38-127.0.0.1-select.
+15:58:38-127.0.0.1-BEGIN AJAX.
+15:58:38-127.0.0.1-select.
+15:58:38-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 11.
+15:58:38-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 11.
+15:58:39-127.0.0.1-BEGIN AJAX.
+15:58:39-127.0.0.1-select.
+15:58:39-127.0.0.1-select.
+15:58:39-127.0.0.1-SELECT IF(G.IdOwner = 11, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11.
+15:58:39-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+15:58:40-127.0.0.1-BEGIN AJAX.
+15:58:40-127.0.0.1-select.
+15:58:40-127.0.0.1-select.
+15:58:40-127.0.0.1-SELECT IF(G.IdOwner = 11, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11.
+15:58:44-127.0.0.1-BEGIN AJAX.
+15:58:44-127.0.0.1-select.
+15:58:44-127.0.0.1-SELECT Id, Name FROM opeople  WHERE Name LIKE '%be%'.
+15:58:47-127.0.0.1-BEGIN AJAX.
+15:58:47-127.0.0.1-procedure.
+15:58:47-127.0.0.1-CALL oRequestInsert('11',110,'				
+				').
+15:58:52-127.0.0.1-BEGIN AJAX.
+15:58:52-127.0.0.1-BEGIN AJAX.
+15:58:52-127.0.0.1-select.
+15:58:52-127.0.0.1-select.
+15:58:52-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 11.
+15:58:52-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 11.
+15:58:52-127.0.0.1-BEGIN AJAX.
+15:58:52-127.0.0.1-BEGIN AJAX.
+15:58:52-127.0.0.1-select.
+15:58:52-127.0.0.1-select.
+15:58:52-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+15:58:52-127.0.0.1-SELECT IF(G.IdOwner = 11, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11.
+15:59:06-127.0.0.1-BEGIN AJAX.
+15:59:06-127.0.0.1-select.
+15:59:06-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+15:59:06-127.0.0.1-BEGIN AJAX.
+15:59:06-127.0.0.1-select.
+15:59:06-127.0.0.1-BEGIN AJAX.
+15:59:06-127.0.0.1-select.
+15:59:06-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+15:59:06-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+15:59:08-127.0.0.1-BEGIN AJAX.
+15:59:08-127.0.0.1-BEGIN AJAX.
+15:59:08-127.0.0.1-select.
+15:59:08-127.0.0.1-select.
+15:59:08-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:59:08-127.0.0.1- SELECT *  FROM oMessages  WHERE Para = 110.
+15:59:09-127.0.0.1-BEGIN AJAX.
+15:59:09-127.0.0.1-BEGIN AJAX.
+15:59:09-127.0.0.1-select.
+15:59:09-127.0.0.1-select.
+15:59:09-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.

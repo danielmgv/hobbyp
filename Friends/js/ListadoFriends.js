@@ -74,7 +74,7 @@ function ListadoFriends($Container, params) {
     this.getLiMensaje = function (row)
     {
 		var $a = $('<div></div>');
-		var buttons = '<a href="JavaScript:EnviarMensaje(' + row[params.Clave] + ');" data-role="button" data-icon="bars" data-mini="true" data-inline="true">Enviar mensaje</a>';
+		var buttons = '<a href="JavaScript:EnviarMensaje(' + row[params.Clave] + ', \''+  row[params.Titulo] +'\');" data-role="button" data-icon="bars" data-mini="true" data-inline="true">Enviar mensaje</a>';
 		buttons += '<a href="JavaScript:EliminarFriend(' + row[params.Clave] + ');" data-role="button" data-icon="minus" data-mini="true" data-inline="true">Borrar</a>';		
     	$a.append(buttons);
     	return $('<li></li>').append($a); 	

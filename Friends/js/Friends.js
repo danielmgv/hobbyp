@@ -157,13 +157,14 @@ function oRequestInsertOK(data) {
 function oRequestInsertNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );	
 	if(!hayError(httpRequest.responseText))
-	{		
+	{
 		alert("Error al insertar\n" + textStatus + errorThrown.message + httpRequest.responseText);	
 	}
 }
 
 //***************************************************************************************************************************
-function EnviarMensaje (to) {
-  fromServer["To"] = to;
-  hrefParams('../Messages/Messages.html');
+function EnviarMensaje (To,ToName) {
+  fromServer["To"] = To;
+  fromServer["ToName"] = ToName;  
+  hrefParams('NewMessage.html');
 }

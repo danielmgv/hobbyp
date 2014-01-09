@@ -101,7 +101,7 @@ function oRequestUpdateEstado(IdOwner, estado)
 	}
 
 	if(confirm(mensajeConfirm))
-	{
+	{	
 		var params = {a:fromServer.People.Id, b:IdOwner, Estado: estado};
 		oRequest.Procedure("oRequestUpdateEstado", params);
 	}

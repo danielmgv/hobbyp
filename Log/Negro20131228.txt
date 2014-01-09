@@ -1,0 +1,56 @@
+09:03:22-127.0.0.1-BEGIN AJAX.
+09:03:22-127.0.0.1-select.
+09:03:23-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+09:03:33-127.0.0.1-BEGIN AJAX.
+09:03:33-127.0.0.1-select.
+09:03:33-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+09:03:35-127.0.0.1-BEGIN AJAX.
+09:03:35-127.0.0.1-select.
+09:03:35-127.0.0.1-select.
+09:03:35-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+09:03:35-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+14:05:54-127.0.0.1-BEGIN AJAX.
+14:05:54-127.0.0.1-BEGIN AJAX.
+14:05:54-127.0.0.1-select.
+14:05:54-127.0.0.1-select.
+14:05:54-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+14:05:54-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+14:05:54-127.0.0.1-BEGIN AJAX.
+14:05:54-127.0.0.1-BEGIN AJAX.
+14:05:54-127.0.0.1-select.
+14:05:54-127.0.0.1-select.
+14:05:54-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+14:05:54-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+14:45:30-127.0.0.1-BEGIN AJAX.
+14:45:30-127.0.0.1-select.
+14:45:30-127.0.0.1-select.
+14:45:30-127.0.0.1-SELECT IF(G.IdOwner = 110, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110.
+14:45:30-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+14:45:33-127.0.0.1-BEGIN AJAX.
+14:45:33-127.0.0.1-select.
+14:45:33-127.0.0.1-SELECT Id, Name FROM opeople  WHERE Name LIKE '%www%'.
+14:45:36-127.0.0.1-BEGIN AJAX.
+14:45:36-127.0.0.1-procedure.
+14:45:36-127.0.0.1-CALL oRequestInsert('110',11,'				
+				',0).
+14:45:50-127.0.0.1-BEGIN AJAX.
+14:45:50-127.0.0.1-select.
+14:45:50-127.0.0.1-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+14:45:50-127.0.0.1-BEGIN AJAX.
+14:45:50-127.0.0.1-BEGIN AJAX.
+14:45:50-127.0.0.1-select.
+14:45:50-127.0.0.1-select.
+14:45:50-127.0.0.1-SELECT IF(G.IdOwner = 11, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11.
+14:45:50-127.0.0.1- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+14:45:53-127.0.0.1-BEGIN AJAX.
+14:45:53-127.0.0.1-BEGIN AJAX.
+14:45:53-127.0.0.1-select.
+14:45:53-127.0.0.1-select.
+14:45:53-127.0.0.1-SELECT IF(G.IdOwner = 11, G.IdOwner, PG.IdPeople) as Friend  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11.
+14:46:00-127.0.0.1-BEGIN AJAX.
+14:46:00-127.0.0.1-select.
+14:46:00-127.0.0.1-SELECT Id, Name FROM opeople  WHERE Name LIKE '%bego%'.
+14:46:03-127.0.0.1-BEGIN AJAX.
+14:46:03-127.0.0.1-procedure.
+14:46:03-127.0.0.1-Error CALL failed: (1062) Duplicate entry '11-110' for key 'PRIMARY' CALL oRequestInsert('11',110,'				
+				',0).

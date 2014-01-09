@@ -31,26 +31,6 @@ function pageinit(){
 		
 	$listviewEnviados = $("#ListIdEnviados").ListadoMensajes(params);
 	$listviewEnviados.Consultar();	
-
-	if(fromServer.To)
-	{		
-		//alert(fromServer.To);
-		//debugger;
-		//$("#subNavbarEnviadosId").tap();
-
-		$('a').each(function()
-		{
-			if($(this).attr("href") == "#Enviados")
-			{
-				$(this).click();
-				return false;
-			}			
-		});
-		
-		$("#btnNuevoMensaje").click();
-		$("#ParaParam").val(fromServer.To);		
-		//$("#ParaParam").hide();
-	}
 }
 
 function ObtenerSQLRecibidos()
