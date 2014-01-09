@@ -984,8 +984,25 @@ function dateToString (d) {
 	}
 	
 	var curr_date = d.getDate();
-	var curr_month = d.getMonth();
+	var curr_month = d.getMonth() + 1;
 	var curr_year = d.getFullYear();
 	return(curr_date + "/" + curr_month + "/" + curr_year);  
+}
+
+function dateTimeToString (d) {	
+	if(!d)
+	{
+		return "";		
+	}
+	
+	var curr_date = d.getDate();
+	var curr_month = d.getMonth() + 1;
+	var curr_year = d.getFullYear();
+	
+	var curr_hour = d.getHours();
+	var curr_min = d.getMinutes();
+	var curr_seg = d.getSeconds(); //getMilliseconds()
+	
+	return(curr_date + "/" + curr_month + "/" + curr_year + " " + curr_hour + ":" + curr_min + ":" + curr_seg);  
 }
 

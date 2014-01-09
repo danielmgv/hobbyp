@@ -35,9 +35,9 @@ function pageinit(){
 
 function ObtenerSQLRecibidos()
 {
-	sql =  " SELECT * ";
-	sql += " FROM oMessages ";
-	sql += " WHERE Para = " + fromServer.People.Id;
+	sql =  " SELECT *, P.Name as DeNombre ";
+	sql += " FROM oMessages M JOIN opeople P ON P.Id = M.De ";
+	sql += " WHERE M.Para = " + fromServer.People.Id;
 	
 	return sql;
 }

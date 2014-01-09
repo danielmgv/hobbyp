@@ -13,7 +13,6 @@ function pageinit(){
 //*************************************************************************************************************************************************************************
 function sendMessage()
 {
-	debugger;
 	$.mobile.loading( 'show', {
 		text: "",
 		textVisible: false,
@@ -21,7 +20,8 @@ function sendMessage()
 		textonly: false
 	});
 	var params={
-		 IdOrigenParam: fromServer.People.Id
+		 Asunto:$("#AsuntoParam").text()
+		,IdOrigenParam: fromServer.People.Id
 	    ,FechaParam: new Date()
 		,MensajeParam: $("#MensajeParam").text()
 		,DeParam: fromServer.People.Id
@@ -38,9 +38,9 @@ function oMessagesInsertOK(data) {
 	if(!hayError(data))
 	{
 		alert("Enviado");	
-		fromServer.To = undefinded;
-		fromServer.ToName = undefinded;
-		document.location.history.back();
+		fromServer.To = undefined;
+		fromServer.ToName = undefined;
+		window.history.back();
 	}
 }
 
