@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="Content-Language" content="es-ES"/>
+		<title>Hobbyp</title>		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+						
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	
+		<script src="../js/Comun.js"></script>
+		<script src="../js/Comun_Mobile.js"></script>
+		<script src="../js/MySQLLib/MySQL.js"></script>
+		<script src="../js/MySQLLib/BDEntity.js"></script>
+		<script src="../js/phonegap/PGNavigation.js"></script>		
+		<script src="js/Hobbies.js"></script>
+		
+		<script language="Javascript" type="text/javascript">				
+		</script>				
+	</head>
+	<body>
+		<div data-role="page" data-theme="a" id="one">
+			<div data-role="header" data-position="inline">			
+				<div data-role="navbar" id="navbarId">
+					<ul>
+						<li><a href="javascript:hrefParams('../Messages/Messages.html');" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>	
+						<li><a href="javascript:hrefParams('../Friends/Friends.html');" rel="external" data-ajax="false" data-icon="gear" >Friends</a></li>						
+						<li><a href="javascript:hrefParams('../Search/Search.php');" rel="external" data-ajax="false" data-icon="gear" >Search</a></li>	
+						<li><a href="javascript:hrefParams('../Photos/MyPhotos.php');" rel="external" data-ajax="false" data-icon="gear" >Photos</a></li>
+						<li><a href="#" class="ui-btn-active"  rel="external" data-ajax="false" data-icon="search">Hobbies</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="content" data-theme="a">	
+				<div data-role="fieldcontain" data-scroll="y">
+					<ul id="listHobbies" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search hobbyes...">
+					</ul>
+				</div>	
+				<div data-role="fieldcontain">
+					<label for="textarea">Descripción:</label>
+					<textarea cols="40" rows="8" name="description" id="description"></textarea>
+				</div>
+				<button id="addHob">Nuevo Hobbie</button>
+				<br/>
+				<ul data-role="listview" data-inset="true"  id="listviewId" data-split-icon="delete">
+				</ul>
+				<div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px;">
+					<h3>Delete hobby?</h3>
+					<p></p><!-- data-rel="back" -->
+					<a href="javascript:deleteHobbye();" rel="external" data-ajax="false" data-role="button" data-theme="b" data-icon="check" data-inline="true" data-mini="true" >Delete</a>
+					<a href="index.html" id="btnCancel" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>	
+				</div>				
+			</div>
+			<div data-role="footer" class="footer-docs" data-theme="a">
+				<p class="jqm-version"></p>
+				<p>Research by quaz</p>
+			</div>
+		</div>
+	</body>
+</html>
+
+
