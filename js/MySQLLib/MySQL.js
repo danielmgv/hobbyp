@@ -27,6 +27,10 @@ var MYSQL_TYPE_VAR_STRING  = 253;//	Varstring
 var MYSQL_TYPE_STRING      = 254;//	String
 var MYSQL_TYPE_GEOMETRY  = 255;//	Geometry
 
+
+var AjaxService = 'http://serverajax.bedagoni.hol.es/AjaxService.php';
+var jqxhr;
+
 function getMySQLText(id)
 {
 	return "'" + $("#" + id).val() + "'"; 
@@ -59,10 +63,6 @@ function CallMySQL(params)
 	
 	params.fnCall(sql, params.fnOK, params.fnNOK);
 }
-
-
-var AjaxService = '../Ajax/AjaxService.php';
-var jqxhr;
 
 function AsyncConsultaSELECT(params, fnOk, fnNOK)
 {
