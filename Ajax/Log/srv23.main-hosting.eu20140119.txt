@@ -1,0 +1,33 @@
+09:05:10-85.251.54.20-BEGIN AJAX.
+09:05:10-85.251.54.20-select.
+09:05:10-85.251.54.20-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+09:05:11-85.251.54.20-BEGIN AJAX.
+09:05:11-85.251.54.20-select.
+09:05:11-85.251.54.20- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:05:11-85.251.54.20-BEGIN AJAX.
+09:05:11-85.251.54.20-select.
+09:05:11-85.251.54.20-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:05:18-85.251.54.20-BEGIN AJAX.
+09:05:18-85.251.54.20-select.
+09:05:18-85.251.54.20- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+09:05:18-85.251.54.20-BEGIN AJAX.
+09:05:18-85.251.54.20-select.
+09:05:18-85.251.54.20- SELECT *  FROM oMessages  WHERE De = 11.
+09:05:39-85.251.54.20-BEGIN AJAX.
+09:05:39-85.251.54.20-procedure.
+09:05:39-85.251.54.20-CALL oMessagesEliminarRecibido(4).
+09:05:40-85.251.54.20-BEGIN AJAX.
+09:05:40-85.251.54.20-select.
+09:05:40-85.251.54.20- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+09:05:47-85.251.54.20-BEGIN AJAX.
+09:05:47-85.251.54.20-select.
+09:05:47-85.251.54.20- SELECT *  FROM oMessages  WHERE De = 11.
+09:05:47-85.251.54.20-BEGIN AJAX.
+09:05:47-85.251.54.20-select.
+09:05:47-85.251.54.20- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+09:06:05-85.251.54.20-BEGIN AJAX.
+09:06:05-85.251.54.20-select.
+09:06:05-85.251.54.20- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:06:05-85.251.54.20-BEGIN AJAX.
+09:06:05-85.251.54.20-select.
+09:06:05-85.251.54.20-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.

@@ -3,12 +3,11 @@ var storedQuery = {};
 var $listview;
 var sql;
 var seleccionado;
-
-$(document).bind('pageinit', function(){	pageinit();	});
+var op_hobbyes = new BDEntity("op_hobbyes");
+$(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
 
 function pageinit(){
 	$listview = $("#listviewId");
-	AjaxService = '../Ajax/AjaxService.php';		
 	
 	$("#addHob").on( 'tap', tapadd );	
 	
@@ -18,9 +17,11 @@ function pageinit(){
 	var params = {
 		Text:  "Name",
 		Value: "Id",
-		Table: "ohoobyes"
+		Table: "ohoobyes",
+		fnHref: listViewClick
 		};
 	//Todos los hobbies
+
 	$("#listHobbies").LoadMySQL(params);
 	//$('input[data-type="search"]').val("");
 	//$('input[data-type="search"]').trigger("change");
@@ -31,9 +32,9 @@ function pageinit(){
 	filter_el.trigger("change");
 }
 
-function listViewClick(value)
+function listViewClick(data)
 {
-	guardar(value);
+	guardar(data.Valor);
 }
 
 // Callback function references the event target and adds the 'tap' class to it
@@ -48,6 +49,11 @@ function cargarLista()
 	
 	var params = {SQL:sql};
 	AsyncConsultaSELECT(params, cargarListaOK, cargarListaNOK);	
+}
+
+function cargarListaNOK(httpRequest, textStatus, errorThrown) {
+	$.mobile.loading( 'hide' );	
+	tratarError(httpRequest, textStatus, errorThrown, "cargarLista");		
 }
 
 function cargarListaOK(data) {	
@@ -71,8 +77,7 @@ function dataToListado(data)
 		for (var i = 0; i < data.NumRegistros; i++) {			
 			addRow(data[i]);			
 		}
-	}	
-	
+	}		
 	$listview.listview('refresh');	
 }
 
@@ -90,12 +95,6 @@ function seleccionar(IdHobbie)
 	seleccionado = IdHobbie;	
 }
 
-
-function cargarListaNOK(httpRequest, textStatus, errorThrown) {
-	$.mobile.loading( 'hide' );	
-	alert("Error al cargar lista.\n" + sql + " " + textStatus + errorThrown.message + httpRequest.responseText);	
-}
-
 //*************************************************************************************************************************************************************************
 
 //Guardar 
@@ -108,46 +107,31 @@ function guardar(value)
 		textonly: false
 		//,			html: html
 	});
-	
-	var params = {
-			IdHobbie: value,
+	debugger;
+	var params = {	
 			IdPeople:fromServer.People.Id,
-			Like: true,
-			fnOK: guardarOK,
-			fnNOK: guardarNOK
+			IdHobbie: value,
+			Like: true
 	};
-	op_hobbyesInsert(params);
+	
+	op_hobbyes.Insert(params);
 }
 
-
-function guardarOK(data) {	
-	$.mobile.loading( 'hide' );
+function op_hobbyesInsertOK(data) {	
+	$.mobile.loading( 'hide' );	
 	cargarLista();		
 	if(!hayError(data))
-	{
+	{	
 		$('input[data-type="search"]').val("");
-		$('input[data-type="search"]').trigger("keyup");
-		alert("Guardado");	
+		$('input[data-type="search"]').trigger("keyup");	
+		alert("Guardado");
 	}
 }
 
-function guardarNOK(httpRequest, textStatus, errorThrown) {
+function op_hobbyesInsertNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );
-	cargarLista();
-	if(httpRequest.status = 500)
-	{
-		try{
-			var errorJson = eval(httpRequest.responseText);
-			alert(errorJson.Error);
-		}
-		catch(any){
-			alert(httpRequest.responseText);		
-		}	
-	}
-	else
-	{		
-		alert("Error al guardar.\n" + textStatus + errorThrown.message);	
-	}
+	cargarLista();	
+	tratarError(httpRequest, textStatus, errorThrown, "op_hobbyesInsert");
 }
 //**********************************************************************************************************************************************
 

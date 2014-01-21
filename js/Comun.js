@@ -1081,8 +1081,19 @@ jQuery.fn.LoadMySQL = function(params){
 					}					
 					continue;
 				}
-				auxStr = '<li class="ui-screen-hidden" ><a href="javaScript:listViewClick(' + value +  ')">' + text +  '</a></li>';
-				comboJq.append(auxStr);				
+				var aAux = $("<a>");
+				aAux.click(
+					function()
+					{
+						params.fnHref(data[i]);	
+					}					
+				);
+				//aAux.prop("href","javaScript:listViewClick('" + value +  "')");
+				aAux.text(text);
+				
+				var auxLi = $('<li class="ui-screen-hidden" ></li>');				
+				auxLi.append(aAux);
+				comboJq.append(auxLi);				
 			}
 			
 			comboJq.listview('refresh', true);
