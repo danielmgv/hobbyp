@@ -960,7 +960,7 @@ function serializeJson(jsonVar)
 			case '[object Date]':
 			  	serializeArr.push("'" + jsonVar[key].toMysqlFormat()  + "'");
 		  		break;
-			case 'boolean':
+			case '[object Boolean]':
 		  		serializeArr.push( jsonVar[key]);
 		  		break;
 			case 'undefined':
