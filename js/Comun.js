@@ -1005,4 +1005,120 @@ function dateTimeToString (d) {
 	
 	return(curr_date + "/" + curr_month + "/" + curr_year + " " + curr_hour + ":" + curr_min + ":" + curr_seg);  
 }
+//***********************************************************************************************************************************
+
+function tratarError(httpRequest, textStatus, errorThrown, mensaje)
+{
+	var mensajeAux = mensaje;
+	if(httpRequest.status = 500)
+	{
+		try{
+			var errorJson = eval(httpRequest.responseText);
+			mensajeAux += "\n" + errorJson.Error;
+		}
+		catch(any){
+			mensajeAux += "\n" + httpRequest.responseText;		
+		}	
+	}
+	else
+	{
+		mensajeAux += "\n" + textStatus + errorThrown.message;	
+	}
+	
+	alert(mensajeAux);
+}
+
+//********************************************************************************************************
+//CARGAR LISTVIEW
+jQuery.fn.LoadMySQL = function(params){
+	//debugger;
+	this.html("Cargando....");
+	var comboJq = this;	
+	
+	var sql = "SELECT " + params.Text + " as Texto, " + params.Value + " as Valor ";
+	
+	if(params.JoinField)
+	{
+		sql += ", " + params.JoinField + " as JoinField "; 
+	}
+	
+	sql += " FROM " + params.Table;
+	
+	this.CargarOk = function(data)
+	{
+		comboJq.html("");
+		if(comboJq[0] === undefined)
+		{
+			return;
+		}
+		
+		if(params.Default)
+		{
+			comboJq.append('<option value=' + params.Default.Value + '>' + params.Default.Text + '</option>');
+		}
+		
+		if (data.NumRegistros == 0) {
+			//alert("No se encontraron titulos.");
+		}
+		else {
+			//var datos = data[1];
+			var value, text;
+			
+			var Selected = "";
+			var classjoinValue = "";
+
+			for (var i = 0; i < data.NumRegistros; i++) {
+				
+				value = data[i].Valor;
+				Selected = value == params.Selected ? "SELECTED": "";				
+				text = data[i].Texto;	
+				var auxStr;
+				if(params.JoinField)
+				{
+					if(data[i].JoinField == params.JoinValue)
+					{
+						comboJq.append('<li class="ui-screen-hidden"><a href="javaScript:listViewClick("' + value +  '")"></a>' + text + '</li>');						
+					}					
+					continue;
+				}
+				auxStr = '<li class="ui-screen-hidden" ><a href="javaScript:listViewClick(' + value +  ')">' + text +  '</a></li>';
+				comboJq.append(auxStr);				
+			}
+			
+			comboJq.listview('refresh', true);
+		}
+	};
+	
+	this.CargarNOk = function(httpRequest, textStatus, errorThrown)
+	{
+		comboJq.html("");
+		ccb.feedBack.endLoading();
+		$error("Error en la carga." + httpRequest.responseText);	
+	};
+		
+		
+	if(params.Sync)
+	{
+		SyncConsultaSELECT({SQL: sql, Cached: false}, this.CargarOk, this.CargarNOk);	
+	}
+	else
+	{		
+		if(params.NoCached)
+		{
+			SyncConsultaSELECT({SQL: sql, Cached: false}, this.CargarOk, this.CargarNOk);	
+		}
+		else
+		{
+			SyncConsultaSELECT({SQL: sql, Cached: true}, this.CargarOk, this.CargarNOk);	
+		}	
+	}
+	
+		
+};
+
+//*********************************************************************************************************************************
+
+
+
+
 
