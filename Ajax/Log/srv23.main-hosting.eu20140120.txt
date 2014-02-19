@@ -1,0 +1,15 @@
+10:16:38-83.56.19.7-BEGIN AJAX.
+10:16:38-83.56.19.7-select.
+10:16:38-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+10:16:40-83.56.19.7-BEGIN AJAX.
+10:16:40-83.56.19.7-select.
+10:16:40-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+10:16:41-83.56.19.7-BEGIN AJAX.
+10:16:41-83.56.19.7-select.
+10:16:41-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+10:19:05-83.56.19.7-BEGIN AJAX.
+10:19:05-83.56.19.7-select.
+10:19:05-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+10:19:05-83.56.19.7-BEGIN AJAX.
+10:19:05-83.56.19.7-select.
+10:19:05-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.

@@ -1,0 +1,52 @@
+09:35:30-83.56.19.7-BEGIN AJAX.
+09:35:30-83.56.19.7-select.
+09:35:30-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+09:37:24-83.56.19.7-BEGIN AJAX.
+09:37:24-83.56.19.7-select.
+09:37:24-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+09:43:35-83.56.19.7-BEGIN AJAX.
+09:43:35-83.56.19.7-select.
+09:43:35-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+09:45:11-83.56.19.7-BEGIN AJAX.
+09:45:11-83.56.19.7-select.
+09:45:11-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+09:46:47-83.56.19.7-BEGIN AJAX.
+09:46:47-83.56.19.7-select.
+09:46:47-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+09:52:24-83.56.19.7-BEGIN AJAX.
+09:52:24-83.56.19.7-select.
+09:52:24-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+09:53:32-83.56.19.7-BEGIN AJAX.
+09:53:32-83.56.19.7-select.
+09:53:32-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+10:00:37-83.56.19.7-BEGIN AJAX.
+10:00:37-83.56.19.7-select.
+10:00:37-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'wwww\'' at line 1.
+10:03:00-83.56.19.7-BEGIN AJAX.
+10:03:00-83.56.19.7-select.
+10:03:00-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+10:11:26-83.56.19.7-BEGIN AJAX.
+10:11:26-83.56.19.7-select.
+10:11:26-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+10:20:08-83.56.19.7-BEGIN AJAX.
+10:20:08-83.56.19.7-select.
+10:20:08-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+10:23:50-83.56.19.7-BEGIN AJAX.
+10:23:50-83.56.19.7-select.
+10:23:50-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+10:25:00-83.56.19.7-BEGIN AJAX.
+10:25:00-83.56.19.7-select.
+10:25:00-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+10:28:34-83.56.19.7-BEGIN AJAX.
+10:28:34-83.56.19.7-select.
+10:28:34-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+11:57:06-83.56.19.7-BEGIN AJAX.
+11:57:07-83.56.19.7-select.
+11:57:07-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+12:02:05-83.56.19.7-BEGIN AJAX.
+12:02:05-83.56.19.7-select.
+12:02:05-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+12:06:52-83.56.19.7-BEGIN AJAX.
+12:06:52-83.56.19.7-select.
+12:06:52-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email=\'www\' AND Password=\'www\'.
+12:06:52-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.

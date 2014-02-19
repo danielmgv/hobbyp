@@ -3,7 +3,6 @@ $(document).bind('pageinit', function(){	pageinit();	});
 
 function pageinit(){
 
-	//AjaxService = '../Ajax/AjaxService.php';
 	// Bind the tapHandler callback function to the tap event on div.box
     $("#btnLogin").on( 'tap', tapLogin );	
 }
@@ -20,25 +19,16 @@ function tapLogin( event ) {
 function login()
 {
 	var email = $("#email").val();
-	var password = $("#password").val();
-	
-	var params = {};
-	
-	params.SQL = "SELECT Id, Name FROM opeople WHERE Email='" + email + "' AND Password='" + password + "'";
-	//params.fnCall = AsyncConsultaSELECT;
-	//params.fnOK = HLoginOK;
-	//params.fnNOK = HLoginNOK;	
-	
+	var password = $("#password").val();	
+	var params = {};	
+	params.SQL = "SELECT Id, Name FROM opeople WHERE Email='" + email + "' AND Password='" + password + "'";	
 	$.mobile.loading( 'show', {
 		text: "",
 		textVisible: false,
 		theme: "a",
 		textonly: false
-		//,			html: html
 	});
-
 	AsyncConsultaSELECT(params, loginOK, loginNOK);
-	//CallMySQL(params);
 }
 
 function loginOK(data) {		

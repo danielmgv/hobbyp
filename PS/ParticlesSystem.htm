@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Particles System</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />						
+	<script src="http://code.jquery.com/jquery.min.js"></script>		
+	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+
+    <!--[if lt IE 9]><script type="text/javascript" src="include/excanvas.min.js"></script><![endif]-->
+	<script type="text/javascript" src="easeljs/utils/UID.js"></script>
+	<script type="text/javascript" src="easeljs/geom/Matrix2D.js"></script>
+	<script type="text/javascript" src="easeljs/display/DisplayObject.js"></script>
+	<script type="text/javascript" src="easeljs/display/Container.js"></script>
+	<script type="text/javascript" src="easeljs/display/Stage.js"></script>
+	<script type="text/javascript" src="easeljs/events/MouseEvent.js"></script>
+	<script type="text/javascript" src="easeljs/display/Shape.js"></script>
+	<script type="text/javascript" src="easeljs/display/Graphics.js"></script>
+	<script type="text/javascript" src="easeljs/utils/Ticker.js"></script>
+	<script type="text/javascript" src="easeljs/display/Text.js"></script>
+
+	<script type="text/javascript" src="js/ps.js"></script>
+	<style type="text/css">
+		.controls {
+			padding: 10px;
+		}
+	</style>
+</head>
+	
+<body>
+	<div data-role="page" data-theme="a" id="Configur">
+		<div data-role="header" data-position="fixed" data-fullscreen="true" >	
+		</div>	
+		<div data-role="content" >	
+			<div data-role="fieldcontain" data-scroll="y">
+				<label for="coefatraccion">coefatraccion:</label>
+				<input type="text" id="coefatraccion"/> 			
+			</div>
+			<div data-role="fieldcontain" data-scroll="y">
+				<label for="coefrepulsión">coefrepulsión:</label>
+				<input type="text" id="coefrepulsion"/> 			
+			</div>
+			<div data-role="fieldcontain" data-scroll="y">
+				<label for="balls">Nº:</label>
+				<input type="text" id="balls"/> 			
+			</div>	
+			<div data-role="fieldcontain" data-scroll="y">
+				<label for="circleRadius">Tamaño:</label>
+				<input type="text" id="circleRadius"/> 			
+			</div>	
+			
+			<div data-role="fieldcontain" data-scroll="y">
+				<label for="radioCritico">radioCritico:</label>
+				<input type="text" id="radioCritico"/> 			
+				<label for="rozamiento">Rozamiento:</label>
+				<input type="text" id="rozamiento"/> 	
+				<label for="Vmax">V.Max:</label>
+				<input type="text" id="Vmax"/> 	
+			</div>	
+			<div data-role="fieldcontain" data-scroll="y">
+					Configuración: <select id="configId" onchange="configurar(this.value)">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+			</div>	
+			<div data-role="fieldcontain" data-scroll="y">
+				Alejamiento: <select id="alejamiento" onchange="chagealejamiento(this.value)">
+					<option value="1">Si</option>
+					<option value="0">No</option>
+				</select>
+			</div>					
+				
+			<ul style="display:none">
+				<li><a href="javascript:createBall();" rel="external" data-ajax="false" data-icon="gear" >Create ball</a></li>	
+				<li><a href="javascript:getEnergia();" rel="external" data-ajax="false" data-icon="gear" >Energía total</a></li>						
+				<li><a href="javascript:aumentarVmax();" rel="external" data-ajax="false" data-icon="gear" >Aumentar Vmax</a></li>
+				<li><a href="javascript:reducirVmax();" rel="external" data-ajax="false" data-icon="gear" >Reducir Vmax</a></li>
+				<li><a href="javascript:aumentarT();" rel="external" data-ajax="false" data-icon="gear" >Aumentar tamaño</a></li>
+				<li><a href="javascript:reducirT();" rel="external" data-ajax="false" data-icon="gear" >Reducir tamaño</a></li>
+				<li><a href="javascript:aumentarrozamiento();" rel="external" data-ajax="false" data-icon="gear" >Aumentar rozamiento</a></li>
+				<li><a href="javascript:reducirrozamiento();" rel="external" data-ajax="false" data-icon="gear" >Reducir rozamiento</a></li>					
+				<li><a href="javascript:aumentarRadio();" rel="external" data-ajax="false" data-icon="gear" >Aumentar radio</a></li>	
+				<li><a href="javascript:reducirRadio();" rel="external" data-ajax="false" data-icon="gear" >Reducir radio</a></li>						
+				<li><a href="javascript:toggleCache(this.checked);" rel="external" data-ajax="false" data-icon="gear" >cache enabled</a></li>
+				<li><a href="javascript:toggleGravedad(this.checked);" rel="external" data-ajax="false" data-icon="gear" >Gravedad</a></li>
+				<li><a href="javascript:stage.snapToPixelEnabled = !!this.checked;" rel="external" data-ajax="false" data-icon="gear" >snapToPixel enabled</a></li>			
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" >	
+			<h1><a href="#Canvas" data-role="button">Play</a></h1>
+		</div>	
+	</div>		
+	
+	<div data-role="page" data-theme="a" id="Canvas">
+		<div data-role="header">			
+		</div><!-- /header -->
+		<div data-role="content" >		
+			<h1><a href="#Configur" data-role="button" data-icon="home">Setup</a></h1>
+			<canvas id="testCanvas" style="position:relative;top:0px;left:0px;"></canvas>	
+		</div>
+		<div data-role="footer" data-position="fixed" >				
+		</div>	
+	</div>
+</body>
+</html>

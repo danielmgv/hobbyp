@@ -50,15 +50,13 @@ function select() {
  try
   {
 	$SQL = $_REQUEST['SQL'];	
-	//LogWrite($SQL);
+	LogWrite($SQL);
 
 	$mysqli = connect();	
 
 	if (!$result = mysqli_query($mysqli, $SQL)) {
 		ResponseError($mysqli->error);
-	}
-	
-	LogWrite($SQL);
+	}	
 	
 	$page = isset($_POST['page']) ? $_POST['page'] : 1;
 	

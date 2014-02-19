@@ -1,0 +1,66 @@
+09:07:14-83.56.19.7-BEGIN AJAX.
+09:07:14-83.56.19.7-select.
+09:07:14-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+09:07:15-83.56.19.7-BEGIN AJAX.
+09:07:15-83.56.19.7-select.
+09:07:15-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+09:07:15-83.56.19.7-BEGIN AJAX.
+09:07:15-83.56.19.7-select.
+09:07:15-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+09:07:23-83.56.19.7-BEGIN AJAX.
+09:07:23-83.56.19.7-select.
+09:07:23-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+09:07:23-83.56.19.7-BEGIN AJAX.
+09:07:23-83.56.19.7-select.
+09:07:23-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+09:22:45-83.56.19.7-BEGIN AJAX.
+09:22:45-83.56.19.7-procedure.
+09:22:45-83.56.19.7-BEGIN AJAX.
+09:22:45-83.56.19.7-procedure.
+09:22:45-83.56.19.7-Error CALL failed: (1048) Column 'Idhobbye' cannot be null CALL op_hobbyesInsert('110',Null,true).
+09:22:45-83.56.19.7-Error CALL failed: (1048) Column 'Idhobbye' cannot be null CALL op_hobbyesInsert('110',Null,true).
+09:22:46-83.56.19.7-BEGIN AJAX.
+09:22:46-83.56.19.7-select.
+09:22:46-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+09:22:49-83.56.19.7-BEGIN AJAX.
+09:22:49-83.56.19.7-select.
+09:22:51-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+10:13:19-83.56.19.7-BEGIN AJAX.
+10:13:19-83.56.19.7-BEGIN AJAX.
+10:13:19-83.56.19.7-select.
+10:13:19-83.56.19.7-select.
+10:13:19-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+10:13:19-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+10:37:01-83.56.19.7-BEGIN AJAX.
+10:37:11-83.56.19.7-select.
+10:37:11-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 110.
+10:37:11-83.56.19.7-BEGIN AJAX.
+10:37:11-83.56.19.7-select.
+10:37:11-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+12:40:45-83.56.19.7-BEGIN AJAX.
+12:40:45-83.56.19.7-select.
+12:40:45-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'bego\' AND Password=\'bego\'' at line 1.
+12:41:33-83.56.19.7-BEGIN AJAX.
+12:41:33-83.56.19.7-select.
+12:41:33-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'bego\' AND Password=\'bego\'' at line 1.
+12:41:38-83.56.19.7-BEGIN AJAX.
+12:41:38-83.56.19.7-select.
+12:41:38-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+12:43:16-83.56.19.7-BEGIN AJAX.
+12:43:16-83.56.19.7-select.
+12:43:16-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+12:43:45-83.56.19.7-BEGIN AJAX.
+12:43:45-83.56.19.7-select.
+12:43:45-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+12:44:26-83.56.19.7-BEGIN AJAX.
+12:44:26-83.56.19.7-select.
+12:44:26-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+12:51:23-83.56.19.7-BEGIN AJAX.
+12:51:23-83.56.19.7-select.
+12:51:23-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'www\' AND Password=\'www\'' at line 1.
+14:09:56-83.56.19.7-BEGIN AJAX.
+14:09:56-83.56.19.7-select.
+14:09:56-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'bego\' AND Password=\'bego\'' at line 1.
+14:23:17-83.56.19.7-BEGIN AJAX.
+14:23:17-83.56.19.7-select.
+14:23:17-83.56.19.7-Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'bego\' AND Password=\'bego\'' at line 1.

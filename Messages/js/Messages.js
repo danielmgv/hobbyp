@@ -1,7 +1,7 @@
 
 var $listviewRecibidos;
 var $listviewEnviados;
-var oMessages = new BDEntity("oMessages");
+
 $(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
 
 function pageinit(){	
@@ -9,7 +9,7 @@ function pageinit(){
 	AjaxService = '../Ajax/AjaxService.php';		
 	
 	//$("#newMessage").on( 'tap', tapnewMessage );	
-	$("#btnEnviar").on( 'tap', sendMessage );	
+	//$("#btnEnviar").on( 'tap', sendMessage );	
 	//$("#dialogReply").dialog();
 	
 	var params = {
@@ -52,63 +52,9 @@ function ObtenerSQLEnviados()
 	return sql;
 }
 
-//*************************************************************************************************************************************************************************
-
-function sendMessage()
-{
-	//debugger;
-	$.mobile.loading( 'show', {
-		text: "",
-		textVisible: false,
-		theme: "a",
-		textonly: false
-		//,			html: html
-	});
-	var params={
-		 IdOrigenParam: null
-	    ,FechaParam: new Date()
-		,MensajeParam: $("#MensajeParam").text()
-		,DeParam: fromServer.People.Id
-		,ParaParam: $("#ParaParam").val()
-	};
-	
-	AsyncCallProcedureScalar(getSqlProcedure("oMessagesInsert", params), sendMessageOK, sendMessageNOK);
-}
-
-function sendMessageOK(data) {
-	$.mobile.loading( 'hide' );
-	$("#btnCancel").click();
-	
-	if(!hayError(data))
-	{
-		alert("Enviado");	
-		$listviewEnviados.Consultar();	
-	}
-}
-
-function sendMessageNOK(httpRequest, textStatus, errorThrown) {
-	$.mobile.loading( 'hide' );
-
-	if(httpRequest.status = 500)
-	{
-		try{
-			var errorJson = eval(httpRequest.responseText);
-			alert(errorJson.Error);
-		}
-		catch(any){
-			alert(httpRequest.responseText);		
-		}	
-	}
-	else
-	{		
-		alert("Error al mandar el mensaje.\n" + textStatus + errorThrown.message);	
-	}
-}
-
 //***************************************************************************************************************************
-function oMessagesEliminarRecibido(IdMessage)
+function oMessageDelete(IdMessage)
 {
-	//debugger;
 	$.mobile.loading( 'show', {
 		text: "",
 		textVisible: false,
@@ -116,25 +62,26 @@ function oMessagesEliminarRecibido(IdMessage)
 		textonly: false
 	});
 
-	var params={
-		 IdMessage:IdMessage
-	};
-	oMessages.Procedure("oMessagesEliminarRecibido", params);
-	//oMessages.Delete(params);		
+	oMessages.KeyField.Id = IdMessage;	
+	
+	if(confirm("Realmente desea eliminar el mensaje?"))
+		oMessages.Delete();
+		//oMessages.Procedure("oMessagesEliminarRecibido", params);		
 }
 
-function oMessagesEliminarRecibidoOK(data) {
+function oMessagesDeleteOK(data) {
 	$.mobile.loading( 'hide' );
 	$("#btnCancel").click();
-	
+
 	if(!hayError(data))
 	{
 		//alert("Borrado");
-		$listviewRecibidos.Consultar();		
+		$listviewEnviados.Consultar();	
+		//$listviewRecibidos.Consultar();		
 	}
 }
 
-function oMessagesEliminarRecibidoNOK(httpRequest, textStatus, errorThrown) {
+function oMessagesDeleteNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );
 
 	if(httpRequest.status = 500)
@@ -183,5 +130,10 @@ function replyClick(){
 	oMessages.Insert(params);		
 }
 
-
+//*************************************************************************************************************************************
+function EnviarMensaje (To,ToName) {
+  fromServer["To"] = To;
+  fromServer["ToName"] = ToName;  
+  hrefParams('NewMessage.html');
+}
 

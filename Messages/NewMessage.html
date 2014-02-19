@@ -4,6 +4,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+		<script src="../js/Comun.js"></script>
+		<script src="../js/Comun_Mobile.js"></script>
+		<script src="../js/MySQLLib/MySQL.js"></script>
+		<script src="../js/MySQLLib/BDEntity.js"></script>
+		<script src="../js/phonegap/PGNavigation.js"></script>
+		<script src="js/NewMessage.js"></script>
+		<script src="js/ListviewLoad.js"></script>
 		<title>Nuevo Mensaje</title>
 	</head>
 	<body>
@@ -13,16 +23,18 @@
 			</div>		
 			<div data-role="content">
 				<h1>Edite el mensaje</h1>
-				<p>Edite en mesaje y envieló</p>
-				 <label for="basic">Para:</label>
-    			<input type="text" name="ParaParam" id="ParaParam" value=""  />
+				<p>Edite en mensaje y envieló</p>				
+			 	<div data-role="fieldcontain" data-scroll="y">
+					<label for="Para">Para:</label>
+					<select id="Para" name="Para" data-native-menu="false"></select>
+				</div>	
 			 	<label for="basic">Asunto:</label>			 	
-    			<input type="text" name="Asunto" id="AsuntoParam" value=""  />
+    			<input type="text" name="Asunto" id="Asunto" value=""  />
     			<label for="textarea-a">Mensaje:</label>
-				<textarea name="MensajeParam" id="MensajeParam">				
+				<textarea name="MensajeParam" id="Mensaje">				
 				</textarea>
-				<a href="" data-role="button" data-theme="b" id="btnEnviar">Enviar</a>       
-				<a href="dialog/index.html" data-role="button" data-rel="back" data-theme="c">Cancel</a>    
+				<a href="" data-role="button" data-theme="a" id="btnEnviar">Enviar</a>       
+				<a href="dialog/index.html" data-role="button" data-rel="back" data-theme="a">Cancel</a>    
 			</div>
 		</div>
 	</body>

@@ -1129,6 +1129,49 @@ jQuery.fn.LoadMySQL = function(params){
 
 //*********************************************************************************************************************************
 
+/**
+ * function to load a given js file 
+ */ 
+var loadJS = function(src) {
+     var jsLink = $("<script type='text/javascript' src='"+src+"'>");
+     $("head").append(jsLink); 
+ };
+ 
+ function loadLang(pageParam)
+ {
+	var page = "";
+	
+	if(pageParam)
+	{
+		page = pageParam;		
+	}
+	else
+	{
+		var userLang = navigator.language || navigator.userLanguage;  	
+		var path = jQuery(location).attr('href');
+		page = path.substr( path.lastIndexOf("/") + 1 );		
+	}
+	
+	var fileLang = "js/" + page + "." + userLang + ".js";
+	alert(fileLang);
+	
+	alert ("The language is: " + userLang);
+	loadJS(fileLang);
+	
+	$(".labelMultiidioma").each(
+		function()
+		{
+			if($(this).val)
+			{
+				$(this).val(lang[$(this).attr("Id")]);		
+			}else
+			{
+				$(this).text(lang[$(this).attr("Id")]);			
+			}
+		}		
+	);
+ }
+
 
 
 

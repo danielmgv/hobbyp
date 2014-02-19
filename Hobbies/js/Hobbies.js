@@ -3,10 +3,9 @@ var storedQuery = {};
 var $listview;
 var sql;
 var seleccionado;
-var op_hobbyes = new BDEntity("op_hobbyes");
-$(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
+$(document).bind('pageinit', function(){retrieveParams();debugger;loadLang();	pageinit();	});
 
-function pageinit(){
+function pageinit(){			
 	$listview = $("#listviewId");
 	
 	$("#addHob").on( 'tap', tapadd );	
@@ -108,13 +107,11 @@ function guardar(value)
 		//,			html: html
 	});
 	debugger;
-	var params = {	
-			IdPeople:fromServer.People.Id,
-			IdHobbie: value,
-			Like: true
-	};
+	op_hobbyes.Fields.IdPeople = fromServer.People.Id;
+	op_hobbyes.Fields.IdHobbie = value;
+	op_hobbyes.Fields.Like =  true;
 	
-	op_hobbyes.Insert(params);
+	op_hobbyes.Insert();
 }
 
 function op_hobbyesInsertOK(data) {	
@@ -186,6 +183,10 @@ function deleteNOK(httpRequest, textStatus, errorThrown) {
 }
 //**************************************************************************************************
 
-
+function NuevoHobbie () {
+  //fromServer["To"] = To;
+  //fromServer["ToName"] = ToName;  
+  hrefParams('NuevoHobbie.html');
+}
 
 		

@@ -48,18 +48,18 @@ function ListadoMensajesEnviados($Container, params) {
     this.addRow = function (row) {
     	//debugger;
         var $collapsible = $('<div data-role="collapsible" data-theme="a"  data-content-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="true"></div>'); 
-		$collapsible.append("<h2>" + row[params.Titulo] +"</h2>");
+		//$collapsible.append("<h2>" + row[params.Titulo] +"</h2>");
+		$collapsible.append("<h2>" + row.Asunto +"</h2>");
+		
 		var $listview = $('<ul data-role="listview"></ul>');
     	$collapsible.append($listview);
 
-    	//var $divider = $('<li data-role="list-divider">'+ row.OwnerName +'<span class="ui-li-count">'+ dateToString(row[params.Fecha]) +'</span></li>');
-    	//$listview.append($divider);
     	var liMensaje = _Listado.getLiMensaje(row);
         $listview.append(liMensaje);
         $Container.append($collapsible);
         
 		$collapsible.trigger('create');
-		$collapsible.collapsible();
+		//$collapsible.collapsible();
 		
 		if ( $listview.hasClass('ui-listview')) {
 		    $listview.listview('refresh');
@@ -73,11 +73,12 @@ function ListadoMensajesEnviados($Container, params) {
     
     this.getLiMensaje = function (row)
     {
-		var $a = $('<div></div>');
-		var buttons = '<a href="JavaScript:EnviarMensaje(' + row[params.Clave] + ', \''+  row[params.Titulo] +'\');" data-role="button" data-icon="bars" data-mini="true" data-inline="true">Enviar mensaje</a>';
-		buttons += '<a href="JavaScript:EliminarFriend(' + row[params.Clave] + ');" data-role="button" data-icon="minus" data-mini="true" data-inline="true">Borrar</a>';		
-    	$a.append(buttons);
-    	return $('<li></li>').append($a); 	
+		var $divAux = $('<div data-role="fieldcontain"></div');
+		$divAux.append(row.Mensaje);
+		//var buttons = '<a href="JavaScript:EnviarMensaje(' + row[params.Clave] + ', \''+  row[params.Titulo] +'\');" data-role="button" data-icon="bars" data-mini="true" data-inline="true">Responder</a>';
+		var buttons = '<br/><a href="JavaScript:oMessageDelete(' + row[params.Clave] + ');" data-role="button" data-icon="minus" data-mini="true" data-inline="true">Borrar</a>';		
+    	$divAux.append(buttons);
+    	return $('<li></li>').append($divAux); 	
     };
     
     this.vaciar = function() {

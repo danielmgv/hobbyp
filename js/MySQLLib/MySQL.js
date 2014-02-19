@@ -25,7 +25,7 @@ var MYSQL_TYPE_LONG_BLOB   = 251;//	Long Blob
 var MYSQL_TYPE_BLOB        = 252;//	Blob
 var MYSQL_TYPE_VAR_STRING  = 253;//	Varstring
 var MYSQL_TYPE_STRING      = 254;//	String
-var MYSQL_TYPE_GEOMETRY  = 255;//	Geometry
+var MYSQL_TYPE_GEOMETRY    = 255;//	Geometry
 
 
 //var AjaxService = 'http://serverajax.bedagoni.hol.es/AjaxService.php';
@@ -86,26 +86,26 @@ function AsyncConsultaSELECT(params, fnOk, fnNOK)
 	
 	params["FUNCTION"] = "select";	
 	
-	jqxhr =$.ajax({
-			type: 'POST', 
-			url: AjaxService,
-			data: params,
-			crossDomain: true,
-			success: function(data, textStatus, jqXHR)
+	//debugger;
+		jqxhr = $.post(AjaxService, params, function(){},"json")
+		.done(
+			function(data, textStatus, jqXHR)
 			{
 				if(params.Cached)
 				{		
 					setData(params.SQL, data);
 				}
 				tratarRespuestaAjaxOk(data, textStatus, jqXHR, fnOk);
-			},
-			error: function(httpRequest, textStatus, errorThrown)
+			}
+		)
+		.fail(
+			function(httpRequest, textStatus, errorThrown)
 			{				
+				//$alert(httpRequest.responseText);
 				fnNOK(httpRequest, textStatus, errorThrown);
-			},
-			dataType: "json",
-			async:true
-		});	
+			}		
+		);
+
 }
 
 function SyncConsultaSELECT(params, fnOk, fnNOK)
@@ -176,11 +176,10 @@ function AsyncCallProcedureScalar(procedure, fnOk, fnNOK)
 
 function tratarRespuestaAjaxOk(data, textStatus, jqXHR, fnOk)
 {	
-	//alert(JSON.stringify(data));
-		//return
 	if(data.Error != "" && data.Error != undefined)
 	{
-		fnNOK(null, textStatus, {name : "tratarRespuestaAjaxOk", message : jqXHR.responseText});
+		fnOk(data);
+		//fnNOK(null, textStatus, {name : "tratarRespuestaAjaxOk", message : jqXHR.responseText});
 		//$alert(data.Error); 
 	}
 	else

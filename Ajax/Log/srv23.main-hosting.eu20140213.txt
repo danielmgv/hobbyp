@@ -1,0 +1,454 @@
+09:30:03-83.56.19.7-BEGIN AJAX.
+09:30:03-83.56.19.7-select.
+09:30:03-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+09:30:04-83.56.19.7-BEGIN AJAX.
+09:30:04-83.56.19.7-select.
+09:30:04-83.56.19.7-BEGIN AJAX.
+09:30:04-83.56.19.7-select.
+09:30:04-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+09:30:04-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+09:30:10-83.56.19.7-BEGIN AJAX.
+09:30:10-83.56.19.7-select.
+09:30:10-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:30:10-83.56.19.7-BEGIN AJAX.
+09:30:10-83.56.19.7-select.
+09:30:10-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:30:13-83.56.19.7-BEGIN AJAX.
+09:30:13-83.56.19.7-select.
+09:30:13-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:30:13-83.56.19.7-BEGIN AJAX.
+09:30:13-83.56.19.7-select.
+09:30:13-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:30:29-83.56.19.7-BEGIN AJAX.
+09:30:29-83.56.19.7-select.
+09:30:29-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:30:30-83.56.19.7-BEGIN AJAX.
+09:30:30-83.56.19.7-select.
+09:30:30-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:34:31-83.56.19.7-BEGIN AJAX.
+09:34:31-83.56.19.7-select.
+09:34:31-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:34:31-83.56.19.7-BEGIN AJAX.
+09:34:31-83.56.19.7-select.
+09:34:31-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:34:39-83.56.19.7-BEGIN AJAX.
+09:34:39-83.56.19.7-select.
+09:34:39-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:34:39-83.56.19.7-BEGIN AJAX.
+09:34:39-83.56.19.7-select.
+09:34:39-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:38:00-83.56.19.7-BEGIN AJAX.
+09:38:00-83.56.19.7-select.
+09:38:00-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:38:00-83.56.19.7-BEGIN AJAX.
+09:38:00-83.56.19.7-select.
+09:38:00-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:38:06-83.56.19.7-BEGIN AJAX.
+09:38:06-83.56.19.7-select.
+09:38:06-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:38:06-83.56.19.7-BEGIN AJAX.
+09:38:06-83.56.19.7-select.
+09:38:06-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:39:00-83.56.19.7-BEGIN AJAX.
+09:39:00-83.56.19.7-procedure.
+09:39:00-83.56.19.7-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oMessagesInsert; expected 6, got 0 CALL oMessagesInsert().
+09:40:58-83.56.19.7-BEGIN AJAX.
+09:40:58-83.56.19.7-select.
+09:40:58-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:40:58-83.56.19.7-BEGIN AJAX.
+09:40:58-83.56.19.7-select.
+09:40:58-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:41:05-83.56.19.7-BEGIN AJAX.
+09:41:05-83.56.19.7-select.
+09:41:05-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:41:05-83.56.19.7-BEGIN AJAX.
+09:41:05-83.56.19.7-select.
+09:41:05-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:41:35-83.56.19.7-BEGIN AJAX.
+09:41:35-83.56.19.7-procedure.
+09:41:35-83.56.19.7-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oMessagesInsert; expected 6, got 0 CALL oMessagesInsert().
+09:48:10-83.56.19.7-BEGIN AJAX.
+09:48:10-83.56.19.7-select.
+09:48:10-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:48:10-83.56.19.7-BEGIN AJAX.
+09:48:10-83.56.19.7-select.
+09:48:10-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:48:15-83.56.19.7-BEGIN AJAX.
+09:48:15-83.56.19.7-select.
+09:48:15-83.56.19.7-BEGIN AJAX.
+09:48:15-83.56.19.7-select.
+09:48:15-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:48:15-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:49:26-83.56.19.7-BEGIN AJAX.
+09:49:26-83.56.19.7-BEGIN AJAX.
+09:49:26-83.56.19.7-select.
+09:49:26-83.56.19.7-select.
+09:49:26-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:49:26-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:52:19-83.56.19.7-BEGIN AJAX.
+09:52:19-83.56.19.7-procedure.
+09:52:19-83.56.19.7-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oMessagesInsert; expected 6, got 0 CALL oMessagesInsert().
+09:54:08-83.56.19.7-BEGIN AJAX.
+09:54:08-83.56.19.7-procedure.
+09:54:08-83.56.19.7-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oMessagesInsert; expected 6, got 0 CALL oMessagesInsert().
+09:54:20-83.56.19.7-BEGIN AJAX.
+09:54:20-83.56.19.7-select.
+09:54:20-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:54:20-83.56.19.7-BEGIN AJAX.
+09:54:20-83.56.19.7-select.
+09:54:20-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+09:54:25-83.56.19.7-BEGIN AJAX.
+09:54:25-83.56.19.7-select.
+09:54:25-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+09:54:25-83.56.19.7-BEGIN AJAX.
+09:54:25-83.56.19.7-select.
+09:54:25-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+10:00:40-83.56.19.7-BEGIN AJAX.
+10:00:40-83.56.19.7-select.
+10:00:40-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+10:00:40-83.56.19.7-BEGIN AJAX.
+10:00:40-83.56.19.7-select.
+10:00:40-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+10:01:12-83.56.19.7-BEGIN AJAX.
+10:01:12-83.56.19.7-select.
+10:01:12-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+10:01:12-83.56.19.7-BEGIN AJAX.
+10:01:12-83.56.19.7-select.
+10:01:12-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+10:02:32-83.56.19.7-BEGIN AJAX.
+10:02:32-83.56.19.7-procedure.
+10:02:32-83.56.19.7-Error CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oMessagesInsert; expected 6, got 0 CALL oMessagesInsert().
+10:02:41-83.56.19.7-BEGIN AJAX.
+10:02:41-83.56.19.7-select.
+10:02:41-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+10:02:41-83.56.19.7-BEGIN AJAX.
+10:02:41-83.56.19.7-select.
+10:02:41-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+10:02:46-83.56.19.7-BEGIN AJAX.
+10:02:46-83.56.19.7-select.
+10:02:46-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+10:02:46-83.56.19.7-BEGIN AJAX.
+10:02:46-83.56.19.7-select.
+10:02:46-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+10:03:50-83.56.19.7-BEGIN AJAX.
+10:03:50-83.56.19.7-procedure.
+10:03:50-83.56.19.7-Error CALL failed: (1048) Column 'IdOrigen' cannot be null CALL oMessagesInsert('aaa',Null,Null,'				bbbb
+				','110','www').
+10:06:01-83.56.19.7-BEGIN AJAX.
+10:06:01-83.56.19.7-procedure.
+10:06:01-83.56.19.7-Error CALL failed: (1048) Column 'Fecha' cannot be null CALL oMessagesInsert('aaa',Null,Null,'				bbbb
+				','110','www').
+10:07:40-83.56.19.7-BEGIN AJAX.
+10:07:40-83.56.19.7-procedure.
+10:07:40-83.56.19.7-Error CALL failed: (1048) Column 'Fecha' cannot be null CALL oMessagesInsert('aaa',Null,Null,'				bbbb
+				','110','www').
+10:08:13-83.56.19.7-BEGIN AJAX.
+10:08:13-83.56.19.7-select.
+10:08:13-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+10:08:13-83.56.19.7-BEGIN AJAX.
+10:08:13-83.56.19.7-select.
+10:08:13-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+10:08:39-83.56.19.7-BEGIN AJAX.
+10:08:39-83.56.19.7-procedure.
+10:08:39-83.56.19.7-CALL oMessagesInsert('aa',Null,'2014-02-13 09:08:17','				
+			bb	','110','www').
+10:36:25-83.56.19.7-BEGIN AJAX.
+10:36:25-83.56.19.7-BEGIN AJAX.
+10:36:25-83.56.19.7-select.
+10:36:25-83.56.19.7-select.
+10:36:25-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+10:36:25-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+10:36:33-83.56.19.7-BEGIN AJAX.
+10:36:33-83.56.19.7-select.
+10:36:33-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+10:36:33-83.56.19.7-BEGIN AJAX.
+10:36:33-83.56.19.7-select.
+10:36:33-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+10:40:54-83.56.19.7-BEGIN AJAX.
+10:40:54-83.56.19.7-select.
+10:40:54-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+10:46:47-83.56.19.7-BEGIN AJAX.
+10:46:47-83.56.19.7-select.
+10:46:47-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+10:58:40-83.56.19.7-BEGIN AJAX.
+10:58:40-83.56.19.7-select.
+10:58:40-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+11:00:38-83.56.19.7-BEGIN AJAX.
+11:00:38-83.56.19.7-select.
+11:00:38-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+11:01:09-83.56.19.7-BEGIN AJAX.
+11:01:09-83.56.19.7-select.
+11:01:09-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+11:38:27-83.56.19.7-BEGIN AJAX.
+11:38:27-83.56.19.7-select.
+11:38:27-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+11:39:07-83.56.19.7-BEGIN AJAX.
+11:39:07-83.56.19.7-select.
+11:39:07-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+11:40:10-83.56.19.7-BEGIN AJAX.
+11:40:10-83.56.19.7-select.
+11:40:10-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+11:41:02-83.56.19.7-BEGIN AJAX.
+11:41:02-83.56.19.7-select.
+11:41:02-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+11:41:21-83.56.19.7-BEGIN AJAX.
+11:41:21-83.56.19.7-procedure.
+11:41:21-83.56.19.7-Error CALL failed: (1048) Column 'Asunto' cannot be null CALL oMessagesInsert(Null,Null,'2014-02-13 10:41:01',Null,'110',Null).
+11:42:58-83.56.19.7-BEGIN AJAX.
+11:42:58-83.56.19.7-select.
+11:42:58-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+11:42:58-83.56.19.7-BEGIN AJAX.
+11:42:58-83.56.19.7-select.
+11:42:58-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+11:43:03-83.56.19.7-BEGIN AJAX.
+11:43:03-83.56.19.7-BEGIN AJAX.
+11:43:03-83.56.19.7-select.
+11:43:03-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+11:43:03-83.56.19.7-select.
+11:43:03-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+11:43:08-83.56.19.7-BEGIN AJAX.
+11:43:08-83.56.19.7-select.
+11:43:08-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+11:43:15-83.56.19.7-BEGIN AJAX.
+11:43:15-83.56.19.7-procedure.
+11:43:15-83.56.19.7-CALL oMessagesInsert('EEEEEEEE',Null,'2014-02-13 10:43:08','				
+				dddddddddd','110','11').
+11:43:19-83.56.19.7-BEGIN AJAX.
+11:43:19-83.56.19.7-select.
+11:43:19-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+11:43:19-83.56.19.7-BEGIN AJAX.
+11:43:19-83.56.19.7-select.
+11:43:19-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+11:53:07-83.56.19.7-BEGIN AJAX.
+11:53:07-83.56.19.7-select.
+11:53:07-83.56.19.7-BEGIN AJAX.
+11:53:07-83.56.19.7-select.
+11:53:07-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+11:53:07-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+11:53:42-83.56.19.7-BEGIN AJAX.
+11:53:42-83.56.19.7-select.
+11:53:42-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+11:53:42-83.56.19.7-BEGIN AJAX.
+11:53:42-83.56.19.7-select.
+11:53:42-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+11:55:13-83.56.19.7-BEGIN AJAX.
+11:55:13-83.56.19.7-BEGIN AJAX.
+11:55:13-83.56.19.7-select.
+11:55:13-83.56.19.7-select.
+11:55:13-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+11:55:13-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+11:56:55-83.56.19.7-BEGIN AJAX.
+11:56:55-83.56.19.7-select.
+11:56:55-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+11:56:55-83.56.19.7-BEGIN AJAX.
+11:56:55-83.56.19.7-select.
+11:56:55-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+11:57:06-83.56.19.7-BEGIN AJAX.
+11:57:06-83.56.19.7-procedure.
+11:57:06-83.56.19.7-Error CALL failed: (1048) Column 'Mensaje' cannot be null CALL oMessagesInsert('',Null,'2014-02-13 10:56:55',Null,Null,Null).
+11:59:55-83.56.19.7-BEGIN AJAX.
+11:59:55-83.56.19.7-BEGIN AJAX.
+11:59:55-83.56.19.7-select.
+11:59:55-83.56.19.7-select.
+11:59:56-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+11:59:56-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:00:37-83.56.19.7-BEGIN AJAX.
+12:00:37-83.56.19.7-select.
+12:00:37-83.56.19.7-BEGIN AJAX.
+12:00:37-83.56.19.7-select.
+12:00:37-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:00:37-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:01:44-83.56.19.7-BEGIN AJAX.
+12:01:44-83.56.19.7-select.
+12:01:44-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:01:44-83.56.19.7-BEGIN AJAX.
+12:01:44-83.56.19.7-select.
+12:01:44-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:03:57-83.56.19.7-BEGIN AJAX.
+12:03:57-83.56.19.7-select.
+12:03:57-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:03:57-83.56.19.7-BEGIN AJAX.
+12:03:57-83.56.19.7-select.
+12:03:57-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:04:22-83.56.19.7-BEGIN AJAX.
+12:04:22-83.56.19.7-select.
+12:04:22-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:04:22-83.56.19.7-BEGIN AJAX.
+12:04:22-83.56.19.7-select.
+12:04:22-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:05:21-83.56.19.7-BEGIN AJAX.
+12:05:21-83.56.19.7-select.
+12:05:21-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:05:21-83.56.19.7-BEGIN AJAX.
+12:05:21-83.56.19.7-select.
+12:05:21-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:05:28-83.56.19.7-BEGIN AJAX.
+12:05:28-83.56.19.7-procedure.
+12:05:28-83.56.19.7-Error CALL failed: (1305) PROCEDURE u490265401_educa.oMessagesDelete does not exist CALL oMessagesDelete(2).
+12:30:37-83.56.19.7-BEGIN AJAX.
+12:30:37-83.56.19.7-select.
+12:30:37-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:30:39-83.56.19.7-BEGIN AJAX.
+12:30:39-83.56.19.7-select.
+12:30:39-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:31:05-83.56.19.7-BEGIN AJAX.
+12:31:05-83.56.19.7-procedure.
+12:31:05-83.56.19.7-Error CALL failed: (1054) Unknown column 'AsuntoParam' in 'where clause' CALL oMessagesDelete(3).
+12:34:14-83.56.19.7-BEGIN AJAX.
+12:34:14-83.56.19.7-select.
+12:34:14-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:34:14-83.56.19.7-BEGIN AJAX.
+12:34:14-83.56.19.7-select.
+12:34:14-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:34:20-83.56.19.7-BEGIN AJAX.
+12:34:20-83.56.19.7-procedure.
+12:34:20-83.56.19.7-Error CALL failed: (1054) Unknown column 'AsuntoParam' in 'where clause' CALL oMessagesDelete(1).
+12:35:39-83.56.19.7-BEGIN AJAX.
+12:35:39-83.56.19.7-procedure.
+12:35:39-83.56.19.7-Error CALL failed: (1054) Unknown column 'AsuntoParam' in 'where clause' CALL oMessagesDelete(1).
+12:36:07-83.56.19.7-BEGIN AJAX.
+12:36:07-83.56.19.7-procedure.
+12:36:07-83.56.19.7-CALL oMessagesDelete(1).
+12:36:07-83.56.19.7-BEGIN AJAX.
+12:36:07-83.56.19.7-select.
+12:36:07-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:36:18-83.56.19.7-BEGIN AJAX.
+12:36:18-83.56.19.7-BEGIN AJAX.
+12:36:18-83.56.19.7-select.
+12:36:18-83.56.19.7-select.
+12:36:18-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:36:18-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:38:38-83.56.19.7-BEGIN AJAX.
+12:38:38-83.56.19.7-procedure.
+12:38:38-83.56.19.7-CALL oMessagesDelete(3).
+12:38:38-83.56.19.7-BEGIN AJAX.
+12:38:38-83.56.19.7-select.
+12:38:38-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:38:51-83.56.19.7-BEGIN AJAX.
+12:38:51-83.56.19.7-select.
+12:38:51-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:38:51-83.56.19.7-BEGIN AJAX.
+12:38:51-83.56.19.7-select.
+12:38:51-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:39:54-83.56.19.7-BEGIN AJAX.
+12:39:54-83.56.19.7-select.
+12:39:54-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:39:54-83.56.19.7-BEGIN AJAX.
+12:39:54-83.56.19.7-select.
+12:39:54-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:40:00-83.56.19.7-BEGIN AJAX.
+12:40:00-83.56.19.7-procedure.
+12:40:00-83.56.19.7-CALL oMessagesDelete(4).
+12:41:00-83.56.19.7-BEGIN AJAX.
+12:41:00-83.56.19.7-select.
+12:41:00-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:42:01-83.56.19.7-BEGIN AJAX.
+12:42:01-83.56.19.7-procedure.
+12:42:01-83.56.19.7-CALL oMessagesDelete(5).
+12:42:06-83.56.19.7-BEGIN AJAX.
+12:42:06-83.56.19.7-select.
+12:42:06-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:42:28-83.56.19.7-BEGIN AJAX.
+12:42:28-83.56.19.7-select.
+12:42:28-83.56.19.7-BEGIN AJAX.
+12:42:28-83.56.19.7-select.
+12:42:28-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:42:28-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:42:32-83.56.19.7-BEGIN AJAX.
+12:42:32-83.56.19.7-procedure.
+12:42:32-83.56.19.7-CALL oMessagesDelete(2).
+12:42:32-83.56.19.7-BEGIN AJAX.
+12:42:32-83.56.19.7-select.
+12:42:32-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:42:37-83.56.19.7-BEGIN AJAX.
+12:42:37-83.56.19.7-procedure.
+12:42:37-83.56.19.7-CALL oMessagesDelete(6).
+12:42:37-83.56.19.7-BEGIN AJAX.
+12:42:37-83.56.19.7-select.
+12:42:37-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:42:52-83.56.19.7-BEGIN AJAX.
+12:42:52-83.56.19.7-select.
+12:42:52-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+12:43:00-83.56.19.7-BEGIN AJAX.
+12:43:00-83.56.19.7-procedure.
+12:43:00-83.56.19.7-CALL oMessagesInsert('aaaaa',Null,'2014-02-13 11:42:52','			ffff	
+		fff		','110','11').
+12:43:04-83.56.19.7-BEGIN AJAX.
+12:43:04-83.56.19.7-select.
+12:43:04-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:43:04-83.56.19.7-BEGIN AJAX.
+12:43:04-83.56.19.7-select.
+12:43:04-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+12:43:24-83.56.19.7-BEGIN AJAX.
+12:43:24-83.56.19.7-select.
+12:43:24-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+12:43:24-83.56.19.7-BEGIN AJAX.
+12:43:24-83.56.19.7-select.
+12:43:24-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+14:48:50-83.56.19.7-BEGIN AJAX.
+14:48:50-83.56.19.7-select.
+14:48:50-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
+14:48:52-83.56.19.7-BEGIN AJAX.
+14:48:52-83.56.19.7-select.
+14:48:52-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 110 AND Estado = 0.
+14:48:52-83.56.19.7-BEGIN AJAX.
+14:48:52-83.56.19.7-select.
+14:48:52-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 110, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 110 Or PG.IdPeople = 110 AND IF(G.IdOwner = 110, PG.IdPeople, G.IdOwner) <> 110.
+14:49:00-83.56.19.7-BEGIN AJAX.
+14:49:00-83.56.19.7-select.
+14:49:00-83.56.19.7-BEGIN AJAX.
+14:49:00-83.56.19.7-select.
+14:49:03-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+14:49:03-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+14:49:04-83.56.19.7-BEGIN AJAX.
+14:49:04-83.56.19.7-select.
+14:49:04-83.56.19.7-BEGIN AJAX.
+14:49:04-83.56.19.7-select.
+14:49:05-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 110 AND M.EstadoPara <> 2 .
+14:49:05-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 110.
+14:49:37-83.56.19.7-BEGIN AJAX.
+14:49:37-83.56.19.7-select.
+14:49:38-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+14:49:39-83.56.19.7-BEGIN AJAX.
+14:49:39-83.56.19.7-select.
+14:49:39-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+14:49:39-83.56.19.7-BEGIN AJAX.
+14:49:39-83.56.19.7-select.
+14:49:39-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+14:49:42-83.56.19.7-BEGIN AJAX.
+14:49:42-83.56.19.7-select.
+14:49:42-83.56.19.7-BEGIN AJAX.
+14:49:42-83.56.19.7-select.
+14:49:44-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+14:49:44-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 11.
+14:49:49-83.56.19.7-BEGIN AJAX.
+14:49:49-83.56.19.7-select.
+14:49:49-83.56.19.7-BEGIN AJAX.
+14:49:49-83.56.19.7-select.
+14:49:49-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+14:49:49-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 11.
+14:49:58-83.56.19.7-BEGIN AJAX.
+14:49:58-83.56.19.7-select.
+14:49:58-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+14:50:16-83.56.19.7-BEGIN AJAX.
+14:50:16-83.56.19.7-procedure.
+14:50:25-83.56.19.7-CALL oMessagesInsert('111',Null,'2014-02-13 13:49:58','				
+	22222			','11','110').
+14:50:28-83.56.19.7-BEGIN AJAX.
+14:50:28-83.56.19.7-select.
+14:50:28-83.56.19.7-BEGIN AJAX.
+14:50:28-83.56.19.7-select.
+14:50:29-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+14:50:29-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 11.
+14:50:33-83.56.19.7-BEGIN AJAX.
+14:50:33-83.56.19.7-select.
+14:50:33-83.56.19.7-BEGIN AJAX.
+14:50:33-83.56.19.7-select.
+14:50:33-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+14:50:33-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 11.
+14:51:49-83.56.19.7-BEGIN AJAX.
+14:51:49-83.56.19.7-select.
+14:51:49-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+14:51:50-83.56.19.7-BEGIN AJAX.
+14:51:50-83.56.19.7-select.
+14:51:50-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
