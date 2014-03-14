@@ -847,12 +847,29 @@ jQuery.fn.asHighlight = function() {
 };
 
 //------------------------------------------------------------------------------------------------
-function showError(mensaje)
-{
-	var $divDialog = $('<div title="Error"></div>').prependTo('body');
-	$divDialog.append(mensaje);
-	$divDialog.dialog();	
+function showError(message)
+{	
+  // Create it in memory
+    var dlg = $("<div />")
+        .attr("data-role", "dialog")
+        .attr("id", "dialog");
+    var content = $("<div />")
+        .attr("data-role", "content")
+        .append($("<span />").html(message));
+    content.append("<a href=\"javascript:$('.ui-dialog').dialog('close');$('#dialog').remove(); " +
+        "return false;\" data-role=\"button\" data-rel=\"back\">Close</a>");
+
+    dlg.append(content);
+
+    dlg.appendTo($.mobile.pageContainer);
+
+	//$.mobile.pageContainer.
+	dlg.append('<a id="lnkDialog" href="#dialog" data-rel="dialog" data-transition="pop" style="display:none;"></a>');
+	$("#lnkDialog").click();
+    // show the dialog programmatically
+//    $.mobile.changePage(dlg, { role: "dialog", transition: "pop" });
 }
+
 
 function showAlert(mensaje)
 {
@@ -862,6 +879,7 @@ function showAlert(mensaje)
 		autoOpen: false,
 		width: 400,
 		height: 200});	
+		
 	$divDialog.dialog("open");
 }
 
@@ -1123,8 +1141,6 @@ jQuery.fn.LoadMySQL = function(params){
 			SyncConsultaSELECT({SQL: sql, Cached: true}, this.CargarOk, this.CargarNOk);	
 		}	
 	}
-	
-		
 };
 
 //*********************************************************************************************************************************
@@ -1140,37 +1156,74 @@ var loadJS = function(src) {
  function loadLang(pageParam)
  {
 	var page = "";
-	
+	var userLang = navigator.language || navigator.userLanguage;  	
+		
 	if(pageParam)
 	{
 		page = pageParam;		
 	}
 	else
 	{
-		var userLang = navigator.language || navigator.userLanguage;  	
 		var path = jQuery(location).attr('href');
 		page = path.substr( path.lastIndexOf("/") + 1 );		
 	}
 	
-	var fileLang = "js/" + page + "." + userLang + ".js";
-	alert(fileLang);
+	if(page.indexOf("=dialog")!= -1)
+	{
+		return;
+	}
 	
-	alert ("The language is: " + userLang);
+	var fileLang = "js/lang.js/" + page + "." + laguageCode(userLang) + ".js";
+	
 	loadJS(fileLang);
 	
 	$(".labelMultiidioma").each(
 		function()
 		{
-			if($(this).val)
+			var $obj = $(this);
+			var objLang = lang[$(this).attr("Id")];
+			if(objLang)
 			{
-				$(this).val(lang[$(this).attr("Id")]);		
-			}else
-			{
-				$(this).text(lang[$(this).attr("Id")]);			
+				if($obj.val)
+				{
+					$obj.val(objLang.Value);		
+				}
+				if($obj.text)
+				{
+					$obj.text(objLang.Text);			
+				}				
+				if($obj.attr("placeholder"))
+				{
+					$obj.attr("placeholder", objLang["placeholder"]);		
+				}
+				/*
+				if($obj.attr("data-filter-placeholder"))
+				{
+					$obj.attr("data-filter-placeholder", objLang["placeholder"]);
+					$("#" + $obj.attr("Id")).listview("refresh");
+				}
+				*/
 			}
 		}		
 	);
  }
+ 
+ function laguageCode(code)
+ {
+ 	switch (code)
+ 	{
+ 		case "es-ES":
+ 			return "es";
+ 			break;
+ 		case "es":
+ 			return "es";
+ 			break; 			
+		default:
+			return "en";
+		 			
+ 	} 	
+ }
+
 
 
 

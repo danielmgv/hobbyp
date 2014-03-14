@@ -178,9 +178,11 @@ function tratarRespuestaAjaxOk(data, textStatus, jqXHR, fnOk)
 {	
 	if(data.Error != "" && data.Error != undefined)
 	{
-		fnOk(data);
+		//fnOk(data);
 		//fnNOK(null, textStatus, {name : "tratarRespuestaAjaxOk", message : jqXHR.responseText});
+		//fnNOK(data, textStatus, null);
 		//$alert(data.Error); 
+		showError(data.Error);
 	}
 	else
 	{	
@@ -261,8 +263,12 @@ function DateToMySQL(idDatePicker)
 function hayError(data)
 {
 	if(data && data.Error && data.Error != "" && data.Error != undefined)
-	{		
-		$error(data.Error);
+	{
+		if(lang[data.Error])		
+			$error(lang[data.Error].Text);
+		else
+			$error(data.Error);
+			
 		return true;
 	}	
 

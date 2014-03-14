@@ -1,4 +1,4 @@
 var lang ={
-	Register : "Register",
-	Login: "Login"
+	Register :{Text: "Register", Value: ""},
+	Login:    {Text: "Login"   , Value: ""}
 };

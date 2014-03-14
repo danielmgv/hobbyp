@@ -1,4 +1,4 @@
-
+//*************************************************************************************************************************************************************
 var	oMessages = {
 		MeBDEntity: new BDEntity("oMessages"),
 		KeyField: {Id:null},	
@@ -15,9 +15,10 @@ var	oMessages = {
 		Delete : function(){this.MeBDEntity.Delete(this.KeyField);}
 };
 
+//*************************************************************************************************************************************************************
 var op_hobbyes = {
     MeBDEntity: new BDEntity("op_hobbyes"),
-    KeyField: { IdHobbie: null, IdPeople: null},
+    KeyField: { IdPeople: null, IdHobbie: null},
     Fields:
 		{
 		    IdPeople: "",
@@ -28,17 +29,21 @@ var op_hobbyes = {
     Delete: function() { this.MeBDEntity.Delete(this.KeyField); }
 };
 
+//*************************************************************************************************************************************************************
 var ohoobyes = {
     MeBDEntity: new BDEntity("ohoobyes"),
     KeyField: { Id: null},
     Fields:
 		{
-		    Name: ""
+		    Name: "",
+			IdParent: null,
+			Description: ""
 		},
     Insert: function() { this.MeBDEntity.Insert(this.Fields); },
     Delete: function() { this.MeBDEntity.Delete(this.KeyField); }
 };
 
+//*************************************************************************************************************************************************************
 var opeople = {
     MeBDEntity: new BDEntity("opeople"),
     KeyField: { Id: null},
@@ -46,68 +51,137 @@ var opeople = {
 		{
 		    Name: "",
 		    Email: "",
-		    Password: ""
+		    Password: "",
+		    ObservacionesHobbies: ""
 		},
     Insert: function() { this.MeBDEntity.Insert(this.Fields); },
     Delete: function() { this.MeBDEntity.Delete(this.KeyField); },
-	GetByKey: function() { this.MeBDEntity.GetByKey(this.KeyField); }  
+    Procedure: function(procedureName, params) { this.MeBDEntity.Procedure(procedureName, params); },
+    GetByKey: function() { this.MeBDEntity.GetByKey(this.KeyField); }
+};
+
+//*************************************************************************************************************************************************************
+var oNews = {
+    MeBDEntity: new BDEntity("oNews"),
+    KeyField: { Id: null},
+    AutoIndex: true,
+    Fields:
+		{
+			IdPeople: null,
+		    IdHobbie: null,
+		    Title: "",
+		    Content: "",
+		    ImgFileName: "",
+		    FAlta: new Date()
+		},
+    Insert: function() { this.MeBDEntity.Insert(this.Fields, this.AutoIndex); },
+    Delete: function() { this.MeBDEntity.Delete(this.KeyField); },
+    Procedure: function(procedureName, params) { this.MeBDEntity.Procedure(procedureName, params); },
+    GetByKey: function() { this.MeBDEntity.GetByKey(this.KeyField); }
 };
 
 
 
-
-//****************************************************************************************************************************
+//*************************************************************************************************************************************************************
+//*************************************************************************************************************************************************************
 function BDEntity(tableName)
 {
 	this.tableName = tableName;
 	this.InsertProc =  tableName + "Insert";
 	this.DeleteProc = tableName + "Delete";
 	
-	this.Insert = function (params)
-	{
-		try{
-			var fnOK = eval(this.InsertProc + "OK");
-			var fnNOK = eval(this.InsertProc + "NOK");	
-		}
-		catch(any)
-		{	
-			alert(any);
-		}
-		AsyncCallProcedure(getSqlProcedure(this.InsertProc, params), fnOK, fnNOK);
-	};
-	
+	this.Insert = function (params, AutoIndex)
+	{	
+		this.Procedure(this.InsertProc, params, AutoIndex);	
+	};	
+		
 	this.Delete = function (params)
 	{
-		AsyncCallProcedure(getSqlProcedure(this.DeleteProc, params), eval(this.DeleteProc + "OK"), eval(this.DeleteProc + "NOK"));
-	};  
+		this.Procedure(this.DeleteProc, params);
+	};	
 	
-	this.GetByKey = function (keys)
+	this.Procedure = function (procedureName, params, scalar)
 	{
-		AsyncConsultaSELECT({SQL:GetByKeySQL(tableName, keys)}, eval(tableName + "GetByKey" + "OK"), eval(tableName + "GetByKey" + "NOK"));
-	};  
-	
-	this.Procedure = function (procedureName, params)
-	{
-		try{
-			var fnOK = eval(procedureName + "OK");
-			var fnNOK = eval(procedureName + "NOK");
-		}
-		catch(any)
-		{
-			alert(any);
+		var fnOK = window[procedureName + "OK"];
+		var fnNOK = window[procedureName + "NOK"];
+		
+		if (!(typeof(fnOK) === "function")) { 
+    		fnOK = function(data){};
 		}
 		
-		AsyncCallProcedure(getSqlProcedure(procedureName, params), fnOK, fnNOK);
+		if (!(typeof(fnNOK) === "function")) { 
+    		fnNOK = genericNOK;
+		}
+				
+		if(scalar)
+			AsyncCallProcedureScalar(getSqlProcedure(procedureName, params), fnOK, fnNOK);
+		else		
+			AsyncCallProcedure(getSqlProcedure(procedureName, params), fnOK, fnNOK);
+	};	
+	
+	this.GetByKey = function (KeyField)
+	{
+		var fnOK = eval(tableName + "GetByKeyOK");
+		var fnNOK = eval(tableName + "GetByKeyNOK");		
+		var SQL = "SELECT * FROM " + this.tableName + " WHERE " + Conditions(KeyField);	
+		AsyncConsultaSELECT({SQL: SQL}, fnOK, fnNOK);
 	};
+	
 }
+
+//**********************************************************************************************************************************************************************
+function genericNOK(httpRequest, textStatus, errorThrown) {
+	//$.mobile.loading( 'hide' );
+	if(httpRequest.status = 500)
+	{
+		try{
+			var errorJson = eval(httpRequest.responseText);
+			showError(errorJson.Error);
+		}
+		catch(any){
+			showError(httpRequest.responseText);		
+		}	
+	}
+	else
+	{
+		showError(textStatus + errorThrown.message);	
+	}
+}
+
 //**********************************************************************************************************************************************************************
 
-function  GetByKeySQL (tableName, keys) {
-	  var sql = "SELECT * FROM " + tableName + " WHERE ";
-	  for(var key in keys)
-	  {
-	  		sql += key + "=" + key;	  	
-	  }
-	  
-	  return sql;
+function Conditions(KeyField)
+{
+	var sql = "";
+	for (var key in KeyField) {
+	  if (KeyField.hasOwnProperty(key)) {
+	  	  switch (Object.prototype.toString.call(KeyField[key])) {
+		    case "[object String]":
+		  		sql += key + " = '" + KeyField[key] + "'";
+		  		break;
+			case '[object Number]':
+		  		sql += key + " = " + KeyField[key];
+		  		break;
+			case "[object Null]":
+		  		sql += key + " = " + "Null" ;
+		  		break;		  		
+			case '[object Date]':
+			  	sql += key + " = " + "'" + KeyField[key].toMysqlFormat()  + "'";
+		  		break;
+			case '[object Boolean]':
+		  		sql += key + " = " + KeyField[key];
+		  		break;
+			case 'undefined':
+		  		//serializeArr.push( "'" + Fields[key] + "'" );
+		  		break;	  			
+			default:
+		  		sql += key + " = " + "Null";
+		  		break;
+			}
+			sql += " AND ";
+		}
+		sql = sql.substring(0, sql.length - 4);
+	}
+	return sql;
 }
+
