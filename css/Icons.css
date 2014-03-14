@@ -1,0 +1,77 @@
+	.ui-icon-news-active{		
+   		background: url('Icons/knewsticker-3.png') no-repeat !important;
+		background-size: 32px 32px !important;
+		/*border:1px solid blue  !important;*/  
+		border-left: 1px solid blue  !important; 
+		border-top: 0px; !important;
+		border-right: 1px solid blue  !important;
+		border-bottom: 1px solid blue  !important;
+		color: blue !important;  
+		text-shadow: 0 1px 0 #059;
+	}    
+	
+	.ui-icon-diary-active{		
+   		background: url('Icons/korganizer-2.png') no-repeat !important;
+		background-size: 32px 32px !important;
+		/*border:1px solid blue  !important;*/  
+		border-left: 1px solid blue  !important; 
+		border-top: 0px; !important;
+		border-right: 1px solid blue  !important;
+		border-bottom: 1px solid blue  !important;
+		color: blue !important;  
+		text-shadow: 0 1px 0 #059;
+	}    
+
+	.ui-icon-messages-active{		
+   		background: url('Icons/mail-receive.png') no-repeat !important;
+		background-size: 32px 32px !important;
+		/*border:1px solid blue  !important;*/  
+		border-left: 1px solid blue  !important; 
+		border-top: 0px; !important;
+		border-right: 1px solid blue  !important;
+		border-bottom: 1px solid blue  !important;
+		color: blue !important;  
+		text-shadow: 0 1px 0 #059;
+	}    	
+	
+	.ui-icon-config-active{		
+   		background: url('Icons/preferences-desktop-personal.png') no-repeat !important;
+		background-size: 32px 32px !important;
+		/*border:1px solid blue  !important;*/  
+		border-left: 1px solid blue  !important; 
+		border-top: 0px; !important;
+		border-right: 1px solid blue  !important;
+		border-bottom: 1px solid blue  !important;
+		color: blue !important;  
+		text-shadow: 0 1px 0 #059;
+	}    
+		
+		
+	.ui-icon-news {
+		background: url('Icons/knewsticker-3.png') no-repeat !important;
+		background-size: 32px 32px !important;		
+		text-shadow: none;
+		border-top: 1px solid blue !important;
+    }   
+    	         
+	.ui-icon-diary {
+		background: url('Icons/korganizer-2.png') no-repeat  !important;
+		background-size: 32px 32px;
+		margin-left:12px;/*Adjust this value to position the icon*/
+		border-top: 1px solid blue !important;
+    }
+	.ui-icon-messages {
+		background: url('Icons/mail-receive.png') no-repeat  !important;
+		background-size: 32px 32px;
+		margin-left:12px;/*Adjust this value to position the icon*/
+		border-top: 1px solid blue !important;
+    }	    	    
+	.ui-icon-config { 
+		background: url('Icons/preferences-desktop-personal.png') no-repeat  !important;
+		background-size: 32px 32px;
+		margin-left:12px;/*Adjust this value to position the icon*/
+		border-top: 1px solid blue !important;
+	 }
+	 /*
+	 http://openiconlibrary.sourceforge.net/gallery2/?./Icons/apps&700
+	 */
