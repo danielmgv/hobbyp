@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="Content-Language" content="es-ES"/>		
+		<link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="../css/Icons.css" />
+		<link rel="stylesheet" href="../css/hobbyp.css" />
+								
+		<script src="../js/JQuery/jquery.min.js"></script>				
+		<script src="../js/JQuery/jquery.mobile.min.js"></script>	
+		<script src="../js/Comun.js"></script>
+		<script src="../js/MySQLLib/MySQL.js"></script>
+		<script src="../js/MySQLLib/BDEntity.js"></script>
+		<script src="../js/phonegap/PGNavigation.js"></script>	
+		<script src="../js/Hobbyp.js"></script>
+		
+		<script src="js/Messages.js"></script>
+		<script src="js/ListadoMensajes.js"></script>
+		<script src="js/ListadoMensajesEnviados.js"></script>
+		<title>Messages</title>
+	</head>
+	<body>
+		<div data-role="page" data-theme="c" id="Recibidos">
+			<div data-role="header" data-position="fixed"  class="headerLogo">				
+				<select  id="lvHobbies" onchange="hobbypChange(this);" data-theme="c" >										
+				</select>				
+				<a href="../index.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+				<a href="javascript:hrefParams('../Config/Config.html');" data-icon="user" data-iconpos="notext" data-rel="dialog" data-transition="fade">Profile</a>
+			</div>
+			<section data-role="content" data-theme="c" >	
+				<div data-role="navbar" id="subNavbarId">
+					<ul>
+						<li><a href="#Recibidos" class="ui-btn-active ui-state-persist" >Recibidos</a></li>
+						<li><a href="#Enviados" id="subNavbarEnviadosId">Enviados</a></li>
+					</ul>
+				</div>
+				<div data-role="fieldcontain" data-scroll="y">
+					<div class="content-primary" >
+						<div data-role="collapsible-set" id="ListIdRecibidos">
+						</div>	
+					</div>
+				</div>
+			</section>
+			<div data-role="footer" class="footer-docs" data-theme="c"  data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar" id="navbarId">
+					<ul>
+						<li><a class="labelMultiidioma ui-icon-news"         href="javascript:hrefParams('../News/News.html');"         rel="external" data-ajax="false" id="News"     >News</a></li>
+	    				<li><a class="labelMultiidioma ui-icon-diary" href="javascript:hrefParams('../Diary/Diary.html');" rel="external" data-ajax="false" id="Diary"    >Diary</a></li>
+						<li><a class="labelMultiidioma ui-icon-messages-active"     href="#"                                                   rel="external" data-ajax="false" id="Messages" >Messages</a></li>	
+						<li><a class="labelMultiidioma ui-icon-config"       href="javascript:hrefParams('../Friends/Friends.html');"   rel="external" data-ajax="false" id="Friends"   >Friends</a></li>
+					</ul>
+				</div>	
+			</div>	
+			
+			<a id='lnkDialogReply' href="#dialogReply" data-rel="popup" style='display:none;'></a>
+			
+			<div data-role="popup" id="dialogReply" data-theme="a" class="ui-corner-all">
+				<form>
+					<div style="padding:10px 20px;">
+					  <h3 id="asuntoReply"></h3>
+			          <label for="respuesta" class="ui-hidden-accessible">Respuesta:</label>
+			          <textarea name="respuesta" id="respuesta" data-theme="a" ></textarea>				          	
+			    	  <a href="#" onclick="replyClick(); return false" rel="external" data-role="button">Enviar respuesta</a>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+
+		<div data-role="page" data-theme="c" id="Enviados">		
+			<div data-role="header" data-position="fixed"  class="headerLogo">				
+				<select  id="lvHobbies2" onchange="hobbypChange(this);" data-theme="c" >										
+				</select>				
+				<a href="../index.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+				<a href="javascript:hrefParams('../Config/Config.html');" data-icon="user" data-iconpos="notext" data-rel="dialog" data-transition="fade">Profile</a>
+			</div>
+			<section data-role="content" >
+				<div data-role="navbar" id="subNavbarId2">
+					<ul>				
+						<li><a href="#Recibidos"  >Recibidos</a></li>	
+						<li><a href="#Enviados" class="ui-btn-active ui-state-persist" >Enviados</a></li>											
+					</ul>
+				</div>
+				
+				<div data-role="fieldcontain" data-scroll="y">
+					<div class="content-primary" >
+						<div data-role="collapsible-set" id="ListIdEnviados">
+						</div>	
+					</div>
+				</div>
+				<div data-role="fieldcontain">					
+					<a href="javascript:EnviarMensaje();" id="btnNuevoMensaje" data-role="button" data-inline="true" data-rel="dialog" data-transition="pop" data-theme="a" class="ui-btn ui-icon-mail ui-btn-icon-left labelMultiidioma">Nuevo mensaje</a>
+<!--
+	<a href="dialog.html" data-role="button" data-inline="true" data-rel="dialog" data-transition="pop">Nuevo mensaje</a>
+					
+-->
+					
+				</div>
+			</section>
+			<div data-role="footer" class="footer-docs" data-theme="c"  data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar" id="navbarId">
+					<ul>
+						<li><a class="labelMultiidioma ui-icon-news"         href="javascript:hrefParams('../News/News.html');"         rel="external" data-ajax="false" id="News"     >News</a></li>
+	    				<li><a class="labelMultiidioma ui-icon-diary" href="javascript:hrefParams('../Diary/Diary.html');" rel="external" data-ajax="false" id="Diary"    >Diary</a></li>
+						<li><a class="labelMultiidioma ui-icon-messages-active"     href="#"                                                   rel="external" data-ajax="false" id="Messages" >Messages</a></li>	
+						<li><a class="labelMultiidioma ui-icon-config"       href="javascript:hrefParams('../Hobbies/Hobbies.html');"   rel="external" data-ajax="false" id="Config"   >Config</a></li>
+					</ul>
+				</div>	
+			</div>					
+		</div><!--/page-->		
+
+	</body>
+</html>
+

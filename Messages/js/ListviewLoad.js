@@ -28,12 +28,7 @@ function ListviewLoad($Container, params) {
     };
 
     this.recargarDatos = function (data) {   
-        //_Listado.vaciar();
-
-        if(hayError(data))
-		{	
-			return;
-		}
+        _Listado.vaciar();
         
         if(params.fnOnLoad)
         {
@@ -51,11 +46,9 @@ function ListviewLoad($Container, params) {
     };
 
     this.addRow = function (row) {
-    	var $option = '<option value="'+ row[params.Clave] +'">'+ row[params.Titulo] +'</option>';
-		
-		$Container.append($option);
-		$Container.selectmenu("refresh");
-		//$Container.Listview("refresh");		
+		var option = '<option value =' + row[params.Clave] + '>' + row[params.Titulo] +'</option>';
+		$Container.append(option);
+		$Container.selectmenu("refresh");		
     };
     
     
