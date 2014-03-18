@@ -1,0 +1,180 @@
+02:04:26-85.251.54.20-BEGIN AJAX.
+02:04:26-85.251.54.20-select.
+02:04:26-85.251.54.20- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+02:04:26-85.251.54.20-BEGIN AJAX.
+02:04:26-85.251.54.20-select.
+02:04:26-85.251.54.20- SELECT *  FROM oMessages  WHERE De = 11.
+02:06:37-85.251.54.20-BEGIN AJAX.
+02:06:37-85.251.54.20-select.
+02:06:37-85.251.54.20- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+02:06:37-85.251.54.20-BEGIN AJAX.
+02:06:37-85.251.54.20-select.
+02:06:37-85.251.54.20- SELECT *  FROM oMessages  WHERE De = 11.
+02:11:33-85.251.54.20-BEGIN AJAX.
+02:11:33-85.251.54.20-select.
+02:11:33-85.251.54.20- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+02:11:33-85.251.54.20-BEGIN AJAX.
+02:11:33-85.251.54.20-select.
+02:11:33-85.251.54.20- SELECT *  FROM oMessages  WHERE De = 11.
+09:07:01-83.56.19.7-BEGIN AJAX.
+09:07:02-83.56.19.7-select.
+09:07:02-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='www' AND Password='www'.
+09:07:04-83.56.19.7-BEGIN AJAX.
+09:07:04-83.56.19.7-select.
+09:07:04-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:07:04-83.56.19.7-BEGIN AJAX.
+09:07:04-83.56.19.7-select.
+09:07:04-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:07:10-83.56.19.7-BEGIN AJAX.
+09:07:10-83.56.19.7-select.
+09:07:10-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+09:07:10-83.56.19.7-BEGIN AJAX.
+09:07:10-83.56.19.7-select.
+09:07:10-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+09:18:01-83.56.19.7-BEGIN AJAX.
+09:18:01-83.56.19.7-select.
+09:18:01-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:18:01-83.56.19.7-BEGIN AJAX.
+09:18:01-83.56.19.7-select.
+09:18:01-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:18:08-83.56.19.7-BEGIN AJAX.
+09:18:08-83.56.19.7-select.
+09:18:08-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+09:18:08-83.56.19.7-BEGIN AJAX.
+09:18:08-83.56.19.7-select.
+09:18:08-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+09:58:41-83.56.19.7-BEGIN AJAX.
+09:58:41-83.56.19.7-select.
+09:58:41-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+09:59:14-83.56.19.7-BEGIN AJAX.
+09:59:14-83.56.19.7-select.
+09:59:14-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:59:14-83.56.19.7-BEGIN AJAX.
+09:59:14-83.56.19.7-select.
+09:59:14-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:59:23-83.56.19.7-BEGIN AJAX.
+09:59:23-83.56.19.7-select.
+09:59:23-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+09:59:24-83.56.19.7-BEGIN AJAX.
+09:59:24-83.56.19.7-select.
+09:59:24-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+10:01:37-83.56.19.7-BEGIN AJAX.
+10:01:37-83.56.19.7-select.
+10:01:37-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+10:01:37-83.56.19.7-BEGIN AJAX.
+10:01:37-83.56.19.7-select.
+10:01:37-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+10:09:21-83.56.19.7-BEGIN AJAX.
+10:09:21-83.56.19.7-select.
+10:09:21-83.56.19.7-SELECT Id, Name, Description from ohobies   Where  Name LIKE '%%' AND Description LIKE '%%'.
+10:09:21-83.56.19.7-BEGIN AJAX.
+10:09:21-83.56.19.7-select.
+10:09:21-83.56.19.7-SELECT Id, Name, Description from ohobies   Where  Name LIKE '%%' AND Description LIKE '%%'.
+10:10:15-83.56.19.7-BEGIN AJAX.
+10:10:15-83.56.19.7-select.
+10:10:15-83.56.19.7-SELECT Id, Name, Description from ohobies   Where  Name LIKE '%%' AND Description LIKE '%%'.
+10:21:05-83.56.19.7-BEGIN AJAX.
+10:21:05-83.56.19.7-select.
+10:21:05-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+10:21:07-83.56.19.7-BEGIN AJAX.
+10:21:07-83.56.19.7-select.
+10:21:07-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+10:21:07-83.56.19.7-BEGIN AJAX.
+10:21:07-83.56.19.7-select.
+10:21:07-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+10:21:12-83.56.19.7-BEGIN AJAX.
+10:21:12-83.56.19.7-select.
+10:21:12-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+10:21:13-83.56.19.7-BEGIN AJAX.
+10:21:13-83.56.19.7-select.
+10:21:13-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+10:21:21-83.56.19.7-BEGIN AJAX.
+10:21:21-83.56.19.7-select.
+10:21:21-83.56.19.7-SELECT Id, Name, Description from ohobies   Where  Name LIKE '%%' AND Description LIKE '%%'.
+10:24:45-83.56.19.7-BEGIN AJAX.
+10:24:45-83.56.19.7-select.
+10:24:45-83.56.19.7-SELECT Id, Name, Description from ohobies   Where  Name LIKE '%%' AND Description LIKE '%%'.
+12:19:09-83.56.19.7-BEGIN AJAX.
+12:19:09-83.56.19.7-select.
+12:19:09-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+12:19:22-83.56.19.7-BEGIN AJAX.
+12:19:22-83.56.19.7-select.
+12:19:22-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+12:19:22-83.56.19.7-BEGIN AJAX.
+12:19:22-83.56.19.7-select.
+12:19:22-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+12:19:31-83.56.19.7-BEGIN AJAX.
+12:19:31-83.56.19.7-select.
+12:19:31-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+12:19:31-83.56.19.7-BEGIN AJAX.
+12:19:31-83.56.19.7-select.
+12:19:31-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+12:20:25-83.56.19.7-BEGIN AJAX.
+12:20:25-83.56.19.7-select.
+12:20:25-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+12:20:25-83.56.19.7-BEGIN AJAX.
+12:20:25-83.56.19.7-select.
+12:20:25-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+12:53:13-83.56.19.7-BEGIN AJAX.
+12:53:13-83.56.19.7-procedure.
+12:53:25-83.56.19.7-BEGIN AJAX.
+12:53:25-83.56.19.7-procedure.
+12:53:38-83.56.19.7-CALL UpdateObservacionesHobbies('11',Null).
+12:53:38-83.56.19.7-CALL UpdateObservacionesHobbies('11',Null).
+12:53:54-83.56.19.7-BEGIN AJAX.
+12:53:54-83.56.19.7-select.
+12:53:54-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+12:53:54-83.56.19.7-BEGIN AJAX.
+12:53:54-83.56.19.7-select.
+12:53:54-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 11.
+12:54:09-83.56.19.7-BEGIN AJAX.
+12:54:09-83.56.19.7-select.
+12:54:09-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+12:54:09-83.56.19.7-BEGIN AJAX.
+12:54:09-83.56.19.7-select.
+12:54:09-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+12:54:47-83.56.19.7-BEGIN AJAX.
+12:54:47-83.56.19.7-select.
+12:54:47-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+12:54:47-83.56.19.7-BEGIN AJAX.
+12:54:47-83.56.19.7-select.
+12:54:47-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+12:56:09-83.56.19.7-BEGIN AJAX.
+12:56:09-83.56.19.7-select.
+12:56:09-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 11.
+12:56:14-83.56.19.7-BEGIN AJAX.
+12:56:14-83.56.19.7-select.
+12:56:14-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+12:56:15-83.56.19.7-BEGIN AJAX.
+12:56:15-83.56.19.7-select.
+12:56:15-83.56.19.7- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+12:56:15-83.56.19.7-BEGIN AJAX.
+12:56:15-83.56.19.7-select.
+12:56:15-83.56.19.7- SELECT *  FROM oMessages  WHERE De = 11.
+12:56:28-83.56.19.7-BEGIN AJAX.
+12:56:28-83.56.19.7-select.
+12:56:28-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+12:56:28-83.56.19.7-BEGIN AJAX.
+12:56:28-83.56.19.7-select.
+12:56:28-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:16:41-83.56.19.7-BEGIN AJAX.
+13:16:41-83.56.19.7-procedure.
+13:16:41-83.56.19.7-CALL UpdateObservacionesHobbies('11',Null).
+13:17:25-83.56.19.7-BEGIN AJAX.
+13:17:25-83.56.19.7-select.
+13:17:25-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+13:17:26-83.56.19.7-BEGIN AJAX.
+13:17:26-83.56.19.7-select.
+13:17:26-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:18:21-83.56.19.7-BEGIN AJAX.
+13:18:21-83.56.19.7-procedure.
+13:18:21-83.56.19.7-CALL UpdateObservacionesHobbies('11',Null).
+13:19:03-83.56.19.7-BEGIN AJAX.
+13:19:03-83.56.19.7-select.
+13:19:03-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+13:19:03-83.56.19.7-BEGIN AJAX.
+13:19:03-83.56.19.7-select.
+13:19:03-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+13:19:24-83.56.19.7-BEGIN AJAX.
+13:19:24-83.56.19.7-procedure.
+13:19:24-83.56.19.7-CALL UpdateObservacionesHobbies('11','rrrrrr').

@@ -1,0 +1,16 @@
+10:55:59-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:42:43-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:48:08-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:48:08-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:48:54-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:49:06-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:49:07-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:50:15-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:56:02-83.56.19.7-CALL failed: (1305) PROCEDURE u490265401_educa.oNewsDelete does not exist CALL oNewsDelete(1).
+12:01:40-62.174.40.228-Column 'Id' in field list is ambiguous.
+12:44:29-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:46:55-83.56.19.7-..%2FData%2FPeople_11%2FFile_19.dat Not found.
+12:49:37-83.56.19.7-../Data/People_11/File_19.dat Not found.
+12:57:22-83.56.19.7-Data/People_11/File_19.dat Not found.
+13:12:42-83.56.19.7-Data/People_11/File_21.dat Not found.
+18:07:45-62.174.38.54-Column 'Id' in field list is ambiguous.

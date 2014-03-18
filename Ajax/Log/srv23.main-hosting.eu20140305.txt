@@ -1,0 +1,18 @@
+19:24:08-85.251.54.20-BEGIN AJAX.
+19:24:08-85.251.54.20-select.
+19:24:08-85.251.54.20- SELECT oNews.Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta, H.Name as HobbieName  FROM oNews   JOIN ohoobyes H ON H.Id = IdHobbie  WHERE IdPeople = 11.
+19:27:25-85.251.54.20-BEGIN AJAX.
+19:27:25-85.251.54.20-select.
+19:27:25-85.251.54.20- SELECT oNews.Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta, H.Name as HobbieName  FROM oNews   JOIN ohoobyes H ON H.Id = IdHobbie  WHERE IdPeople = 11.
+20:52:05-85.251.54.20-BEGIN AJAX.
+20:52:05-85.251.54.20-select.
+20:52:05-85.251.54.20- SELECT oNews.Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta, H.Name as HobbieName  FROM oNews   JOIN ohoobyes H ON H.Id = IdHobbie  WHERE IdPeople = 11.
+20:56:02-85.251.54.20-BEGIN AJAX.
+20:56:02-85.251.54.20-select.
+20:56:02-85.251.54.20- SELECT oNews.Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta, H.Name as HobbieName  FROM oNews   JOIN ohoobyes H ON H.Id = IdHobbie  WHERE IdPeople = 11.
+21:46:17-85.251.54.20-BEGIN AJAX.
+21:46:17-85.251.54.20-select.
+21:46:17-85.251.54.20- SELECT oNews.Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta, H.Name as HobbieName  FROM oNews   JOIN ohoobyes H ON H.Id = IdHobbie  WHERE IdPeople = 11.
+21:50:43-85.251.54.20-BEGIN AJAX.
+21:50:43-85.251.54.20-select.
+21:50:43-85.251.54.20- SELECT oNews.Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta, H.Name as HobbieName  FROM oNews   JOIN ohoobyes H ON H.Id = IdHobbie  WHERE IdPeople = 11.

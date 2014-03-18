@@ -1,0 +1,5 @@
+11:43:30-83.56.19.7-CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oNewsInsert; expected 6, got 7 CALL oNewsInsert('11','4','Libros','23423','','2014-03-18 10:42:58',Null).
+11:46:27-83.56.19.7-CALL failed: (1048) Column 'Privacity' cannot be null CALL oNewsInsert('11','4','Libros','23423','','2014-03-18 10:42:58',Null).
+11:47:14-83.56.19.7-CALL failed: (1048) Column 'Privacity' cannot be null CALL oNewsInsert('11','4','Libros','23423','','2014-03-18 10:42:58',Null).
+11:47:57-83.56.19.7-CALL failed: (1048) Column 'Privacity' cannot be null CALL oNewsInsert('11','16','23423','234234','','2014-03-18 10:47:50',Null).
+11:49:12-83.56.19.7-CALL failed: (1048) Column 'Privacity' cannot be null CALL oNewsInsert('11','11','qweqwe','werwer','','2014-03-18 10:49:04',Null).

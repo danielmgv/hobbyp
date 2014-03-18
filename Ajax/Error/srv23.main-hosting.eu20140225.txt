@@ -1,0 +1,67 @@
+10:22:33-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:29:28-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:30:18-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:33:25-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:34:09-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:34:37-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:36:11-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:37:28-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:37:39-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:43:50-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:43:55-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:51:30-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:51:36-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:53:18-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:53:49-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:56:03-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:56:19-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:56:50-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:57:49-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:58:30-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:58:49-83.56.19.7-Column 'Id' in field list is ambiguous.
+10:58:55-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:32:35-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:33:18-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:35:57-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:36:46-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:41:57-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:42:32-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:44:25-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:44:30-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:44:33-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:44:36-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:44:37-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:44:39-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:44:41-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:44:44-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:45:26-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:45:59-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:48:43-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:49:05-83.56.19.7-Unknown column 'IdPeople' in 'field list'.
+11:52:00-83.56.19.7-Column 'Id' in field list is ambiguous.
+11:56:16-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:02:58-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:23:38-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:26:54-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:29:22-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:30:06-83.56.19.7-CALL failed: (1305) PROCEDURE u490265401_educa.oNewsInsert does not exist CALL oNewsInsert(Null,'1',Null,'','','2014-02-25 11:29:26','11').
+12:30:37-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:48:59-83.56.19.7-CALL failed: (1305) PROCEDURE u490265401_educa.oNewsInsert does not exist CALL oNewsInsert(Null,'1',Null,'qweqwe','','2014-02-25 11:47:55','11').
+12:49:26-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:52:31-83.56.19.7-Column 'Id' in field list is ambiguous.
+12:56:48-83.56.19.7-CALL failed: (1305) PROCEDURE u490265401_educa.oNewsInsert does not exist CALL oNewsInsert(Null,'1',Null,'werwerw','','2014-02-25 11:56:10','11').
+13:02:42-83.56.19.7-Column 'Id' in field list is ambiguous.
+13:05:28-83.56.19.7-CALL failed: (1305) PROCEDURE u490265401_educa.oNewsInsert does not exist CALL oNewsInsert(Null,'1',Null,'qweqwe','','2014-02-25 12:04:30','11').
+13:05:43-83.56.19.7-Column 'Id' in field list is ambiguous.
+13:11:48-83.56.19.7-Column 'Id' in field list is ambiguous.
+13:20:32-83.56.19.7-Column 'Id' in field list is ambiguous.
+13:20:50-83.56.19.7-CALL failed: (1305) PROCEDURE u490265401_educa.oNewsInsert does not exist CALL oNewsInsert(Null,'1',Null,'qweqw','','2014-02-25 12:20:36','11').
+13:22:29-83.56.19.7-CALL failed: (1305) PROCEDURE u490265401_educa.oNewsInsert does not exist CALL oNewsInsert(Null,'1',Null,'234234','','2014-02-25 12:22:14','11').
+13:40:27-83.56.19.7-CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oNewsInsert; expected 6, got 7 CALL oNewsInsert(Null,'1','qweqwe','qweqwe','','2014-02-25 12:40:13','11').
+13:43:27-83.56.19.7-Column 'Id' in field list is ambiguous.
+13:44:57-83.56.19.7-CALL failed: (1318) Incorrect number of arguments for PROCEDURE u490265401_educa.oNewsInsert; expected 6, got 7 CALL oNewsInsert(Null,'1','qweqw','qweqwe','','2014-02-25 12:43:38','11').
+13:50:08-83.56.19.7-Column 'Id' in field list is ambiguous.
+14:05:25-83.56.19.7-Column 'Id' in field list is ambiguous.
+14:16:31-83.56.19.7-Column 'Id' in field list is ambiguous.
+14:53:45-83.56.19.7-Column 'Id' in field list is ambiguous.
+14:54:45-83.56.19.7-Column 'Id' in field list is ambiguous.

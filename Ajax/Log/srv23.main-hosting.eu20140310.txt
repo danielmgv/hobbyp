@@ -1,0 +1,9 @@
+21:15:08-85.251.54.20-BEGIN AJAX.
+21:15:08-85.251.54.20-select.
+21:15:08-85.251.54.20-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+21:15:09-85.251.54.20-BEGIN AJAX.
+21:15:09-85.251.54.20-select.
+21:15:09-85.251.54.20-SELECT Id, Name from ohoobyes  .
+21:15:09-85.251.54.20-BEGIN AJAX.
+21:15:09-85.251.54.20-select.
+21:15:09-85.251.54.20-SELECT Name as Texto, Id as Valor  FROM ohoobyes.

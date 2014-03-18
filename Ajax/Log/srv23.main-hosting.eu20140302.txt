@@ -1,0 +1,24 @@
+21:44:51-85.251.54.20-BEGIN AJAX.
+21:44:51-85.251.54.20-select.
+21:44:51-85.251.54.20-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+21:44:54-85.251.54.20-BEGIN AJAX.
+21:44:54-85.251.54.20-select.
+21:44:54-85.251.54.20- SELECT N.Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE DATE_SUB(CURDATE(),INTERVAL 30 DAY) <= N.FAlta .
+21:44:55-85.251.54.20-BEGIN AJAX.
+21:44:55-85.251.54.20-select.
+21:44:55-85.251.54.20-SELECT Id, Name from ohoobyes  .
+21:45:09-85.251.54.20-BEGIN AJAX.
+21:45:09-85.251.54.20-select.
+21:45:09-85.251.54.20- SELECT oNews.Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta, H.Name as HobbieName  FROM oNews   JOIN ohoobyes H ON H.Id = IdHobbie  WHERE IdPeople = 11.
+21:45:31-85.251.54.20-BEGIN AJAX.
+21:45:31-85.251.54.20-select.
+21:45:31-85.251.54.20- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+21:45:32-85.251.54.20-BEGIN AJAX.
+21:45:32-85.251.54.20-select.
+21:45:32-85.251.54.20- SELECT *  FROM oMessages  WHERE De = 11.
+21:46:28-85.251.54.20-BEGIN AJAX.
+21:46:28-85.251.54.20-select.
+21:46:28-85.251.54.20- SELECT N.Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE DATE_SUB(CURDATE(),INTERVAL 30 DAY) <= N.FAlta .
+21:46:28-85.251.54.20-BEGIN AJAX.
+21:46:28-85.251.54.20-select.
+21:46:28-85.251.54.20-SELECT Id, Name from ohoobyes  .

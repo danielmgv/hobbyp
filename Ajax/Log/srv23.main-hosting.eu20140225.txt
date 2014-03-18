@@ -1,0 +1,880 @@
+06:25:11-85.251.54.20-BEGIN AJAX.
+06:25:11-85.251.54.20-BEGIN AJAX.
+06:25:11-85.251.54.20-select.
+06:25:11-85.251.54.20-select.
+06:25:11-85.251.54.20- SELECT *  FROM oMessages  WHERE De = 11.
+06:25:11-85.251.54.20- SELECT M.Id as IdMessage, Asunto, Mensaje, M.Fecha, P.Name as DeNombre  FROM oMessages M JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+09:35:31-83.56.19.7-BEGIN AJAX.
+09:35:31-83.56.19.7-select.
+09:35:31-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+09:35:33-83.56.19.7-BEGIN AJAX.
+09:35:33-83.56.19.7-select.
+09:35:33-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:35:34-83.56.19.7-BEGIN AJAX.
+09:35:34-83.56.19.7-select.
+09:35:34-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:35:42-83.56.19.7-BEGIN AJAX.
+09:35:42-83.56.19.7-select.
+09:35:42-83.56.19.7-SELECT H.Name, H.Id  FROM op_hobbyes P JOIN ohoobyes H ON H.Id = P.IdHobbye WHERE P.IdPeople = 11.
+09:35:42-83.56.19.7-BEGIN AJAX.
+09:35:42-83.56.19.7-select.
+09:35:42-83.56.19.7-SELECT Id, Name from ohoobyes  .
+09:35:42-83.56.19.7-BEGIN AJAX.
+09:35:42-83.56.19.7-select.
+09:35:42-83.56.19.7-SELECT Name as Texto, Id as Valor  FROM ohoobyes.
+09:40:17-83.56.19.7-BEGIN AJAX.
+09:40:17-83.56.19.7-select.
+09:40:17-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+09:40:18-83.56.19.7-BEGIN AJAX.
+09:40:18-83.56.19.7-select.
+09:40:18-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:40:18-83.56.19.7-BEGIN AJAX.
+09:40:18-83.56.19.7-select.
+09:40:18-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:43:08-83.56.19.7-BEGIN AJAX.
+09:43:08-83.56.19.7-select.
+09:43:08-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:43:09-83.56.19.7-BEGIN AJAX.
+09:43:09-83.56.19.7-select.
+09:43:09-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:43:35-83.56.19.7-BEGIN AJAX.
+09:43:35-83.56.19.7-select.
+09:43:35-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:43:36-83.56.19.7-BEGIN AJAX.
+09:43:36-83.56.19.7-select.
+09:43:36-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:45:41-83.56.19.7-BEGIN AJAX.
+09:45:41-83.56.19.7-select.
+09:45:41-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+09:45:42-83.56.19.7-BEGIN AJAX.
+09:45:42-83.56.19.7-select.
+09:45:42-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:46:04-83.56.19.7-BEGIN AJAX.
+09:46:04-83.56.19.7-select.
+09:46:04-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+09:46:05-83.56.19.7-BEGIN AJAX.
+09:46:05-83.56.19.7-select.
+09:46:05-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+10:19:59-83.56.19.7-BEGIN AJAX.
+10:19:59-83.56.19.7-select.
+10:19:59-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+10:20:03-83.56.19.7-BEGIN AJAX.
+10:20:03-83.56.19.7-select.
+10:20:03-83.56.19.7- SELECT R.IdOwner, R.Description, P.Name as OwnerName, R.FAlta FROM oRequest R JOIN opeople P ON P.Id = R.IdOwner WHERE R.IdPeople = 11 AND Estado = 0.
+10:20:03-83.56.19.7-BEGIN AJAX.
+10:20:03-83.56.19.7-select.
+10:20:03-83.56.19.7-SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11.
+10:21:49-83.56.19.7-BEGIN AJAX.
+10:21:49-83.56.19.7-select.
+10:21:49-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+10:22:30-83.56.19.7-BEGIN AJAX.
+10:22:30-83.56.19.7-select.
+10:22:30-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+10:22:33-83.56.19.7-BEGIN AJAX.
+10:22:33-83.56.19.7-select.
+10:22:33-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:29:28-83.56.19.7-BEGIN AJAX.
+10:29:28-83.56.19.7-select.
+10:29:28-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:30:18-83.56.19.7-BEGIN AJAX.
+10:30:18-83.56.19.7-select.
+10:30:18-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:30:45-83.56.19.7-BEGIN AJAX.
+10:30:45-83.56.19.7-select.
+10:30:45-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:33:25-83.56.19.7-BEGIN AJAX.
+10:33:25-83.56.19.7-select.
+10:33:25-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:33:26-83.56.19.7-BEGIN AJAX.
+10:33:26-83.56.19.7-select.
+10:33:26-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:34:09-83.56.19.7-BEGIN AJAX.
+10:34:09-83.56.19.7-select.
+10:34:09-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:34:09-83.56.19.7-BEGIN AJAX.
+10:34:09-83.56.19.7-select.
+10:34:09-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:34:37-83.56.19.7-BEGIN AJAX.
+10:34:37-83.56.19.7-select.
+10:34:37-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:34:37-83.56.19.7-BEGIN AJAX.
+10:34:37-83.56.19.7-select.
+10:34:37-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:36:11-83.56.19.7-BEGIN AJAX.
+10:36:11-83.56.19.7-select.
+10:36:11-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:36:11-83.56.19.7-BEGIN AJAX.
+10:36:11-83.56.19.7-select.
+10:36:11-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:37:25-83.56.19.7-BEGIN AJAX.
+10:37:25-83.56.19.7-select.
+10:37:25-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+10:37:28-83.56.19.7-BEGIN AJAX.
+10:37:28-83.56.19.7-select.
+10:37:28-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:37:28-83.56.19.7-BEGIN AJAX.
+10:37:28-83.56.19.7-select.
+10:37:28-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:37:39-83.56.19.7-BEGIN AJAX.
+10:37:39-83.56.19.7-select.
+10:37:39-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:43:50-83.56.19.7-BEGIN AJAX.
+10:43:50-83.56.19.7-select.
+10:43:50-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:43:51-83.56.19.7-BEGIN AJAX.
+10:43:51-83.56.19.7-select.
+10:43:51-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:43:55-83.56.19.7-BEGIN AJAX.
+10:43:55-83.56.19.7-select.
+10:43:55-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:51:30-83.56.19.7-BEGIN AJAX.
+10:51:30-83.56.19.7-select.
+10:51:30-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:51:31-83.56.19.7-BEGIN AJAX.
+10:51:31-83.56.19.7-select.
+10:51:31-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:51:36-83.56.19.7-BEGIN AJAX.
+10:51:36-83.56.19.7-select.
+10:51:36-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:53:18-83.56.19.7-BEGIN AJAX.
+10:53:18-83.56.19.7-select.
+10:53:18-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:53:49-83.56.19.7-BEGIN AJAX.
+10:53:49-83.56.19.7-select.
+10:53:49-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:56:03-83.56.19.7-BEGIN AJAX.
+10:56:03-83.56.19.7-select.
+10:56:03-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:56:19-83.56.19.7-BEGIN AJAX.
+10:56:19-83.56.19.7-select.
+10:56:19-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:56:50-83.56.19.7-BEGIN AJAX.
+10:56:50-83.56.19.7-select.
+10:56:50-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:57:49-83.56.19.7-BEGIN AJAX.
+10:57:49-83.56.19.7-select.
+10:57:49-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:57:50-83.56.19.7-BEGIN AJAX.
+10:57:50-83.56.19.7-select.
+10:57:50-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:58:30-83.56.19.7-BEGIN AJAX.
+10:58:30-83.56.19.7-select.
+10:58:30-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+10:58:31-83.56.19.7-BEGIN AJAX.
+10:58:31-83.56.19.7-select.
+10:58:31-83.56.19.7-SELECT Id, Name from ohoobyes  .
+10:58:49-83.56.19.7-BEGIN AJAX.
+10:58:49-83.56.19.7-select.
+10:58:49-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+10:58:55-83.56.19.7-BEGIN AJAX.
+10:58:55-83.56.19.7-select.
+10:58:55-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN opeople P ON P.Id = M.De  WHERE M.Para = 11 AND M.EstadoPara <> 2 .
+11:32:35-83.56.19.7-BEGIN AJAX.
+11:32:35-83.56.19.7-select.
+11:32:35-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:33:18-83.56.19.7-BEGIN AJAX.
+11:33:18-83.56.19.7-select.
+11:33:18-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:35:57-83.56.19.7-BEGIN AJAX.
+11:35:57-83.56.19.7-select.
+11:35:57-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:36:46-83.56.19.7-BEGIN AJAX.
+11:36:46-83.56.19.7-select.
+11:36:46-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:41:56-83.56.19.7-BEGIN AJAX.
+11:41:56-83.56.19.7-select.
+11:41:56-83.56.19.7-SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='www' AND Password='www'.
+11:41:57-83.56.19.7-BEGIN AJAX.
+11:41:57-83.56.19.7-select.
+11:41:57-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+11:41:58-83.56.19.7-BEGIN AJAX.
+11:41:58-83.56.19.7-select.
+11:41:58-83.56.19.7-SELECT Id, Name from ohoobyes  .
+11:42:32-83.56.19.7-BEGIN AJAX.
+11:42:32-83.56.19.7-select.
+11:42:32-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:44:25-83.56.19.7-BEGIN AJAX.
+11:44:25-83.56.19.7-select.
+11:44:25-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+11:44:26-83.56.19.7-BEGIN AJAX.
+11:44:26-83.56.19.7-select.
+11:44:26-83.56.19.7-SELECT Id, Name from ohoobyes  .
+11:44:30-83.56.19.7-BEGIN AJAX.
+11:44:30-83.56.19.7-select.
+11:44:30-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:44:32-83.56.19.7-BEGIN AJAX.
+11:44:32-83.56.19.7-select.
+11:44:32-83.56.19.7-SELECT Id, Name from ohoobyes  .
+11:44:33-83.56.19.7-BEGIN AJAX.
+11:44:33-83.56.19.7-select.
+11:44:33-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+11:44:36-83.56.19.7-BEGIN AJAX.
+11:44:36-83.56.19.7-select.
+11:44:36-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:44:37-83.56.19.7-BEGIN AJAX.
+11:44:37-83.56.19.7-select.
+11:44:37-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+11:44:38-83.56.19.7-BEGIN AJAX.
+11:44:38-83.56.19.7-select.
+11:44:38-83.56.19.7-SELECT Id, Name from ohoobyes  .
+11:44:39-83.56.19.7-BEGIN AJAX.
+11:44:39-83.56.19.7-select.
+11:44:39-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:44:41-83.56.19.7-BEGIN AJAX.
+11:44:41-83.56.19.7-select.
+11:44:41-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+11:44:42-83.56.19.7-BEGIN AJAX.
+11:44:42-83.56.19.7-select.
+11:44:42-83.56.19.7-SELECT Id, Name from ohoobyes  .
+11:44:44-83.56.19.7-BEGIN AJAX.
+11:44:44-83.56.19.7-select.
+11:44:44-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:45:26-83.56.19.7-BEGIN AJAX.
+11:45:26-83.56.19.7-select.
+11:45:26-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+11:45:27-83.56.19.7-BEGIN AJAX.
+11:45:27-83.56.19.7-select.
+11:45:27-83.56.19.7-SELECT Id, Name from ohoobyes  .
+11:45:59-83.56.19.7-BEGIN AJAX.
+11:45:59-83.56.19.7-select.
+11:45:59-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:48:43-83.56.19.7-BEGIN AJAX.
+11:48:43-83.56.19.7-select.
+11:48:43-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:49:05-83.56.19.7-BEGIN AJAX.
+11:49:05-83.56.19.7-select.
+11:49:05-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:52:00-83.56.19.7-BEGIN AJAX.
+11:52:00-83.56.19.7-select.
+11:52:00-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+11:52:01-83.56.19.7-BEGIN AJAX.
+11:52:01-83.56.19.7-select.
+11:52:01-83.56.19.7-SELECT Id, Name from ohoobyes  .
+11:52:13-83.56.19.7-BEGIN AJAX.
+11:52:13-83.56.19.7-select.
+11:52:13-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:55:16-83.56.19.7-BEGIN AJAX.
+11:55:16-83.56.19.7-select.
+11:55:16-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:56:16-83.56.19.7-BEGIN AJAX.
+11:56:16-83.56.19.7-select.
+11:56:16-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+11:56:17-83.56.19.7-BEGIN AJAX.
+11:56:17-83.56.19.7-select.
+11:56:17-83.56.19.7-SELECT Id, Name from ohoobyes  .
+11:56:21-83.56.19.7-BEGIN AJAX.
+11:56:21-83.56.19.7-select.
+11:56:21-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+11:56:22-83.56.19.7-BEGIN AJAX.
+11:56:22-83.56.19.7-select.
+11:56:22-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:01:35-83.56.19.7-BEGIN AJAX.
+12:01:35-83.56.19.7-select.
+12:01:35-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:01:36-83.56.19.7-BEGIN AJAX.
+12:01:36-83.56.19.7-select.
+12:01:36-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:02:58-83.56.19.7-BEGIN AJAX.
+12:02:58-83.56.19.7-select.
+12:02:58-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+12:02:59-83.56.19.7-BEGIN AJAX.
+12:02:59-83.56.19.7-select.
+12:02:59-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:03:04-83.56.19.7-BEGIN AJAX.
+12:03:04-83.56.19.7-select.
+12:03:04-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:03:04-83.56.19.7-BEGIN AJAX.
+12:03:04-83.56.19.7-select.
+12:03:04-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:04:09-83.56.19.7-BEGIN AJAX.
+12:04:09-83.56.19.7-select.
+12:04:09-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:04:10-83.56.19.7-BEGIN AJAX.
+12:04:10-83.56.19.7-select.
+12:04:10-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:04:57-83.56.19.7-BEGIN AJAX.
+12:04:57-83.56.19.7-select.
+12:04:57-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:04:57-83.56.19.7-BEGIN AJAX.
+12:04:57-83.56.19.7-select.
+12:04:57-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:07:13-83.56.19.7-BEGIN AJAX.
+12:07:13-83.56.19.7-select.
+12:07:13-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:07:14-83.56.19.7-BEGIN AJAX.
+12:07:14-83.56.19.7-select.
+12:07:14-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:08:31-83.56.19.7-BEGIN AJAX.
+12:08:31-83.56.19.7-select.
+12:08:31-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:08:32-83.56.19.7-BEGIN AJAX.
+12:08:32-83.56.19.7-select.
+12:08:32-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:09:46-83.56.19.7-BEGIN AJAX.
+12:09:46-83.56.19.7-select.
+12:09:46-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:09:47-83.56.19.7-BEGIN AJAX.
+12:09:47-83.56.19.7-select.
+12:09:47-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:20:53-83.56.19.7-BEGIN AJAX.
+12:20:53-83.56.19.7-select.
+12:20:53-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:20:54-83.56.19.7-BEGIN AJAX.
+12:20:54-83.56.19.7-select.
+12:20:54-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:23:38-83.56.19.7-BEGIN AJAX.
+12:23:38-83.56.19.7-select.
+12:23:38-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+12:23:39-83.56.19.7-BEGIN AJAX.
+12:23:39-83.56.19.7-select.
+12:23:39-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:23:42-83.56.19.7-BEGIN AJAX.
+12:23:42-83.56.19.7-select.
+12:23:42-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:23:43-83.56.19.7-BEGIN AJAX.
+12:23:43-83.56.19.7-select.
+12:23:43-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:24:50-83.56.19.7-BEGIN AJAX.
+12:24:50-83.56.19.7-select.
+12:24:50-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:24:51-83.56.19.7-BEGIN AJAX.
+12:24:51-83.56.19.7-select.
+12:24:51-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:26:54-83.56.19.7-BEGIN AJAX.
+12:26:54-83.56.19.7-select.
+12:26:54-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+12:26:55-83.56.19.7-BEGIN AJAX.
+12:26:55-83.56.19.7-select.
+12:26:55-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:27:02-83.56.19.7-BEGIN AJAX.
+12:27:02-83.56.19.7-select.
+12:27:02-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:27:03-83.56.19.7-BEGIN AJAX.
+12:27:03-83.56.19.7-select.
+12:27:03-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:27:21-83.56.19.7-BEGIN AJAX.
+12:27:21-83.56.19.7-select.
+12:27:21-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:27:22-83.56.19.7-BEGIN AJAX.
+12:27:22-83.56.19.7-select.
+12:27:22-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:28:44-83.56.19.7-BEGIN AJAX.
+12:28:44-83.56.19.7-select.
+12:28:44-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:28:45-83.56.19.7-BEGIN AJAX.
+12:28:45-83.56.19.7-select.
+12:28:45-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:29:22-83.56.19.7-BEGIN AJAX.
+12:29:22-83.56.19.7-select.
+12:29:22-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+12:29:23-83.56.19.7-BEGIN AJAX.
+12:29:23-83.56.19.7-select.
+12:29:23-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:29:27-83.56.19.7-BEGIN AJAX.
+12:29:27-83.56.19.7-select.
+12:29:27-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:29:27-83.56.19.7-BEGIN AJAX.
+12:29:27-83.56.19.7-select.
+12:29:27-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:30:06-83.56.19.7-BEGIN AJAX.
+12:30:06-83.56.19.7-procedure.
+12:30:06-83.56.19.7-BEGIN AJAX.
+12:30:06-83.56.19.7-select.
+12:30:06-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:30:07-83.56.19.7-BEGIN AJAX.
+12:30:07-83.56.19.7-select.
+12:30:07-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:30:37-83.56.19.7-BEGIN AJAX.
+12:30:37-83.56.19.7-select.
+12:30:37-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+12:30:38-83.56.19.7-BEGIN AJAX.
+12:30:38-83.56.19.7-select.
+12:30:38-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:44:00-83.56.19.7-BEGIN AJAX.
+12:44:00-83.56.19.7-select.
+12:44:00-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:44:01-83.56.19.7-BEGIN AJAX.
+12:44:01-83.56.19.7-select.
+12:44:01-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:45:28-83.56.19.7-BEGIN AJAX.
+12:45:28-83.56.19.7-select.
+12:45:28-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:45:29-83.56.19.7-BEGIN AJAX.
+12:45:29-83.56.19.7-select.
+12:45:29-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:46:05-83.56.19.7-BEGIN AJAX.
+12:46:05-83.56.19.7-select.
+12:46:05-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:46:06-83.56.19.7-BEGIN AJAX.
+12:46:06-83.56.19.7-select.
+12:46:06-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:47:56-83.56.19.7-BEGIN AJAX.
+12:47:56-83.56.19.7-select.
+12:47:56-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:47:57-83.56.19.7-BEGIN AJAX.
+12:47:57-83.56.19.7-select.
+12:47:57-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:48:58-83.56.19.7-BEGIN AJAX.
+12:48:58-83.56.19.7-select.
+12:48:58-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:48:59-83.56.19.7-BEGIN AJAX.
+12:48:59-83.56.19.7-procedure.
+12:49:01-83.56.19.7-BEGIN AJAX.
+12:49:01-83.56.19.7-select.
+12:49:01-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:49:26-83.56.19.7-BEGIN AJAX.
+12:49:26-83.56.19.7-select.
+12:49:26-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+12:49:27-83.56.19.7-BEGIN AJAX.
+12:49:27-83.56.19.7-select.
+12:49:27-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:51:19-83.56.19.7-BEGIN AJAX.
+12:51:19-83.56.19.7-select.
+12:51:19-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:51:20-83.56.19.7-BEGIN AJAX.
+12:51:20-83.56.19.7-select.
+12:51:20-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:52:30-83.56.19.7-BEGIN AJAX.
+12:52:30-83.56.19.7-select.
+12:52:30-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:52:31-83.56.19.7-BEGIN AJAX.
+12:52:31-83.56.19.7-select.
+12:52:31-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+12:52:38-83.56.19.7-BEGIN AJAX.
+12:52:38-83.56.19.7-select.
+12:52:38-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:52:39-83.56.19.7-BEGIN AJAX.
+12:52:39-83.56.19.7-select.
+12:52:39-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:53:16-83.56.19.7-BEGIN AJAX.
+12:53:16-83.56.19.7-select.
+12:53:16-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:53:17-83.56.19.7-BEGIN AJAX.
+12:53:17-83.56.19.7-select.
+12:53:17-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:56:12-83.56.19.7-BEGIN AJAX.
+12:56:12-83.56.19.7-select.
+12:56:12-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:56:12-83.56.19.7-BEGIN AJAX.
+12:56:12-83.56.19.7-select.
+12:56:12-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:56:47-83.56.19.7-BEGIN AJAX.
+12:56:47-83.56.19.7-select.
+12:56:47-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+12:56:48-83.56.19.7-BEGIN AJAX.
+12:56:48-83.56.19.7-select.
+12:56:48-83.56.19.7-SELECT Id, Name from ohoobyes  .
+12:56:48-83.56.19.7-BEGIN AJAX.
+12:56:48-83.56.19.7-procedure.
+13:02:42-83.56.19.7-BEGIN AJAX.
+13:02:42-83.56.19.7-select.
+13:02:42-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+13:02:43-83.56.19.7-BEGIN AJAX.
+13:02:43-83.56.19.7-select.
+13:02:43-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:02:46-83.56.19.7-BEGIN AJAX.
+13:02:46-83.56.19.7-select.
+13:02:46-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:02:46-83.56.19.7-BEGIN AJAX.
+13:02:46-83.56.19.7-select.
+13:02:46-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:04:31-83.56.19.7-BEGIN AJAX.
+13:04:31-83.56.19.7-select.
+13:04:31-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:04:32-83.56.19.7-BEGIN AJAX.
+13:04:32-83.56.19.7-select.
+13:04:32-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:05:28-83.56.19.7-BEGIN AJAX.
+13:05:28-83.56.19.7-select.
+13:05:28-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:05:28-83.56.19.7-BEGIN AJAX.
+13:05:28-83.56.19.7-procedure.
+13:05:28-83.56.19.7-BEGIN AJAX.
+13:05:28-83.56.19.7-select.
+13:05:28-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:05:43-83.56.19.7-BEGIN AJAX.
+13:05:43-83.56.19.7-select.
+13:05:43-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+13:05:44-83.56.19.7-BEGIN AJAX.
+13:05:44-83.56.19.7-select.
+13:05:44-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:08:29-83.56.19.7-BEGIN AJAX.
+13:08:29-83.56.19.7-select.
+13:08:29-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:08:30-83.56.19.7-BEGIN AJAX.
+13:08:30-83.56.19.7-select.
+13:08:30-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:09:03-83.56.19.7-BEGIN AJAX.
+13:09:03-83.56.19.7-select.
+13:09:03-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:09:03-83.56.19.7-BEGIN AJAX.
+13:09:03-83.56.19.7-select.
+13:09:03-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:11:48-83.56.19.7-BEGIN AJAX.
+13:11:48-83.56.19.7-select.
+13:11:48-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+13:11:49-83.56.19.7-BEGIN AJAX.
+13:11:49-83.56.19.7-select.
+13:11:49-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:14:47-83.56.19.7-BEGIN AJAX.
+13:14:47-83.56.19.7-select.
+13:14:47-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:14:47-83.56.19.7-BEGIN AJAX.
+13:14:47-83.56.19.7-select.
+13:14:47-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:15:03-83.56.19.7-BEGIN AJAX.
+13:15:03-83.56.19.7-select.
+13:15:03-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:15:03-83.56.19.7-BEGIN AJAX.
+13:15:03-83.56.19.7-select.
+13:15:03-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:20:32-83.56.19.7-BEGIN AJAX.
+13:20:32-83.56.19.7-select.
+13:20:32-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+13:20:33-83.56.19.7-BEGIN AJAX.
+13:20:33-83.56.19.7-select.
+13:20:33-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:20:37-83.56.19.7-BEGIN AJAX.
+13:20:37-83.56.19.7-select.
+13:20:37-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:20:37-83.56.19.7-BEGIN AJAX.
+13:20:37-83.56.19.7-select.
+13:20:37-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:20:49-83.56.19.7-BEGIN AJAX.
+13:20:49-83.56.19.7-select.
+13:20:49-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:20:50-83.56.19.7-BEGIN AJAX.
+13:20:50-83.56.19.7-select.
+13:20:50-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:20:50-83.56.19.7-BEGIN AJAX.
+13:20:50-83.56.19.7-procedure.
+13:22:14-83.56.19.7-BEGIN AJAX.
+13:22:14-83.56.19.7-select.
+13:22:14-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:22:15-83.56.19.7-BEGIN AJAX.
+13:22:15-83.56.19.7-select.
+13:22:15-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:22:28-83.56.19.7-BEGIN AJAX.
+13:22:28-83.56.19.7-select.
+13:22:28-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:22:28-83.56.19.7-BEGIN AJAX.
+13:22:28-83.56.19.7-select.
+13:22:28-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:22:29-83.56.19.7-BEGIN AJAX.
+13:22:29-83.56.19.7-procedure.
+13:25:04-83.56.19.7-BEGIN AJAX.
+13:25:04-83.56.19.7-select.
+13:25:04-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:25:05-83.56.19.7-BEGIN AJAX.
+13:25:05-83.56.19.7-select.
+13:25:05-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:25:16-83.56.19.7-BEGIN AJAX.
+13:25:16-83.56.19.7-select.
+13:25:16-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:25:16-83.56.19.7-BEGIN AJAX.
+13:25:16-83.56.19.7-select.
+13:25:16-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:40:14-83.56.19.7-BEGIN AJAX.
+13:40:14-83.56.19.7-select.
+13:40:14-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:40:15-83.56.19.7-BEGIN AJAX.
+13:40:15-83.56.19.7-select.
+13:40:15-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:40:27-83.56.19.7-BEGIN AJAX.
+13:40:27-83.56.19.7-procedure.
+13:41:00-83.56.19.7-BEGIN AJAX.
+13:41:00-83.56.19.7-select.
+13:41:00-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:41:01-83.56.19.7-BEGIN AJAX.
+13:41:01-83.56.19.7-select.
+13:41:01-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:43:27-83.56.19.7-BEGIN AJAX.
+13:43:27-83.56.19.7-select.
+13:43:27-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+13:43:28-83.56.19.7-BEGIN AJAX.
+13:43:28-83.56.19.7-select.
+13:43:28-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:43:39-83.56.19.7-BEGIN AJAX.
+13:43:39-83.56.19.7-select.
+13:43:39-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:43:39-83.56.19.7-BEGIN AJAX.
+13:43:39-83.56.19.7-select.
+13:43:39-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:44:57-83.56.19.7-BEGIN AJAX.
+13:44:57-83.56.19.7-procedure.
+13:45:02-83.56.19.7-BEGIN AJAX.
+13:45:02-83.56.19.7-select.
+13:45:02-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:45:02-83.56.19.7-BEGIN AJAX.
+13:45:02-83.56.19.7-select.
+13:45:02-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:45:32-83.56.19.7-BEGIN AJAX.
+13:45:32-83.56.19.7-select.
+13:45:32-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:45:33-83.56.19.7-BEGIN AJAX.
+13:45:33-83.56.19.7-select.
+13:45:33-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:45:52-83.56.19.7-BEGIN AJAX.
+13:45:52-83.56.19.7-procedure.
+13:45:52-83.56.19.7-CALL oNewsInsert('11','1','234','2342342','','2014-02-25 12:45:31').
+13:47:05-83.56.19.7-BEGIN AJAX.
+13:47:05-83.56.19.7-select.
+13:47:05-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:47:05-83.56.19.7-BEGIN AJAX.
+13:47:05-83.56.19.7-select.
+13:47:05-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:50:08-83.56.19.7-BEGIN AJAX.
+13:50:08-83.56.19.7-select.
+13:50:08-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+13:50:08-83.56.19.7-BEGIN AJAX.
+13:50:08-83.56.19.7-select.
+13:50:08-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:52:59-83.56.19.7-BEGIN AJAX.
+13:52:59-83.56.19.7-select.
+13:52:59-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+13:53:00-83.56.19.7-BEGIN AJAX.
+13:53:00-83.56.19.7-select.
+13:53:00-83.56.19.7-SELECT Id, Name from ohoobyes  .
+13:55:14-83.56.19.7-BEGIN AJAX.
+13:55:14-83.56.19.7-procedure.
+13:55:14-83.56.19.7-CALL oNewsInsert('11','1','werwer','hrthhhhhhhhh','C:\fakepath\Educa22.jpg','2014-02-25 12:52:58').
+14:02:25-83.56.19.7-BEGIN AJAX.
+14:02:25-83.56.19.7-select.
+14:02:25-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:02:25-83.56.19.7-BEGIN AJAX.
+14:02:25-83.56.19.7-select.
+14:02:25-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:02:42-83.56.19.7-BEGIN AJAX.
+14:02:42-83.56.19.7-select.
+14:02:42-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:02:43-83.56.19.7-BEGIN AJAX.
+14:02:43-83.56.19.7-select.
+14:02:43-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:02:57-83.56.19.7-BEGIN AJAX.
+14:02:57-83.56.19.7-procedureScalar.
+14:02:57-83.56.19.7-CALL oNewsInsert('11','1','werwer','ewrwer','C:\fakepath\Educa22.jpg','2014-02-25 13:02:42').
+14:03:33-83.56.19.7-BEGIN AJAX.
+14:03:33-83.56.19.7-select.
+14:03:33-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:03:33-83.56.19.7-BEGIN AJAX.
+14:03:33-83.56.19.7-select.
+14:03:33-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:03:40-83.56.19.7-BEGIN AJAX.
+14:03:40-83.56.19.7-select.
+14:03:40-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:03:40-83.56.19.7-BEGIN AJAX.
+14:03:40-83.56.19.7-select.
+14:03:40-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:03:58-83.56.19.7-BEGIN AJAX.
+14:03:58-83.56.19.7-procedureScalar.
+14:03:58-83.56.19.7-CALL oNewsInsert('11','1','qweqwe','qweqwe','C:\fakepath\Educa22.jpg','2014-02-25 13:03:39').
+14:04:01-83.56.19.7-BEGIN AJAX.
+14:04:01-83.56.19.7-select.
+14:04:01-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:04:02-83.56.19.7-BEGIN AJAX.
+14:04:02-83.56.19.7-select.
+14:04:02-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:05:24-83.56.19.7-BEGIN AJAX.
+14:05:24-83.56.19.7-select.
+14:05:24-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:05:25-83.56.19.7-BEGIN AJAX.
+14:05:25-83.56.19.7-select.
+14:05:25-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+14:05:35-83.56.19.7-BEGIN AJAX.
+14:05:35-83.56.19.7-select.
+14:05:35-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:05:35-83.56.19.7-BEGIN AJAX.
+14:05:35-83.56.19.7-select.
+14:05:35-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:05:51-83.56.19.7-BEGIN AJAX.
+14:05:51-83.56.19.7-procedureScalar.
+14:05:51-83.56.19.7-CALL oNewsInsert('11','1','wer','werwer','C:\fakepath\Educa22.jpg','2014-02-25 13:05:34').
+14:05:57-83.56.19.7-BEGIN AJAX.
+14:05:57-83.56.19.7-select.
+14:05:57-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:05:58-83.56.19.7-BEGIN AJAX.
+14:05:58-83.56.19.7-select.
+14:05:58-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:12:27-83.56.19.7-BEGIN AJAX.
+14:12:28-83.56.19.7-select.
+14:12:28-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:12:28-83.56.19.7-BEGIN AJAX.
+14:12:28-83.56.19.7-select.
+14:12:28-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:14:53-83.56.19.7-BEGIN AJAX.
+14:14:53-83.56.19.7-select.
+14:14:53-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:14:54-83.56.19.7-BEGIN AJAX.
+14:14:54-83.56.19.7-select.
+14:14:54-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:15:34-83.56.19.7-BEGIN AJAX.
+14:15:34-83.56.19.7-procedureScalar.
+14:15:34-83.56.19.7-CALL oNewsInsert('11','1','eeeeeeee','errrrrrrrrrrrrrrrrr','Educa22.jpg','2014-02-25 13:14:53').
+14:15:42-83.56.19.7-BEGIN AJAX.
+14:15:42-83.56.19.7-select.
+14:15:42-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:15:43-83.56.19.7-BEGIN AJAX.
+14:15:43-83.56.19.7-select.
+14:15:43-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:16:31-83.56.19.7-BEGIN AJAX.
+14:16:31-83.56.19.7-select.
+14:16:31-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+14:16:32-83.56.19.7-BEGIN AJAX.
+14:16:32-83.56.19.7-select.
+14:16:32-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:16:35-83.56.19.7-BEGIN AJAX.
+14:16:35-83.56.19.7-select.
+14:16:35-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:16:35-83.56.19.7-BEGIN AJAX.
+14:16:35-83.56.19.7-select.
+14:16:35-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:16:54-83.56.19.7-BEGIN AJAX.
+14:16:54-83.56.19.7-procedureScalar.
+14:16:54-83.56.19.7-CALL oNewsInsert('11','1','werwe','werwer','Educa22.jpg','2014-02-25 13:16:35').
+14:17:03-83.56.19.7-BEGIN AJAX.
+14:17:03-83.56.19.7-select.
+14:17:03-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:17:04-83.56.19.7-BEGIN AJAX.
+14:17:04-83.56.19.7-select.
+14:17:04-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:18:36-83.56.19.7-BEGIN AJAX.
+14:18:36-83.56.19.7-select.
+14:18:36-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:18:37-83.56.19.7-BEGIN AJAX.
+14:18:37-83.56.19.7-select.
+14:18:37-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:20:03-83.56.19.7-BEGIN AJAX.
+14:20:03-83.56.19.7-select.
+14:20:03-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:20:04-83.56.19.7-BEGIN AJAX.
+14:20:04-83.56.19.7-select.
+14:20:04-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:20:22-83.56.19.7-BEGIN AJAX.
+14:20:22-83.56.19.7-procedureScalar.
+14:20:22-83.56.19.7-CALL oNewsInsert('11','1','123','123','Educa22.jpg','2014-02-25 13:20:02').
+14:20:39-83.56.19.7-BEGIN AJAX.
+14:20:39-83.56.19.7-select.
+14:20:39-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:20:40-83.56.19.7-BEGIN AJAX.
+14:20:40-83.56.19.7-select.
+14:20:40-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:26:26-83.56.19.7-BEGIN AJAX.
+14:26:26-83.56.19.7-select.
+14:26:26-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:26:27-83.56.19.7-BEGIN AJAX.
+14:26:27-83.56.19.7-select.
+14:26:27-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:26:46-83.56.19.7-BEGIN AJAX.
+14:26:46-83.56.19.7-procedureScalar.
+14:26:46-83.56.19.7-CALL oNewsInsert('11','1','qweqwe','qweqweqwe','Educa22.jpg','2014-02-25 13:26:26').
+14:28:23-83.56.19.7-BEGIN AJAX.
+14:28:23-83.56.19.7-select.
+14:28:23-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:28:24-83.56.19.7-BEGIN AJAX.
+14:28:24-83.56.19.7-select.
+14:28:24-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:30:00-83.56.19.7-BEGIN AJAX.
+14:30:00-83.56.19.7-procedureScalar.
+14:30:00-83.56.19.7-CALL oNewsInsert('11','1','qweqwe','qweqweqwe','Educa22.jpg','2014-02-25 13:26:26').
+14:30:25-83.56.19.7-BEGIN AJAX.
+14:30:25-83.56.19.7-select.
+14:30:25-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:30:25-83.56.19.7-BEGIN AJAX.
+14:30:25-83.56.19.7-select.
+14:30:25-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:39:54-83.56.19.7-BEGIN AJAX.
+14:39:54-83.56.19.7-select.
+14:39:54-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:39:55-83.56.19.7-BEGIN AJAX.
+14:39:55-83.56.19.7-select.
+14:39:55-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:40:09-83.56.19.7-BEGIN AJAX.
+14:40:09-83.56.19.7-procedureScalar.
+14:40:09-83.56.19.7-CALL oNewsInsert('11','8','werwer','werwer','Educa22.jpg','2014-02-25 13:39:54').
+14:40:14-83.56.19.7-BEGIN AJAX.
+14:40:14-83.56.19.7-select.
+14:40:14-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:40:14-83.56.19.7-BEGIN AJAX.
+14:40:14-83.56.19.7-select.
+14:40:14-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:41:29-83.56.19.7-BEGIN AJAX.
+14:41:29-83.56.19.7-select.
+14:41:29-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:41:30-83.56.19.7-BEGIN AJAX.
+14:41:30-83.56.19.7-select.
+14:41:30-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:41:45-83.56.19.7-BEGIN AJAX.
+14:41:45-83.56.19.7-procedureScalar.
+14:41:45-83.56.19.7-CALL oNewsInsert('11','9','werwe','rwerwer','Educa22.jpg','2014-02-25 13:41:28').
+14:45:37-83.56.19.7-BEGIN AJAX.
+14:45:37-83.56.19.7-select.
+14:45:37-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:45:38-83.56.19.7-BEGIN AJAX.
+14:45:38-83.56.19.7-select.
+14:45:38-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:49:25-83.56.19.7-BEGIN AJAX.
+14:49:25-83.56.19.7-select.
+14:49:25-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:49:26-83.56.19.7-BEGIN AJAX.
+14:49:26-83.56.19.7-select.
+14:49:26-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:49:32-83.56.19.7-BEGIN AJAX.
+14:49:32-83.56.19.7-select.
+14:49:32-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:49:33-83.56.19.7-BEGIN AJAX.
+14:49:33-83.56.19.7-select.
+14:49:33-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:49:43-83.56.19.7-BEGIN AJAX.
+14:49:43-83.56.19.7-procedureScalar.
+14:49:43-83.56.19.7-CALL oNewsInsert('11','1','34234','234234','Educa22.jpg','2014-02-25 13:49:30').
+14:49:44-83.56.19.7-BEGIN AJAX.
+14:49:44-83.56.19.7-select.
+14:49:44-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:49:45-83.56.19.7-BEGIN AJAX.
+14:49:45-83.56.19.7-select.
+14:49:45-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:53:45-83.56.19.7-BEGIN AJAX.
+14:53:45-83.56.19.7-select.
+14:53:45-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+14:53:46-83.56.19.7-BEGIN AJAX.
+14:53:46-83.56.19.7-select.
+14:53:46-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:53:50-83.56.19.7-BEGIN AJAX.
+14:53:50-83.56.19.7-select.
+14:53:50-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:53:50-83.56.19.7-BEGIN AJAX.
+14:53:50-83.56.19.7-select.
+14:53:50-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:54:01-83.56.19.7-BEGIN AJAX.
+14:54:01-83.56.19.7-procedureScalar.
+14:54:01-83.56.19.7-CALL oNewsInsert('11','1','sdfsd','sdfsdf','Educa22.jpg','2014-02-25 13:53:50').
+14:54:02-83.56.19.7-BEGIN AJAX.
+14:54:02-83.56.19.7-select.
+14:54:02-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:54:02-83.56.19.7-BEGIN AJAX.
+14:54:02-83.56.19.7-select.
+14:54:02-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:54:45-83.56.19.7-BEGIN AJAX.
+14:54:45-83.56.19.7-select.
+14:54:45-83.56.19.7- SELECT Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta  FROM oNews N JOIN ( SELECT DISTINCT IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) as FriendId,   IF(G.IdOwner = 11, PPeople.Name, POwner.Name) as FriendName  FROM `op_Group` PG  JOIN oGroup G ON PG.IdGroup = G.Id  JOIN opeople POwner ON G.IdOwner = POwner.Id  JOIN opeople PPeople ON PG.IdPeople = PPeople.Id  Where  G.IdOwner = 11 Or PG.IdPeople = 11 AND IF(G.IdOwner = 11, PG.IdPeople, G.IdOwner) <> 11 ) F ON F.FriendId = N.IdPeople  JOIN ohoobyes H ON H.Id = IdHobbie  WHERE N.FAlta >= GetDate() - 30 .
+14:54:46-83.56.19.7-BEGIN AJAX.
+14:54:46-83.56.19.7-select.
+14:54:46-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:54:51-83.56.19.7-BEGIN AJAX.
+14:54:51-83.56.19.7-select.
+14:54:51-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:54:51-83.56.19.7-BEGIN AJAX.
+14:54:51-83.56.19.7-select.
+14:54:51-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:55:02-83.56.19.7-BEGIN AJAX.
+14:55:02-83.56.19.7-procedureScalar.
+14:55:02-83.56.19.7-CALL oNewsInsert('11','1','werwer','werwer','Educa22.jpg','2014-02-25 13:54:50').
+14:55:12-83.56.19.7-BEGIN AJAX.
+14:55:12-83.56.19.7-select.
+14:55:12-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.
+14:55:13-83.56.19.7-BEGIN AJAX.
+14:55:13-83.56.19.7-select.
+14:55:13-83.56.19.7-SELECT Id, Name from ohoobyes  .
+14:55:13-83.56.19.7-BEGIN AJAX.
+14:55:13-83.56.19.7-select.
+14:55:13-83.56.19.7- SELECT Id, IdPeople, IdHobbie, Title, Content, ImgFileName, FAlta  FROM oNews   WHERE IdPeople = 11.

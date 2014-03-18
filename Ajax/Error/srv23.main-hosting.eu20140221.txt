@@ -1,0 +1,6 @@
+10:09:21-83.56.19.7-Table 'u490265401_educa.ohobies' doesn't exist.
+10:09:21-83.56.19.7-Table 'u490265401_educa.ohobies' doesn't exist.
+10:10:15-83.56.19.7-Table 'u490265401_educa.ohobies' doesn't exist.
+10:21:21-83.56.19.7-Table 'u490265401_educa.ohobies' doesn't exist.
+10:24:45-83.56.19.7-Table 'u490265401_educa.ohobies' doesn't exist.
+12:54:19-83.56.19.7-Fallo al conectar a MySQL: (1203) User u490265401_admin already has more than 'max_user_connections' active connections.
