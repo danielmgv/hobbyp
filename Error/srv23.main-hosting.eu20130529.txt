@@ -1,1 +1,0 @@
-09:48:28-80.25.246.60-Unknown column 'C.Materia' in 'field list'.

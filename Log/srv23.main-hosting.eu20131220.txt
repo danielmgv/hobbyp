@@ -1,6 +1,0 @@
-07:26:58-83.56.19.7-BEGIN AJAX.
-07:26:58-83.56.19.7-select.
-07:26:58-83.56.19.7-SELECT Id, Name FROM opeople WHERE Email='bego' AND Password='bego'.
-07:26:59-83.56.19.7-BEGIN AJAX.
-07:26:59-83.56.19.7-select.
-07:26:59-83.56.19.7-SELECT Id, Path, NombreOriginal, Titulo FROM op_photo WHERE IdPeople = 110.
