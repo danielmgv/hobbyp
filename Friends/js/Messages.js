@@ -1,6 +1,4 @@
 
-var oMessages = new BDEntity("oMessages");
-
 $(document).bind('pageinit', function(){retrieveParams();	pageinit();	});
 
 function pageinit(){	
@@ -19,16 +17,15 @@ function sendMessage()
 		theme: "a",
 		textonly: false
 	});
-	var params={
-		 Asunto:$("#AsuntoParam").text()
-		,IdOrigenParam: fromServer.People.Id
-	    ,FechaParam: new Date()
-		,MensajeParam: $("#MensajeParam").text()
-		,DeParam: fromServer.People.Id
-		,ParaParam: fromServer.To
-	};
+
+	oMessages.Fields.Asunto = $("#AsuntoParam").val();
+	//oMessages.Fields.IdOrigen = null;//Id de mensaje a que se responde
+	//oMessages.Fields.Fecha = new Date();
+	oMessages.Fields.Mensaje = $("#MensajeParam").val();
+	oMessages.Fields.De = fromServer.People.Id;
+	oMessages.Fields.Para =fromServer.To;
 	
-	oMessages.Insert(params);		
+	oMessages.Insert();		
 }
 
 function oMessagesInsertOK(data) {

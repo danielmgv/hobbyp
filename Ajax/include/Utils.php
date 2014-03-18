@@ -8,10 +8,9 @@ $clientIp = $_SERVER['REMOTE_ADDR'];
 //$clientIpFORWARDED = $_SERVER['HTTP_X_FORWARDED_FOR'];
 $hostName = gethostname();
 
-
 function ResponseError($errorParam) {
 	header("HTTP/1.1 500 Internal Server Error");		
-	LogWrite("Error ".$errorParam);
+	//LogWrite("Error ".$errorParam);
 	ErrorWrite($errorParam);
 	$respuesta['Error'] = $errorParam;
 	echo json_encode($respuesta);
@@ -43,7 +42,6 @@ function LogWrite($mensaje)
 
 function ErrorWrite($mensaje)
 {
-/*
 	$clientIp = $_SERVER['REMOTE_ADDR'];
 	//$clientIpFORWARDED = $_SERVER['HTTP_X_FORWARDED_FOR'];
 	$hostName = gethostname();
@@ -55,8 +53,7 @@ function ErrorWrite($mensaje)
 	
 	$mensaje = $ahora."-". $clientIp . "-". $mensaje.".\n";
 	fwrite($fp,$mensaje);	
-	fclose($fp);	
-*/	
+	fclose($fp);		
 }
 
 ?>

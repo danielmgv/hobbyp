@@ -72,7 +72,8 @@ var oNews = {
 		    Title: "",
 		    Content: "",
 		    ImgFileName: "",
-		    FAlta: new Date()
+		    FAlta: new Date(),
+		    Privacity: null
 		},
     Insert: function() { this.MeBDEntity.Insert(this.Fields, this.AutoIndex); },
     Delete: function() { this.MeBDEntity.Delete(this.KeyField); },

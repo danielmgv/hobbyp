@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>		
+		<link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+		<script src="../js/JQuery/jquery.min.js"></script>				
+		<script src="../js/JQuery/jquery.mobile.min.js"></script>
+		<script src="../js/JQuery/jquery.form.js"></script>	
+		<script src="../js/Comun.js"></script>
+		<script src="../js/MySQLLib/MySQL.js"></script>
+		<script src="../js/MySQLLib/BDEntity.js"></script>
+		<script src="../js/phonegap/PGNavigation.js"></script>
+
+	
+		<script src="js/ListviewLoad.js"></script>
+		<script src="js/Diary_NewEntry.js"></script>
+
+	
+		<script type="text/javascript">
+			// JavaScript
+			function loadScript(src, callback) {
+			    var head = document.getElementsByTagName('head')[0],
+			        script = document.createElement('script');
+			    done = false;
+			    script.setAttribute('src', src);
+			    script.setAttribute('type', 'text/javascript');
+			    script.setAttribute('charset', 'utf-8');
+			    script.onload = script.onreadstatechange = function() {
+			        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+			            done = true;
+			            script.onload = script.onreadystatechange = null;
+			                if (callback) {
+			                    callback();
+			                }
+			            }
+			    };
+			    head.insertBefore(script, head.firstChild);
+			}
+			 
+			// load the my-script-file.js and display an alert dialog once the script has been loaded
+			//loadScript('js/ListviewLoad.js');
+			//loadScript('js/Diary_NewEntry.js');
+		</script>
+		<title>Formulario</title>
+	</head>
+	<body>
+		<div data-role="dialog">	
+			<div data-role="header" data-theme="b">
+				<h1 id="titulo" class="labelMultiidioma">Nueva Entrada</h1>
+			</div>
+			<div data-role="content">
+				<form id="imageForm" name="imageForm" method="post" enctype="multipart/form-data">
+					 <div data-role="fieldcontain">
+						<label for="lvHobbies">Hobbye:</label>
+						<select id="lvHobbies" name="lvHobbies">
+						</select>
+					</div>
+					<div data-role="fieldcontain">
+						<label id="tituloApunte" for="Title" class="labelMultiidioma">Titulo:</label>	   					
+						<input id="Title" name="Title" type="text" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="Content">Contenido:</label>	   		
+						<textarea id="Content" name="Content"></textarea>
+					</div>
+					<div data-role="fieldcontain">	   						
+						<label for="file">Imagen:</label>	 		
+						<input type="file" id="file" name="file"/>
+					</div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+    	                    <legend>Privacity:</legend>
+         	                    <input type="radio" name="Privacity" id="radio-choice-1" value="1" checked="checked" />
+         	                    <label id="Private" class="labelMultiidioma" for="radio-choice-1" >Private</label>
+
+         	                    <input type="radio" name="Privacity" id="radio-choice-2" value="2"  />
+         	                    <label id="OnlyFriends" class="labelMultiidioma" for="radio-choice-2">Only friends</label>
+
+         	                    <input type="radio" name="Privacity" id="radio-choice-3" value="3"  />
+         	                    <label id="Public" class="labelMultiidioma" for="radio-choice-3">Public</label>
+                        </fieldset>
+                    </div>						
+				</form>		
+				<a data-inline="true" data-role="button" data-theme="a" class="labelMultiidioma" href="javascript:btnSaveClick();" id="btnSave" >Enviar</a>       
+				<a data-inline="true" data-role="button" data-theme="a" class="labelMultiidioma" href="#" data-rel="back" id="btnCancel">Cancel</a>				    
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,15 +1,13 @@
 ﻿
-$(document).bind('pageinit', function(){	pageinit();	});
+$(document).bind('pageinit', function(){loadLang();	pageinit();	});
 
 function pageinit(){
-
 	// Bind the tapHandler callback function to the tap event on div.box
     $("#btnLogin").on( 'tap', tapLogin );	
 }
-			
+
 //***************************************************************************************************************************************************************************
 //REGISTER	
-
 // Callback function references the event target and adds the 'tap' class to it
 function tapLogin( event ) {
 	$(event.target).addClass( "tap" );
@@ -21,7 +19,7 @@ function login()
 	var email = $("#email").val();
 	var password = $("#password").val();	
 	var params = {};	
-	params.SQL = "SELECT Id, Name FROM opeople WHERE Email='" + email + "' AND Password='" + password + "'";	
+	params.SQL = "SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='" + email + "' AND Password='" + password + "'";	
 	$.mobile.loading( 'show', {
 		text: "",
 		textVisible: false,
@@ -38,20 +36,20 @@ function loginOK(data) {
 		{
 			if(data.NumRegistros > 0)
 			{		
-				logado(data[0].Id, data[0].Name);
+				logado(data[0]);
 			}
 			else
 			{
-				alert("No se encuentra el usuario");
+				showError("No se encuentra el usuario");
 			}
 		}
 		else
 		{
-			alert("error" + data.Error);		
+			showError("error" + data.Error);		
 		}
 	}
 	catch(err){		
-		alert("loginOK: Error " + err.message);
+		showError("loginOK: Error " + err.message);
 	}
 }
 
@@ -62,19 +60,20 @@ function loginNOK(httpRequest, textStatus, errorThrown) {
 	{
 		var errorTxt = "Error \n" + textStatus + errorThrown.message + httpRequest.responseText;
 		errorTxt += "\n" + errorThrown + httpRequest.statusText;
-		alert(errorTxt);	
+		showError(errorTxt);	
 	}	
 }
 
-function logado(IdPeople, Name)
+function logado(data)
 {
 	fromServer = {
 			People : {
-				Id: IdPeople,
-				Name: Name
+				Id: data.Id,
+				Name: data.Name,
+				ObservacionesHobbies: data.ObservacionesHobbies
 				}
 		};
-	hrefParams("../Friends/Friends.html");
+	hrefParams("../News/News.html");
 	
 	//window.location.href="../Friends/Friends.php?Id=" + IdPeople + "&Name=" + Name;
 	//$.mobile.changePage("../H_Me/MyPhotos.php?Id=" + IdPeople + "&Name=" + Name);

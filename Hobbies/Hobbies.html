@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="Content-Language" content="es-ES"/>	
+		<link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="../css/Icons.css" />
+		<link rel="stylesheet" href="../css/hobbyp.css" />
+		
+		<script src="../js/JQuery/jquery.min.js"></script>				
+		<script src="../js/JQuery/jquery.mobile.min.js"></script>		
+		<script src="../js/Comun.js"></script>
+		<script src="../js/MySQLLib/MySQL.js"></script>
+		<script src="../js/MySQLLib/BDEntity.js"></script>
+		<script src="../js/phonegap/PGNavigation.js"></script>		
+		<script src="js/Hobbies.js"></script>
+		<script src="js/ListviewLoad.js"></script>
+		<title>Hobbyp</title>				
+	</head>
+	<body>
+		<div data-role="page" data-theme="a" id="one">
+			<div data-role="header"  data-position="fixed" class="headerLogo">	
+				<p class="jqm-version"></p>
+				<p class="labelMultiidioma" id="footer" >Hobbyp</p>
+			</div>	
+			<section data-role="main">
+				<div data-role="navbar" id="navbarId">
+					<ul>
+						<li><a href="#" rel="external" data-ajax="false" data-icon="gear"  class="ui-btn-active ui-state-persist labelMultiidioma" id="Profile" >Profile</a></li>						
+						<li><a href="javascript:hrefParams('../Friends/Friends.html');"  rel="external" data-ajax="false" data-icon="gear" class="labelMultiidioma" id="Friends" >Contacts</a></li>																						
+					</ul>
+				</div>
+				<div data-role="fieldcontain" data-scroll="y">					
+					<textarea id="ObservacionesHobbies"></textarea>
+					<ul data-role="listview" data-inset="true"  id="listviewId" data-split-icon="delete">
+					</ul>
+					<a href="javascript:btnSaveObsClick();" class="labelMultiidioma"  id="btnSaveObs" data-role="button" data-inline="true">Save</a>
+				</div>
+				<div data-role="fieldcontain">
+					<select id="lvHobbies"></select>
+					<a href="javascript:btnAddHobbieClick();" class="labelMultiidioma"  id="btnAddHobbie" data-role="button" data-inline="true" data-rel="dialog" data-transition="pop">Add Hobbie</a>					
+				</div>
+			</section>
+		
+			<div data-role="footer" class="footer-docs" data-theme="a" data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar" id="navbarId">
+					<ul>
+						<li><a class="labelMultiidioma ui-icon-news-active" href="javascript:hrefParams('../News/News.html');" rel="external" data-ajax="false"  id="News" >News</a></li>
+	    				<li><a class="labelMultiidioma ui-icon-diary" href="javascript:hrefParams('../Diary/Diary.html');"  rel="external" data-ajax="false" id="Diary"    >Diary</a></li>
+						<li><a class="labelMultiidioma ui-icon-messages" href="javascript:hrefParams('../Messages/Messages.html');" rel="external" data-ajax="false" id="Messages" >Messages</a></li>	
+						<li><a class="labelMultiidioma ui-icon-config-active"href="#"   rel="external" data-ajax="false" >Config</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>
+
+

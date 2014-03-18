@@ -1173,7 +1173,7 @@ var loadJS = function(src) {
 		return;
 	}
 	
-	var fileLang = "js/lang.js/" + page + "." + laguageCode(userLang) + ".js";
+	var fileLang = "js/lang/" + page + "." + laguageCode(userLang) + ".js";
 	
 	loadJS(fileLang);
 	

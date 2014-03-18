@@ -5,11 +5,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta http-equiv="Content-Language" content="es-ES"/>		
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />						
-		<script src="http://code.jquery.com/jquery.min.js"></script>		
-		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+		<link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="../css/Icons.css" />
+		<link rel="stylesheet" href="../css/hobbyp.css" />
+								
+		<script src="../js/JQuery/jquery.min.js"></script>				
+		<script src="../js/JQuery/jquery.mobile.min.js"></script>	
 		<script src="../js/Comun.js"></script>
-		<script src="../js/Comun_Mobile.js"></script>
 		<script src="../js/MySQLLib/MySQL.js"></script>
 		<script src="../js/MySQLLib/BDEntity.js"></script>
 		<script src="../js/phonegap/PGNavigation.js"></script>
@@ -50,28 +52,25 @@
 	<body>
 		<!--Friends -->
 		<div data-role="page" data-theme="a" id="Friends">
-			<div data-role="header" data-position="fixed" >
-				<div data-role="navbar" id="navbarId">
-					<ul>
-						<li><a href="javascript:hrefParams('../Messages/Messages.html');" rel="external" data-ajax="false" data-icon="gear" >Messages</a></li>	
-						<li><a href="" data-icon="gear" class="ui-btn-active">Friends</a></li>	
-						<li><a href="javascript:hrefParams('../Search/Search.html');" rel="external" data-ajax="false" data-icon="gear" >Search</a></li>	
-						<li><a href="javascript:hrefParams('../Photos/MyPhotos.php');" rel="external" data-ajax="false" data-icon="gear" >Photos</a></li>
-						<li><a href="javascript:hrefParams('../Hobbies/Hobbies.html');" rel="external" data-ajax="false" data-icon="search">Hobbies</a></li>						
-					</ul>
-				</div>
-				<div data-role="navbar" id="subNavbarId">
-					<ul>
-						<li><a href="#Friends" class="ui-btn-active ui-state-persist">Friends</a></li>
-						<li><a href="#Groups">Groups</a></li>
-					</ul>
-				</div>
-			</div>
+			<div data-role="header"  data-position="fixed" class="headerLogo">	
+				<p class="jqm-version"></p>
+				<p class="labelMultiidioma" id="HobbypTitle1" >Hobbyp</p>
+			    <a href="javascript:hrefParams('../Config/Config.html');" data-role="button" data-icon="user" data-iconshadow="false" onclick="empty()" data-iconpos="notext"  class="ui-btn-right">Config</a>
+			</div>	
+			
 			<div data-role="content" data-theme="a">	
+				<div data-role="navbar" id="subNavbarId">
+					<ul>						
+						<li><a href="#Friends" class="ui-btn-active ui-state-persist">Friends</a></li>	
+						<li><a href="#Groups" class="labelMultiidioma" id="Groups">Groups</a></li>
+						<li><a href="javascript:hrefParams('../Search/Search.html');" rel="external" data-ajax="false" data-icon="gear"  class="labelMultiidioma" id="Search" >Search</a></li>						
+					</ul>
+				</div>
+				
 				<div data-role="fieldcontain" data-scroll="y">
 					<label id="lblMyRequests"></label>			
 					<div class="content-primary" >
-						Friends:
+						<label class="labelMultiidioma" id="Friends">Friends:</label>						
 						<div data-role="collapsible-set" id="FriendsList">
 						</div>			
 					</div>
@@ -80,10 +79,17 @@
 					<a id="addFriend" href="NewFriend.html" data-role="button" data-inline="true" data-rel="dialog" data-transition="pop">New</a>					
 				</div>
 			</div>
-			<div data-role="footer" class="footer-docs" data-theme="a" data-position="fixed" >
-				<p class="jqm-version"></p>
-				<p>Hobbyp V.1.0 Research by quaz</p>
-			</div>
+			
+			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar" id="navbarId">
+					<ul>
+						<li><a class="labelMultiidioma ui-icon-news"          href="javascript:hrefParams('../News/News.html');"         rel="external" data-ajax="false" id="News"     >News</a></li>
+	    				<li><a class="labelMultiidioma ui-icon-diary"         href="javascript:hrefParams('../Diary/Diary.html');"       rel="external" data-ajax="false" id="Diary"    >Diary</a></li>
+						<li><a class="labelMultiidioma ui-icon-messages"      href="javascript:hrefParams('../Messages/Messages.html');" rel="external" data-ajax="false" id="Messages" >Messages</a></li>	
+						<li><a class="labelMultiidioma ui-icon-config-active" href="#"   rel="external" data-ajax="false" id="Friends"   >Friends</a></li>
+					</ul>
+				</div>	
+			</div>	
 		</div>
 		<!--Groups -->
 		<div data-role="page" data-theme="a" id="Groups">		

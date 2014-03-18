@@ -2,11 +2,10 @@
 var $FriendsList, $NewFriendList, $MyRequestsList;
 var oRequest = new BDEntity("oRequest");
 
-$(document).bind('pageinit', function(){retrieveParams(); pageinit();	});
+$(document).bind('pageinit', function(){retrieveParams(); loadLang(); pageinit();});
 
 function pageinit(){	
 	$NewFriendList = $("#NewFriendList");
-	AjaxService = '../Ajax/AjaxService.php';
 	$("#btnBuscarNew").on( 'tap', btnBuscarNewTap );	
 
 	//debugger;

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+		<script src="../js/Comun.js"></script>
+		<script src="../js/MySQLLib/MySQL.js"></script>
+		<script src="../js/MySQLLib/BDEntity.js"></script>
+		<script src="../js/phonegap/PGNavigation.js"></script>
+		<script src="js/NuevoHobbie.js"></script>
+		<script src="js/ListviewLoad.js"></script>
+		<title>Nuevo Hobbie</title>
+	</head>
+	<body>
+		<div data-role="dialog">	
+			<div data-role="header" data-theme="d">
+				<h1 class="labelMultiidioma"  id="Titulo">Nuevo Hobbie</h1>
+			</div>		
+			<div data-role="content">
+				<h1 class="labelMultiidioma"  id="Cabecera">Buscador de Hobbies</h1>
+				<p class="labelMultiidioma"  id="Cabecera2">Seleccione el hobbie y añada descripción/p>				
+			 	<div data-role="fieldcontain">					
+					<label for="Nombre" id="lblNombre" class="labelMultiidioma">Nombre</label>
+					<ul id="Nombre" class="labelMultiidioma" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true">
+					</ul>
+					<label for="Description" id="lblDescription" class="labelMultiidioma">Description</label>
+					<input class="labelMultiidioma" type="text" name="Description" id="Description" value="" placeholder="Description..."  data-clear-btn="true"/>
+					<button id="btnBuscar" class="labelMultiidioma">Buscar</button>									
+				</div>				
+				<div data-role="fieldcontain" data-scroll="y">
+					<select id="lvHobbies"></select>
+					
+
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

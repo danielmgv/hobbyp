@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta http-equiv="Content-Language" content="es-ES"/>
 		<title>Hobbyp</title>
-		<link rel="stylesheet" href="css/Bootstrap.css">
-		
-		<link rel="stylesheet" href="../css/jquery.mobile.min.css" />						
+	
+		<link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+								
 		<script src="../js/JQuery/jquery.min.js"></script>		
 		<script src="../js/JQuery/jquery.mobile.min.js"></script>
 	
@@ -25,17 +25,17 @@
 			
 			<div data-role="content" data-theme="a">	
 				<form action="#" method="get">
-					<p>Enter user and password.</p>
+					<p><label id="lblCabecera" class="labelMultiidioma">Enter user and password.</label></p>
 
 					<div data-role="fieldcontain">
-						<label for="name">User:</label>
+						<label for="name" id="lblUser" class="labelMultiidioma">User:</label>
 						<input type="text" name="email" id="email" value=""  />
 					</div>	
 					<div data-role="fieldcontain">						
-						<label for="password">Password:</label>						
+						<label for="password" id="lblPassword" class="labelMultiidioma">Password:</label>						
 						<input type="password" name="password" id="password" value="" autocomplete="off">	
 					</div>												
-					<a data-role="button" id="btnLogin">Enter</a>												
+					<a data-role="button" id="btnLogin" class="labelMultiidioma">Enter</a>												
 				</form>
 			</div>				
 			<div data-role="footer" class="ui-bar">			

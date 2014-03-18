@@ -17,7 +17,7 @@ function cargarHobbies()
 		Titulo:  "Name",
 		Clave: "Id"
 	};
-	var $lvHobbies = $("#lvHobbies").ListviewLoad(params);
+	var $lvHobbies = $("#lvHobbies").LvHobbiesLoad(params);
 	$lvHobbies.Consultar();		
 }
 
@@ -45,12 +45,7 @@ function hobbypChange(combo)
 	hrefParams(window.location.href);	
 }
 
-
-jQuery.fn.ListviewLoad = function(params){
-	return new ListviewLoad(this, params);
-};
-
-function ListviewLoad($Container, params) {    
+function LvHobbiesLoad($Container, params) {    
     var _Listado = this;
     
     this.Inicializar = function () {
@@ -124,3 +119,6 @@ function ListviewLoad($Container, params) {
     };
 }
 
+jQuery.fn.LvHobbiesLoad = function(params){
+	return new LvHobbiesLoad(this, params);
+};
