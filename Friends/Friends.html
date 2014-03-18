@@ -18,6 +18,7 @@
 		<script src="js/Listado.js"></script>
 		<script src="js/ListadoFriends.js"></script>
 		<script src="js/Requests.js"></script>
+		<script src="../js/Hobbyp.js"></script>
 		<script src="js/Friends.js"></script>
 		
 			<style>
@@ -51,12 +52,13 @@
 	</head>
 	<body>
 		<!--Friends -->
-		<div data-role="page" data-theme="a" id="Friends">
-			<div data-role="header"  data-position="fixed" class="headerLogo">	
-				<p class="jqm-version"></p>
-				<p class="labelMultiidioma" id="HobbypTitle1" >Hobbyp</p>
-			    <a href="javascript:hrefParams('../Config/Config.html');" data-role="button" data-icon="user" data-iconshadow="false" onclick="empty()" data-iconpos="notext"  class="ui-btn-right">Config</a>
-			</div>	
+		<div data-role="page" data-theme="c" id="Friends">
+			<div data-role="header" data-position="fixed"  class="headerLogo">				
+				<select  id="lvHobbies" onchange="hobbypChange(this);" data-theme="c" >										
+				</select>				
+				<a href="../" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+				<a href="javascript:hrefParams('../Config/Config.html');" data-icon="user" data-iconpos="notext" data-rel="dialog" data-transition="fade">Search</a>
+			</div>
 			
 			<div data-role="content" data-theme="a">	
 				<div data-role="navbar" id="subNavbarId">

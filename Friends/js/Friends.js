@@ -1,8 +1,5 @@
 //DEFINE
 var $FriendsList, $NewFriendList, $MyRequestsList;
-var oRequest = new BDEntity("oRequest");
-
-$(document).bind('pageinit', function(){retrieveParams(); loadLang(); pageinit();});
 
 function pageinit(){	
 	$NewFriendList = $("#NewFriendList");
@@ -19,13 +16,13 @@ function pageinit(){
 function BuscarPeticionesAmistad()
 {
 	var params = {
-	ObtenerSQL: ObtenerSQLMyRequests,
-	fnOnLoad: fnOnLoadMyRequests,
-	Titulo:  "OwnerName",
-	Descripcion: "Description",
-	Fecha: "FAlta",
-	Clave: "IdOwner",
-	Table: "oMessages"
+		ObtenerSQL: ObtenerSQLMyRequests,
+		fnOnLoad: fnOnLoadMyRequests,
+		Titulo:  "OwnerName",
+		Descripcion: "Description",
+		Fecha: "FAlta",
+		Clave: "IdOwner",
+		Table: "oMessages"
 	};
 
 	$MyRequestsList = $("#MyRequestsList").Listado(params);
@@ -51,11 +48,11 @@ function fnOnLoadMyRequests(data)
 //**************************************************************************************************************************************************
 function BuscarFriends(){
 		var paramsFriendsList = {
-		ObtenerSQL: ObtenerSqlFriends,
-		Titulo:  "FriendName",
-		Descripcion: "Friend",
-		//Fecha: "FAlta",
-		Clave: "FriendId"
+			ObtenerSQL: ObtenerSqlFriends,
+			Titulo:  "FriendName",
+			Descripcion: "Friend",
+			//Fecha: "FAlta",
+			Clave: "FriendId"
 		};
 	$FriendsList = $("#FriendsList").ListadoFriends(paramsFriendsList);
 	$FriendsList.Consultar();		
