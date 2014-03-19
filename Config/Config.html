@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="Content-Language" content="es-ES"/>		
+		<link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="../css/Icons.css" />
+		<link rel="stylesheet" href="../css/hobbyp.css" />
+
+		<script src="../js/JQuery/jquery.min.js"></script>				
+		<script src="../js/JQuery/jquery.mobile.min.js"></script>	
+		<script src="../js/Comun.js"></script>
+		<script src="../js/MySQLLib/MySQL.js"></script>
+		<script src="../js/MySQLLib/BDEntity.js"></script>
+		<script src="../js/phonegap/PGNavigation.js"></script>
+		<script src="../js/Hobbyp.js"></script>	
+			
+		<script src="js/Config.js"></script>
+
+		<title>Configuración</title>
+	</head>
+	<body>
+		<div data-role="page" data-theme="c" id="pageNewsId">
+			<div data-role="header" data-position="fixed"  class="headerLogo">				
+				<select  id="lvHobbies" onchange="hobbypChange(this);" data-theme="c" >										
+				</select>
+				<a href="javascript:hrefParams('../News/News.html');" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>				
+			</div>
+			<section data-role="content" >				
+				<form id="imageForm" name="imageForm" method="post" enctype="multipart/form-data">
+					<div data-role="fieldcontain">	   						
+						<label for="file">Name:</label>	 		
+						<input type="file" id="file" name="file"/>
+					</div>
+					<div data-role="fieldcontain">	   						
+						<label for="file">Photo:</label>	 		
+						<input type="file" id="file" name="file"/>
+					</div>
+					 <div data-role="fieldcontain">
+						<label for="lvHobbies">Country:</label>
+						<select id="lvHobbies" name="lvHobbies">
+						</select>
+					</div>
+					<div data-role="fieldcontain">
+						<label id="tituloApunte" for="Title" class="labelMultiidioma">City:</label>	   					
+						<input id="Title" name="Title" type="text" />
+					</div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+    	                    <legend>Gender:</legend>
+         	                    <input type="radio" name="Privacity" id="radio-choice-1" value="1" checked="checked" />
+         	                    <label id="Private" class="labelMultiidioma" for="radio-choice-1" >Private</label>
+
+         	                    <input type="radio" name="Privacity" id="radio-choice-2" value="2"  />
+         	                    <label id="OnlyFriends" class="labelMultiidioma" for="radio-choice-2">Only friends</label>
+
+         	                    <input type="radio" name="Privacity" id="radio-choice-3" value="3"  />
+         	                    <label id="Public" class="labelMultiidioma" for="radio-choice-3">Public</label>
+                        </fieldset>
+                    </div>	
+					<div data-role="fieldcontain">
+						<label id="tituloApunte" for="Title" class="labelMultiidioma">Age:</label>	   					
+						<input id="Title" name="Title" type="text" />
+					</div>		
+					<div data-role="fieldcontain">
+						<label id="tituloApunte" for="Title" class="labelMultiidioma">Email:</label>	   					
+						<input id="Title" name="Title" type="text" />
+					</div>	
+					<div data-role="fieldcontain">
+						<label for="Content">Recibir mensajes por email:</label>	   		
+						<textarea id="Content" name="Content"></textarea>
+					</div>	
+					<div data-role="fieldcontain">
+						<label id="tituloApunte" for="Title" class="labelMultiidioma">Phone:</label>	   					
+						<input id="Title" name="Title" type="text" />
+					</div>			
+					<div data-role="fieldcontain">
+						<label for="Content">Estado:</label>	   		
+						<textarea id="Content" name="Content"></textarea>
+					</div>		
+			
+				</form>		
+				<a data-inline="true" data-role="button" data-theme="a" class="labelMultiidioma" href="javascript:btnSaveClick();" id="btnSave" >Enviar</a>       
+				<a data-inline="true" data-role="button" data-theme="a" class="labelMultiidioma" href="#" data-rel="back" id="btnCancel">Cancel</a>				    
+			</section>
+			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar" id="navbarId">
+					<ul>
+						<li><a class="labelMultiidioma ui-icon-news "         href="javascript:hrefParams('../News/News.html');" rel="external" data-ajax="false"  id="News" >News</a></li>
+	    				<li><a class="labelMultiidioma ui-icon-diary "        href="javascript:hrefParams('../Diary/Diary.html');"  rel="external" data-ajax="false" id="Diary"    >Diary</a></li>
+						<li><a class="labelMultiidioma ui-icon-messages "     href="javascript:hrefParams('../Messages/Messages.html');" rel="external" data-ajax="false" id="Messages" >Messages</a></li>	
+						<li><a class="labelMultiidioma ui-icon-config"        href="javascript:hrefParams('../Friends/Friends.html');"   rel="external" data-ajax="false" id="Friends"   >Friends</a></li>
+					</ul>
+				</div>
+			</div>		
+		</div><!--/page-->		
+	</body>
+</html>
+
