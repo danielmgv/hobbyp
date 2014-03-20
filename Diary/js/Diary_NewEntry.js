@@ -114,5 +114,5 @@ function oNewsInsertNOK(httpRequest, textStatus, errorThrown) {
 	{		
 		showError("Error al actualizar.\n" + textStatus + errorThrown.message);	
 	}
-}javascript:hrefParams('../Friends/Friends.html');
+}
 
