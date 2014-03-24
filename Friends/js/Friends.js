@@ -11,6 +11,18 @@ function pageinit(){
 	// Cargar lista de friends
 	BuscarFriends();	
 }
+//*****************************************************************************************************************************************************************
+function send()
+{
+	MailerGmail.Params.AddressEmail = $("#Email").val();
+	MailerGmail.Params.AddressName = $("#Nombre").val();
+	MailerGmail.Send(fnSendOk);
+}
+
+function fnSendOk(data)
+{
+	alert("Mensaje enviado correctamente");
+}
 
 //******************************************************************************************************************************************************************************
 function BuscarPeticionesAmistad()

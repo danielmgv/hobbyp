@@ -11,6 +11,12 @@ function pageinit(){
 	$lvcNews.Consultar();	
 }
 
+function openMenu()
+{
+	alert(1);
+	//$("#popupMenu").popup("open");	
+}
+
 function ObtenerSQLNews()
 {
 	var sql =  " SELECT N.Id, IdPeople, H.Name as HobbieName, Title, Content, ImgFileName, FAlta ";

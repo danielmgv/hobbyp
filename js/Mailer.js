@@ -1,6 +1,8 @@
 ﻿
-var MailerPath = '../Ajax/include/Mailer/mailer.php';
-
+// USO:
+// MailerGmail.Params.AddressEmail = "wqweq"
+// MailerGmail.Params.AddressName = "adasdas"
+// MailerGmail.Send(fnOk);
 var	MailerGmail = {
 		MeMailer: new MailerClass("smtp.gmail.com"),		
 		Params: {
@@ -15,6 +17,8 @@ var	MailerGmail = {
 
 function MailerClass(Host)
 {	
+	var MailerPath = '../Ajax/include/Mailer/mailer.php';
+	
 	this.Send = function (Params, SendEmailDone)
 	{	
         var jqxhr = $.post(MailerPath, Params).done(SendEmailDone).fail(this.SendEmailFail);

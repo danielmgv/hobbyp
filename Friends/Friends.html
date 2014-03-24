@@ -19,6 +19,7 @@
 		<script src="js/ListadoFriends.js"></script>
 		<script src="js/Requests.js"></script>
 		<script src="../js/Hobbyp.js"></script>
+		<script src="../js/Mailer.js"></script>
 		<script src="js/Friends.js"></script>
 		
 			<style>
@@ -64,8 +65,9 @@
 				<div data-role="navbar" id="subNavbarId">
 					<ul>						
 						<li><a href="#Friends" class="ui-btn-active ui-state-persist">Friends</a></li>	
-						<li><a href="#Groups" class="labelMultiidioma" id="Groups">Groups</a></li>
-						<li><a href="javascript:hrefParams('../Search/Search.html');" rel="external" data-ajax="false" data-icon="gear"  class="labelMultiidioma" id="Search" >Search</a></li>						
+						<li><a href="#Groups" class="ui-btn ui-state-persist labelMultiidioma" id="Groups">Groups</a></li>
+						<li><a href="javascript:hrefParams('../Search/Search.html');" rel="external" data-ajax="false" data-icon="gear"  class="labelMultiidioma ui-btn" id="Search" >Search</a></li>						
+						<li><a href="#Invite"  class="ui-btn labelMultiidioma" id="btnInvite" >Invitar</a></li>
 					</ul>
 				</div>
 				
@@ -122,6 +124,36 @@
 				<p>Hobbyp V.1.0 Research by quaz</p>
 			</div>					
 		</div><!--/page-->		
+		<!--Invite -->
+		<div data-role="page" data-theme="a" id="Invite">		
+			<div data-role="header" data-position="fixed"  class="headerLogo">				
+				<select  id="lvHobbies" onchange="hobbypChange(this);" data-theme="c" >										
+				</select>				
+				<a href="../" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+				<a href="javascript:hrefParams('../Config/Config.html');" data-icon="user" data-iconpos="notext" data-rel="dialog" data-transition="fade">Search</a>
+			</div>
+			<div data-role="content" data-theme="a">	
+				<div data-role="fieldcontain" data-scroll="y">
+					<div class="content-primary" >					
+						 <label for="basic">Email:</label>
+    					<input type="text" name="Email" id="Email" value=""  />
+    					<div data-role="fieldcontain" data-scroll="y">
+							<a id="btnSend" href="JavaScript:send();" data-role="button" data-inline="true" >Enviar email invitación</a>					
+						</div>
+					</div><!--/content-primary -->	
+				</div><!--/fieldcontain-->
+			</div>	
+			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar" id="navbarId">
+					<ul>
+						<li><a class="labelMultiidioma ui-icon-news"          href="javascript:hrefParams('../News/News.html');"         rel="external" data-ajax="false" id="News"     >News</a></li>
+	    				<li><a class="labelMultiidioma ui-icon-diary"         href="javascript:hrefParams('../Diary/Diary.html');"       rel="external" data-ajax="false" id="Diary"    >Diary</a></li>
+						<li><a class="labelMultiidioma ui-icon-messages"      href="javascript:hrefParams('../Messages/Messages.html');" rel="external" data-ajax="false" id="Messages" >Messages</a></li>	
+						<li><a class="labelMultiidioma ui-icon-config-active" href="#"   rel="external" data-ajax="false" id="Friends"   >Friends</a></li>
+					</ul>
+				</div>	
+			</div>					
+		</div><!--/page-->				
 	</body>
 </html>
 

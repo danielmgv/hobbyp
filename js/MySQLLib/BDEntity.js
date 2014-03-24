@@ -47,14 +47,21 @@ var ohoobyes = {
 var opeople = {
     MeBDEntity: new BDEntity("opeople"),
     KeyField: { Id: null},
+    AutoIndex: true,
     Fields:
 		{
 		    Name: "",
 		    Email: "",
 		    Password: "",
-		    ObservacionesHobbies: ""
+		    ObservacionesHobbies: "",
+	    	Photo: "",
+			Country: "",
+			City: "",
+			Gender: "",
+			Age: "",		
+			Phone: ""
 		},
-    Insert: function() { this.MeBDEntity.Insert(this.Fields); },
+    Insert: function() { this.MeBDEntity.Insert(this.Fields, this.AutoIndex); },
     Delete: function() { this.MeBDEntity.Delete(this.KeyField); },
     Procedure: function(procedureName, params) { this.MeBDEntity.Procedure(procedureName, params); },
     GetByKey: function() { this.MeBDEntity.GetByKey(this.KeyField); }

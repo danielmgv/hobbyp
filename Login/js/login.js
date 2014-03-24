@@ -1,8 +1,9 @@
 ﻿
-$(document).bind('pageinit', function(){loadLang();	pageinit();	});
+$(document).bind('pageinit', function(){retrieveParams(); loadLang(); pageinit();	});
 
 function pageinit(){
-	// Bind the tapHandler callback function to the tap event on div.box
+
+	// Bind the tapHandler callback function to the tap event on div.box	
     $("#btnLogin").on( 'tap', tapLogin );	
 }
 
