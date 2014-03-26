@@ -63,7 +63,7 @@ function LvHobbiesLoad($Container, params) {
     };
 
     this.ObtenerRegistros = function(sql) {   
-        AsyncConsultaSELECT({ SQL: sql}, _Listado.recargarDatos, _Listado.obtenerRegistrosNOK);        
+        AsyncConsultaSELECT({ SQL: sql, Cached: true}, _Listado.recargarDatos, _Listado.obtenerRegistrosNOK);        
     };
 
     this.obtenerRegistrosNOK = function (httpRequest, textStatus, errorThrown) {

@@ -71,6 +71,7 @@ function CompleteAjaxForm (httpRequest) {
 
 function opeopleGetByKeyOK(data)
 {
+	//*****************
 	alert("Revisar esto");
 	opeople = data;
 	loadPeopleData();
@@ -101,7 +102,7 @@ function btnSaveClick () {
         textonly: false
     });
     
-	opeople.KeyFields.Id = fromServer.People.Id;
+	opeople.KeyField.Id = fromServer.People.Id;
 	opeople.Fields.Name = $("#Name").val();
 	opeople.Fields.Email = $("#Email").val();
 	opeople.Fields.Password = $("#Password").val();

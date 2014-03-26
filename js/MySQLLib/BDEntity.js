@@ -64,8 +64,21 @@ var opeople = {
     Insert: function() { this.MeBDEntity.Insert(this.Fields, this.AutoIndex); },
     Delete: function() { this.MeBDEntity.Delete(this.KeyField); },
     Procedure: function(procedureName, params) { this.MeBDEntity.Procedure(procedureName, params); },
-    GetByKey: function() { this.MeBDEntity.GetByKey(this.KeyField); }
+    GetByKey: function() { this.MeBDEntity.GetByKey(this.KeyField); },
+    LoadFromData: function(data){ casarDatos(this, data);}
 };
+
+
+function casarDatos (destino, origen)
+{
+	$.each(destino.KeyField, function(campo, tipo) {
+	    this[campo] = origen[campo];	   
+	});	
+	
+	$.each(destino.Fields, function(campo, tipo) {
+	    this[campo] = origen[campo];	   
+	});	
+}
 
 //*************************************************************************************************************************************************************
 var oNews = {
