@@ -9,12 +9,13 @@ function pageinit(){
 		};
 	$lvcNews = $("#lvcNews").ListadoNews(params);
 	$lvcNews.Consultar();	
+	loadPerfilPop();	
 }
 
 function openMenu()
 {
-	alert(1);
-	//$("#popupMenu").popup("open");	
+	//alert(1);
+	$("#popupMenu").popup("open");	
 }
 
 function ObtenerSQLNews()

@@ -73,10 +73,9 @@ function AsyncConsultaSELECT(params, fnOk, fnNOK)
 {
 	if(params.Cached)
 	{		
-		var dataCached = getData(params.SQL);
-		if(dataCached != null)
+		if(fromServer[params.SQL])
 		{
-			fnOk(dataCached);
+			fnOk(fromServer[params.SQL]);
 			//alert("sin consulta");
 			return;
 		}
@@ -93,7 +92,7 @@ function AsyncConsultaSELECT(params, fnOk, fnNOK)
 			{
 				if(params.Cached)
 				{		
-					setData(params.SQL, data);
+					fromServer[params.SQL] = data;
 				}
 				tratarRespuestaAjaxOk(data, textStatus, jqXHR, fnOk);
 			}
@@ -274,64 +273,6 @@ function hayError(data)
 
 	return false;
 }	
-//------------------------------------------
-function getData(sql)
-{
-	return getParent(window.parent, sql);
-}
-
-function setData(sql, data)
-{
-	setParent(window.parent,sql, data);	
-}
-
-function getParent(ventana, sql)
-{	
-	if(ventana)
-	{
-		if(ventana.storedQuery)
-		{
-			//var newObject = jQuery.extend({}, ventana.storedQuery[sql]);
-
-		// Deep copy
-		//var newObject = jQuery.extend(true, {}, oldObject);
-
-			return ventana.storedQuery[sql];
-		}	
-		else
-		{
-			return getParent(ventana.parent, sql);
-		}	
-	}
-	else
-	{
-		return ventana;
-	}	
-
-	//return ventana.storedQuery != null ? ventana : getParent(ventana.parent);
-}
-
-
-function setParent(ventana, sql, data)
-{	
-	if(ventana)
-	{
-		if(ventana.storedQuery)
-		{
-			ventana.storedQuery[sql] = data;
-		}	
-		else
-		{
-			setParent(ventana.parent, sql, data);
-		}	
-	}
-	else
-	{
-		return;
-	}	
-
-	//return ventana.storedQuery != null ? ventana : getParent(ventana.parent);
-}
 
 //-----------------------------------------------------------------------------------------------------------------
 //********************************************************************************************************

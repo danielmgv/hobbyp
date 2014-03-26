@@ -57,8 +57,8 @@ var opeople = {
 	    	Photo: "",
 			Country: "",
 			City: "",
-			Gender: "",
-			Age: "",		
+			Gender: null,
+			Age: null,		
 			Phone: ""
 		},
     Insert: function() { this.MeBDEntity.Insert(this.Fields, this.AutoIndex); },
@@ -107,6 +107,8 @@ function BDEntity(tableName)
 	{
 		this.Procedure(this.DeleteProc, params);
 	};	
+	
+
 	
 	this.Procedure = function (procedureName, params, scalar)
 	{

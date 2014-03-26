@@ -20,7 +20,7 @@ function login()
 	var email = $("#email").val();
 	var password = $("#password").val();	
 	var params = {};	
-	params.SQL = "SELECT Id, Name, ObservacionesHobbies FROM opeople WHERE Email='" + email + "' AND Password='" + password + "'";	
+	params.SQL = "SELECT Id, Name, Photo, Gender, Age, Country, City, Phone ObservacionesHobbies FROM opeople WHERE Email='" + email + "' AND Password='" + password + "'";	
 	$.mobile.loading( 'show', {
 		text: "",
 		textVisible: false,
@@ -71,6 +71,14 @@ function logado(data)
 			People : {
 				Id: data.Id,
 				Name: data.Name,
+				Email:data.Email,
+				Country:data.Country,
+				Photo:data.Photo,
+				Country:data.Country,
+				City:data.City,
+				Gender:data.Gender,
+				Age:data.Age,
+				Phone:data.Phone,
 				ObservacionesHobbies: data.ObservacionesHobbies
 				}
 		};

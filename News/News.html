@@ -15,7 +15,8 @@
 		<script src="../js/MySQLLib/MySQL.js"></script>
 		<script src="../js/MySQLLib/BDEntity.js"></script>
 		<script src="../js/phonegap/PGNavigation.js"></script>
-		<script src="../js/Hobbyp.js"></script>	
+		<script src="../js/Hobbyp.js"></script>
+		<script src="../js/Perfil.js"></script>		
 			
 		<script src="js/News.js"></script>
 		<script src="js/ListadoNews.js"></script>	
@@ -28,23 +29,32 @@
 				<select  id="lvHobbies" onchange="hobbypChange(this);" data-theme="c" >										
 				</select>				
 				<a href="../" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
-				<a href="javascript:openMenu();" data-icon="user" data-iconpos="notext"  rel="external" data-ajax="false"  data-transition="fade">Search</a>
-			</div>			
-			<section data-role="content" >				
-				<div data-role="popup" id="popupMenu" data-theme="d">
-					<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
-						<li data-role="divider" data-theme="e">Choose an action</li>
-						<li><a href="#">View details</a></li>
-						<li><a href="#">Edit</a></li>
-						<li><a href="#">Disable</a></li>
-						<li><a href="#">Delete</a></li>
-					</ul>
-				</div>				
+				<a href="#popupLogin" data-icon="user" data-iconpos="notext" data-rel="popup" data-position-to="#contentId"  data-transition="pop">Sign in</a>
+				<!--
+					class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a"
+				<a href="#popupMenu" data-icon="user" data-iconpos="notext"  rel="external" data-ajax="false"  data-transition="fade">Search</a>
+				-->
+			</div>
+			<section data-role="content" id="contentId" >													
 				<div data-role="fieldcontain" data-scroll="y">
 					<div class="content-primary" >
 						<div data-role="collapsible-set" id="lvcNews"></div>	
 					</div>
 				</div>
+				<div data-role="popup" id="popupLogin" data-theme="a" data-arrow="r,t" class="ui-corner-all">
+				    <form>
+				        <div style="padding:10px 20px;">
+							<a href="#popupMyPhoto" data-rel="popup" data-position-to="window" data-transition="fade"><img id="MyPhotoLittle" class="MyPhotoClass" src="" alt="My photo" style="width:30%"></a>						
+							<div data-role="popup" id="popupMyPhoto" data-overlay-theme="b" data-theme="b" data-corners="false">
+							    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="MyPhotoClass" id="MyPhotoBig" src="" style="max-height:512px;" alt="my photo">
+							</div>							
+				            <div class="ui-grid-a">
+					            <button type="button" onclick="hrefParams('../Config/Config.html');" class="ui-btn ui-corner-all ui-shadow ui-btn-c ">Editar perfil</button>
+					            <button type="button" onclick="SignOut();" class="ui-btn ui-corner-all ui-shadow ui-btn-c ">Sign out</button>
+				            </div>
+				        </div>	
+				    </form>				    
+				</div>				
 			</section>
 			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" data-fullscreen="true">
 				<div data-role="navbar" id="navbarId">

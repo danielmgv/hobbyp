@@ -10,6 +10,7 @@
 
 		<script src="../js/JQuery/jquery.min.js"></script>				
 		<script src="../js/JQuery/jquery.mobile.min.js"></script>	
+		<script src="../js/JQuery/jquery.form.js"></script>	
 		<script src="../js/Comun.js"></script>
 		<script src="../js/MySQLLib/MySQL.js"></script>
 		<script src="../js/MySQLLib/BDEntity.js"></script>
@@ -32,15 +33,19 @@
 				<form id="imageForm" name="imageForm" method="post" enctype="multipart/form-data">
 					<div data-role="fieldcontain">	   						
 						<label for="file">Name:</label>	 		
-						<input type="file" id="file" name="file"/>
+						<input type="text" id="Name" name="Name"/>
 					</div>
-					<div data-role="fieldcontain">	   						
+					<div data-role="fieldcontain">	   
+						<a href="#popupMyPhoto" data-rel="popup" data-position-to="window" data-transition="fade"><img id="MyPhotoLittle" class="MyPhotoClass" src="" alt="My photo" style="width:30%"></a>						
+						<div data-role="popup" id="popupMyPhoto" data-overlay-theme="b" data-theme="b" data-corners="false">
+						    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="MyPhotoClass" id="MyPhotoBig" src="" style="max-height:512px;" alt="my photo">
+						</div>								
 						<label for="file">Photo:</label>	 		
 						<input type="file" id="file" name="file"/>
 					</div>
 					 <div data-role="fieldcontain">
 						<label for="lvHobbies">Country:</label>
-						<select id="lvHobbies" name="lvHobbies">
+						<select id="Countries" name="Countries">
 						</select>
 					</div>
 					<div data-role="fieldcontain">
@@ -51,13 +56,9 @@
                         <fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
     	                    <legend>Gender:</legend>
          	                    <input type="radio" name="Privacity" id="radio-choice-1" value="1" checked="checked" />
-         	                    <label id="Private" class="labelMultiidioma" for="radio-choice-1" >Private</label>
-
+         	                    <label id="Private" class="labelMultiidioma" for="radio-choice-1" >Hombre</label>
          	                    <input type="radio" name="Privacity" id="radio-choice-2" value="2"  />
-         	                    <label id="OnlyFriends" class="labelMultiidioma" for="radio-choice-2">Only friends</label>
-
-         	                    <input type="radio" name="Privacity" id="radio-choice-3" value="3"  />
-         	                    <label id="Public" class="labelMultiidioma" for="radio-choice-3">Public</label>
+         	                    <label id="OnlyFriends" class="labelMultiidioma" for="radio-choice-2">Mujer</label>
                         </fieldset>
                     </div>	
 					<div data-role="fieldcontain">
