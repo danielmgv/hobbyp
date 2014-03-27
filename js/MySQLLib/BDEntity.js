@@ -58,27 +58,19 @@ var opeople = {
 			Country: "",
 			City: "",
 			Gender: null,
-			Age: null,		
+			Age: null,
 			Phone: ""
 		},
     Insert: function() { this.MeBDEntity.Insert(this.Fields, this.AutoIndex); },
     Delete: function() { this.MeBDEntity.Delete(this.KeyField); },
     Procedure: function(procedureName, params) { this.MeBDEntity.Procedure(procedureName, params); },
-    GetByKey: function() { this.MeBDEntity.GetByKey(this.KeyField); },
-    LoadFromData: function(data){ casarDatos(this, data);}
+    GetByKey: function() { this.MeBDEntity.GetByKey(this.KeyField); }
+    /*
+    GetPhotoPath: function(){
+    	return "../Data/People_" + KeyField.Id + "/PersonalFile_" + KeyField.Id  + ".dat";
+    }
+    */
 };
-
-
-function casarDatos (destino, origen)
-{
-	$.each(destino.KeyField, function(campo, tipo) {
-	    this[campo] = origen[campo];	   
-	});	
-	
-	$.each(destino.Fields, function(campo, tipo) {
-	    this[campo] = origen[campo];	   
-	});	
-}
 
 //*************************************************************************************************************************************************************
 var oNews = {
@@ -121,8 +113,6 @@ function BDEntity(tableName)
 		this.Procedure(this.DeleteProc, params);
 	};	
 	
-
-	
 	this.Procedure = function (procedureName, params, scalar)
 	{
 		var fnOK = window[procedureName + "OK"];
@@ -143,13 +133,22 @@ function BDEntity(tableName)
 	};	
 	
 	this.GetByKey = function (KeyField)
-	{
-		var fnOK = eval(tableName + "GetByKeyOK");
-		var fnNOK = eval(tableName + "GetByKeyNOK");		
+	{	
+		var fnOK = window[tableName + "GetByKeyOK"];
+		var fnNOK = window[tableName + "GetByKeyNOK"];
+		
+		if (!(typeof(fnOK) === "function")) {
+			throw "GetByKeyOK not defined"; 
+    		//fnOK = function(data){};
+		}
+		
+		if (!(typeof(fnNOK) === "function")) { 
+    		fnNOK = genericNOK;
+		}
+		
 		var SQL = "SELECT * FROM " + this.tableName + " WHERE " + Conditions(KeyField);	
 		AsyncConsultaSELECT({SQL: SQL}, fnOK, fnNOK);
-	};
-	
+	};	
 }
 
 //**********************************************************************************************************************************************************************
@@ -207,4 +206,6 @@ function Conditions(KeyField)
 	}
 	return sql;
 }
+
+
 

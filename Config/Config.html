@@ -29,8 +29,8 @@
 				<a href="javascript:hrefParams('../News/News.html');" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>							
 			</div>
 							
-			<section data-role="content" >				
-				<form id="imageForm" name="imageForm" method="post" enctype="multipart/form-data">
+			<section data-role="content" >
+				<form id="imageForm" name="imageForm" method="post" enctype="multipart/form-data">		
 					<div data-role="fieldcontain">	   						
 						<label for="file">Name:</label>	 		
 						<input type="text" id="Name" name="Name"/>
@@ -44,42 +44,45 @@
 						<input type="file" id="file" name="file"/>
 					</div>
 					 <div data-role="fieldcontain">
-						<label for="lvHobbies">Country:</label>
-						<select id="Countries" name="Countries">
+						<label for="Country">Country:</label>
+						<select id="Country" name="Country">
 						</select>
 					</div>
 					<div data-role="fieldcontain">
-						<label id="tituloApunte" for="Title" class="labelMultiidioma">City:</label>	   					
-						<input id="Title" name="Title" type="text" />
+						<label id="tituloCity" for="Title" class="labelMultiidioma">City:</label>	   					
+						<input id="City" name="City" type="text" />
 					</div>
                     <div data-role="fieldcontain">
-                        <fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" >
     	                    <legend>Gender:</legend>
-         	                    <input type="radio" name="Privacity" id="radio-choice-1" value="1" checked="checked" />
-         	                    <label id="Private" class="labelMultiidioma" for="radio-choice-1" >Hombre</label>
-         	                    <input type="radio" name="Privacity" id="radio-choice-2" value="2"  />
-         	                    <label id="OnlyFriends" class="labelMultiidioma" for="radio-choice-2">Mujer</label>
+         	                    <input type="radio" name="Gender" id="Gender_1" value="1" checked="checked" />
+         	                    <label id="lblGender_1" class="labelMultiidioma" for="Gender_1" >Hombre</label>
+         	                    <input type="radio" name="Gender" id="Gender_2" value="2"  />
+         	                    <label id="lblGender_2" class="labelMultiidioma" for="Gender_2">Mujer</label>
                         </fieldset>
                     </div>	
 					<div data-role="fieldcontain">
 						<label id="tituloApunte" for="Title" class="labelMultiidioma">Age:</label>	   					
-						<input id="Title" name="Title" type="text" />
+						<input id="Age" name="Age" type="text" />
 					</div>		
 					<div data-role="fieldcontain">
 						<label id="tituloApunte" for="Title" class="labelMultiidioma">Email:</label>	   					
-						<input id="Title" name="Title" type="text" />
+						<input id="Email" name="Email" type="text" />
 					</div>	
 					<div data-role="fieldcontain">
 						<label for="Content">Recibir mensajes por email:</label>	   		
-						<textarea id="Content" name="Content"></textarea>
+						<select id="RecibirMensajes">
+							<option value="SI" selected="selected">Sí</option>
+							<option value="NO">No</option>
+						</select>
 					</div>	
 					<div data-role="fieldcontain">
-						<label id="tituloApunte" for="Title" class="labelMultiidioma">Phone:</label>	   					
-						<input id="Title" name="Title" type="text" />
-					</div>			
+						<label id="tituloPhone" for="Title" class="labelMultiidioma">Phone:</label>	   					
+						<input id="Phone" name="Phone" type="text" />
+					</div>													
 					<div data-role="fieldcontain">
-						<label for="Content">Estado:</label>	   		
-						<textarea id="Content" name="Content"></textarea>
+						<label for="ObservacionesHobbies">Estado:</label>	   		
+						<textarea id="ObservacionesHobbies" name="ObservacionesHobbies"></textarea>
 					</div>		
 					<div data-role="fieldcontain">
 						<a data-inline="true" data-role="button" data-theme="a" class="labelMultiidioma" href="javascript:btnSaveClick();" id="btnSave" >Enviar</a>       
@@ -87,7 +90,7 @@
 					</div>
 				</form>									   
 			</section>
-			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" data-fullscreen="true">
+			<div data-role="footer" class="footer-docs" data-theme="a"  data-position="fixed" >
 				<div data-role="navbar" id="navbarId">
 					<ul>
 						<li><a class="labelMultiidioma ui-icon-news "         href="javascript:hrefParams('../News/News.html');" rel="external" data-ajax="false"  id="News" >News</a></li>

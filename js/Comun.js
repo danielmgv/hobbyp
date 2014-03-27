@@ -425,6 +425,13 @@ var loadJS = function(src) {
 		 			
  	} 	
  }
+ 
+function imageFromServer($image, rutaServer, nombreOriginal)
+{
+	var ruta = encodeURIComponent(rutaServer);				
+	var urlfoto = "../Ajax/include/Image.php?NombreOriginal=" + nombreOriginal + "&Ruta=" + ruta;
+	$image.attr("src", urlfoto);	
+}
 
 
 

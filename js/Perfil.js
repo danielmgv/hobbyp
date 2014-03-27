@@ -1,13 +1,20 @@
 ﻿
 function loadPerfilPop()
-{
-	var src = "../Data/People_" + fromServer.People.Id + "/" + fromServer.People.Photo;
-	
+{	
 	$("#MyName").text(fromServer.People.Name);
 	$("#MyEmail").text(fromServer.People.Email);
-	$(".MyPhotoClass").attr("src", src);
-	//$("#MyPhotoLittle").src(fromServer.People.Photo);
+	recargarFotos();
 	//ajaxFormPerfilLoad();	
+}
+
+function recargarFotos()
+{	
+	$(".MyPhotoClass").each(
+		function() {
+			var ruta = "../Data/People_" + fromServer.People.Id + "/PersonalFile_" + fromServer.People.Id  + ".dat";			
+			imageFromServer($(this), ruta, fromServer.People.Photo);
+		}
+	);	
 }
 
 function SignOut()

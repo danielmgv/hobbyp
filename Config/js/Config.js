@@ -1,32 +1,18 @@
 
 function pageinit(){	
-	loadPeopleData();
-	ajaxFormLoad();
 	var params = {
 		Table:"Countries",
 		Text:"CountryName",
 		Value:"CountryISO_A2"
+		//,		Selected: opeople.Fields.Country
 	};
-
-	$("#Countries").Cargar(params);
-}
-
-function loadPeopleData()
-{
-	opeople.Fields = fromServer.People;
 	
-	$("#Name").val(opeople.Fields.Name);
-	$("#Email").val(opeople.Fields.Email);	
-	$("#Password").val(opeople.Fields.Password);
-	$("#ObservacionesHobbies").val(opeople.Fields.ObservacionesHobbies);
+	$("#Country").Cargar(params);
 	
-	//opeople.Fields.Photo = $('#file').val().split('\\').pop();
-	$("#Country").val(opeople.Fields.Country);
-	$("#City").val(opeople.Fields.City);
-	$("#Gender").val(opeople.Fields.Gender);
-	$("#Age").val(opeople.Fields.Age);
-	$("#Phone").val(opeople.Fields.Phone);
-	recargarFotos();
+	opeople.KeyField.Id = fromServer.People.Id;	
+	opeople.GetByKey();	
+	
+	ajaxFormLoad();
 }
 
 function ajaxFormLoad () {	
@@ -63,34 +49,57 @@ function SuccessAjaxForm () {
 function CompleteAjaxForm (httpRequest) {
 	var errorJson = JSON.parse(httpRequest.responseText);
 	if(!hayError(errorJson))
-	{
+	{		
 		opeople.GetByKey();
-
 	}
 }
 
+//***************************************************************************************************************************************************************************************
 function opeopleGetByKeyOK(data)
 {
-	//*****************
-	alert("Revisar esto");
-	opeople = data;
-	loadPeopleData();
+	$.each(data[0], function(campo, valor) {
+	    opeople.Fields[campo] = valor;
+	});	
+	
+	fromServer.People.Photo = opeople.Fields.Photo;//Nombre original
+	
+	$("#Name").val(opeople.Fields.Name);
+	$("#Email").val(opeople.Fields.Email);	
+	//$("#Password").val(opeople.Fields.Password);
+	$("#ObservacionesHobbies").val(opeople.Fields.ObservacionesHobbies);
+	
+	//opeople.Fields.Photo = $('#file').val().split('\\').pop();
+	
+	//$("#Country").val(opeople.Fields.Country);
+	selectMobile($("#Country"), opeople.Fields.Country);
+	
+	$("#City").val(opeople.Fields.City);
+	$("#Gender_" + opeople.Fields.Gender).click();//attr('checked', 'checked');
+	//$('input:radio[name="Gender"]').filter('[value="'+ opeople.Fields.Gender +'"]').next().click();
+	
+	//$("input[type='radio']").attr("checked",true).checkboxradio("refresh");
+	//$("#Gender").val(opeople.Fields.Gender);
+	$("#Age").val(opeople.Fields.Age);
+	$("#Phone").val(opeople.Fields.Phone);
+	recargarFotos();		
+}
+
+function selectMobile(el, value)
+{
+	// Select the relevant option, de-select any others
+	el.val(value).attr('selected', true).siblings('option').removeAttr('selected');
+	
+	// jQM refresh
+	el.selectmenu("refresh", true);
 }
 
 function recargarFotos()
 {
 	$(".MyPhotoClass").each(
 		function() {
-		  imageFromServer($(this), "../Data/People_" + fromServer.People.Id + "/" + opeople.Fields.Photo, "foto" );
+		  imageFromServer($(this), "../Data/People_" + fromServer.People.Id + "/PersonalFile_" + fromServer.People.Id + ".dat" , opeople.Fields.Photo );
 		}
 	);	
-}
-
-function imageFromServer($image, rutaServer, nombreOriginal)
-{
-	var ruta = encodeURIComponent(rutaServer);				
-	var urlfoto = "../Ajax/include/Image.php?NombreOriginal=" + nombreOriginal + "&Ruta=" + ruta;
-	$image.attr("src", urlfoto);	
 }
 	
 //************************************************************************************************************************************
@@ -101,20 +110,20 @@ function btnSaveClick () {
         theme: "a",
         textonly: false
     });
-    
+
 	opeople.KeyField.Id = fromServer.People.Id;
 	opeople.Fields.Name = $("#Name").val();
 	opeople.Fields.Email = $("#Email").val();
-	opeople.Fields.Password = $("#Password").val();
+	//opeople.Fields.Password = $("#Password").val();
 	opeople.Fields.ObservacionesHobbies = $("#ObservacionesHobbies").val();
 	opeople.Fields.Photo = $('#file').val().split('\\').pop();
 	opeople.Fields.Country = $("#Country").val();
 	opeople.Fields.City = $("#City").val();
-	opeople.Fields.Gender = $("#Gender").val();
+	opeople.Fields.Gender = $("input[name='Gender']:checked").val();
 	opeople.Fields.Age = $("#Age").val();
 	opeople.Fields.Phone = $("#Phone").val();	
 	
-	opeople.Procedure("opeopleUpdate", $.extend({}, opeople.KeyFields, opeople.Fields));
+	opeople.Procedure("opeopleUpdate", $.extend({}, opeople.KeyField, opeople.Fields));
 }
 
 function opeopleUpdateOK(data)
@@ -122,17 +131,17 @@ function opeopleUpdateOK(data)
 	$.mobile.loading( 'hide' );
 	if(!hayError(data))
 	{
-		var pathTo = encodeURIComponent("../Data/People_" + opeople.Id + "/");
-	    var newFileName = "PersonalFile_" + data[0].Id + ".dat";
-	    //opeople.KeyField.Id = data[0].Id;
+		var pathTo = encodeURIComponent("../Data/People_" + fromServer.People.Id + "/");
+	    var newFileName = "PersonalFile_" + fromServer.People.Id + ".dat";
 	    var fileName = $('#file').val().split('\\').pop();
-	    uploadFile(fileName, newFileName, pathTo);
+	    if(fileName.length > 0)
+	        uploadFile(fileName, newFileName, pathTo);
 	}
 }
 
 function uploadFile(fileName, newFileName, pathTo)
 {
-	$("#imageForm").attr("action", "../Ajax/include/upload.php?RutaDestino="+RutaDestino+"&NuevoNombre="+NuevoNombre+"&NombreOriginal="+ NombreOriginal);		
+	$("#imageForm").attr("action", "../Ajax/include/upload.php?RutaDestino="+pathTo+"&NuevoNombre="+newFileName+"&NombreOriginal="+ fileName);		
 	$("#imageForm").submit();
 }
 
