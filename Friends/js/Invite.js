@@ -5,9 +5,7 @@ var $listview;
 var sql;
 var seleccionado;
 
-$(document).bind('pageinit', function(){	pageinit();	});
-
-function pageinit(){
+function pageinitOld(){
 	$listview = $("#listviewId");
 	AjaxService = '../Ajax/AjaxService.php';		
 	

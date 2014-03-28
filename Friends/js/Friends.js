@@ -10,6 +10,15 @@ function pageinit(){
 	
 	// Cargar lista de friends
 	BuscarFriends();	
+	
+		var params = {
+		ObtenerSQL: ObtenerSql,
+		Titulo:  "Name",
+		Clave: "Id"
+	};
+	
+	var $lvHobbies2 = $("#lvHobbies2").LvHobbiesLoad(params);
+	$lvHobbies2.Consultar();		
 }
 //*****************************************************************************************************************************************************************
 function send()
