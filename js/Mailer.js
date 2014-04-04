@@ -10,7 +10,9 @@ var	MailerGmail = {
 			Password: "976219766",
 			AddressEmail: "danielmgv@gmail.com",
 			AddressName: "Daniel M",
-			Language: "es"
+			Language: "es",
+			Subject: "",
+			Body: ""
 		},
 		Send : function(SendEmailDone){this.MeMailer.Send(Params, SendEmailDone);},		
 };
