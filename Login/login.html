@@ -13,6 +13,7 @@
 		<script src="../js/JQuery/jquery.mobile.min.js"></script>
 	
 		<script src="../js/Comun.js"></script>
+		<script src="../js/Mailer.js"></script>
 		<script src="../js/MySQLLib/MySQL.js"></script>
 		<script src="../js/phonegap/PGNavigation.js"></script>
 		<script src="js/login.js"></script>
@@ -34,6 +35,9 @@
 					<div data-role="fieldcontain">						
 						<label for="password" id="lblPassword" class="labelMultiidioma">Password:</label>						
 						<input type="password" name="password" id="password" value="" autocomplete="off">	
+					</div>		
+					<div data-role="fieldcontain">						
+						<a href="JavaScript:rememberPassword();" id="linkRecordar" class="labelMultiidioma">Recordar contraseña</a>	
 					</div>												
 					<a data-role="button" id="btnLogin" class="labelMultiidioma">Enter</a>												
 				</form>

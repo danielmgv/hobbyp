@@ -90,3 +90,24 @@ function logado(data)
 
 //**************************************************************************************************************************************************************************************
 
+function rememberPassword () {
+	//Se ha mandado un correo a la 
+  //href="javascript:hrefParams('../News/News.html');"
+  	opeople.Procedure("opeopleRememberPassword", params);
+}
+
+function opeopleRememberPasswordOK(data)
+{
+	MailerGmail.Params.AddressEmail = $("#email").val();
+  	MailerGmail.Params.Subject = lang.RememberSubject;
+  	MailerGmail.Params.Body = lang.RememberBody + "<BR>" + data[1].Password;
+  	MailerGmail.Send(SendEmailDone); 	
+}
+
+function SendEmailDone()
+{
+	alert("Se ha enviado un email con la contraseña");	
+}
+
+
+
