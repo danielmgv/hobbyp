@@ -20,6 +20,41 @@ function pageinit(){
 	var $lvHobbies2 = $("#lvHobbies2").LvHobbiesLoad(params);
 	$lvHobbies2.Consultar();		
 }
+//*************************************************************************************************************
+function btnSendClick(){		
+	var email = $("#Email").val();
+	        
+	if(confirm("Desea inviatar a "+ email +" a unirse a hobbyp?"))
+	{
+		var data ={Email: email};
+		
+		opeople.Procedure("opeopleGetByEmail", data);	
+	}
+}
+
+function opeopleGetByEmailOk(data)
+{
+	if(data.NumRegistros > 0)
+	{
+		var params = {a:fromServer.People.Id, b:data["1"].IdPeople, c: $("#MensajeParam").text()};
+		oRequest.Insert(params);
+	}
+	else
+	{
+		var email = $("#Email").val();
+		MailerGmail.Params.Subject =  fromServer.People.Name + " desa compartir sus hobies con usted mediante Hobbyp.";
+		MailerGmail.Params.Body =  "<h1>Hobbyp<h1> Realice y comparta sus hobbies organizadolos mediante Hobbyp, sus amigos le esperan. + <br>";
+		MailerGmail.Params.Body += getLinkApp(email);
+		MailerGmail.Params.AddressName = $("#Nombre").val();
+		MailerGmail.Send(fnSendOk);
+	}	
+}
+
+function getLinkApp(email)
+{
+	var linkApp = "http://hobbyp.bedagoni.hol.es/Join/Join.html";
+	var linkStr = $("<a>").href(linkApp + "?" + email + "&from="+ fromServer.People.Id);	
+}
 //*****************************************************************************************************************************************************************
 function send()
 {
@@ -170,7 +205,7 @@ function oRequestInsertOK(data) {
 		alert("InsertOK");
 	}
 }
-
+/*
 function oRequestInsertNOK(httpRequest, textStatus, errorThrown) {
 	$.mobile.loading( 'hide' );	
 	if(!hayError(httpRequest.responseText))
@@ -178,7 +213,7 @@ function oRequestInsertNOK(httpRequest, textStatus, errorThrown) {
 		alert("Error al insertar\n" + textStatus + errorThrown.message + httpRequest.responseText);	
 	}
 }
-
+*/
 //***************************************************************************************************************************
 function EnviarMensaje (To,ToName) {
   fromServer["To"] = To;
