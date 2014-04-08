@@ -24,7 +24,7 @@ function pageinit(){
 function btnSendClick(){		
 	var email = $("#Email").val();
 	        
-	if(confirm("Desea inviatar a "+ email +" a unirse a hobbyp?"))
+	if(confirm("Desea invitar a "+ email +" a unirse a hobbyp?"))
 	{
 		var data ={Email: email};
 		
